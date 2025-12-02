@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
         <div className='bg-blue-400 text-red-600 w-50'> 
-          Hola
+          Develop
         </div>
     </div>
   )
