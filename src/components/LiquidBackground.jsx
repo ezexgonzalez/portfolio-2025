@@ -31,8 +31,7 @@ const LiquidBackground = ({ className = "", children }) => {
           className="absolute inset-0 bg-cover bg-no-repeat opacity-95"
           style={{
             backgroundImage: "url('/hero-liquid-dark.png')",
-            // movemos la imagen un poco hacia arriba
-            backgroundPosition: "center -100px",
+    
           }}
         />
 
