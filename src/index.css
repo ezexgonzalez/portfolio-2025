@@ -45,10 +45,10 @@
       --color-surface: rgba(15, 23, 42, 0.97);
       --color-surface-muted: rgba(15, 23, 42, 0.9);
 
-      /* liquid glass dark */
-      --color-glass: rgba(15, 23, 42, 0.88);
-      --color-glass-soft: rgba(15, 23, 42, 0.7);
-      --color-border-subtle: rgba(148, 163, 184, 0.35);
+        /* liquid glass dark (más translúcido) */
+      --color-glass: rgba(15, 23, 42, 0.68);
+      --color-glass-soft: rgba(30, 64, 175, 0.45); /* toque de azul */
+      --color-border-subtle: rgba(248, 250, 252, 0.16); /* casi blanco suave */
 
       /* texto */
       --color-main: #e5e7eb;
