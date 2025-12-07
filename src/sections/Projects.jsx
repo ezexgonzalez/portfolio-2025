@@ -15,9 +15,17 @@ const Projects = () => {
         {projects.map((project) => (
           <GlassCard
             key={project.id}
-            className="px-5 py-4 text-sm bg-[rgba(7,16,28,0.5)] dark:bg-[rgba(7,16,28,0.5)]"
+            className="
+              px-5 py-4 text-sm
+              bg-[rgba(7,16,28,0.5)]
+              dark:bg-[rgba(7,16,28,0.5)]
+              transition-transform transition-shadow
+              hover:-translate-y-[2px]
+              hover:shadow-[0_26px_80px_rgba(0,0,0,0.85)]
+              md:col-span-1
+            "
           >
-            <div className="flex flex-col h-full justify-between gap-3">
+            <div className="flex flex-col h-full justify-between gap-4">
               <div>
                 <h3 className="text-base font-semibold text-white">
                   {project.title}
@@ -30,7 +38,7 @@ const Projects = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-1.5 mt-3">
+              <div className="flex flex-wrap gap-1.5 mt-1">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
@@ -46,6 +54,32 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+
+              <div className="flex gap-3 mt-2 text-xs">
+                <a
+                  href={project.link.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    text-accent
+                    hover:underline
+                  "
+                >
+                  Ver demo
+                </a>
+                <a
+                  href={project.link.repo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    text-muted
+                    hover:text-white
+                    hover:underline
+                  "
+                >
+                  Ver código
+                </a>
+              </div>
             </div>
           </GlassCard>
         ))}
@@ -55,3 +89,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
