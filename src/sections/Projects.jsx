@@ -19,7 +19,7 @@ const Projects = () => {
               px-5 py-4 text-sm
               bg-[rgba(7,16,28,0.5)]
               dark:bg-[rgba(7,16,28,0.5)]
-              transition-transform transition-shadow
+              transition-shadow
               hover:-translate-y-[2px]
               hover:shadow-[0_26px_80px_rgba(0,0,0,0.85)]
               md:col-span-1
