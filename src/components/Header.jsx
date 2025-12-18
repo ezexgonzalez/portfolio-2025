@@ -1,6 +1,6 @@
-// src/components/Header.jsx
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import Logo from "./Logo";
 
 const NAV_LINKS = [
   { id: "projects", label: "Projects" },
@@ -9,40 +9,66 @@ const NAV_LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
-
 const Header = ({ activeSection, onNavClick }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (typeof window === "undefined") return;
-      setScrolled(window.scrollY > 10); // a partir de 10px ya activa el glass
+      if (typeof window !== "undefined") {
+        setScrolled(window.scrollY > 20);
+      }
     };
-
-    handleScroll(); // por si no arrancamos en el top
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <header
-      className={`
-        fixed top-0 inset-x-0 z-30
-        transition-[backdrop-filter,border-color] duration-200
-        ${scrolled
-          ? "backdrop-blur-lg bg-white/25 dark:bg-[rgba(3,7,18,0.55)] border-b border-white/5"
-          : "backdrop-blur-0 bg-transparent border-b border-transparent"
-        }
-      `}
-    >
+    <header className="fixed top-0 inset-x-0 z-50 flex justify-center p-4 pointer-events-none">
       <div
-        className="
-          max-w-5xl mx-auto
-          px-6 py-3
-          flex items-center justify-between gap-6
-        "
+        className={`
+          pointer-events-auto
+          flex items-center px-2 py-2 pl-2 sm:pl-3
+          rounded-full border transition-all duration-500 ease-out
+
+          ${
+            scrolled
+              ? `
+                /* LIGHT (nuevo): glass claro elegante */
+                bg-white/60 border-slate-200/70 backdrop-blur-xl
+                shadow-[0_18px_60px_-30px_rgba(15,23,42,0.35)]
+                scale-100
+
+                /* DARK (tu look original) */
+                dark:bg-black/40 dark:border-white/10 dark:shadow-2xl
+              `
+              : `
+                bg-transparent border-transparent scale-105
+              `
+          }
+        `}
       >
-        <nav className="flex gap-6 text-sm">
+        {/* BOTÓN DEL LOGO */}
+        <button
+          onClick={scrollToTop}
+          aria-label="Volver al inicio"
+          className="
+            mr-1 sm:mr-2 rounded-full
+            focus:outline-none focus:ring-2
+            focus:ring-slate-400/30 dark:focus:ring-white/20
+          "
+        >
+          <Logo />
+        </button>
+
+        {/* Divisor vertical */}
+        <div className="w-px h-4 mx-1 sm:mx-2 bg-slate-300/40 dark:bg-white/10" />
+
+        {/* NAV */}
+        <nav className="flex items-center gap-1 sm:gap-2">
           {NAV_LINKS.map(({ id, label }) => {
             const isActive = activeSection === id;
 
@@ -51,26 +77,41 @@ const Header = ({ activeSection, onNavClick }) => {
                 key={id}
                 onClick={() => onNavClick(id)}
                 className={`
-                  relative
-                  transition-colors
-                  ${isActive ? "text-main dark:text-white" : "text-muted"}
+                  relative px-3 py-1.5 text-xs sm:text-sm font-medium transition-colors rounded-full
+
+                  ${
+                    isActive
+                      ? `
+                        /* LIGHT (nuevo) */
+                        text-slate-800 font-semibold
+                        /* DARK (igual) */
+                        dark:text-white
+                      `
+                      : `
+                        /* LIGHT (nuevo) */
+                        text-slate-500 hover:text-slate-700
+                        /* DARK (igual) */
+                        dark:text-slate-400 dark:hover:text-slate-200
+                      `
+                  }
                 `}
               >
-                <span>{label}</span>
-                {isActive && scrolled && (
+                {isActive && (
                   <span
                     className="
-                      absolute -bottom-1 left-0 right-0
-                      h-[2px]
-                      rounded-full
-                      bg-accent
+                      absolute inset-0 rounded-full -z-10 animate-fade-in
+                      bg-slate-900/5 dark:bg-white/10
+                      border border-slate-200/60 dark:border-transparent
                     "
                   />
                 )}
+                {label}
               </button>
             );
           })}
         </nav>
+
+        <div className="w-px h-4 mx-1 sm:mx-2 bg-slate-300/40 dark:bg-white/10" />
 
         <ThemeToggle />
       </div>
@@ -79,6 +120,5 @@ const Header = ({ activeSection, onNavClick }) => {
 };
 
 export default Header;
-
 
 
