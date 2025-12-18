@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import LiquidBackground from "./components/LiquidBackground";
@@ -13,88 +12,136 @@ const SECTION_IDS = ["hero", "projects", "about", "skills", "contact"];
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
 
-  // Scroll suave al hacer click en el nav
   const handleNavClick = (id) => {
     const el = document.getElementById(id);
     if (!el) return;
 
+    // Detectamos si es Desktop para decidir cómo scrollear
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+
     el.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      // Desktop: "center" (Para encuadrar perfecto)
+      // Mobile: "start" (Para pegar al borde del nav, usando el padding css)
+      block: isDesktop ? "center" : "start",
     });
   };
 
-  // Detectar sección activa mientras scrolleás
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            if (SECTION_IDS.includes(id)) {
-              setActiveSection(id);
-            }
+          if (entry.isIntersecting && SECTION_IDS.includes(entry.target.id)) {
+            setActiveSection(entry.target.id);
           }
         });
       },
-      {
-        root: null,
-        threshold: 0.5, // 50% de la sección visible para considerarla activa
-      }
+      { root: null, threshold: 0.3 }
     );
-
     SECTION_IDS.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
-
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="bg-bg text-main">
+    <div className="bg-bg text-main selection:bg-indigo-500/30">
       <LiquidBackground>
-        <Header
-          activeSection={activeSection}
-          onNavClick={handleNavClick}
-        />
+        <Header activeSection={activeSection} onNavClick={handleNavClick} />
 
-        <main className="max-w-5xl mx-auto px-6 pt-28 pb-4">
-          <section id="hero" className="scroll-mt-24 pb-20">
-            <Hero />
+        <main className="w-full">
+          
+          {/* HERO 
+              Mobile: pt-32 para bajarlo visualmente al cargar.
+              Desktop: h-screen, snap-start, centrado.
+          */}
+          <section
+            id="hero"
+            className="
+              w-full px-4 sm:px-6
+              pt-32 pb-20
+              lg:pt-0 lg:pb-0
+              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+            "
+          >
+            <div className="w-full max-w-5xl mx-auto">
+              <Hero />
+            </div>
           </section>
 
-          <section id="projects" className="scroll-mt-24 pb-24">
-            <Projects />
+          {/* PROJECTS 
+              Mobile: pt-0 (El CSS de 75px hace el trabajo).
+              Desktop: h-screen, snap-start, centrado.
+          */}
+          <section
+            id="projects"
+            className="
+              w-full px-4 sm:px-6
+              pt-0 pb-24
+              lg:pt-0 lg:pb-0
+              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+            "
+          >
+            <div className="w-full max-w-5xl mx-auto">
+              <Projects />
+            </div>
           </section>
 
-          <section id="about" className="scroll-mt-24 pb-16">
-            <About />
+          {/* ABOUT */}
+          <section
+            id="about"
+            className="
+              w-full px-4 sm:px-6
+              pt-0 pb-24
+              lg:pt-0 lg:pb-0
+              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+            "
+          >
+            <div className="w-full max-w-5xl mx-auto">
+              <About />
+            </div>
           </section>
 
-          <section id="skills" className="scroll-mt-24 pb-16">
-            <Skills />
+          {/* SKILLS */}
+          <section
+            id="skills"
+            className="
+              w-full px-4 sm:px-6
+              pt-0 pb-24
+              lg:pt-0 lg:pb-0
+              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+            "
+          >
+            <div className="w-full max-w-5xl mx-auto">
+              <Skills />
+            </div>
           </section>
 
-          <section id="contact" className="scroll-mt-24 pb-12">
-            <Contact />
+          {/* CONTACT */}
+          <section
+            id="contact"
+            className="
+              w-full px-4 sm:px-6
+              pt-0 pb-32
+              lg:pt-0 lg:pb-0
+              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+            "
+          >
+            <div className="w-full max-w-5xl mx-auto">
+              <Contact />
+              {/* Footer Desktop */}
+              <div className="hidden lg:flex mt-12 w-full justify-between text-[11px] text-muted opacity-60 border-t border-white/5 pt-4">
+                 <span>© 2025 Ezequiel Gonzalez</span>
+                 <span>Liquid Glass UI</span>
+              </div>
+            </div>
           </section>
         </main>
 
-        <footer
-          className="
-            max-w-5xl mx-auto px-6 pb-10
-            flex flex-col sm:flex-row items-start sm:items-center justify-between
-            gap-3
-            text-[11px] text-muted
-            border-t border-white/5
-            pt-4
-          "
-        >
-          <span>© {new Date().getFullYear()} Ezequiel Gonzalez</span>
-          <span className="text-xs">
-            Construido con React, Vite y Tailwind · Liquid glass UI
-          </span>
+        {/* Footer Mobile */}
+        <footer className="lg:hidden max-w-5xl mx-auto px-6 pb-12 text-center text-[11px] text-muted opacity-60">
+           © 2025 Ezequiel Gonzalez
         </footer>
       </LiquidBackground>
     </div>
@@ -102,6 +149,3 @@ function App() {
 }
 
 export default App;
-
-
-
