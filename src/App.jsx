@@ -46,7 +46,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-bg text-main selection:bg-indigo-500/30">
+    <div className="bg-bg text-main selection:bg-indigo-500/30 overflow-x-clip">
       <LiquidBackground>
         <Header activeSection={activeSection} onNavClick={handleNavClick} />
 
