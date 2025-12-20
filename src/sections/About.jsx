@@ -29,34 +29,50 @@ const About = () => {
                 <span className="text-slate-800 dark:text-white font-medium">
                   Ezequiel Gonzalez
                 </span>
-                , un desarrollador web apasionado por el ecosistema{" "}
+                , desarrollador Full Stack{" "}
                 <span className="text-indigo-600 dark:text-indigo-400">
-                  JavaScript
-                </span>
-                . Mi camino hacia la tecnología no fue lineal, lo que me ha dado una perspectiva única sobre la resolución de problemas.
+                  MERN
+                </span>{" "}
+                con un enfoque orientado a construir productos confiables,
+                escalables y bien ejecutados. Desde temprano tuve afinidad por
+                la tecnología: aprendí de forma autodidacta, desarrollé
+                facilidad para resolver problemas técnicos y me acostumbré a
+                incorporar herramientas y entornos nuevos con rapidez.
+              </p>
+              <p>
+                Inicié la Licenciatura en Sistemas en la Universidad Nacional de
+                Lanús y, posteriormente, opté por una formación más práctica e
+                intensiva enfocada en desarrollo web, consolidando fundamentos y
+                trabajando con proyectos orientados a producto.
               </p>
 
               <p>
-                Vengo de un entorno de alta responsabilidad en el{" "}
+                Más adelante me incorporé al{" "}
                 <span className="text-slate-700 dark:text-slate-200">
-                  monitoreo para la policía de la ciudad
+                  Centro de Monitoreo de la Policía de la Ciudad
                 </span>
-                . Esa etapa forjó en mí una{" "}
-                <span className="text-slate-800 dark:text-white font-semibold">
-                  disciplina inquebrantable
-                </span>
-                , la capacidad de mantener la calma bajo presión y un enfoque absoluto en el trabajo en equipo coordinado.
+                , un entorno operativo de alta exigencia que fortaleció
+                habilidades que hoy aplico directamente al desarrollo: trabajo
+                bajo presión, comunicación clara, coordinación en equipo y
+                adaptación constante. Esta experiencia consolidó una mentalidad
+                más estructurada y orientada a resultados.
               </p>
 
               <p>
-                Hoy, aplico esa misma rigurosidad al desarrollo de software, enfocándome en construir productos que no solo funcionen, sino que sean escalables y estéticamente impecables.
+                Actualmente estoy enfocado en incorporarme al sector IT con una
+                perspectiva más consistente, apoyada en disciplina, experiencia
+                real en entornos demandantes y un objetivo profesional claro.
+                Busco integrarme a un equipo donde pueda aportar valor
+                construyendo soluciones end-to-end, con buenas prácticas, foco
+                en calidad y una experiencia final cuidada.
               </p>
             </div>
           </GlassCard>
 
           {/* Mini Quote */}
           <div className="px-6 border-l-2 border-indigo-500/30 italic text-slate-500 dark:text-slate-500 text-sm lg:text-[15px]">
-            "Mi objetivo no es solo escribir código, sino elevar el nivel de cada producto en el que participo."
+            "Mi objetivo no es solo escribir código, sino elevar el nivel de
+            cada producto en el que participo."
           </div>
         </div>
 
@@ -110,23 +126,27 @@ const About = () => {
           </GlassCard>
 
           {/* CTA */}
-          <div className="
+          <div
+            className="
             p-5 lg:p-6 rounded-[var(--radius-card)]
             border border-dashed border-slate-200/70 dark:border-white/10
             flex items-center justify-between
             group cursor-pointer
             hover:bg-slate-900/5 dark:hover:bg-white/[0.02]
             transition-colors
-          ">
+          "
+          >
             <span className="text-[11px] lg:text-xs text-slate-600 dark:text-slate-400">
               ¿Quieres saber más?
             </span>
 
-            <div className="
+            <div
+              className="
               flex items-center gap-2 text-[11px] lg:text-xs
               text-slate-800 dark:text-white
               font-bold group-hover:translate-x-1 transition-transform
-            ">
+            "
+            >
               <span>Descargar CV</span>
               <Download size={14} />
             </div>
