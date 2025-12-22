@@ -10,14 +10,15 @@ const ContactTile = ({ icon: Icon, label, value, href, featured = false }) => (
     rel="noreferrer"
     className={`
       group flex items-center justify-between p-4 rounded-2xl border transition-all duration-300
-      ${featured
-        ? `
+      ${
+        featured
+          ? `
           /* LIGHT */
           bg-indigo-500/10 border-indigo-500/25 hover:bg-indigo-500/15 hover:border-indigo-500/35
           /* DARK (tu diseño) */
           dark:bg-indigo-600/10 dark:border-indigo-500/30 dark:hover:bg-indigo-600/20 dark:hover:border-indigo-500/50
         `
-        : `
+          : `
           /* LIGHT */
           bg-white/60 border-slate-200/70 hover:bg-white/75 hover:border-slate-300/70
           /* DARK (tu diseño) */
@@ -30,14 +31,15 @@ const ContactTile = ({ icon: Icon, label, value, href, featured = false }) => (
       <div
         className={`
           p-2.5 rounded-xl flex items-center justify-center
-          ${featured
-            ? `
+          ${
+            featured
+              ? `
               /* LIGHT */
               bg-indigo-500 text-white shadow-lg shadow-indigo-500/15
               /* DARK */
               dark:bg-indigo-500 dark:text-white dark:shadow-indigo-500/20
             `
-            : `
+              : `
               /* LIGHT */
               bg-slate-900/5 text-slate-700 group-hover:text-slate-800
               /* DARK */
@@ -53,10 +55,7 @@ const ContactTile = ({ icon: Icon, label, value, href, featured = false }) => (
         <p
           className={`
             text-xs font-bold tracking-wide uppercase
-            ${featured
-              ? "text-indigo-700 dark:text-indigo-300"
-              : "text-slate-500 dark:text-slate-500"
-            }
+            ${featured ? "text-indigo-700 dark:text-indigo-300" : "text-slate-500 dark:text-slate-500"}
           `}
         >
           {label}
@@ -94,7 +93,7 @@ const Contact = () => {
         <SectionHeader
           label="Contact"
           title="Hablemos"
-          description="Estoy listo para sumarme a nuevos desafíos. ¿Creamos algo juntos?"
+          description="Estoy disponible para sumarme a nuevos desafíos. ¿Creamos algo juntos?"
         />
       </div>
 
@@ -127,19 +126,27 @@ const Contact = () => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                   </span>
-                  Disponible para proyectos
+                  Disponible para entrevistas
                 </div>
 
                 <h3 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-white leading-tight">
-                  ¿Tenés una idea en mente?
+                  ¿Hablamos de tu próximo producto?
                 </h3>
 
                 <p className="text-base text-slate-600 dark:text-slate-400 leading-relaxed max-w-md">
-                  Actualmente estoy buscando oportunidades como{" "}
+                  Busco mi primera oportunidad en IT como{" "}
                   <strong className="text-slate-800 dark:text-white">
-                    Full Stack Developer
+                    Full Stack Developer (Junior/Trainee)
                   </strong>
-                  . Si valorás el código limpio, la arquitectura escalable y el diseño de interfaces modernas, me encantaría charlar con vos.
+                  . Construyo aplicaciones end-to-end con MERN, cuidando{" "}
+                  <strong className="text-slate-800 dark:text-white">
+                    arquitectura, performance y experiencia de usuario
+                  </strong>
+                  .
+                </p>
+
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-md">
+                  Abierto a roles Junior/Trainee y proyectos freelance.
                 </p>
               </div>
 
@@ -151,7 +158,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
                   <CheckCircle2 size={18} className="text-indigo-600 dark:text-indigo-400" />
-                  <span>Disponible Remoto & Full Time</span>
+                  <span>Remoto / Híbrido · Full time</span>
                 </div>
               </div>
             </div>
@@ -170,24 +177,24 @@ const Contact = () => {
             >
               <ContactTile
                 icon={Mail}
-                label="Envíame un correo"
-                value="ezequiel.gonzalez@email.com"
-                href="mailto:ezequiel.gonzalez@email.com"
+                label="Email"
+                value="ezexgonzalez@outlook.com"
+                href="mailto:ezexgonzalez@outlook.com"
                 featured={true}
               />
 
               <ContactTile
                 icon={Linkedin}
-                label="Conectemos"
-                value="linkedin.com/in/ezequiel"
-                href="https://www.linkedin.com"
+                label="LinkedIn"
+                value="linkedin.com/in/ezexgonzalez"
+                href="https://www.linkedin.com/in/ezexgonzalez/"
               />
 
               <ContactTile
                 icon={Github}
-                label="Revisá mi código"
-                value="github.com/ezequiel"
-                href="https://github.com"
+                label="GitHub"
+                value="github.com/ezexgonzalez"
+                href="https://github.com/ezexgonzalez"
               />
             </div>
           </div>
@@ -198,4 +205,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 

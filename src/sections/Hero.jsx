@@ -55,13 +55,14 @@ const Hero = () => {
 
               {/* Descripción: suavizado en light, dark intacto */}
               <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed max-w-lg">
-                Creo experiencias digitales de alto impacto. Especializado en
-                arquitecturas escalables,
+                Construyo aplicaciones web end-to-end con MERN, cuidando
+                performance, arquitectura y experiencia de usuario. Busco mi
                 <span className="text-slate-700 dark:text-slate-200 font-medium">
                   {" "}
-                  performance obsesiva
+                  primera oportunidad
                 </span>{" "}
-                y diseño de interfaces líquidas.
+                profesional en IT para aportar valor y crecer en un equipo
+                exigente.
               </p>
             </div>
 
@@ -77,10 +78,18 @@ const Hero = () => {
                 Ver Proyectos
               </PrimaryButton>
 
-              <SecondaryButton>Contactar</SecondaryButton>
+              <SecondaryButton
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Contactar
+              </SecondaryButton>
 
-              <div className="hidden sm:flex items-center gap-2 text-[10px] text-slate-500 ml-4 pl-4 border-l border-slate-300 dark:border-white/10">
-                <MapPin size={12} />
+              <div className="hidden sm:flex items-center gap-2 text-[12px] text-slate-500 ml-4 pl-4 border-l border-slate-300 dark:border-white/10">
+                <MapPin size={15} />
                 <span>Buenos Aires</span>
               </div>
             </div>
@@ -111,8 +120,9 @@ const Hero = () => {
                   Disponible para nuevos retos
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Buscando oportunidades para aportar valor en equipos ágiles con
-                  stack moderno (MERN).
+                  Buscando oportunidades para roles trainee/junior. Me destaco
+                  por disciplina, aprendizaje rápido y enfoque en calidad:
+                  código limpio, UI consistente y APIs ordenadas.
                 </p>
               </div>
             </div>
@@ -145,7 +155,7 @@ const Hero = () => {
                   +3
                 </span>
                 <span className="text-[10px] text-slate-500 uppercase tracking-wider">
-                  Años Exp.
+                  Proyectos deployados
                 </span>
               </div>
               <div>
