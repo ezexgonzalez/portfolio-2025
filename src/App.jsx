@@ -16,14 +16,13 @@ function App() {
     const el = document.getElementById(id);
     if (!el) return;
 
-    // Detectamos si es Desktop para decidir cómo scrollear
     const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
 
     el.scrollIntoView({
       behavior: "smooth",
-      // Desktop: "center" (Para encuadrar perfecto)
-      // Mobile: "start" (Para pegar al borde del nav, usando el padding css)
-      block: isDesktop ? "center" : "start",
+      // Desktop: start (más consistente con secciones flexibles)
+      // Mobile: start (respeta el scroll-padding-top)
+      block: isDesktop ? "start" : "start",
     });
   };
 
@@ -38,10 +37,12 @@ function App() {
       },
       { root: null, threshold: 0.3 }
     );
+
     SECTION_IDS.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
+
     return () => observer.disconnect();
   }, []);
 
@@ -51,8 +52,7 @@ function App() {
         <Header activeSection={activeSection} onNavClick={handleNavClick} />
 
         <main className="w-full">
-          
-          {/* HERO 
+          {/* HERO
               Mobile: pt-32 para bajarlo visualmente al cargar.
               Desktop: h-screen, snap-start, centrado.
           */}
@@ -70,17 +70,16 @@ function App() {
             </div>
           </section>
 
-          {/* PROJECTS 
-              Mobile: pt-0 (El CSS de 75px hace el trabajo).
-              Desktop: h-screen, snap-start, centrado.
+          {/* PROJECTS
+              Desktop: min-h-screen + padding (no más overflow sobre otras secciones)
           */}
           <section
             id="projects"
             className="
               w-full px-4 sm:px-6
               pt-0 pb-24
-              lg:pt-0 lg:pb-0
-              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+              lg:py-24
+              lg:min-h-screen lg:snap-start
             "
           >
             <div className="w-full max-w-5xl mx-auto">
@@ -94,8 +93,8 @@ function App() {
             className="
               w-full px-4 sm:px-6
               pt-0 pb-24
-              lg:pt-0 lg:pb-0
-              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+              lg:py-24
+              lg:min-h-screen lg:snap-start
             "
           >
             <div className="w-full max-w-5xl mx-auto">
@@ -109,8 +108,8 @@ function App() {
             className="
               w-full px-4 sm:px-6
               pt-0 pb-24
-              lg:pt-0 lg:pb-0
-              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+              lg:py-24
+              lg:min-h-screen lg:snap-start
             "
           >
             <div className="w-full max-w-5xl mx-auto">
@@ -124,16 +123,17 @@ function App() {
             className="
               w-full px-4 sm:px-6
               pt-0 pb-32
-              lg:pt-0 lg:pb-0
-              lg:h-screen lg:snap-start lg:flex lg:items-center lg:justify-center
+              lg:py-24
+              lg:min-h-screen lg:snap-start
             "
           >
             <div className="w-full max-w-5xl mx-auto">
               <Contact />
+
               {/* Footer Desktop */}
               <div className="hidden lg:flex mt-12 w-full justify-between text-[11px] text-muted opacity-60 border-t border-white/5 pt-4">
-                 <span>© 2025 Ezequiel Gonzalez</span>
-                 <span>Liquid Glass UI</span>
+                <span>© 2025 Ezequiel Gonzalez</span>
+                <span>Liquid Glass UI</span>
               </div>
             </div>
           </section>
@@ -141,7 +141,7 @@ function App() {
 
         {/* Footer Mobile */}
         <footer className="lg:hidden max-w-5xl mx-auto px-6 pb-12 text-center text-[11px] text-muted opacity-60">
-           © 2025 Ezequiel Gonzalez
+          © 2025 Ezequiel Gonzalez
         </footer>
       </LiquidBackground>
     </div>

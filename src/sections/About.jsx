@@ -106,21 +106,72 @@ const About = () => {
           {/* Intereses */}
           <GlassCard className="p-6 lg:p-8 flex-1">
             <p className="text-[10px] lg:text-xs uppercase tracking-widest text-slate-500 dark:text-slate-500 font-bold mb-4">
-              Lo que me mueve
+              Principios de trabajo
             </p>
 
-            <ul className="space-y-3 text-xs lg:text-sm text-slate-600 dark:text-slate-400">
-              <li className="flex items-center gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                <span>Arquitecturas limpias (Clean Code)</span>
+            <ul
+              className="
+      grid grid-cols-1 md:grid-cols-2
+      gap-y-3 md:gap-y-4 gap-x-6
+      text-[13px] lg:text-sm
+      leading-snug
+      text-slate-600 dark:text-slate-400
+    "
+            >
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                <span className="min-w-0">
+                  Código limpio y mantenible (Clean Code)
+                </span>
               </li>
-              <li className="flex items-center gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                <span>Diseño de Interfaces Líquidas</span>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                <span className="min-w-0">
+                  UI consistente (componentes + design tokens)
+                </span>
               </li>
-              <li className="flex items-center gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-                <span>Aprendizaje continuo de TypeScript</span>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                <span className="min-w-0">
+                  Performance primero (cargas y render eficiente)
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
+                <span className="min-w-0">
+                  UX clara (jerarquía visual + feedback inmediato)
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0" />
+                <span className="min-w-0">
+                  Accesibilidad básica (contraste, foco, teclado)
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-violet-500 shrink-0" />
+                <span className="min-w-0">
+                  APIs ordenadas (contratos claros + validaciones)
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+                <span className="min-w-0">
+                  Iteración rápida con criterio (mejoras continuas)
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
+                <span className="min-w-0">
+                  Detalle y pulido (estados, edge cases, micro UX)
+                </span>
               </li>
             </ul>
           </GlassCard>

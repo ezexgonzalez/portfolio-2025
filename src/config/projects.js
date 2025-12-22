@@ -4,25 +4,13 @@ export const projects = [
     title: "Task Manager",
     role: "Full Stack · MERN",
     description:
-      "Gestor de tareas con autenticación JWT, panel líquido, filtros y estados.",
+      "Gestor de tareas full stack con autenticación JWT, CRUD completo y estados. UI Liquid Glass con animaciones suaves y UX cuidada.",
     tech: ["React", "Node.js", "MongoDB", "Tailwind"],
     year: 2025,
+    image: "/task-manager.png",
     link: {
-      demo: "#",
-      repo: "#",
-    },
-  },
-  {
-    id: "ecommerce",
-    title: "E-commerce",
-    role: "Frontend · React",
-    description:
-      "Tienda con catálogo, carrito, filtros y diseño moderno orientado a conversión.",
-    tech: ["React", "TypeScript", "Stripe"],
-    year: 2025,
-    link: {
-      demo: "#",
-      repo: "#",
+      demo: "https://mern-task-manager-iota-teal.vercel.app/",
+      repo: "https://github.com/ezexgonzalez/mern-task-manager",
     },
   },
   {
@@ -30,12 +18,13 @@ export const projects = [
     title: "Portfolio 2025",
     role: "Diseño + Desarrollo",
     description:
-      "Portfolio personal con liquid glass, dark/light mode y foco en experiencia.",
+      "Portfolio 2025 con Liquid Glass UI, micro-interacciones y dark/light mode. Enfocado en performance, accesibilidad y detalle visual.",
     tech: ["React", "Tailwind", "Vite"],
     year: 2025,
+    image: "/portfolio.png",
     link: {
       demo: "#",
-      repo: "#",
+      repo: "https://github.com/ezexgonzalez/portfolio-2025",
     },
   },
 ];
