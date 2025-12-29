@@ -1,73 +1,112 @@
 @import "tailwindcss";
 
-/* 1) Definís cómo funciona el variant `dark:` */
+/* Definición de variante dark para Tailwind v4 */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* 2) Definís tu tema base (light) con @theme */
+/* --- TEMA GLOBAL (LIGHT MODE POR DEFECTO) --- */
 @theme {
-  /* fuentes */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
-    "SF Pro Text", "Inter", sans-serif;
+  /* Fuentes */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
 
-  /* colores base (light) */
+  /* Colores Light Mode (Tus valores) */
   --color-bg: #f5f5f7;
   --color-bg-soft: #e5e7eb;
+  
   --color-surface: #ffffff;
   --color-surface-muted: rgba(255, 255, 255, 0.86);
-
-  /* liquid glass (light) */
+  
   --color-glass: rgba(255, 255, 255, 0.82);
   --color-glass-soft: rgba(255, 255, 255, 0.68);
+  
   --color-border-subtle: rgba(15, 23, 42, 0.06);
-
-  /* texto */
-  --color-main: #020617;
-  --color-muted: #6b7280;
-
-  /* accent */
+  
+  --color-main: #020617; /* Texto Oscuro */
+  --color-muted: #6b7280; /* Texto Gris */
+  
   --color-accent: #6366f1;
   --color-accent-soft: color-mix(in oklab, #6366f1 30%, transparent);
 
-  /* radios y sombras */
+  /* Variables de estructura */
   --radius-card: 2rem;
   --radius-pill: 999px;
-
+  
+  /* Sombras Light */
   --shadow-glass: 0 18px 60px rgba(15, 23, 42, 0.18);
   --shadow-glass-strong: 0 26px 80px rgba(15, 23, 42, 0.26);
 }
 
-/* 3) Overrides del tema para dark mode */
+/* --- TEMA DARK (INTOCABLE - EXACTAMENTE TUS VALORES) --- */
 @layer theme {
   :root {
     @variant dark {
       --color-bg: #020617;
       --color-bg-soft: #020818;
+      
       --color-surface: rgba(15, 23, 42, 0.97);
-      --color-surface-muted: rgba(15, 23, 42, 0.9);
-
-      /* liquid glass dark */
-      --color-glass: rgba(15, 23, 42, 0.88);
-      --color-glass-soft: rgba(15, 23, 42, 0.7);
-      --color-border-subtle: rgba(148, 163, 184, 0.35);
-
-      /* texto */
+      --color-surface-muted: rgba(15, 23, 22, 0.9);
+      
+      --color-glass: rgba(15, 23, 42, 0.38);
+      --color-glass-soft: rgba(30, 64, 175, 0.28);
+      
+      --color-border-subtle: rgba(241, 245, 249, 0.32);
+      
       --color-main: #e5e7eb;
-      --color-muted: #9ca3af;
-
-      /* accent un poco más intenso */
+      --color-muted: #94a3b8;
+      
       --color-accent: #6366f1;
       --color-accent-soft: color-mix(in oklab, #6366f1 45%, transparent);
-
-      /* sombras más profundas */
-      --shadow-glass: 0 22px 80px rgba(0, 0, 0, 0.75);
-      --shadow-glass-strong: 0 30px 110px rgba(0, 0, 0, 0.9);
+      
+      --shadow-glass: 0 28px 120px rgba(0, 0, 0, 0.9);
+      --shadow-glass-strong: 0 36px 140px rgba(0, 0, 0, 0.95);
     }
   }
 }
 
-/* 4) Estilos base (acá sí usamos @layer base) */
+/* --- CONFIGURACIÓN BASE (Scroll y Body) --- */
 @layer base {
+  /* Mobile (Default) */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px; 
+    scroll-snap-type: none;
+  }
+
   body {
     @apply bg-bg text-main font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Desktop (Pantallas grandes) */
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 0;
+      
+    }
+  }
+}
+
+/* --- UTILIDADES Y ANIMACIONES --- */
+@layer utilities {
+  @keyframes prism-sweep {
+    0% { transform: translateX(-100%); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateX(200%); opacity: 0; }
+  }
+  .animate-prism {
+    animation: prism-sweep 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  /* Utilidad para stroke de texto (opcional) */
+  .text-stroke-glass {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent;
+  }
+  /* Ajuste stroke para Light Mode */
+  :not(.dark) .text-stroke-glass {
+    -webkit-text-stroke: 1px rgba(2, 6, 23, 0.8);
+    color: transparent;
   }
 }
