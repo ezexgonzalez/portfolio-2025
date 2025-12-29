@@ -15,13 +15,14 @@ export const projects = [
   },
   {
     id: "portfolio-2025",
-    title: "Portfolio 2025",
+    title: "Portfolio",
     role: "Diseño + Desarrollo",
     description:
       "Portfolio 2025 con Liquid Glass UI, micro-interacciones y dark/light mode. Enfocado en performance, accesibilidad y detalle visual.",
     tech: ["React", "Tailwind", "Vite"],
     year: 2025,
     image: "/portfolio.png",
+    stack_type: "Frontend",
     link: {
       demo: "#",
       repo: "https://github.com/ezexgonzalez/portfolio-2025",
