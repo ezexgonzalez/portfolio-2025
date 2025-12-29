@@ -177,31 +177,34 @@ const About = () => {
           </GlassCard>
 
           {/* CTA */}
-          <div
-            className="
-            p-5 lg:p-6 rounded-[var(--radius-card)]
+          
+            <a
+              href="/cv-ezequiel-gonzalez.pdf"
+              download="CV-Ezequiel-Gonzalez.pdf"
+              className="
+              p-5 lg:p-6 rounded-[var(--radius-card)]
             border border-dashed border-slate-200/70 dark:border-white/10
             flex items-center justify-between
             group cursor-pointer
             hover:bg-slate-900/5 dark:hover:bg-white/[0.02]
-            transition-colors
-          "
-          >
-            <span className="text-[11px] lg:text-xs text-slate-600 dark:text-slate-400">
-              ¿Quieres saber más?
-            </span>
-
-            <div
-              className="
-              flex items-center gap-2 text-[11px] lg:text-xs
-              text-slate-800 dark:text-white
-              font-bold group-hover:translate-x-1 transition-transform
+            transition-colors  
             "
             >
-              <span>Descargar CV</span>
-              <Download size={14} />
-            </div>
-          </div>
+              <span className="text-[11px] lg:text-xs text-slate-600 dark:text-slate-400">
+                ¿Quieres saber más?
+              </span>
+              <div
+                className="
+                flex items-center gap-2 text-[11px] lg:text-xs
+                text-slate-800 dark:text-white
+                font-bold group-hover:translate-x-1 transition-transform
+              "
+              >
+                <span>Descargar CV</span>
+                <Download size={14} />
+              </div>
+            </a>
+          
         </div>
       </div>
     </div>

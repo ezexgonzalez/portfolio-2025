@@ -132,7 +132,7 @@ function App() {
 
               {/* Footer Desktop */}
               <div className="hidden lg:flex mt-12 w-full justify-between text-[11px] text-muted opacity-60 border-t border-white/5 pt-4">
-                <span>© 2025 Ezequiel Gonzalez</span>
+                <span>© {new Date().getFullYear()} Ezequiel Gonzalez</span>
                 <span>Liquid Glass UI</span>
               </div>
             </div>
@@ -141,7 +141,7 @@ function App() {
 
         {/* Footer Mobile */}
         <footer className="lg:hidden max-w-5xl mx-auto px-6 pb-12 text-center text-[11px] text-muted opacity-60">
-          © 2025 Ezequiel Gonzalez
+          © {new Date().getFullYear()} Ezequiel Gonzalez
         </footer>
       </LiquidBackground>
     </div>
