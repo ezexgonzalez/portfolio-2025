@@ -194,6 +194,21 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 **Authorization gate:** This selection does **not** authorize responsive, motion, interaction exploration, engineering implementation, or further variation of option A. Next design production pass should target **B only** and include only those assets explicitly requested in the new brief.
 
+### PASS 06 — APPROVED PRODUCTION DESIGN (director review, 2026-10-21)
+
+**Status: About / Story is visually approved for continued portfolio design.** No production code has been implemented or browser-tested.
+
+- **Figma collection:** `61:508` — `08 — About / Story Production`.
+- **Protected owner-selected reference B:** `62:558`.
+- **Desktop final:** `68:523` — 1920 × 1818 px, continuing the narrative/chronology dual-column hierarchy.
+- **Tablet final:** `68:576` — 768 × 1910 px, single-column reading with year markers attached to their story chapters.
+- **Mobile final:** `68:629` — 390 × 2231 px, natural two-line title, complete text, vertical chapter flow.
+- **Specifications and motion notes:** `68:682`; one-time brief editorial motion, no elaborate construction animation; the entire text must remain readable. Reduced motion defaults to immediately visible final state.
+- **Cleanup verified:** rejected A-only story frames and their exclusive continuity/viewport variants are no longer present in the About section. Shared/global design foundations were preserved.
+- **Visual audit:** desktop/tablet/mobile screenshots inspected, no visible horizontal clipping or obvious legibility failures. Figma notes report checks at 1536, 1366 and 320 px, but browser rendering and actual scroll, typography, keyboard focus and zoom behavior remain pending engineering/QA.
+- **Copy:** previously approved full first-person story retained; `Pero mi recorrido no fue una línea recta.` now has slightly more typographic emphasis. Year and paragraph placement verified at designed widths.
+- **Next:** conduct a separate content audit for Skills / Capabilities; exploration pass should produce **exactly two desktop directions only** and STOP for owner selection under the permanent gate. No responsive or motion for both concept options.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
