@@ -209,6 +209,18 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 - **Copy:** previously approved full first-person story retained; `Pero mi recorrido no fue una línea recta.` now has slightly more typographic emphasis. Year and paragraph placement verified at designed widths.
 - **Next:** conduct a separate content audit for Skills / Capabilities; exploration pass should produce **exactly two desktop directions only** and STOP for owner selection under the permanent gate. No responsive or motion for both concept options.
 
+## 4B. SKILLS / CAPABILITIES — APPROVED EXPLORATION A (2026-10-21)
+
+**Owner selected option A — Technical Index** as the creative desktop direction. **Option B — Capabilities Matrix is rejected**, and must not be further developed.
+
+- Figma selected frame: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=77-557
+- Frame ID: `77:557` — `A — Technical Index / 1920 × 1080`.
+- Explored under `77:556` — `09 — Skills / Capabilities Exploration`.
+
+**Preserve:** monochrome black editorial style, broad left title `Tecnologías y capacidades.` in DM Sans plus Instrument Serif italic, three numbered technical capability rows on right, subtle horizontal rules, descriptions and inline technologies as text (not pills), large negative space, no imagery or icon clusters. Three rows: `Interfaces Web`, `Backend & Data`, `Tools & Workflow`. This expresses what the developer builds rather than a proficiency scorecard.
+
+**Owner-selection gate:** This approves the design *direction only*. Do not assume responsive, motion, interactions or handoff are completed or authorized by this selection. The next specialist assignment may refine **only selected option A** and build responsive/production details specifically scoped by the Director. Option B must not be worked further. Do not write implementation code until the entire portfolio is approved.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
