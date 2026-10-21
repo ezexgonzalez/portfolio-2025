@@ -174,6 +174,26 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 
 
+## 4A. ABOUT / STORY — APPROVED EXPLORATION B (2026-10-21)
+
+**Owner-selected direction:** **B — Story & Timeline**. This closes the two-concept exploration round for About. **Option A is rejected and must not be developed further.**
+
+- Figma source: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=62-558
+- Approved complete desktop composition: node `62:558` — `B — Story & Timeline / complete story / 1920 wide`, 1920 × 1781 px. Height follows the narrative, not a forced 1080 px fixed section.
+- The first 1920 × 1080 viewport presentation is node `63:707`. The original desktop exploration is the design reference; do not copy rigid viewport constraints to implementation.
+
+**Protected art direction:**
+- Heading `El camino hasta acá.` combining restrained DM Sans and italic Instrument Serif, with small `03 / ABOUT` section index and discreet name metadata.
+- Personal first-person narrative in the left dominant reading column, with a right-hand aligned editorial chronology `2021 / Primeros pasos`, `2025 / Una nueva etapa`, `2026 / Nuevas perspectivas`.
+- Thin horizontal rules divide the three narrative chapters, with generous negative space and readable paragraphs. No photographic assets, cards, glows, panels or decorative UI.
+- Preserve the previously approved substantive story: early curiosity, Universidad Nacional de Lanús and practical web training, non-linear path and experience at Centro de Monitoreo, deliberate return to programming in 2025, Task Manager, Eze Web Studio, and development/design identity.
+
+**Two minor observations for the later owner-authorized refinement pass:**
+1. The serif line `Pero mi recorrido no fue una línea recta.` is presently somewhat quiet; test only a modest increase in editorial emphasis without altering the approved composition.
+2. In future tablet/mobile work, position each date close to its corresponding narrative chapter so the reading order remains meaningful.
+
+**Authorization gate:** This selection does **not** authorize responsive, motion, interaction exploration, engineering implementation, or further variation of option A. Next design production pass should target **B only** and include only those assets explicitly requested in the new brief.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
