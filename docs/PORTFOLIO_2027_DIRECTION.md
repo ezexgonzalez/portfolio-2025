@@ -156,6 +156,19 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 6. Significant negative space is a compositional feature; do not fill it with arbitrary widgets.
 7. Constructive line-based reveal should emphasize structure once, then give way to stable readable content. This is motion *direction*, not yet a tested animation.
 
+**Pass 04B motion correction (owner-requested, reviewed 2026-10-21):** The Figma specialist produced a new editable construction-animation study; this supersedes the conventional fade-in proposal. The design direction is **conceptually approved for continued design work**, but exported playback is NOT visually verified here and final production performance remains pending.
+
+- Figma correction container: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=45-5809
+- Desktop construction storyboard: `50:428` — five phases A (dot field), B (measured structural geometry), C (internal text/link skeletons), D (vertical resolution/replacement sweep), E (clean final).
+- Mobile storyboard: `50:2061` — same idea in a single column, reduced density.
+- Figma animated desktop frame: `45:7422`; manual motion tracks on ~350 nodes, 2.4s timeline.
+- Figma animated mobile frame: `45:10156`; manual motion tracks on ~207 nodes; Figma motion API reports a 2.0s loop although storyboard documentation describes a 1.4s sequence. **Resolve this discrepancy during future handoff**, not by assuming the prototype already fulfills the final runtime behavior.
+- Reduced-motion immediately visible final frame: `45:11220`.
+- Important: Figma preview timeline reports `loopMode: loop`, although the intended *website* behavior is **play once upon section entry and remain at final state without replaying on scroll back**. Implement that exact website behavior later. Do not ship an infinitely looping construction.
+- Animated proof has not been visually verified via exported video in this review due to inability to download the Figma export in the runtime. Detailed storyboard frames and animated node tracks were inspected.
+- The technical layer must be outside semantics and pointer hit-testing. Reveal must complete/skips immediately for keyboard focus, anchor navigation, fast scrolling, or reduced-motion preference.
+- Do NOT reconstruct the final state with static fade-in, or use fake console/status panels. Do NOT alter approved Selected Work layouts or add screenshots.
+
 **Before final section sign-off:** request specialist responsive proposals at 1920×900–960, 1536×864, 1366×768, 768×1024, 390×844 and 320 wide. The two columns should reorganize organically at narrow widths without squeezing copy or links. Validate small metadata contrast, tab/focus affordances, destination URLs, semantic reading order, and the transition from the approved Hero. No premature coding.
 
 
