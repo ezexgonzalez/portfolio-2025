@@ -120,9 +120,25 @@ Important implementation handoff principles (documentation only; no code now):
 
 Sections and ordering are exploratory until the Director approves. Preserve verified existing bios, project links, CV and contact data; revise inaccurate, outdated or duplicated claims before launch. Never invent testimonials, clients, years of experience, product metrics or deployed project counts.
 
-### Projects display language
+### Selected Work — owner-approved content and visual constraints (2026-10-21)
 
-Use an orderly grid / reticle of invisible modules defined by structural hairlines or coordinates. Previews, project title, role, context and outbound links should be easy to scan. A module may function like a card semantically while avoiding the *visual appearance* of a floating bordered card. Investigate constructive line-based reveal on entrance, but protect reading and interaction. Full mockups pending Figma.
+**Final selection for the initial redesign: exactly TWO projects.**
+
+1. **Eze Web Studio** — an independent, self-directed studio/site; demonstrates web design, frontend implementation, visual identity, product direction and practical service context. Do not imply client commissions or invented results. Verify final display naming and links before delivery.
+2. **Task Manager** — Full Stack MERN project; demonstrates authentication, CRUD, backend logic and user experience. Verify final stack, features and working links before delivery.
+
+**Portfolio 2025 is excluded completely from the Selected Work project gallery.** It is being replaced on the same public domain, so it is no longer an independently visitable showcase. It may only be mentioned in About as historical context if the owner approves, not as an active featured project.
+
+**Absolute visual constraint: NO photographs, project screenshots, screenshots-as-previews, mockup thumbnails, collage imagery or colored project images in Selected Work.** This protects the portfolio's dark monochrome atmosphere. Do NOT replace screenshots with generic AI-generated images, stock imagery, or decorative fake previews.
+
+**Visual approach:** Two substantial typographic editorial project modules integrated into the page's structural grid: fine hairline divisions, generous negative space, clear numbering (01/02), large title, concise category/role, short real descriptions, restrained stack in editorial text (not chip clusters), and working demo/source links. These are layout modules, NOT floating cards; no per-module rounded backgrounds, glass, shadows or dashboard treatment. Designer may explore asymmetry and proportional emphasis, but should not assume project images, add a third placeholder project or overwhelm the screen with giant text.
+
+**Motion:** A restrained line/construction reveal can draw grid divisions as the section enters view, followed by simple text reveal. Avoid replay-on-every-scroll, slow blocking animations, constant glitch, and unnecessary animated ASCII inside each module. Hover/focus affordances must be legible, accessible and functional without motion.
+
+**Responsive:** On large screens explore a balanced two-module horizontal grid, with deliberate typography and whitespace; on mobile compose as a vertical sequence with clear separators. Test real widths/heights and scaling instead of copying fixed Figma positions.
+
+**Design phase only:** Figma specialist must explore Selected Work composition after a Director brief. No React/CSS changes, package installation, deployment or engineering implementation until the whole portfolio design is approved.
+
 
 ## 5. Motion system rules
 
