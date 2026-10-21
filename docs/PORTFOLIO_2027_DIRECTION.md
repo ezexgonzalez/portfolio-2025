@@ -1,6 +1,6 @@
 # PORTFOLIO 2027 — CREATIVE DIRECTION & PRODUCT BRIEF
 
-**Status:** Discovery complete for visual direction; Hero Exploration 01 in Figma pending review.  
+**Status:** Hero creative direction approved by owner on 2026-10-21; Figma implementation/specification and responsive/motion validation pending.  
 **Owner:** Ezequiel Gonzalez (always WITHOUT accents).  
 **Last updated:** 2026-10-21.  
 **Production:** https://ezegonzalez.dev/  
@@ -32,7 +32,7 @@ Primary audience: recruiters, technical interviewers, developers, potential coll
 
 **Explicit exclusions:** ubiquitous glass cards, glassmorphism, glowing dashboard panels, endless badges/chips, gratuitous gradients, excessively decorative iconography, startup-AI aesthetic, dense animated noise, perpetual high-contrast white flash, copied reference layouts.
 
-**Not yet approved:** typefaces, exact colors, exact layout, ASCII implementation, animation tooling, animation timing, mobile decisions, full-site wireframes.
+**Not yet approved/finalized:** exact typography family names and values, color tokens, animation technology/timing, responsive adaptations, full-site wireframes. **The desktop Hero B composition is approved** (see section 3A); do not redesign it.
 
 **Exploration-only palette direction:** near-black `#0B0B0B`, softened white `#F0F0EE`, functional grays. These are starting references, NOT finalized tokens.
 
@@ -54,6 +54,39 @@ Navigation actions: **Explorar proyectos** and **Mi historia**.
 Visual hierarchy: name is the principal anchor; professional paragraph communicates role and competency; personal statement conveys genuine observation, reflection and curiosity. Do not turn the statement into generic motivational ad copy. Avoid putting “looking for my first IT job” in the Hero; review relevant availability in About / Contact when writing final content.
 
 No accents in the name: always **Ezequiel Gonzalez**.
+
+## 3A. APPROVED DESKTOP HERO DESIGN — FIXED CREATIVE REFERENCE
+
+**Owner selection:** Proposal **B — Editorial inmersiva**, 1440 x 960 desktop frame. Approved by Ezequiel Gonzalez as the chosen visual direction on 2026-10-21.
+
+**Figma source of truth:** https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=2-41  
+**Figma file key:** `qhsoutNaKIPSqO31AEttRT`  
+**Selected frame node:** `2:41` (`B — Editorial inmersiva / 1440 × 960`)
+
+### Design decisions to preserve
+
+- Centered, immersive editorial layout, not the earlier asymmetrical exploration.
+- Two-level, visually expressive name lockup: **Ezequiel** in a bold, clean large sans treatment, followed by the larger italic editorial serif **Gonzalez**. Name spelled *without accents*.
+- Role and location in restrained small monospaced text above the name.
+- Abstract ASCII **elliptical surrounding field**, large but quiet, leaving the central typographic content legible through intentional negative space.
+- A single professional description centered in a controlled readable column.
+- Primary contrasting light rectangular `Explorar proyectos` action and understated secondary `Mi historia` link.
+- Fine vertical/horizontal framing rules. No floating glass cards, glows or arbitrary color accents.
+- The personal statement (italic `Observar, cuestionar, entender.` with smaller second line) lives in its own editorial area below a thin dividing rule.
+- Restrained monochrome tone, clear hierarchy, and generous whitespace.
+
+### What is NOT approved as complete
+
+- Figma contains static **editable ASCII glyph layers** (`2:43`, `2:44`, `2:45`), not proof of a running/procedural animation. Production must maintain a similar silhouette, restrained contrast, and central legibility while evaluating a real animated engine.
+- Motion and interaction behaviors, reduced-motion alternative, mobile/tablet compositions, browser performance, and exact typeface/spacing values still require proper designer handoff and engineering prototype evidence.
+- Do NOT export the entire Hero as one bitmap or substitute a giant opaque image for accessible text and functional links.
+- Avoid claiming the design already exists in production. Do not add libraries prematurely.
+
+### Next specialist assignments
+
+- **Figma specialist:** prepare an implementation handoff for the selected B frame: exact type family/weight, spacing, colors, breakpoints, mobile proposal, ASCII coverage/opacity behavior, major interactive states, and proposed animation choreography. Keep layout identity; no new competing Hero.
+- **Integration Engineer:** perform separate motion feasibility spikes, measure cost and degradation behavior, then implement the approved design on an implementation branch when specifically assigned.
+- **Director General:** review fidelity against selected Figma frame and approve technical choices and mobile composition.
 
 ## 4. Tentative information architecture
 
@@ -124,10 +157,8 @@ Target final motion parameters only after prototyping, not from arbitrary defaul
 - User-shared ASCII motion: https://x.com/ayushsoni_io/status/2109879028983501259
 - User-shared construction transition: https://x.com/Jakubantalik/status/2109671433521815772
 - User also supplied four reference screenshots in the design conversation. They serve as inspiration for editorial atmosphere / typography / grid / composition; NOT templates to reproduce. These screenshots are not part of the repository.
-- Figma specialist is independently exploring two distinct Hero directions:
-  - A: Asymmetric editorial composition with ASCII as prominent companion.
-  - B: Immersive typographic approach with subtle surrounding ASCII.
-- Both must retain approved Hero copy, with desktop proposals delivered first. Responsive system follows approval.
+- The Figma specialist explored two Hero directions (A asymmetric; B immersive). **B is now owner-approved** and replaces the earlier open exploration. Selected frame: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=2-41 . The unchosen A must not be treated as a parallel implementation.
+- Responsive system, ASCII motion and detailed handoff remain pending.
 
 ## 8. Existing repository audit (main at 014843d, 2025-12-29)
 
@@ -159,12 +190,12 @@ Never merge to main, trigger deploy or change DNS/domain without explicit author
 
 ## 10. Immediate next actions
 
-1. Review Figma Hero A and B against this document and the user's supplied examples.
-2. Pick/refine the Hero design before coding it.
+1. Obtain specialist handoff and mobile proposal for the approved **Figma Hero B**.
+2. Define acceptable static/ambient ASCII fidelity and motion before implementation.
 3. Assign two isolated motion spikes to the Integration Engineer: (a) ASCII 2D Canvas rendering, (b) `transitions-ui-generation` skeleton on one grid block. Record timings/behavior and provide videos.
 4. Select the smallest appropriate motion stack based on evidence, not novelty.
-5. Plan the project gallery, about, skills and contact around the approved design language.
-6. Perform implementation housekeeping only with a scoped engineering brief.
+5. Explore the project gallery, about, skills and contact around the approved Hero's typographic language.
+6. Implement approved sections with scoped engineering briefs and perform safe housekeeping.
 7. Review copy, links, SEO, visual states, reduced-motion fallback and mobile before release.
 
 **No code implementation or dependencies were approved at the time this document was written.**
