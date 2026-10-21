@@ -139,6 +139,27 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 **Design phase only:** Figma specialist must explore Selected Work composition after a Director brief. No React/CSS changes, package installation, deployment or engineering implementation until the whole portfolio design is approved.
 
+#### Selected Work — approved Figma direction / Pass 03
+
+**Status:** Owner-selected composition A, **Structural Grid**, in Figma. Preserve as the desktop creative reference. Figma remains responsible for responsive development, visual fine-tuning and motion specification; this does NOT authorize React implementation.
+
+- **Figma file:** https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=19-389
+- **Selected node:** `19:389` — `A — Structural Grid / 1920 × 1080`
+- **Size:** 1920 × 1080 master (not a fixed viewport requirement for implementation).
+
+**Visual decisions to retain:**
+1. Monochrome dark editorial section with the heading `Proyectos seleccionados`, combining DM Sans and Instrument Serif.
+2. Delicate full-width structural rules, lateral framing and a central vertical hairline dividing the two project areas (without rounded-card surfaces).
+3. Exactly two equally important projects: left `Eze Web Studio`, right `Task Manager`.
+4. Each module displays restrained mono index/category, generously sized title, short project description, capabilities, editorial inline stack, and two visible actions (visit/project and code source).
+5. No images, mockups, thumbnails, fake UI previews, glow, glass, gradients, badge clusters or extra decorative ASCII.
+6. Significant negative space is a compositional feature; do not fill it with arbitrary widgets.
+7. Constructive line-based reveal should emphasize structure once, then give way to stable readable content. This is motion *direction*, not yet a tested animation.
+
+**Before final section sign-off:** request specialist responsive proposals at 1920×900–960, 1536×864, 1366×768, 768×1024, 390×844 and 320 wide. The two columns should reorganize organically at narrow widths without squeezing copy or links. Validate small metadata contrast, tab/focus affordances, destination URLs, semantic reading order, and the transition from the approved Hero. No premature coding.
+
+
+
 
 ## 5. Motion system rules
 
