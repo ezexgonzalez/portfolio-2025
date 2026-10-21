@@ -260,6 +260,19 @@ No refactors or new dependencies have been made for this preparation step. Produ
 
 Never merge to main, trigger deploy or change DNS/domain without explicit authorization. Development stages must not regress the current production website.
 
+## 9A. PERMANENT DESIGN-PHASE APPROVAL GATE — TWO CONCEPTS, THEN STOP (2026-10-21)
+
+**Owner instruction:** When the Director asks the Figma specialist to explore two visual ideas, **produce only the two requested initial desktop design proposals** (1920 × 1080 unless explicitly superseded), plus concise side-by-side explanation and direct frame links. **Do not automatically design the responsive versions or create animation prototypes, motion studies, hover/focus systems, specifications, components, additional layouts or extensive documentation for BOTH options.** This unnecessary work delays decisions and wastes tool calls.
+
+**The mandatory sequence:**
+- Pass A: exactly two distinct desktop visual explorations → STOP.
+- Owner/Director selects ONE.
+- Pass B: only the approved ONE receives refinement, responsive, motion, interaction, and specifications, each within the specifically authorized scope.
+- Never extend the rejected direction.
+- If prior briefs imply these deliverables prematurely, this new permanent gate takes precedence unless an explicit new user instruction overrides it.
+
+**Immediate applicability:** About/Story Pass 05 is currently an **exploration-only** pass. Two desktop proposals (Editorial Narrative and Story & Timeline), no full responsive or new motion; present and await selection.
+
 ## 10. Immediate next actions
 
 1. Create a purposeful **1920 × 1080 Full HD Hero B master** and responsive designs (including 1536 × 864 and 1366 × 768), then obtain design handoff and mobile proposal.
