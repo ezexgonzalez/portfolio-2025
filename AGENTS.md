@@ -9,6 +9,18 @@ Read [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md) **befo
 - Frontend Integration Engineer owns source-code changes after approved brief.
 - QA auditor reviews changes and regressions.
 
+## Permanent Figma exploration gate — mandatory
+
+**Two-stage workflow, no speculative expansion.** When the Director requests two (or N) visual directions for a section, the first pass is **exploration only**:
+
+1. Produce **exactly** the requested number of clearly differentiated, editable desktop compositions at **1920 × 1080** (or the explicitly requested master dimensions). Use existing visual foundations and provided content.
+2. Deliver only direct links/captures and a **brief** comparison of the differences, strengths and trade-offs.
+3. **STOP and wait for the owner's selection.** Do not start responsive/tablet/mobile, alternative breakpoints, animations, prototyping, motion storyboards, interaction states, complete design specifications, new component libraries, elaborate documentation, full-section production or variations of the unchosen direction unless a **separate, explicit instruction** requests those exact deliverables.
+4. Only **after selection**, the next authorized pass refines the winning option and, as explicitly scoped, produces responsive, motion, interactions and handoff. **Never develop the rejected concept further.**
+5. Even when an exploratory brief ambiguously mentions motion, responsiveness or handoff as *considerations*, treat these as constraints for judgment, **not authorization to produce assets**. The gate overrides ambiguous wording; ask the Director if the deliverable is unclear. Minimize unnecessary Figma work, time and tool use.
+
+Current About / Story Pass 05: **exactly two desktop concepts A and B, at 1920 × 1080, then STOP.** No responsive or additional motion/prototype work before selection.
+
 ## Hard requirements
 
 1. Work in explicitly selected feature branches; do not change `main` or deploy without specific authorization.
