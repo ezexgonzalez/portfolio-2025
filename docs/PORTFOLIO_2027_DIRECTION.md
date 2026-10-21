@@ -84,9 +84,31 @@ No accents in the name: always **Ezequiel Gonzalez**.
 
 ### Next specialist assignments
 
-- **Figma specialist:** prepare an implementation handoff for the selected B frame: exact type family/weight, spacing, colors, breakpoints, mobile proposal, ASCII coverage/opacity behavior, major interactive states, and proposed animation choreography. Keep layout identity; no new competing Hero.
+- **Figma specialist:** adapt selected B into a new **1920 × 1080 desktop master**, then prepare exact type family/weight, spacing, colors, breakpoints, mobile proposal, ASCII coverage/opacity behavior, major interactive states, and proposed animation choreography. Keep layout identity; no new competing Hero.
 - **Integration Engineer:** perform separate motion feasibility spikes, measure cost and degradation behavior, then implement the approved design on an implementation branch when specifically assigned.
 - **Director General:** review fidelity against selected Figma frame and approve technical choices and mobile composition.
+
+## 3B. RESPONSIVE DESIGN REFERENCE — UPDATED DIRECTOR INSTRUCTION (2026-10-21)
+
+**The main desktop design artboard is FULL HD: 1920 × 1080 px, not 1440 × 960.** This supersedes the earlier Figma Pass 02 brief which used the old reference frame size.
+
+The original Figma Hero B frame at 1440 × 960 (node `2:41`) remains **untouched as the approved artistic/typographic composition reference**. The Figma specialist must create a separate, editable **1920 × 1080 Hero frame** and deliberately recompose its typographic scale, spacing, ASCII coverage, editorial lines, button proportions, and vertical rhythm. **Do not simply scale the entire old frame by 1.333×.** Preserve its design language and relative hierarchy but target readable, realistic desktop proportions.
+
+**Responsive validation required:**
+- Design master: **1920 × 1080** (Full HD desktop).
+- Realistic browser content region: verify approximately **1920 × 900–960** available CSS-pixel height with the browser UI visible, rather than assuming the full monitor height is always available.
+- Intermediate desktops: **1536 × 864** (also useful as an effective CSS viewport when 1920-pixel hardware uses 125% scaling) and **1366 × 768**.
+- Tablet: **768 × 1024**.
+- Mobile: **390 × 844**.
+- Additional compression check: **320 px** width.
+
+Important implementation handoff principles (documentation only; no code now):
+- Document fluid/hierarchical text sizing and sensible maximum widths instead of translating Figma dimensions into unbounded fixed pixels.
+- Avoid full-viewport text that clips or requires scrolling just to read the first sentence on shorter screens.
+- Design ASCII safe zones so animation does not obscure the identity or professional text.
+- Define which layout characteristics *scale*, which *reflow*, and which *stay capped* across widths.
+- Account for actual browser CSS viewport, zoom/system DPI scaling, not only nominal monitor resolution.
+- No code or repository implementation until the **entire portfolio design** is prepared, reviewed and approved by the user.
 
 ## 4. Tentative information architecture
 
@@ -190,7 +212,7 @@ Never merge to main, trigger deploy or change DNS/domain without explicit author
 
 ## 10. Immediate next actions
 
-1. Obtain specialist handoff and mobile proposal for the approved **Figma Hero B**.
+1. Create a purposeful **1920 × 1080 Full HD Hero B master** and responsive designs (including 1536 × 864 and 1366 × 768), then obtain design handoff and mobile proposal.
 2. Define acceptable static/ambient ASCII fidelity and motion before implementation.
 3. Assign two isolated motion spikes to the Integration Engineer: (a) ASCII 2D Canvas rendering, (b) `transitions-ui-generation` skeleton on one grid block. Record timings/behavior and provide videos.
 4. Select the smallest appropriate motion stack based on evidence, not novelty.
