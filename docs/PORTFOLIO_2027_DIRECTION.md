@@ -233,6 +233,31 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 **Next combined design production pass:** Refine and adapt **Skills A (Technical Index, node `77:557`) and Contact A (Editorial Sign-off, node `84:557`) only**. Deliver responsive production variants and **one consolidated editable interaction/motion specification matrix** listing section, element, state/trigger, visual behavior, duration/easing, pointer/focus/touch, reduced-motion and implementation notes. Do not spend effort refining either rejected B. Responsive and motion specs are design work only, not browser implementation.
 
+## 4D. PASS 11 — FINAL FIGMA AUDIT & CLEANUP (2026-10-21)
+
+**Status:** The five approved sections have passed an initial holistic *visual design* review; **full design-to-code handoff is NOT yet authorized** because global navigation and some source/link verification remain outstanding. Figma review findings are in `104:1287`.
+
+**Figma references:**
+- **Full site desktop (audit snapshot):** `102:559` — 1920 × 6085 px.
+- **Full site mobile (audit snapshot):** `102:775` — 390 × 6311 px.
+- **Findings / handoff status:** `104:1287`.
+- **Master interaction and motion sheet:** `92:556`; distinguish `Approved`, `Proposed` and `Pending` rows.
+- **Organization:** selected historical references `102:556`, responsive production by section `102:557`, `30:836`, `61:508`, `89:556`, `89:557`; consolidated motion `89:558` plus specific UI Construction `45:5809`; design foundations `11:37`.
+
+**Verified cleanup:** discarded Hero A `2:16`, Selected Work B `19:433`, its B continuity `19:548`, obsolete comparison `19:619`, and old motion studies `19:639` / `35:216` were removed. About A and rejected Skills/Contact B were already removed. Preserve the five approved original frames, shared component sets, actual production frames, and construction-study master.
+
+**What passed:** unified visual hierarchy and monochrome editorial system across all five sections; no obvious clipping in assembled 1920px or 390px frames; scrollable real-height About; sequential mobile ordering; visual design and basic contrast checks; corrected Selected Work section index `02`.
+
+**P1 decision before implementation brief:** The **global navigation is not designed or owner-approved**. Must decide whether page uses only scroll/CTAs or a minimal global navigation system. Design desktop and mobile states and anchoring/focus/scroll offsets before engineer invents behavior. Preserve the Hero layout and avoid generic floating pill/glass nav.
+
+**Other P1 validation before launch:** Confirm Eze Web Studio's true public website URL and whether live; check the existing `/cv-ezequiel-gonzalez.pdf` file and current CV content; verify Task Manager demo/repo destinations; review UI Construction preview in Figma and production performance once implemented. The Figma prototype's looping behavior must not be used in production.
+
+**P2 details:** On 390px Hero metadata is about 11px: browser/zoom legibility check warranted; review semantic direction of internal Hero CTA arrow without redesigning it.
+
+**Implementation discipline:** Motion sheet's other interactions are mostly **proposed**, not owner-approved. No claim that live ARIA/keyboard/reduced-motion/browser behavior has been tested. Pending engineering proof of concept should occur only after owner authorizes the actual implementation phase.
+
+**Recommended next design pass:** **Global Navigation / minimal targeted design**, after Director/owner confirms approach; no wholesale redesign or extra exploration rounds. Then a final implementation-ready design manifest and scoped handoff. Production `main` remains untouched.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
