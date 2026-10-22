@@ -100,6 +100,25 @@
   .portfolio-2027 .p27-work-title { letter-spacing: -1.4px; }
   .portfolio-2027 .p27-project h3 { letter-spacing: -1.8px; }
 }
+/* Desktop rhythm follows available height, with readable minimum spacing.
+   Only whitespace adapts; intrinsic content can always extend the section. */
+@media (min-width: 64rem) {
+  .portfolio-2027 .p27-work {
+    --work-rhythm: clamp(0.75rem, calc(4.166667svh - 1.25rem), 1.5rem);
+    --work-top: calc(3 * var(--work-rhythm));
+    --work-heading-gap: calc(1.5 * var(--work-rhythm));
+    --work-heading-bottom: calc(3 * var(--work-rhythm));
+    --work-grid-top: calc(1.5 * var(--work-rhythm));
+    --work-grid-bottom: calc(3 * var(--work-rhythm));
+    --work-bottom: calc(3 * var(--work-rhythm));
+    --work-name-gap: calc(2.5 * var(--work-rhythm));
+    --work-description-gap: calc(2 * var(--work-rhythm));
+    --work-class-gap: calc(3 * var(--work-rhythm));
+    --work-cap-gap: calc(0.5 * var(--work-rhythm));
+    --work-tech-gap: calc(2 * var(--work-rhythm));
+    --work-action-gap: calc(2 * var(--work-rhythm));
+  }
+}
 @media (max-width: 63.999rem) {
   .portfolio-2027 .p27-work {
     --work-top: 3rem; --work-heading-gap: 1.75rem; --work-heading-bottom: 3.5rem;
