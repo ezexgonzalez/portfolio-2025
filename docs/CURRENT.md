@@ -12,9 +12,9 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **01 / Technical Foundation**.
+- **Bloque activo:** **02 / Hero + Global Navigation**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Siguiente hito:** preparar un **brief separado** para Bloque 02 / Hero + Global Navigation. Bloque 02 sigue **NO AUTORIZADO** hasta esa instrucción; no iniciar Hero ni navegación por inferencia.
+- **Siguiente hito:** ejecutar Bloque 02 únicamente según el nuevo brief, en preview aislada. Bloques 03–06 NO AUTORIZADOS.
 - **No afirmar:** que ya existe la nueva UI, que se verificaron animaciones en navegador, que el cambio está desplegado o que la corrección final del Hero se aplicó en Figma sin comprobarlo.
 
 ## 2. Diseño seleccionado (NO reabrir)
@@ -101,7 +101,7 @@ Informe corto con:
 | Bloque | Alcance | Estado |
 |---|---|---|
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| 02 | Hero + Global Navigation: fidelidad responsive, anclas, UI semántica | **NO AUTORIZADO AÚN** |
+| **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **AUTHORIZED — NOT STARTED** |
 | 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
@@ -267,3 +267,15 @@ límites; entrega pendiente de revisión del Director General.
 - **Bloque 01:** aprobado.
 - **Bloque 02:** todavía NO autorizado; depende de un nuevo brief con alcance, criterios de aceptación y verificación técnica.
 - **Producción:** `main` sin modificar; no merge ni deploy.
+
+## 9. Bloque 02 — Hero + Global Navigation
+
+**Autorizado el 2026-10-21. Estado: AUTHORIZED — NOT STARTED.** Bloque 01 aprobado. Bloques 03–06 no autorizados.
+
+**Figma:** Hero `10:97`, `10:123`, `10:149`, `10:175`, `10:201`, `10:227`, `10:253`, `10:277`; navegación `111:547` y especificaciones `111:550`; ASCII `11:203`. El rótulo del Hero `PORTFOLIO / 2027` fue verificado **ausente** en esas ocho variantes y en las vistas integrales `102:559` y `102:775`. No reincorporarlo.
+
+**Entregable autorizado:** montar Hero editorial y navegación sticky desktop/mobile con sus estados, anclas y accesibilidad, incluyendo el campo ASCII abstracto ambiental, en una **preview local aislada del sitio 2025**. Usar la base `src/portfolio2027` del Bloque 01. Implementar HTML semántico y diseños responsive aprobados; validar 1920/1536/1366/768/390/320, keyboard, focus, hash, scroll offset, reduced-motion, y consumo del ASCII. Se permiten placeholders de anclas de futuras secciones únicamente dentro de la preview, nunca como implementaciones terminadas.
+
+**Límites:** no editar las secciones 02–05, no agregar dependencias importantes sin aprobación, no sobrescribir el sitio predeterminado 2025, no desplegar ni hacer merge a `main`. Revisar `@source not "./portfolio2027"`, CSS global y `initTheme()` al preparar la preview. No sustituir ASCII por fade-in, Matrix o imagen estática como único resultado sin autorización. Proporcionar fallback accesible. No bloquear texto o controles por animaciones.
+
+**Gate de salida:** capturas y comparación real con Figma, evidencia de lint/build (distinguir 4 errores legacy de nuevas regresiones), validación responsive/accesibilidad, commits y archivos. Actualizar `docs/CURRENT.md` como `DONE — PENDING DIRECTOR REVIEW`, con pruebas efectivamente ejecutadas, y detenerse. Bloque 03 sigue NO AUTORIZADO.
