@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **03B / Selected Work — DONE — PENDING DIRECTOR REVIEW**.
+- **Bloque activo:** **04 / About + Skills — AUTHORIZED — NOT STARTED**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Estado del Bloque 03:** **03A APPROVED; 03B DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Solo falta la corrección 03B; no reabrir motion ni diseño.
+- **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Dirección revisa la compactación 03B entregada en sección 18. Ingeniería detenida; motion 03A conservado. Bloques 04–06 NO AUTORIZADOS.
+- **Siguiente hito:** Engineering Block 04 About / Story + Skills autorizado. Ejecutar únicamente ese bloque, actualizar CURRENT.md, detenerse para revisión de Dirección; Bloques 05–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -106,8 +106,8 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A APPROVED; 03B DONE — PENDING DIRECTOR REVIEW** |
-| 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
+| **04** | About + Skills: narrativa, índice técnico y responsive | **AUTHORIZED — NOT STARTED** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
 
@@ -881,3 +881,19 @@ Capturas estáticas de tablet/mobile y Hero comparadas con ImageChops: idéntica
   SHA consultable en historial, sin autorreferencia circular.
 
 **Bloque 04 y posteriores NO AUTORIZADOS. Detener y esperar revisión de Dirección.**
+
+## 19. Director approval of 03B and Block 04 authorization — 2026-10-22
+
+**Decision:** Block 03/03A/03B **APPROVED** after reviewing actual before/after screenshots and CSS. At 1920×1080 Selected Work is 1002px against 1016px available; 1536×864 796px against 800px; 1366×768 680px against 704px. All project actions and lower structural grid rule visible when entering by anchor; a few pixels of final section padding may require natural scroll because the anchor offsets by 80px. Accepted; do not compress further. Approved UI Construction remains 4200ms desktop / 3000ms compact, its pre-armed zero-flash lifecycle intact. This is not release approval; font delivery, CLS, Safari/Firefox and physical device QA remain.
+
+### Active engineering Block 04: ABOUT/STORY + SKILLS/CAPABILITIES
+
+**State: AUTHORIZED — NOT STARTED.** Work only on `feature/portfolio-2027-foundation`, in the isolated `src/portfolio2027` local preview. Preserve default legacy 2025 UI/`main`, no merge/deploy/dependencies.
+
+**Figma About B Story & Timeline:** production `61:508`; desktop `68:523` (1920×1818), tablet `68:576` (768×1910), mobile `68:629` (390×2231), notes `68:682`. **Copy exactly** from these final frames; three narrative chapters with 2021 / 2025 / 2026 markers aligned to their chapter-specific paragraphs, *not a timeline moved to the end*. Intro title “El camino hasta acá.” and transition “Pero mi recorrido no fue una línea recta.” Desktop narrative left + dates right; single-column story/mobile chronology in natural reading order below ~1024. About is intentionally tall: **do not force it to 100vh**, unlike the special Selected Work height refinement.
+
+**Figma Skills A Technical Index:** production `89:556`; desktop `90:556` (1920×1038), tablet `90:634` (768×1039), mobile `90:712` (390×1231). Title “Tecnologías y capacidades.” and exactly three editorial rows: `01 INTERFACES WEB`, `02 BACKEND & DATA`, `03 TOOLS & WORKFLOW`, each with exact description and technologies from Figma. Desktop left editorial title, right structured rows; tablet/mobile vertical; no cards, chips, fake hover/click interactivity or new technology claims.
+
+**Implementation:** Add About and Skills after existing Selected Work, replace only development `#about` and `#skills` placeholders with real semantic sections. Keep `#contact` technical placeholder. Maintain `Hero → Selected Work → About → Skills → Contact placeholder`. Existing nav/hash/focus, scroll offsets, selected work construction and typography must still work. Read foundation tokens and master interaction sheet `92:556`; motion beyond explicitly approved minimal editorial cues should stay static or be labeled proposed, no new dependencies and no UI Construction applied to About/Skills.
+
+**Validation:** exact-copy verification, screenshots versus Figma at 1920, 1536, 1366, 768, 390 and 320; natural height, no horizontal overflow; text reflow/zoom, semantic headings, chronology alignment and anchor focus; first-entry Selected Work motion still performs A–E with no flash and approved timing. Run npm lint/build and scoped lint; isolate the existing four legacy ESLint errors. Record files, browser evidence, commits, limitations and real checks in CURRENT.md, mark `DONE — PENDING DIRECTOR REVIEW` and STOP. **Block 05 and 06 remain NOT AUTHORIZED**.
