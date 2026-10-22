@@ -1,6 +1,6 @@
 # AGENTS.md — Portfolio 2027
 
-Read [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md) **before proposing edits**.
+**MANDATORY before any work:** read [docs/CURRENT.md](docs/CURRENT.md) for the active block, actual implementation status and next gate; then read [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md) for approved art direction and historical decisions. Update CURRENT.md at the end of every authorized block, with honest evidence and commit SHA.
 
 ## Role boundaries
 
@@ -19,8 +19,6 @@ Read [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md) **befo
 4. Only **after selection**, the next authorized pass refines the winning option and, as explicitly scoped, produces responsive, motion, interactions and handoff. **Never develop the rejected concept further.**
 5. Even when an exploratory brief ambiguously mentions motion, responsiveness or handoff as *considerations*, treat these as constraints for judgment, **not authorization to produce assets**. The gate overrides ambiguous wording; ask the Director if the deliverable is unclear. Minimize unnecessary Figma work, time and tool use.
 
-Current About / Story Pass 05: **exactly two desktop concepts A and B, at 1920 × 1080, then STOP.** No responsive or additional motion/prototype work before selection.
-
 ## Hard requirements
 
 1. Work in explicitly selected feature branches; do not change `main` or deploy without specific authorization.
@@ -33,4 +31,4 @@ Current About / Story Pass 05: **exactly two desktop concepts A and B, at 1920 �
 8. Describe what changed and how it was verified. Run `npm run lint` and `npm run build` when implementing code changes.
 9. Do not assert that Figma designs, benchmarks, animations or deployments are approved or verified unless actual evidence exists.
 
-Current stage: documentation and feasibility research, not design implementation.
+Current stage: Portfolio 2027 Figma design and navigation direction selected. **Block 01 / Technical Foundation is authorized but not yet implemented**, as detailed in [docs/CURRENT.md](docs/CURRENT.md). Future blocks are NOT authorized. Preserve the deployed 2025 site until explicit release approval.
