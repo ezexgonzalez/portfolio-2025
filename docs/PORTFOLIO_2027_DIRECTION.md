@@ -258,6 +258,20 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 **Recommended next design pass:** **Global Navigation / minimal targeted design**, after Director/owner confirms approach; no wholesale redesign or extra exploration rounds. Then a final implementation-ready design manifest and scoped handoff. Production `main` remains untouched.
 
+## 4E. NAVIGATION DESIGN GATE / DOMAIN & CV CLARIFICATIONS (2026-10-21)
+
+**Owner confirmed:** The redesigned *personal portfolio* retains `https://ezegonzalez.dev/` when it replaces the current site. This is **not** an assertion that the separate Eze Web Studio site is hosted at the portfolio domain; that project's own public URL still requires independent confirmation before shipping project links.
+
+**CV PDF verified in GitHub `main`:** `public/cv-ezequiel-gonzalez.pdf` exists as a PDF-backed tracked file (SHA `1e6bd92f2a812528cafc5c0d3fdda1d5d3ccc096`). Expected public download path remains `/cv-ezequiel-gonzalez.pdf`. Its file presence is verified; its *content currency* and final site download behavior remain to be reviewed by owner/QA.
+
+**Authorized next design work: Pass 12, Global Navigation Design, Figma-only.**
+- Produce **one cohesive navigation direction with desktop and mobile variants**, not two explorations. This is explicitly a responsive navigation design assignment, not a dual-concept exploration.
+- Design a restrained editorial navigation matching already-approved typography, monochrome tokens, structural rules, and layout. Do **not** redesign the Hero or any approved section.
+- Define minimal links to the five sections (home, projects, about, capabilities, contact); link labels, anchor targets and scroll offsets. Avoid fake links, unsupported new pages, floaty glass bars and animated gimmicks.
+- Design actual desktop header/default, scrolled or sticky behavior, active, hover, keyboard focus, and mobile closed/open/menu interactions (including touch targets, escape/backdrop, scroll behavior, reduced motion and small-device fit).
+- Specify how the navbar integrates with the Hero so it does not mask ASCII/name/CTAs, and how it remains accessible in the full desktop/mobile continuous scroll.
+- Keep any unresolved interaction choices proposed until Director/owner review. Do not implement code, adjust production, or claim functionality based on static Figma.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
