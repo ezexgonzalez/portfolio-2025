@@ -1,9 +1,9 @@
 # Portfolio 2027 — isolated development experience
 
-Blocks 01, 02 and 02A approved. Block 03 adds Selected Work + UI Construction,
-with correction 03A delivered for Director review in this isolated experience.
-The 2025 `App.jsx`, `main.jsx`, theme initialization and default HTML entry remain
-unchanged. About/Skills/Contact remain temporary targets, with no implementation.
+Blocks 01–03 approved. Block 04 implements About / Story and Skills / Capabilities
+for Director review in this isolated experience. The 2025 `App.jsx`, `main.jsx`,
+theme initialization and default HTML entry remain unchanged. Contact is the
+only temporary target; Block 05 is not authorized.
 
 ## Open locally
 
@@ -15,8 +15,9 @@ npm run dev -- --host 127.0.0.1
 Open `http://127.0.0.1:5173/src/portfolio2027/preview.html` (use the port Vite prints).
 The default `/` remains 2025. This development HTML is not an input of the normal
 production build; no public route/router or hosting configuration was added.
-About/Skills/Contact anchor targets are explicitly marked temporary; #projects
-now reaches the real section. The readable no-JS fallback includes both projects.
+The #projects, #about and #skills anchors reach real sections. #contact remains
+a temporary technical target. The no-JS fallback includes both projects, the full
+story and exactly three capability entries.
 
 ## Architecture
 
@@ -37,6 +38,10 @@ now reaches the real section. The readable no-JS fallback includes both projects
 - `hooks/useUiConstruction.js` owns one-shot triggering, interruption and cleanup.
 - `motion/uiConstruction.js` measures real DOM words/bounds once and renders the
   decorative point/trace/contour/sweep sequence on one transient Canvas.
+- `components/AboutStory.jsx` and `styles/about-story.css` implement the three
+  narrative chapters with paragraph-linked chronology, without fixed heights.
+- `components/SkillsCapabilities.jsx` and `styles/skills-capabilities.css` implement
+  the static three-entry technical index; no actions or pointer cursor.
 - `navigation.js` declares the five approved anchor destinations.
 - `styles/experience.css` implements the two approved pieces using native CSS.
 - `preview/` owns the React root and development-only document reset/placeholders.
@@ -65,7 +70,7 @@ Hero copy omits the retired eyebrow. The navigation integration reference adds a
 at widths ≥1100px the Hero uses the viewport remaining below the header, with
 flexible vertical whitespace and intrinsic content growth under zoom. Smaller
 screens retain natural scrolling. The outer frame is removed; only the full-width
-separator above the editorial closing remains. Real source sections do not exist yet.
+separator above the editorial closing remains. About and Skills follow Selected Work in the same document.
 
 Colors, families, frame/reading limits, hairlines, rhythm and header tokens reuse
 Block 01. The display type scale and width/height adaptations now follow the
@@ -140,6 +145,28 @@ For an existing #projects URL, run `history.replaceState(null, '', location.path
 then reload. This resets the page visit; no replay control or production feature
 was added. Avoid direct-hash/keyboard entry when reviewing pointer/scroll motion.
 
+## About / Story and Skills / Capabilities
+
+About sources: production `61:508`, desktop `68:523`, tablet `68:576`, mobile
+`68:629`, notes `68:682`. All paragraphs and emphasis are preserved. Desktop
+reads in a controlled left column (680/640/600px), with 360/320/280px chronology.
+Native grid rows tie 2025 to the actual return paragraph, so font changes and
+longer text cannot detach the date. The other years accompany their chapters.
+Below 1024px a single DOM sequence places 2021 after the origins, 2025 between
+work experience and the return, and 2026 after Full Stack/Eze Web Studio.
+About remains intentionally tall and scrollable; its rhythm is independent of
+Selected Work’s compact desktop spacing.
+
+Skills sources: production `89:556`, desktop `90:556`, tablet `90:634`, mobile
+`90:712`. Left title/right list on desktop, stacked from tablet; numbers,
+categories, descriptions and technology lines retain their hierarchy. NBSPs in
+Tailwind CSS and REST APIs match Figma. Text can reflow under enlargement.
+
+The master `92:556` rows `104:781/807/833/859/885/911/937` were read in full.
+Entrance, divider/date emphasis and number hover are all **Proposed**, so these
+two sections remain static with selectable, visible text and no new observers,
+timers or motion system. These effects await explicit approval.
+
 ## Verification
 
 See `docs/CURRENT.md`, `docs/qa/block02/README.md`, saved browser screenshots and
@@ -148,4 +175,5 @@ Playwright/Chromium tooling; it is not a project dependency. Standard production
 build and isolated preview build are validated separately. Browser results do not
 constitute approval or release authorization. Block 03 evidence and the scoped
 external-tool harness are in `docs/qa/block03/`; correction evidence, real browser
-recordings and capture timestamps are in `docs/qa/block03a/`. Blocks 04–06 remain unauthorized.
+recordings and capture timestamps are in `docs/qa/block03a/`. Block 04 copy/geometry, responsive captures and regression
+evidence live in `docs/qa/block04/`. Blocks 05–06 remain unauthorized.

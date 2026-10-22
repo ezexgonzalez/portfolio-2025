@@ -1,0 +1,107 @@
+/* Skills A — Technical Index. Static information; no action affordances. */
+.portfolio-2027 .p27-capabilities {
+  --cap-top: 6rem; --cap-bottom: 8rem; --cap-main-top: 4rem;
+  --cap-title: 3.5rem; --cap-accent: 4rem;
+  --cap-title-width: 30rem; --cap-column-gap: 5rem; --cap-inset: 5rem;
+  --cap-number-width: 3rem; --cap-number-gap: 2rem;
+  --cap-number: 1.75rem; --cap-number-line: 2.25rem;
+  --cap-category: 2.25rem; --cap-category-line: 2.75rem;
+  --cap-description: 1.1875rem; --cap-description-line: 1.8125rem;
+  --cap-technologies: 1.5rem; --cap-technologies-line: 2.25rem;
+  padding-block: var(--cap-top) var(--cap-bottom);
+}
+.portfolio-2027 .p27-capabilities-index {
+  font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
+  padding-block-end: 1.875rem; border-block-end: var(--p27-hairline) solid var(--p27-color-rule);
+}
+.portfolio-2027 .p27-capabilities-main {
+  display: grid; grid-template-columns: minmax(0, var(--cap-title-width)) minmax(0, 1fr);
+  column-gap: var(--cap-column-gap); padding-block-start: var(--cap-main-top);
+}
+.portfolio-2027 .p27-capabilities-title {
+  display: flex; flex-direction: column; min-inline-size: 0;
+  font-size: var(--cap-title); line-height: calc(var(--cap-title) + 0.5rem);
+  font-weight: 400; letter-spacing: -2px; overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-capabilities-title .p27-serif {
+  font-size: var(--cap-accent); line-height: calc(var(--cap-accent) + 0.5rem); letter-spacing: -1px;
+}
+.portfolio-2027 .p27-capabilities-list {
+  padding: 0; list-style: none; min-inline-size: 0;
+  border-block-end: var(--p27-hairline) solid var(--p27-color-rule);
+}
+.portfolio-2027 .p27-capability {
+  display: flex; flex-direction: column; gap: 1.25rem;
+  padding-block: 2rem; border-block-start: var(--p27-hairline) solid var(--p27-color-rule);
+  overflow-wrap: anywhere; letter-spacing: -0.1px;
+}
+.portfolio-2027 .p27-capability-heading {
+  display: grid; grid-template-columns: var(--cap-number-width) minmax(0, 1fr);
+  column-gap: var(--cap-number-gap); align-items: center;
+}
+.portfolio-2027 .p27-capability-number {
+  color: var(--p27-color-secondary); font-size: var(--cap-number);
+  line-height: var(--cap-number-line); letter-spacing: 0.5px;
+}
+.portfolio-2027 .p27-capability h3 {
+  font-size: var(--cap-category); line-height: var(--cap-category-line); font-weight: 400; letter-spacing: -0.5px;
+}
+.portfolio-2027 .p27-capability-description {
+  margin-inline-start: var(--cap-inset); max-inline-size: 53.75rem;
+  font-size: var(--cap-description); line-height: var(--cap-description-line); color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-capability-technologies {
+  margin-inline-start: var(--cap-inset); font-size: var(--cap-technologies); line-height: var(--cap-technologies-line);
+}
+@media (max-width: 106rem) and (min-width: 64rem) {
+  .portfolio-2027 .p27-capabilities {
+    --cap-top: 5rem; --cap-main-top: 3.5rem; --cap-title: 3rem; --cap-accent: 3.5rem;
+    --cap-title-width: 25rem; --cap-column-gap: 4rem;
+    --cap-category: 2rem; --cap-category-line: 2.5rem;
+    --cap-description: 1.125rem; --cap-description-line: 1.75rem;
+    --cap-technologies: 1.375rem; --cap-technologies-line: 2rem;
+  }
+}
+@media (max-width: 89.999rem) and (min-width: 64rem) {
+  .portfolio-2027 .p27-capabilities {
+    --cap-title: 2.75rem; --cap-accent: 3.25rem;
+    --cap-title-width: 22.5rem; --cap-column-gap: 3rem;
+    --cap-inset: 3.75rem; --cap-number-width: 2.25rem; --cap-number-gap: 1.5rem;
+    --cap-number: 1.625rem; --cap-number-line: 2.125rem;
+    --cap-category: 1.875rem; --cap-category-line: 2.375rem;
+  }
+}
+@media (max-width: 63.999rem) {
+  .portfolio-2027 .p27-capabilities {
+    --cap-top: 4rem; --cap-bottom: 6rem; --cap-main-top: 3rem;
+    --cap-title: 2.75rem; --cap-accent: 3.25rem;
+    --cap-inset: 3.75rem; --cap-number-width: 2.25rem; --cap-number-gap: 1.5rem;
+    --cap-number: 1.625rem; --cap-number-line: 2.125rem;
+    --cap-category: 1.875rem; --cap-category-line: 2.375rem;
+    --cap-description: 1.125rem; --cap-description-line: 1.75rem;
+    --cap-technologies: 1.375rem; --cap-technologies-line: 2rem;
+  }
+  .portfolio-2027 .p27-capabilities-main { grid-template-columns: minmax(0, 1fr); row-gap: 3.5rem; }
+  .portfolio-2027 .p27-capabilities-title { flex-direction: row; flex-wrap: wrap; gap: 0 0.75rem; letter-spacing: -1px; }
+}
+@media (max-width: 37.499rem) {
+  .portfolio-2027 .p27-capabilities {
+    --cap-top: 3.5rem; --cap-bottom: 4rem; --cap-main-top: 2.5rem;
+    --cap-title: 2.25rem; --cap-accent: 2.625rem; --cap-inset: 0rem;
+    --cap-number: 1.375rem; --cap-number-line: 1.875rem;
+    --cap-category: 1.5rem; --cap-category-line: 2rem;
+    --cap-description: 1.0625rem; --cap-description-line: 1.625rem;
+    --cap-technologies: 1.25rem; --cap-technologies-line: 1.875rem;
+  }
+  .portfolio-2027 .p27-capabilities-index { padding-block-end: 1.5rem; }
+  .portfolio-2027 .p27-capabilities-main { row-gap: 2.5rem; }
+  .portfolio-2027 .p27-capabilities-title { flex-direction: column; line-height: 2.625rem; }
+  .portfolio-2027 .p27-capabilities-title .p27-serif { line-height: 3rem; }
+  .portfolio-2027 .p27-capability { padding-block: 1.75rem; }
+  .portfolio-2027 .p27-capability-heading { grid-template-columns: minmax(0, 1fr); row-gap: 0.75rem; }
+}
+@media (max-width: 22.499rem) {
+  .portfolio-2027 .p27-capabilities { --cap-title: 2.125rem; --cap-accent: 2.5rem; }
+  .portfolio-2027 .p27-capabilities-title { line-height: 2.5rem; }
+  .portfolio-2027 .p27-capabilities-title .p27-serif { line-height: 2.875rem; }
+}

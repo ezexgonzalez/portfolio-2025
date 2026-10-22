@@ -1,0 +1,98 @@
+/* About B — Story & Timeline. Intrinsic height; chronology follows real rows. */
+.portfolio-2027 .p27-story {
+  --story-reading: 42.5rem; --story-dates: 22.5rem; --story-tail: 7.5rem;
+  --story-top: 6rem; --story-bottom: 8rem;
+  --story-title-gap: 4rem; --story-heading-bottom: 6rem;
+  --story-paragraph-gap: 2rem; --story-chapter-top: 2.5rem; --story-chapter-bottom: 5rem;
+  --story-title: 3.5rem; --story-accent: 4rem; --story-title-tracking: -2px; --story-accent-tracking: -1px;
+  --story-body: 1.25rem; --story-line: 1.9375rem;
+  --story-reflection: 2.125rem; --story-reflection-line: 2.625rem;
+  padding-block: var(--story-top) var(--story-bottom);
+}
+.portfolio-2027 .p27-story-index {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+  color: var(--p27-color-auxiliary); font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px;
+}
+.portfolio-2027 .p27-story-title {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 0 1rem;
+  margin-block-start: var(--story-title-gap); padding-block-end: var(--story-heading-bottom);
+  font-size: var(--story-title); line-height: calc(var(--story-title) + 0.5rem);
+  font-weight: 400; letter-spacing: var(--story-title-tracking); overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-story-title .p27-serif {
+  font-size: var(--story-accent); line-height: calc(var(--story-accent) + 0.5rem);
+  letter-spacing: var(--story-accent-tracking);
+}
+.portfolio-2027 .p27-story-chapter {
+  display: grid; align-items: start;
+  grid-template-columns: minmax(0, 1fr) max(2rem, calc(100% - var(--story-reading) - var(--story-dates) - var(--story-tail))) var(--story-dates) var(--story-tail);
+  row-gap: var(--story-paragraph-gap);
+  border-block-start: var(--p27-hairline) solid var(--p27-color-rule);
+  padding-block: var(--story-chapter-top) var(--story-chapter-bottom);
+  color: var(--p27-color-secondary); font-size: var(--story-body);
+  line-height: var(--story-line); letter-spacing: -0.1px; overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-story-chapter:last-child { border-block-end: var(--p27-hairline) solid var(--p27-color-rule); }
+.portfolio-2027 .p27-story-chapter > p { grid-column: 1; min-inline-size: 0; }
+.portfolio-2027 .p27-story-emphasis { color: var(--p27-color-text); }
+.portfolio-2027 .p27-story-reflection {
+  color: var(--p27-color-text); font-size: var(--story-reflection);
+  line-height: var(--story-reflection-line); letter-spacing: 0;
+}
+.portfolio-2027 .p27-story-milestone { grid-column: 3; grid-row: 1 / span 2; min-inline-size: 0; letter-spacing: 0; }
+.portfolio-2027 .p27-story-return > p:last-child { grid-row: 3; }
+.portfolio-2027 .p27-story-return .p27-story-milestone { grid-row: 3; }
+.portfolio-2027 .p27-story-perspectives .p27-story-milestone { grid-row: 1 / span 3; }
+.portfolio-2027 .p27-story-date {
+  display: flex; align-items: center; flex-wrap: wrap;
+  font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px;
+}
+.portfolio-2027 .p27-story-date time { color: var(--p27-color-text); font-size: 1.75rem; line-height: 2.25rem; }
+.portfolio-2027 .p27-story-date span { white-space: pre-wrap; }
+.portfolio-2027 .p27-story-note { margin-block-start: 1rem; font-size: 1rem; line-height: 1.5625rem; }
+@media (max-width: 106rem) {
+  .portfolio-2027 .p27-story {
+    --story-reading: 40rem; --story-dates: 20rem; --story-tail: 5rem;
+    --story-top: 5rem; --story-title-gap: 3.5rem; --story-heading-bottom: 5rem;
+    --story-paragraph-gap: 1.75rem; --story-chapter-bottom: 4.5rem;
+    --story-title: 3rem; --story-accent: 3.5rem; --story-title-tracking: -1.6px; --story-accent-tracking: -0.8px;
+    --story-body: 1.1875rem; --story-line: 1.8125rem;
+    --story-reflection: 2rem; --story-reflection-line: 2.5rem;
+  }
+}
+@media (max-width: 89.999rem) {
+  .portfolio-2027 .p27-story {
+    --story-reading: 37.5rem; --story-dates: 17.5rem; --story-tail: 5.375rem;
+    --story-heading-bottom: 4rem; --story-chapter-bottom: 4rem;
+    --story-title: 2.75rem; --story-accent: 3.25rem; --story-title-tracking: -1.4px;
+    --story-body: 1.125rem; --story-line: 1.75rem;
+    --story-reflection: 1.875rem; --story-reflection-line: 2.375rem;
+  }
+}
+@media (max-width: 63.999rem) {
+  .portfolio-2027 .p27-story {
+    --story-top: 4rem; --story-bottom: 6rem; --story-title-gap: 3rem;
+    --story-chapter-top: 2rem;
+  }
+  .portfolio-2027 .p27-story-chapter { display: flex; flex-direction: column; }
+  .portfolio-2027 .p27-story-chapter > :is(p, .p27-story-milestone) { inline-size: min(100%, var(--story-reading)); }
+}
+@media (max-width: 37.499rem) {
+  .portfolio-2027 .p27-story {
+    --story-top: 3.5rem; --story-bottom: 4rem; --story-title-gap: 2.5rem; --story-heading-bottom: 3rem;
+    --story-paragraph-gap: 1.5rem; --story-chapter-top: 1.75rem; --story-chapter-bottom: 3.5rem;
+    --story-title: 2.25rem; --story-accent: 2.625rem; --story-title-tracking: -1px; --story-accent-tracking: -0.5px;
+    --story-body: 1.0625rem; --story-line: 1.625rem;
+    --story-reflection: 1.75rem; --story-reflection-line: 2.25rem;
+  }
+  .portfolio-2027 .p27-story-title { flex-direction: column; align-items: flex-start; line-height: 2.625rem; }
+  .portfolio-2027 .p27-story-title .p27-serif { line-height: 3rem; }
+}
+@media (max-width: 22.499rem) {
+  .portfolio-2027 .p27-story {
+    --story-title: 2.125rem; --story-accent: 2.5rem; --story-body: 1rem; --story-line: 1.5625rem;
+    --story-reflection: 1.625rem; --story-reflection-line: 2rem; --story-chapter-bottom: 3rem;
+  }
+  .portfolio-2027 .p27-story-title { line-height: 2.5rem; }
+  .portfolio-2027 .p27-story-title .p27-serif { line-height: 2.875rem; }
+}
