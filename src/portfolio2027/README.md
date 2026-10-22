@@ -53,9 +53,11 @@ introduce Tailwind utility strings in this subsystem.
 Sources: Hero `10:97` through `10:277`, navigation `111:591`/`111:637`, integration
 `111:725`, foundations `11:37`, specifications `111:550`, ASCII study `11:203`.
 Hero copy omits the retired eyebrow. The navigation integration reference adds a
-64/56px header **before** the unchanged Hero flow; it is not subtracted from Hero
-height. Whitespace responds to height, text stays intrinsically sized, and shorter
-or enlarged-text viewports can scroll. Real source sections do not exist yet.
+64/56px header before the Hero. Block 02A supersedes the original desktop height:
+at widths ≥1100px the Hero uses the viewport remaining below the header, with
+flexible vertical whitespace and intrinsic content growth under zoom. Smaller
+screens retain natural scrolling. The outer frame is removed; only the full-width
+separator above the editorial closing remains. Real source sections do not exist yet.
 
 Colors, families, frame/reading limits, hairlines, rhythm and header tokens reuse
 Block 01. The display type scale and width/height adaptations now follow the

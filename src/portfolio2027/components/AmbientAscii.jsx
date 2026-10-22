@@ -30,7 +30,7 @@ function drawField(context, width, height, time, compact) {
       const weave = 0.5 + 0.5 * Math.sin(angle * 11 + radius * 38 + phase);
       const intensity = density * (0.42 + 0.58 * weave);
       if (intensity < 0.12) continue;
-      context.globalAlpha = (compact ? 0.16 : 0.12) * intensity;
+      context.globalAlpha = (compact ? 0.28 : 0.30) * intensity;
       context.fillText(glyphs[Math.min(7, Math.floor(intensity * 8))], x, y);
     }
   }
