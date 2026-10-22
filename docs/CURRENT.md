@@ -12,9 +12,10 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **02 / Hero + Global Navigation**.
+- **Bloque activo:** **02A / Hero tuning — correcciones puntuales**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Siguiente hito:** revisión del Director General del Bloque 02 entregado. Bloques 03–06 NO AUTORIZADOS.
+- **Siguiente hito:** revisión del Director General del Bloque 02A entregado. Bloques 03–06 NO AUTORIZADOS.
+- **Estado del Bloque 02A:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Ver sección 11.
 - **Estado del Bloque 02:** DONE — PENDING DIRECTOR REVIEW. Preview local probada en Chromium; no está desplegada ni aprobada visualmente por Dirección. Ver evidencia y salvedades en sección 10.
 
 ## 2. Diseño seleccionado (NO reabrir)
@@ -102,6 +103,7 @@ Informe corto con:
 |---|---|---|
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **DONE — PENDING DIRECTOR REVIEW** |
+| **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **DONE — PENDING DIRECTOR REVIEW** |
 | 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
@@ -439,3 +441,66 @@ fuera del repositorio; package.json/lockfile de la aplicación no cambiaron.
 
 **Último evento registrado:** Bloque 02 entregado para revisión, con preview local,
 pruebas/capturas y salvedades de tipografía, font delivery y CLS registradas.
+
+
+## 11. Entrega Bloque 02A — 2026-10-22
+
+**Estado: DONE — PENDING DIRECTOR REVIEW.** Brief del propietario autoriza
+exclusivamente tres correcciones del Hero existente. No equivale a aprobación.
+
+### Rama, archivos y decisiones
+
+- Rama sincronizada: `feature/portfolio-2027-foundation`. HEAD inicial:
+  `2f4be5e82302a6cb4bcd5027adbe7ffc3896faca`.
+- `src/portfolio2027/styles/experience.css`: desde 1100px el Hero utiliza la altura
+  disponible después del header medido. Flex distribuye el espacio vertical con
+  padding acotado; mantiene tamaños de nombre, texto y CTAs, y permite crecimiento
+  intrínseco bajo zoom/alturas menores. Se quitan borde superior y laterales; la
+  única divisoria del cierre pasa a pseudo-elemento de ancho viewport.
+- `src/portfolio2027/components/AmbientAscii.jsx`: multiplicador de alfa .12→.30
+  desktop y .16→.28 compacto. Se conserva color monocromático, máscara central,
+  densidad, cadencia, reduced motion y lifecycle. Canvas desktop acompaña altura.
+- `src/portfolio2027/README.md`: contrato desktop actualizado por el brief 02A,
+  que sustituye la decisión anterior de sumar 100svh al header.
+- `docs/qa/block02a/`: dos pares antes/después (Full HD y notebook), ocho capturas
+  posteriores, menú mobile, geometría JSON e informe de verificaciones.
+- `docs/CURRENT.md`: estado, alcance, evidencia y siguiente compuerta.
+
+Sin cambios de copy, navegación/menú, anchors, tipografías, estructura JSX, preview
+aislada, otras secciones, dependencias o lockfile. No main, merge ni deploy.
+
+### Validación real y problemas
+
+- Chromium 153: 1920×1080/960/900, 1536×864, 1366×768, 768×1024, 390×844 y
+  320×844, con fuentes oficiales cargadas y fase ASCII cero para comparar.
+- Sin overflow horizontal en ocho vistas; marco superior/lateral eliminado;
+  divisoria full width. Revisión visual de Full HD, notebook y mobile: contenido
+  legible y ASCII periférico más perceptible, sin alterar el vacío central.
+- Cierre completo desktop antes/después: 1144→1080, 1012.72→960, 948→900,
+  912→864 y 832→768px, respectivamente. Mobile conserva scroll natural.
+- CTA desktop: hash/foco correctos; menú mobile abre y Escape lo cierra; ASCII
+  corre y cambia a estático en reduced motion; sin page errors.
+- `npm run lint`: FAIL, los mismos cuatro errores legacy no-unused-vars de
+  PrimaryButton, SecondaryButton, Contact y Skills. Sin errores nuevos.
+- `npx --no-install eslint src/portfolio2027`: PASS.
+- `npm run build`: PASS (1717 módulos), nueve artefactos 2025 idénticos por SHA-256
+  a baseline. Build explícito de preview: PASS (38 módulos).
+- `git diff --check`: PASS. Sin problemas nuevos de producto observados. El primer
+  assertion de QA esperaba un ID inexistente; corregido al ID real `projects`, PASS.
+
+Evidencia y límites: [qa/block02a/README.md](qa/block02a/README.md),
+[results.json](qa/block02a/results.json). Fuentes oficiales servidas por fulfillment
+exclusivo de QA debido a CA del proxy, sin desactivar validación TLS. No se afirman
+pruebas en dispositivos físicos ni Safari/Firefox. Salvedades tipográficas/CLS del
+Bloque 02 siguen pendientes antes de release.
+
+### Commits y próximo gate
+
+- Implementación: `3432ae1d340c00829d359f1d749fa7b570c78d8c`
+  (`fix: rebalance Hero viewport and strengthen ambient ASCII`).
+- Cierre documental y evidencia: commit posterior
+  `docs: record Block 02A corrections and visual verification`.
+  SHA disponible en el historial; no se registra un hash circular en sí mismo.
+
+**Bloque 03 y UI Construction: NO AUTORIZADOS.** Detener aquí hasta revisión del
+Director y nuevo brief explícito. Producción permanece intacta.
