@@ -10,7 +10,9 @@ were inspected through Figma Design Context and compared visually with these.
 `results.json` contains eight viewport measurements, loaded faces, layout shifts,
 17 passing functional checks, ASCII timing samples, and empty normal-context
 page/console-error and failed-request lists. `verify.mjs` is the reproducible
-harness. `hash-entry-repeat.json` records repeated initial-hash entry checks.
+harness. `hash-entry-repeat.json` records ten initial-hash entries (all 72.1875px).
+`navigation-fit.json` verifies compact at 820/832px and horizontal at
+840/900/1100px, with 734px measured required space and no overflow.
 
 | Viewport | Figma Hero reference | Browser screenshot |
 |---|---|---|

@@ -8,7 +8,7 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** **Block 01 approved; Block 02 / Hero + Global Navigation authorized but not started**. Work must remain in an isolated development preview under `src/portfolio2027/`, preserving the legacy default UI. No 2027 UI or animation is yet verified in browser. Blocks 03–06 are not authorized.
+- **Current phase:** **Block 01 approved; Block 02 DONE — PENDING DIRECTOR REVIEW**. Hero, native ASCII and global navigation run in an isolated local preview under `src/portfolio2027/`; the legacy default UI is preserved. Chromium evidence and remaining typography/CLS observations are in `docs/qa/block02/`. Blocks 03–06 are not authorized. Open the preview with the instructions in [src/portfolio2027/README.md](src/portfolio2027/README.md).
 - **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
 - **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).

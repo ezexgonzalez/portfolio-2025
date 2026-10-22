@@ -14,8 +14,8 @@
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
 - **Bloque activo:** **02 / Hero + Global Navigation**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Siguiente hito:** ejecutar Bloque 02 únicamente según el nuevo brief, en preview aislada. Bloques 03–06 NO AUTORIZADOS.
-- **No afirmar:** que la nueva UI, el ASCII o la navegación ya están probados en navegador o desplegados. El rótulo del Hero sí se verificó eliminado en Figma el 2026-10-21.
+- **Siguiente hito:** revisión del Director General del Bloque 02 entregado. Bloques 03–06 NO AUTORIZADOS.
+- **Estado del Bloque 02:** DONE — PENDING DIRECTOR REVIEW. Preview local probada en Chromium; no está desplegada ni aprobada visualmente por Dirección. Ver evidencia y salvedades en sección 10.
 
 ## 2. Diseño seleccionado (NO reabrir)
 
@@ -101,7 +101,7 @@ Informe corto con:
 | Bloque | Alcance | Estado |
 |---|---|---|
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **AUTHORIZED — NOT STARTED** |
+| **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **DONE — PENDING DIRECTOR REVIEW** |
 | 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
@@ -116,7 +116,7 @@ Cada bloque necesita un brief específico y aprobación antes de pasar al siguie
 - **CV:** archivo `public/cv-ezequiel-gonzalez.pdf` existe en el repo, ruta prevista `/cv-ezequiel-gonzalez.pdf`. Revisar vigencia y descarga en navegador antes de publicación.
 - **Task Manager:** validar demo y repo antes de publicar los enlaces.
 - **Motion:** referencia `Jakubantalik/transitions.dev` (`skeleton`) investigada pero no instalada; hacer prueba de fidelidad, coste, accesibilidad, una sola ejecución y limpieza en su bloque autorizado.
-- **Navegación:** diseño Figma aprobado, pero scroll por anclas, foco, teclado, hash, sticky y mobile no probados en navegador.
+- **Navegación:** implementada y probada en preview Chromium (sección 10). Pendiente QA de otros navegadores, lector de pantalla y dispositivos físicos antes de publicación.
 - **Planilla Figma:** distinguir motion `Approved`, `Proposed` y `Pending`; lo no aprobado no debe implementarse como requisito definitivo.
 - **SEO y calidad:** verificar `lang=es`, metadata, CV, fuentes, rendimiento, teclado, zoom, reduced-motion y overflow en QA; no afirmar validación sin ejecutarla.
 
@@ -270,7 +270,7 @@ límites; entrega pendiente de revisión del Director General.
 
 ## 9. Bloque 02 — Hero + Global Navigation
 
-**Autorizado el 2026-10-21. Estado: AUTHORIZED — NOT STARTED.** Bloque 01 aprobado. Bloques 03–06 no autorizados.
+**Autorizado el 2026-10-21. Estado de entrega: DONE — PENDING DIRECTOR REVIEW.** Bloque 01 aprobado. Bloques 03–06 no autorizados.
 
 **Figma:** Hero `10:97`, `10:123`, `10:149`, `10:175`, `10:201`, `10:227`, `10:253`, `10:277`; navegación `111:547` y especificaciones `111:550`; ASCII `11:203`. El rótulo del Hero `PORTFOLIO / 2027` fue verificado **ausente** en esas ocho variantes y en las vistas integrales `102:559` y `102:775`. No reincorporarlo.
 
@@ -279,3 +279,163 @@ límites; entrega pendiente de revisión del Director General.
 **Límites:** no editar las secciones 02–05, no agregar dependencias importantes sin aprobación, no sobrescribir el sitio predeterminado 2025, no desplegar ni hacer merge a `main`. Revisar `@source not "./portfolio2027"`, CSS global y `initTheme()` al preparar la preview. No sustituir ASCII por fade-in, Matrix o imagen estática como único resultado sin autorización. Proporcionar fallback accesible. No bloquear texto o controles por animaciones.
 
 **Gate de salida:** capturas y comparación real con Figma, evidencia de lint/build (distinguir 4 errores legacy de nuevas regresiones), validación responsive/accesibilidad, commits y archivos. Actualizar `docs/CURRENT.md` como `DONE — PENDING DIRECTOR REVIEW`, con pruebas efectivamente ejecutadas, y detenerse. Bloque 03 sigue NO AUTORIZADO.
+
+## 10. Entrega Bloque 02 — 2026-10-21
+
+**Estado: DONE — PENDING DIRECTOR REVIEW.** Entrega de ingeniería terminada con
+observaciones tipográficas y de CLS explícitas. No equivale a aprobación visual
+ni a autorización de publicación. **Bloque 03 sigue NO AUTORIZADO.**
+
+### Rama, commits y preview
+
+- Rama autorizada: `feature/portfolio-2027-foundation`.
+- HEAD inicial sincronizado y contrastado con GitHub:
+  `b156ffd4bcbd0dfc071131066472363b479eaf10`.
+- HEAD de implementación/evidencia:
+  `41d470034e78ddcf06580e948c5a13946270686b`
+  (`feat: implement isolated Portfolio 2027 Hero and navigation with browser QA`).
+- HEAD final documental: commit posterior titulado
+  `docs: record Block 02 delivery and remaining review observations`.
+  Su SHA exacto se obtiene de `git log -1`/historial de este archivo; no se inventa
+  una referencia circular al SHA del propio commit que contiene la bitácora.
+- `main`, dominio, hosting y aplicación predeterminada 2025 conservados.
+  No hubo merge, deploy, nuevas dependencias de aplicación ni cambios de lockfile.
+
+Abrir con `npm run dev -- --host 127.0.0.1` y visitar
+`http://127.0.0.1:5173/src/portfolio2027/preview.html` (puerto que indique Vite).
+`/` sigue mostrando 2025. No se agregó router ni input al build predeterminado:
+la preview es un HTML de desarrollo aislado, no una ruta pública de producción.
+
+### Arquitectura y archivos
+
+- `src/portfolio2027/components/Hero.jsx`: composición semántica, copy aprobado,
+  dos acciones y cierre editorial, sin eyebrow antiguo.
+- `components/Navigation.jsx`: header, medición de enlaces/identidad y disclosure.
+- `components/AmbientAscii.jsx`: motor y lifecycle Canvas 2D independiente.
+- `hooks/useAnchorNavigation.js`: hash, foco, historial, offsets y sección activa.
+- `navigation.js`: destinos oficiales centralizados.
+- `styles/experience.css`: Hero responsive, navegación y estados bajo namespace.
+- `preview.html`, `preview/main.jsx`, `preview/PortfolioPreview.jsx`,
+  `preview/preview.css`: documento y montaje separados; targets temporales de
+  navegación identificados como placeholders, sin diseñar otras secciones.
+- `src/portfolio2027/README.md`: contrato de integración y uso local actualizado.
+- `src/index.css`: exclusión adicional `@source not "../docs/qa"`.
+  Se conserva la exclusión de la carpeta 2027: el nuevo montaje usa CSS semántico
+  importado, no clases Tailwind que dependan del escaneo legacy. El scanner podía
+  generar utilidades por palabras de pruebas; la exclusión evita cambiar su bundle.
+- `docs/qa/block02/`: harness externo de pruebas, resultados JSON, capturas de las
+  ocho resoluciones, menú abierto, texto al 200% y fallback; informe de comparación.
+- `docs/CURRENT.md`, `README.md`, `AGENTS.md`: cierre y continuidad del proyecto.
+
+No se tocaron `App.jsx`, `main.jsx`, secciones legacy ni assets/CV. La preview no
+importa LiquidBackground, initTheme ni CSS legacy; reutiliza los tokens aprobados.
+La carga opt-in de fuentes se enlaza en el HTML separado. Sin fuentes binarias
+copiadas, bibliotecas de motion, Canvas de terceros ni paquetes nuevos del proyecto.
+
+### Hero, Figma y observaciones visuales
+
+Se leyeron contextos y renders Figma de Hero desktop/notebook/tablet/mobile,
+navegación y contexto integrado `111:725`, foundations y planilla motion.
+Se contrastaron capturas reales 1920×1080/960/900, 1536×864, 1366×768,
+768×1024, 390×844 y 320×844. Sin overflow horizontal en esas ocho medidas.
+
+Se mantiene el flujo aprobado: header de 64/56px antes del Hero; tamaños de
+nombre, márgenes, líneas, CTAs y cierre según referencias. La altura del contenido
+puede crecer; las capturas de poca altura continúan con scroll natural.
+Se corrigió un desfase de 1px causado por contar dos veces el hairline superior.
+
+**Diferencias pendientes de revisión:** la métrica web de DM Sans da un ancho
+aproximado de 308px en «Ezequiel» a 88px frente a la caja Figma de 278px (mobile
+198 frente a 179px). Se conservaron fuente, peso, tamaño y opsz 14, sin deformar
+letras. Instrument Serif queda aproximadamente 446 frente a 449px en desktop.
+No se declara pixel-perfect. El ASCII procedural reproduce carácter, intensidad
+contenida, periferia y vacío central, pero no los mismos glifos del frame estático.
+Ver `docs/qa/block02/README.md` antes de aprobar visualmente.
+
+### ASCII implementado y coste real
+
+Canvas 2D nativo: grid fijo y armónicos angulares con variación lenta; no Matrix,
+ruido aleatorio, imágenes o formas figurativas. Primera pasada refinada con banda
+más fina, menor intensidad y curvatura asimétrica. Centro de lectura protegido.
+
+- Cadencia máxima 12fps desktop / 8fps compacto; 232 columnas, hasta 128/96 filas.
+- DPR máximo 1.5/1.25, backing store limitado a 2560×1600.
+- ResizeObserver, IntersectionObserver y visibilitychange controlan el motor.
+- Fuera de pantalla/pestaña oculta: cancelar timer y RAF; al volver se retoma
+  sin avanzar el tiempo de la animación durante la pausa.
+- Reduced motion: estado cero estático. Fallo de contexto: texto/acciones siguen.
+- Limpieza de observers/listeners/timer/RAF en desmontaje; no cadence duplicada
+  observada con StrictMode. Sin elementos decorativos en el orden de foco.
+- `get_motion_context(11:203)` devolvió inventario vacío. Evolución nominal de 36s
+  tomada como interpretación técnica del storyboard; no se afirma importar tracks.
+  La entrada editorial adicional se dejó estática porque figura Proposed.
+
+Muestreo de callbacks JS del último suite: desktop 26 frames, media 3.33ms,
+p95 3.70ms, máximo 4.80ms; mobile 14 frames, media 1.78ms, p95/máximo 2.10ms.
+No son benchmarks de batería/GPU/dispositivo físico. No hubo draws durante los
+intervalos probados fuera de pantalla, reduced motion y ocultación simulada.
+La ocultación y DPR 3 se simularon; no se declara prueba de pestaña móvil real.
+
+### Navegación y correcciones funcionales
+
+Header sticky opaco, línea tras scroll, estados hover/activo/focus. Cambio compacto
+según espacio disponible con fuentes reales, umbral inferior cercano a 832px.
+Prueba adicional: compacto a 820/832px y horizontal a 840/900/1100px; ancho
+requerido medido 734px, sin overflow (`docs/qa/block02/navigation-fit.json`).
+Disclosure no modal, sin backdrop ni bloqueo de body; panel con scroll propio en
+poca altura. Botón nativo, aria-expanded/controls, panel cerrado inert/aria-hidden.
+Escape restaura toggle; Tab fuera cierra sin robar foco; pointer exterior cierra;
+selección cierra y enfoca heading de destino. Indicador pasivo no modifica hash.
+
+Offsets normales 80/72px; se mide la altura real si el texto ampliado aumenta el
+header. Se validó hash directo y Back/Forward. Se detectó deriva intermitente de
+32px al entrar con hash durante el bootstrap tipográfico: se solicita explícitamente
+la carga de los cuatro faces usados, se espera layout final, se usa restauración
+manual de historial y se evita scroll anchoring nativo en el documento de preview.
+La política previa de historial se restaura al limpiar el hook. La entrada #about
+se comprobó diez veces más: heading a 72.1875px en las diez, sin deriva.
+
+También se corrigieron recortes con fuentes ausentes, wrapping de menú/targets
+al 200% de texto y un overflow causado por el Canvas decorativo. Su viewport de
+recorte es separado del contenido y no intercepta interacción.
+
+### Pruebas y evidencia
+
+| Verificación | Resultado real |
+|---|---|
+| `npm run lint` | FAIL con los mismos 4 errores legacy documentados, sin nuevos |
+| `npx --no-install eslint src/portfolio2027` | PASS |
+| `npm run build` | PASS; 1717 módulos, CSS 69.56kB / gzip 10.66; JS 237.77kB / gzip 71.37 |
+| SHA-256 de artefactos 2025 | 9/9 idénticos a la línea de base de este bloque |
+| Build de preview con input HTML explícito, salida `/tmp` | PASS; 38 módulos, CSS 13.90kB / gzip 3.42; JS 196.75kB / gzip 62.40 |
+| Suite `docs/qa/block02/verify.mjs` | PASS: 17 comprobaciones funcionales/visuales/lifecycle, Chromium 153 |
+| Ocho viewports de referencia | PASS: fuentes cargadas, sin overflow; capturas guardadas |
+| Texto al 200%, 320px / panel 320×360 | PASS: reflow y enlace Contacto alcanzable |
+| Fallback de fuentes/contexto Canvas y sin JavaScript | PASS: contenido y acciones disponibles |
+| Consola/pageerror/requests en contexto QA normal | Sin errores ni requests fallidos |
+| `git diff --check` | PASS |
+
+Los cuatro errores preexistentes siguen en PrimaryButton, SecondaryButton,
+Contact y Skills (`no-unused-vars`). No se corrigieron ni ocultaron con cambios
+de ESLint fuera de alcance. El tooling de navegador se preparó temporalmente
+fuera del repositorio; package.json/lockfile de la aplicación no cambiaron.
+
+### Limitaciones y próximo gate
+
+- La CA del navegador de pruebas no valida el proxy de fuentes de este entorno.
+  Se cargaron respuestas oficiales CSS/TTF mediante curl con TLS validado y
+  fulfillment exclusivo de QA (CORS conservado); no se desactivó validación de
+  certificados ni web security en el suite final. La entrega directa de Google
+  Fonts y el coste de WOFF2 reales quedan pendientes en un navegador normal.
+- Layout shifts medidos del bootstrap/font swap: sumas aproximadas 0.013–0.126,
+  más altas en mobile. **No se afirma cumplir CLS de producción.** Reducirlos y
+  volver a medir antes de release; swap no resuelve por sí solo esas métricas.
+- Pendientes: revisión tipográfica de Dirección; dispositivos físicos, Safari,
+  Firefox, lector de pantalla, zoom real, CPU/GPU/batería y memoria prolongada.
+  200% aquí significa tamaño raíz de texto; no una sesión de zoom del navegador.
+- La evidencia está versionada en `docs/qa/block02/`; no se declara aprobada la UI.
+- **No iniciar Bloque 03 / Selected Work ni UI Construction.** Esperar revisión
+  del Director General y brief explícito. Sin merge, deploy ni cambio de dominio.
+
+**Último evento registrado:** Bloque 02 entregado para revisión, con preview local,
+pruebas/capturas y salvedades de tipografía, font delivery y CLS registradas.
