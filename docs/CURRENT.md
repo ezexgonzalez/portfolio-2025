@@ -13,8 +13,8 @@
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
 - **Bloque activo:** **01 / Technical Foundation**.
-- **Estado del Bloque 01 al crear este archivo:** **AUTORIZADO / AÚN NO IMPLEMENTADO**.
-- **Siguiente hito:** el Frontend Integration Engineer ejecuta únicamente Bloque 01, deja resultados y evidencias, actualiza este archivo y se detiene para revisión del Director General.
+- **Estado actual del Bloque 01:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-21).
+- **Siguiente hito:** revisión del Director General. Bloque 02 sigue **NO AUTORIZADO**; no iniciar implementación de Hero ni navegación.
 - **No afirmar:** que ya existe la nueva UI, que se verificaron animaciones en navegador, que el cambio está desplegado o que la corrección final del Hero se aplicó en Figma sin comprobarlo.
 
 ## 2. Diseño seleccionado (NO reabrir)
@@ -41,7 +41,7 @@ Otras referencias: foundations `11:37`; master interaction/motion `92:556`; audi
 ## 3. BLOQUE ACTIVO — 01 / TECHNICAL FOUNDATION
 
 **Responsable:** Frontend Integration Engineer.  
-**Estado:** `AUTHORIZED — NOT STARTED` hasta evidencia real de ejecución.  
+**Estado:** `DONE — PENDING DIRECTOR REVIEW`. Evidencia en sección 7.
 **Objetivo:** preparar una base técnica mantenible para reproducir Figma en React/Vite/Tailwind v4, **sin implementar todavía ninguna de las cinco secciones, navbar ni animaciones**. Mantener el sitio 2025 funcionando mientras la nueva arquitectura se introduce progresivamente.
 
 ### 3A. Antes de tocar código (obligatorio)
@@ -100,7 +100,7 @@ Informe corto con:
 
 | Bloque | Alcance | Estado |
 |---|---|---|
-| **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **ACTIVO / pendiente de ejecución** |
+| **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **DONE — PENDING DIRECTOR REVIEW** |
 | 02 | Hero + Global Navigation: fidelidad responsive, anclas, UI semántica | **NO AUTORIZADO AÚN** |
 | 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
@@ -135,4 +135,106 @@ Al **terminar cada bloque**:
 
 Si el agente no puede actualizar este archivo por permisos, debe entregar el diff completo necesario y aclarar que **la bitácora quedó sin persistir**. Nunca afirmar que se guardó si no existe commit.
 
-**Último evento registrado:** autorización de Bloque 01 y creación de esta bitácora en la rama de preparación. Ninguna implementación de Block 01 verificada hasta este momento.
+## 7. Entrega Bloque 01 — 2026-10-21
+
+**Estado:** `DONE — PENDING DIRECTOR REVIEW`. No equivale a aprobación.
+
+### Git y alcance real
+
+- Rama: `feature/portfolio-2027-foundation`.
+- HEAD inicial sincronizado por clone y contrastado con GitHub:
+  `9816810d83c2fe66ba8a8108dc8cf460c99786bc`.
+- Commit de implementación: `c973a458e5e223e729e7361d9c67d49e2c50a8de`
+  (`feat: add isolated Portfolio 2027 technical foundation`).
+- Cierre documental: commit posterior `docs: record Block 01 results and director review gate`.
+  Su SHA se obtiene del historial de esta bitácora; no se incluye un SHA circular
+  dentro del mismo commit que lo genera.
+- No se modificó `main`, no se hizo merge ni se ejecutó deploy o cambio de hosting.
+  No se instalaron dependencias nuevas ni cambió el lockfile.
+
+### Auditoría y decisión de arquitectura
+
+`App.jsx` monta Header y cinco secciones dentro de `LiquidBackground`, con
+IntersectionObserver y scroll imperativo. `main.jsx` importa CSS legacy e invoca
+`initTheme()`. `index.css` define Tailwind v4, light/dark y scroll a nivel documento.
+Vite utiliza plugins React/Tailwind; ESLint cubre JS/JSX. `App.css` sigue sin importar.
+`public/` conserva CV e imágenes. No se tocaron contenido, secciones ni assets.
+
+Plan adoptado: subsistema CSS/JS aislado en `src/portfolio2027`, entrada opt-in,
+tokens bajo `.portfolio-2027`, fuentes opcionales, sin montaje ni componentes
+vacíos. No se duplicó el mapa de tokens en React y Tailwind. Se añade solo una
+exclusión `@source not` al CSS legacy: el primer build detectó que el escáner de
+Tailwind recogía utilidades de archivos nuevos aun sin importarlos. Tras excluir
+la carpeta, todos los artefactos del build estándar coinciden por SHA-256 con
+la línea de base. La exclusión deberá revisarse al autorizar el montaje futuro.
+
+### Archivos modificados / creados
+
+- `src/portfolio2027/index.js`: entrada opt-in, export de clase raíz, import CSS.
+- `src/portfolio2027/styles/tokens.css`: paleta, fuentes, espacios, anchos,
+  gutters fluidos, hairline, focus y dimensiones de header (sin navbar).
+- `src/portfolio2027/styles/foundation.css`: reset bajo namespace, contenedor,
+  lectura, familias, selección, focus y política defensiva de reduced motion.
+- `src/portfolio2027/styles/fonts.css`: carga opcional CSS2 con `display=swap`.
+- `src/portfolio2027/README.md`: contrato React/CSS, procedencia, límites y riesgos.
+- `src/index.css`: únicamente exclusión del escaneo Tailwind de la carpeta 2027.
+- `docs/CURRENT.md`, `README.md`, `AGENTS.md`: estado y continuidad del bloque.
+
+### Tokens y tipografía
+
+Se consultaron en modo lectura Figma `11:37` y `111:550`: paleta confirmada,
+DM Sans 400/500 con `opsz` 14, Instrument Serif regular/italic 400 e IBM Plex Mono
+400; marco 1600, contenido 900, lectura 640 y cierre 770px; márgenes de referencia
+160/96/72/48/24/20px, hairline 1px y header 64/56px.
+
+Gutters interpolados y escala inicial de lectura son propuestas de ingeniería,
+ajustables durante integración; no constituyen fidelidad visual de las secciones.
+A 390px el gutter inicial es 24.375px. Se usan rem y límites de lectura fluidos;
+no hay tamaños de nombre del Hero, layouts finales, ASCII o animaciones.
+
+La URL preparada de Google Fonts respondió correctamente con las tres familias,
+pesos y estilos esperados y `font-display: swap`. Fallbacks de sistema/Georgia/mono.
+No se importa `fonts.css` todavía ni se añadieron preloads/preconnects. No se
+redistribuyen fuentes. Figma cita OFL 1.1 y fuentes oficiales; cualquier futuro
+self-host requiere comprobar y conservar los archivos de licencia reales.
+
+### Verificaciones efectivamente ejecutadas
+
+Entorno: React/React DOM 19.1.1, Vite 7.1.3, Tailwind y plugin Vite 4.1.12,
+ESLint 9.34.0 (versiones resueltas por el lockfile).
+
+| Comprobación | Línea de base | Resultado posterior |
+|---|---|---|
+| `npm ci --no-audit --no-fund` | OK, 181 paquetes del lockfile | Sin cambios de dependencias/lockfile |
+| `npm run lint` | FAIL, 4 errores legacy | Mismos 4 errores, sin errores nuevos |
+| `npx --no-install eslint src/portfolio2027/index.js` | No existía | PASS |
+| `npm run build` | PASS | PASS, mismos nombres/hashes y tamaños |
+| Vite JS API, library mode ES, entrada 2027 | No existía | PASS, JS y CSS aislados compilados |
+| SHA-256 de todos los archivos `dist/` | Manifest guardado temporalmente | 9/9 archivos idénticos |
+| `git diff --check` | Sin cambios | PASS |
+| Solicitud real Google Fonts CSS2 | No requerida en legacy | HTTP OK; cinco faces con `swap` |
+
+Errores previos de lint: `PrimaryButton.jsx:2` y `SecondaryButton.jsx:2`
+(`Component`); `Contact.jsx:6` y `Skills.jsx:12` (`Icon`), todos `no-unused-vars`.
+No se corrigieron porque son código legacy fuera de alcance. npm también advierte
+por la configuración ambiental `http-proxy`, sin impedir instalación/build.
+
+Build legacy: CSS 69.56 kB / gzip 10.66 kB; JS 237.77 kB / gzip 71.37 kB;
+1717 módulos. Foundation aislado: CSS 3.23 kB / gzip 1.19 kB y JS 0.07 kB.
+La compilación aislada se produjo en `/tmp`, no en archivos de producción.
+
+### Límites y revisión pendiente
+
+- Sin capturas ni pruebas de navegador: foundation no está montado. La evidencia
+  de no regresión es identidad binaria de los artefactos, no una auditoría visual.
+- CLS, transferencia real de WOFF2, zoom, focus y reduced-motion con UI real quedan
+  pendientes de integración. `swap` por sí solo no evita cambios de métricas.
+- Hay reglas globales legacy de scroll/tema que deberán desacoplarse al autorizar
+  el montaje 2027. Este bloque no las neutraliza ni cambia `App`/`main`.
+- El espécimen histórico de foundations sigue mostrando `PORTFOLIO / 2027`;
+  Pass 12B en los Hero finales **no se verificó** y sigue pendiente antes de Hero.
+- **Bloque 02 NO AUTORIZADO.** Dirección debe revisar el foundation y emitir el
+  próximo brief. No se implementó ninguna sección, navegación o motion.
+
+**Último evento registrado:** Bloque 01 implementado y validado dentro de sus
+límites; entrega pendiente de revisión del Director General.
