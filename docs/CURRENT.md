@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **03A / UI Construction — Zero-flash, Visibility & Pacing**.
+- **Bloque activo:** **03B / Selected Work — Desktop Viewport Height Refinement**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Estado del Bloque 03:** **IMPLEMENTED — DIRECTOR CORRECTION REQUIRED** (2026-10-22). La sección estática está entregada; UI Construction NO aprobada, corrección 03A autorizada. Entrega original en sección 13.
-- **Estado del Bloque 03A:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22), entrega en sección 16.
-- **Siguiente hito:** revisión visual de Dirección del 03A. Bloques 04–06 NO AUTORIZADOS.
+- **Estado del Bloque 03:** **UI CONSTRUCTION APPROVED BY OWNER; FINAL SECTION HEIGHT REFINEMENT PENDING** (2026-10-22). Solo falta la corrección 03B; no reabrir motion ni diseño.
+- **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
+- **Siguiente hito:** Integration Engineer ejecuta exclusivamente 03B, ajuste de altura/espaciado de Selected Work en desktop, comprueba que el motion aprobado siga intacto, actualiza esta bitácora y se detiene. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -106,7 +106,7 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A DONE — PENDING DIRECTOR REVIEW** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A APPROVED; 03B HEIGHT REFINEMENT AUTHORIZED** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
@@ -796,3 +796,19 @@ la comparación estática sigue idéntica. Ningún rediseño o regresión estát
 
 **Bloque 04 y posteriores NO AUTORIZADOS.** Detener aquí. Sin aprobación ni
 publicación implícita.
+
+## 17. Owner visual approval 03A and final desktop height correction 03B (2026-10-22)
+
+**Owner decision:** The revised UI Construction now looks excellent. Owner **approves** the zero-flash lifecycle, increased phase visibility and deliberately slower construction movement implemented in 03A. Preserve all of these as a frozen behavioral baseline. Selected Work's two-project composition, content, links, responsive structure and visual tone remain approved. The **only remaining request** is that **Selected Work feels too tall on desktop** and should, where feasible, fit the available browser viewport as a coherent section.
+
+**03B authorized, NOT STARTED — targeted desktop-only spacing/height refinement:**
+- Begin with baseline natural Selected Work heights from Block 03: 1920px wide → 1072px, 1536 → 924px, 1366 → 868px. Header consumes ~64px of the viewport; assess practical available area `100svh - measured sticky header` (e.g. 1920×1080 ~1016px, 1536×864 ~800px, 1366×768 ~704px). These are **targets to assess, not fixed-height caps**.
+- Reduce primarily *excess vertical whitespace* in `src/portfolio2027/styles/selected-work.css`: heading top/bottom padding, spacing between project name/description/classification/capabilities/stack/links, and overall bottom padding. Keep clear hierarchy, two-column grid, typography, minimum 52px targets and structural dividers. Avoid reducing font size or line-height simply to force fit, and never distort the design.
+- Aim for coherent full-section reading in the initial desktop/notebook viewport **when practical**. If 1366×768 or 1920×900 cannot fit without sacrificing legibility, allow natural scrolling and report the exact tradeoff; do not clip, use `overflow:hidden`, force fixed `height:100vh`, scale the whole section or hide items.
+- Tablet and mobile retain their approved natural one-column flow; prevent compact desktop adjustments from overflowing into 768/390/320 responsive layouts.
+- The approved UI Construction draws geometry from measured DOM. Revalidate that reducing vertical spacing does not cause ghost traces, displaced outlines, early-reflow cancellation, gaps in the zero-flash coverage or broken sweep. **No timing/contrast/motor/trigger changes** unless strictly necessary to remap measured layout, and never replace the approved motion.
+- Verify first-time pointer CTA, navbar, passive scroll, keyboard/direct-hash reduced motion, no-JS/Canvas fallback, and back-navigation remain functional. Check Hero and nav unchanged.
+- Compare current and corrected *final-state* screenshots at 1920×1080, 1536×864, 1366×768, 1920×900 and mobile 390/320; report actual computed section top/bottom relative to viewport and header. Show at least one complete construction run after CSS changes. Test build and scoped lint, distinguishing the four known legacy lint errors.
+- Update `docs/CURRENT.md` with actual heights, before/after, test evidence, commit SHA, any limitations. Set 03B to `DONE — PENDING DIRECTOR REVIEW` when delivered. **Stop. Block 04 not authorized; no main/merge/deploy.**
+
+**This new feedback does not revoke approval of 03A.** The next review evaluates **only compactness of Selected Work and lack of regressions**.
