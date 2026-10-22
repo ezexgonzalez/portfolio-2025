@@ -1,0 +1,7 @@
+/* Only this independent development HTML document imports these rules. */
+html { margin: 0; background: #080808; scroll-behavior: auto; overflow-anchor: none; }
+body { margin: 0; }
+.p27-preview-target { min-block-size: 80svh; padding-block: 5rem; border-block-start: 1px dashed var(--p27-color-rule); }
+.p27-preview-target h2 { font-size: 1.5rem; font-weight: 400; }
+.p27-preview-target p { margin-block-start: 1rem; color: var(--p27-color-secondary); font-size: 1rem; }
+.p27-preview-target :is(h2, p) { overflow-wrap: anywhere; }

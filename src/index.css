@@ -1,6 +1,7 @@
 @import "tailwindcss";
 /* Keep the unmounted 2027 subsystem out of the legacy utility scan. */
 @source not "./portfolio2027";
+@source not "../docs/qa";
 
 /* Definición de variante dark para Tailwind v4 */
 @custom-variant dark (&:where(.dark, .dark *));
