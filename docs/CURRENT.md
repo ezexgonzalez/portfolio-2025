@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **02A / Hero tuning — correcciones puntuales**.
+- **Bloque activo:** **03 / Selected Work — Structural Grid + UI Construction**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Siguiente hito:** revisión del Director General del Bloque 02A entregado. Bloques 03–06 NO AUTORIZADOS.
-- **Estado del Bloque 02A:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Ver sección 11.
-- **Estado del Bloque 02:** DONE — PENDING DIRECTOR REVIEW. Preview local probada en Chromium; no está desplegada ni aprobada visualmente por Dirección. Ver evidencia y salvedades en sección 10.
+- **Siguiente hito:** Integration Engineer ejecuta únicamente Bloque 03 según brief del Director; termina con revisión y actualización de CURRENT.md. Bloques 04–06 NO AUTORIZADOS.
+- **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
+- **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
 ## 2. Diseño seleccionado (NO reabrir)
 
@@ -102,9 +102,9 @@ Informe corto con:
 | Bloque | Alcance | Estado |
 |---|---|---|
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **DONE — PENDING DIRECTOR REVIEW** |
-| **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **DONE — PENDING DIRECTOR REVIEW** |
-| 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
+| **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
+| **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **AUTHORIZED — NOT STARTED** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
@@ -504,3 +504,21 @@ Bloque 02 siguen pendientes antes de release.
 
 **Bloque 03 y UI Construction: NO AUTORIZADOS.** Detener aquí hasta revisión del
 Director y nuevo brief explícito. Producción permanece intacta.
+
+## 12. Director Review — Block 02/02A Approved; Block 03 Authorized (2026-10-22)
+
+**Director decision:** Block 02 and correction pass 02A **APPROVED** on the basis of committed code, eight viewport QA records and visual inspection of actual captured `after-1920x1080.png`, `after-1366x768.png`, `after-390x844.png`. The owner-approved refinements are reflected: desktop Hero closing now fits the initial viewport, framing edges removed, only a full-viewport separator before the quote, and stronger restrained peripheral ASCII. No re-opening of Hero/navigation design. The director reviewed code and documented browser QA but did not independently repeat browser testing. Four pre-existing lint errors are still outside this work's scope. Release remains gated on real font delivery/CLS/device/browser QA; **this is NOT production approval**.
+
+**Block 03 authorization: Selected Work (selected Structural Grid A).** Work in `feature/portfolio-2027-foundation`, isolated preview only, preserving legacy production and the already-approved Hero/navigation. Current Figma sources: Selected Work production `30:836` (desktop `30:898`, 390px `30:1576`, 320px `30:1689`, full-content variants `33:176` through `33:452`); specifications `35:818`; continuous Hero→Selected Work `35:628`/`35:724`; motion master `45:5809`, PLAY desktop `45:7422`, mobile `45:10156`, reduced motion `45:11220`. Master interactions `92:556`.
+
+**Authorized tasks:**
+1. Implement **exactly two** text-only editorial project modules: **Eze Web Studio** (owner's independent studio, not a commissioned client) and **Task Manager** (MERN), with Figma-approved headings, descriptions, metadata, stacks, project/repository actions and structural grid; no cards, screenshot images, invented outcomes or third project.
+2. Desktop two columns with rule, tablet/mobile vertical reading flow. Content heights should grow naturally. Fit 1920/1536/1366/768/390/320; link focus, hover, keyboard and touch. Continuity from existing Hero must not damage prior approved viewports.
+3. Treat UI Construction as the **approved visual direction**, not a generic fade: point field → geometric trace → UI skeleton → vertical materialization → final functional DOM. Use A–E reference and exact content geometry/reflow; animate once per page visit. Timings `2400 ms desktop` / `1400 ms mobile` remain **proposed parameters** until visual verification.
+4. First assess feasibility and licence/performance implications of any third-party source (e.g. Jakubantalik/transitions.dev); **no significant new dependency/install without Director approval**. Native DOM/CSS/SVG/canvas implementation allowed if faithful. If not technically feasible without material architectural choice, stop motion subtask, report options and evidence. Do not replace with opacity-only reveal or claim incomplete approximation as finished.
+5. Motion must be wholly decorative (no pointer/focus interception); final content semantic and accessible from the start. Direct hash/keyboard focus, quick scroll and reduced motion resolve immediately to final state; clean observers, timers, event listeners and overlays; no loops. Prevent jank on mobile.
+6. Existing isolated preview remains the only preview route. Use temporary placeholders for About/Skills/Contact only, not implementations. Verify no regression in Hero and Navigation; no changes to `main`, legacy default route, deployments, package lock without approval.
+
+**Project links:** Eze Web Studio repository `https://github.com/ezexgonzalez/eze-web-studio-V2`; Task Manager repo `https://github.com/ezexgonzalez/mern-task-manager` and demo `https://mern-task-manager-iota-teal.vercel.app/`. The Eze Web Studio project *public* destination is separate from portfolio `https://ezegonzalez.dev/` and must be verified, never guessed or pointed to the portfolio. If unresolved, disable/mark the project-public action in isolated preview rather than invent a link.
+
+**Exit gate:** lint/build and scoped checks (differentiate four pre-existing legacy lint errors); desktop+mobile visual evidence, construction frames/states or video if reliably available, responsive/keyboard/anchor/reduced-motion/cleanup checks, any performance measurements honestly scoped; update `docs/CURRENT.md` to `DONE — PENDING DIRECTOR REVIEW` with changed files, commits, limitations and accurate status. **STOP. Block 04 NOT AUTHORIZED**. No production merge/deploy.
