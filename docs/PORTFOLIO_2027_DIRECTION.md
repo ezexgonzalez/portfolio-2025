@@ -221,6 +221,18 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 
 **Owner-selection gate:** This approves the design *direction only*. Do not assume responsive, motion, interactions or handoff are completed or authorized by this selection. The next specialist assignment may refine **only selected option A** and build responsive/production details specifically scoped by the Director. Option B must not be worked further. Do not write implementation code until the entire portfolio is approved.
 
+## 4C. CONTACT / CLOSING — APPROVED EXPLORATION A (2026-10-21)
+
+**Owner-selected direction:** **A — Editorial Sign-off**, selected after Pass 09. **Option B — Contact Directory is rejected**; do not develop it further.
+
+- Figma source: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%80%94-Hero-Exploration-01?node-id=84-557
+- Selected frame: `84:557` — `A — Editorial Sign-off / 1920 × 1080`.
+- Parent exploration: `84:556` — `10 — Contact / Closing Exploration`.
+
+**Protected direction:** Monochrome editorial sign-off with oversized italic Instrument Serif `Hablemos.`, prominent email `ezexgonzalez@outlook.com` in the left content area, compact personal invitation on the right, restrained text links to LinkedIn/GitHub/CV and a thin-rule footer `© 2027 Ezequiel Gonzalez`. No generic CTA panels, glass cards, imagery, glows or extra links. Keep contact destinations grounded and verify the existing CV asset on implementation.
+
+**Next combined design production pass:** Refine and adapt **Skills A (Technical Index, node `77:557`) and Contact A (Editorial Sign-off, node `84:557`) only**. Deliver responsive production variants and **one consolidated editable interaction/motion specification matrix** listing section, element, state/trigger, visual behavior, duration/easing, pointer/focus/touch, reduced-motion and implementation notes. Do not spend effort refining either rejected B. Responsive and motion specs are design work only, not browser implementation.
+
 ## 5. Motion system rules
 
 **Level A: Signature / structural reveal.** A single significant entrance or section build; linework resolves into content. Use only where it creates meaning and keep it optional/skippable in practice.
