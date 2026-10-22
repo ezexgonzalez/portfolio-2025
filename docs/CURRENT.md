@@ -13,8 +13,8 @@
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
 - **Bloque activo:** **01 / Technical Foundation**.
-- **Estado actual del Bloque 01:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-21).
-- **Siguiente hito:** revisión del Director General. Bloque 02 sigue **NO AUTORIZADO**; no iniciar implementación de Hero ni navegación.
+- **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
+- **Siguiente hito:** preparar un **brief separado** para Bloque 02 / Hero + Global Navigation. Bloque 02 sigue **NO AUTORIZADO** hasta esa instrucción; no iniciar Hero ni navegación por inferencia.
 - **No afirmar:** que ya existe la nueva UI, que se verificaron animaciones en navegador, que el cambio está desplegado o que la corrección final del Hero se aplicó en Figma sin comprobarlo.
 
 ## 2. Diseño seleccionado (NO reabrir)
@@ -41,7 +41,7 @@ Otras referencias: foundations `11:37`; master interaction/motion `92:556`; audi
 ## 3. BLOQUE ACTIVO — 01 / TECHNICAL FOUNDATION
 
 **Responsable:** Frontend Integration Engineer.  
-**Estado:** `DONE — PENDING DIRECTOR REVIEW`. Evidencia en sección 7.
+**Estado:** `APPROVED — DIRECTOR REVIEW COMPLETED`. Evidencia en secciones 7 y 8.
 **Objetivo:** preparar una base técnica mantenible para reproducir Figma en React/Vite/Tailwind v4, **sin implementar todavía ninguna de las cinco secciones, navbar ni animaciones**. Mantener el sitio 2025 funcionando mientras la nueva arquitectura se introduce progresivamente.
 
 ### 3A. Antes de tocar código (obligatorio)
@@ -100,7 +100,7 @@ Informe corto con:
 
 | Bloque | Alcance | Estado |
 |---|---|---|
-| **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **DONE — PENDING DIRECTOR REVIEW** |
+| **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | 02 | Hero + Global Navigation: fidelidad responsive, anclas, UI semántica | **NO AUTORIZADO AÚN** |
 | 03 | Selected Work: dos proyectos y UI Construction después de spike aprobado | **NO AUTORIZADO AÚN** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
@@ -238,3 +238,32 @@ La compilación aislada se produjo en `/tmp`, no en archivos de producción.
 
 **Último evento registrado:** Bloque 01 implementado y validado dentro de sus
 límites; entrega pendiente de revisión del Director General.
+
+
+## 8. Revisión del Director General — 2026-10-21
+
+**Decisión: BLOQUE 01 APROBADO.** Se autoriza continuar con la **preparación del brief** del Bloque 02, NO con su implementación automática.
+
+### Evidencia de revisión independiente del informe del ingeniero
+
+- Inspección directa de GitHub: historial de la rama con dos commits posteriores a la base `9816810d83c2fe66ba8a8108dc8cf460c99786bc`, implementación `c973a458e5e223e729e7361d9c67d49e2c50a8de` y actualización documental `8ce2f09303c266d3f3460e8d7b3c3c3bc51e4abb`.
+- Diff contrastado: nuevos `src/portfolio2027/index.js`, `styles/tokens.css`, `styles/foundation.css`, `styles/fonts.css`, `src/portfolio2027/README.md`; `src/index.css` agrega temporalmente una exclusión de escaneo `@source not "./portfolio2027"`. Resto del diff son documentos.
+- Inspección de código: sin importación de foundation desde `App.jsx` o `main.jsx`, sin secciones ni navegación implementadas, sin dependencias nuevas. `package.json` y lockfile sin cambios.
+- Comparación con `main`: la rama está ahead por 22 y behind por 0; ningún código de UI 2025 fue sustituido. **Esto no equivale a una prueba de navegador.**
+- El ingeniero registró `npm ci` OK; build estándar y build aislado OK; artefactos de build estándar 9/9 idénticos por SHA-256; `npm run lint` conserva los cuatro errores legacy `no-unused-vars` sin nuevos errores. **Los comandos y hashes son resultados reportados por el ingeniero y revisados documentalmente; el Director no pudo reejecutarlos en este entorno sin acceso de red al repositorio.**
+- La nueva implementación es correctamente opt-in, con estilos bajo `.portfolio-2027` y fuente de tokens CSS única. Figma no fue revalidado visualmente durante este bloque, porque la UI 2027 todavía no está montada.
+
+### Condiciones técnicas para el siguiente bloque
+
+1. **Muy importante:** `@source not "./portfolio2027"` evita que Tailwind detecte utilidades escritas en la futura carpeta. Al comenzar el montaje de React, revisar/eliminar esta exclusión o registrar fuentes explícitas de forma compatible con el build. Una foundation no montada puede compilar correctamente sin garantizar que las utilidades futuras lo hagan.
+2. La fuente `fonts.css` es opt-in y aún no se carga. Validar tipografía real, peso, carga, line wrapping y CLS en navegador al montar el Hero.
+3. La hoja legacy conserva `html` scroll y `initTheme()`; no montar la nueva UI dentro de `LiquidBackground` ni conservar comportamientos globales contradictorios sin revisión. Mantener `main` estable.
+4. El reset y motion reducido en `.portfolio-2027` son bases, no evidencia de comportamiento accesible del menú o motion real. Validar en el bloque correspondiente.
+5. `npm run lint` tiene cuatro errores **preexistentes**: registrar baseline y evitar regresiones; un resultado de lint global verde requiere una tarea de corrección legacy autorizada o una migración que retire esos archivos.
+6. Confirmar la eliminación del eyebrow visible `PORTFOLIO / 2027` en Figma antes de implementar la copia final del Hero; no usar el espécimen histórico.
+
+### Gate vigente
+
+- **Bloque 01:** aprobado.
+- **Bloque 02:** todavía NO autorizado; depende de un nuevo brief con alcance, criterios de aceptación y verificación técnica.
+- **Producción:** `main` sin modificar; no merge ni deploy.
