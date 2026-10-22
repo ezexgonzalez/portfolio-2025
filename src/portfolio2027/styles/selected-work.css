@@ -1,5 +1,6 @@
 /* Structural Grid A. All dimensions are intrinsic; no viewport height constraint. */
 .portfolio-2027 .p27-work {
+  overflow-x: clip;
   --work-top: 5.0625rem; --work-heading-gap: 2rem; --work-heading-bottom: 5rem;
   --work-grid-gap: clamp(6rem, calc(16.667vw - 10rem), 10rem);
   --work-grid-top: 2.1875rem; --work-grid-bottom: 5.1875rem; --work-bottom: 6.4375rem;
@@ -139,4 +140,14 @@
   .portfolio-2027 .p27-work-title .p27-serif { line-height: 2.875rem; letter-spacing: -0.4px; }
   .portfolio-2027 .p27-project h3 { line-height: 2.625rem; letter-spacing: -1px; }
   .portfolio-2027 .p27-project-actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+}
+
+/* First React paint is already covered. Semantic content and layout stay intact.
+   The guard is replaced atomically by the opaque Canvas, or removed by fail-open. */
+.portfolio-2027 .p27-work:is([data-construction='armed'], [data-construction='waiting']) .p27-work-frame::after {
+  content: ''; position: absolute; inset: 0 -1.5rem; z-index: 3;
+  background: var(--p27-color-bg); pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-2027 .p27-work .p27-work-frame::after { content: none; }
 }

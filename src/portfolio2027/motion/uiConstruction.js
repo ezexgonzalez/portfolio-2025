@@ -1,6 +1,9 @@
 // Original native implementation of the approved A–E study. No vendor runtime.
 const clamp = (value) => Math.max(0, Math.min(1, value));
-const progress = (time, start, end) => clamp((time - start) / (end - start));
+const progress = (time, start, end) => {
+  const value = clamp((time - start) / (end - start));
+  return value * value * (3 - 2 * value);
+};
 
 function measure(frame, context, compact) {
   const base = frame.getBoundingClientRect();
@@ -68,25 +71,25 @@ function strokePath(context, box, amount, horizontal) {
 function draw(context, model, time) {
   const { width, height, dots, rules, boxes, lines } = model;
   // Below the frontier is construction; above it is the unmodified real DOM.
-  const sweep = 1 - Math.pow(1 - progress(time, 0.68, 0.97), 2);
+  const sweep = progress(time, 0.667, 0.976);
   const y = sweep * (height + 2);
   context.clearRect(0, 0, width, height);
   context.save();
   context.beginPath(); context.rect(0, y, width, height - y); context.clip();
   context.fillStyle = '#080808'; context.fillRect(0, 0, width, height);
-  context.fillStyle = '#7d7d7d';
+  context.fillStyle = '#ababab';
   for (const dot of dots) {
-    context.globalAlpha = progress(time, dot.delay, dot.delay + 0.1) * 0.28;
-    context.fillRect(dot.x, dot.y, 1, 1);
+    context.globalAlpha = progress(time, dot.delay, dot.delay + 0.19) * 0.72;
+    context.fillRect(dot.x, dot.y, 1.4, 1.4);
   }
-  context.globalAlpha = 0.72; context.strokeStyle = '#7d7d7d'; context.lineWidth = 0.8;
+  context.globalAlpha = 0.9; context.strokeStyle = '#ababab'; context.lineWidth = 1;
   context.setLineDash([1, 5]);
   rules.forEach((rule, index) => {
-    const q = progress(time, 0.16 + index * 0.016, 0.39 + index * 0.016);
+    const q = progress(time, 0.143 + index * 0.012, 0.38 + index * 0.008);
     strokePath(context, rule, q, rule.w > rule.h);
   });
   boxes.forEach((box, index) => {
-    const q = progress(time, 0.30 + index * 0.018, 0.51 + index * 0.012);
+    const q = progress(time, 0.333 + index * 0.012, 0.56 + index * 0.012);
     const distance = (box.w * 2 + box.h * 2) * q;
     let remaining = distance;
     for (const side of [
@@ -102,18 +105,18 @@ function draw(context, model, time) {
   });
   // Typographic contours and baselines anticipate the real text, including wraps.
   lines.forEach((line, index) => {
-    const q = progress(time, 0.34 + index / lines.length * 0.12, 0.57 + index / lines.length * 0.06);
+    const q = progress(time, 0.333 + index / lines.length * 0.12, 0.60 + index / lines.length * 0.065);
     if (!q) return;
     context.save(); context.beginPath(); context.rect(line.x - 1, line.y - 2, (line.w + 3) * q, line.h + 4); context.clip();
     context.font = line.font; context.letterSpacing = line.spacing === 'normal' ? '0px' : line.spacing;
-    context.textBaseline = 'alphabetic'; context.globalAlpha = 0.58; context.lineWidth = 0.5;
+    context.textBaseline = 'alphabetic'; context.globalAlpha = 0.9; context.lineWidth = 0.85;
     context.setLineDash([1, 2]); context.strokeText(line.text, line.x, line.baseline);
-    context.globalAlpha = 0.22; context.beginPath(); context.moveTo(line.x, line.y + line.h + 2); context.lineTo(line.x + line.w, line.y + line.h + 2); context.stroke();
+    context.globalAlpha = 0.48; context.beginPath(); context.moveTo(line.x, line.y + line.h + 2); context.lineTo(line.x + line.w, line.y + line.h + 2); context.stroke();
     context.restore();
   });
   context.restore();
-  if (time >= 0.68 && time < 0.97) {
-    context.globalAlpha = 1; context.fillStyle = '#7d7d7d'; context.fillRect(0, y, width, 1);
+  if (time >= 0.667 && time < 0.976) {
+    context.globalAlpha = 1; context.fillStyle = '#ababab'; context.fillRect(0, y, width, 1.25);
   }
 }
 

@@ -24,7 +24,7 @@ export default function SelectedWork() {
   useUiConstruction(sectionRef);
 
   return (
-    <section ref={sectionRef} id="projects" className="p27-work p27-target" aria-labelledby="projects-title">
+    <section ref={sectionRef} data-construction="armed" id="projects" className="p27-work p27-target" aria-labelledby="projects-title">
       <div className="p27-work-frame p27-container">
         <div className="p27-work-boundary" data-build-rule="horizontal" />
         <header className="p27-work-heading">

@@ -1,7 +1,7 @@
 # Portfolio 2027 — isolated development experience
 
 Blocks 01, 02 and 02A approved. Block 03 adds Selected Work + UI Construction,
-completed for Director review in this isolated development experience.
+with correction 03A delivered for Director review in this isolated experience.
 The 2025 `App.jsx`, `main.jsx`, theme initialization and default HTML entry remain
 unchanged. About/Skills/Contact remain temporary targets, with no implementation.
 
@@ -109,19 +109,36 @@ modules, 1600px maximum frame, 720px columns/160px gap at 1920; 624px/96px at
 The existing gutter token yields 24.375px at 390 instead of Figma's rounded 24px.
 
 Point field → geometric trace → typographic/UI skeleton → vertical sweep → actual
-DOM. Original native engine; no copied runtime, library or new package. Start
-near 85% viewport height once per mounted page visit. 2400ms desktop, 1400ms below
-1024px. One aria-hidden, pointer-transparent Canvas covers unrevealed pixels;
-no content opacity, visibility, inert or accessibility-tree masking. Text uses
-actual loaded fonts and wrapped word geometry. No per-scroll reconstruction.
+DOM. Block 03A keeps the same geometry/final UI with a prepaint opaque guard on
+`armed`/`waiting`. JSX sets the armed marker in its first render; useLayoutEffect
+sets up recovery before paint. The guard hands off atomically only after the
+phase-zero Canvas is opaque. Semantic DOM stays mounted and accessible.
 
-Explicit font readiness before measurement. Geometry/backing store caps and a
-bounded 500/160-point grid. Reduced motion, direct hash, focus/pointer, internal
-anchor, fast entry/scroll, offscreen/hidden state, resize/reflow or new font load
-resolve to final. Completion/cancellation removes Canvas, RAF, observers and
-listeners. Context/render failure retains the functional DOM. No entrance repeats
-on return scrolling; no navigation changes. Native Canvas text contours are a
-responsive rendering of the study, not exported Figma vector glyphs.
+Start near 85% viewport height, once per visit. Timing is now **4200ms desktop /
+3000ms below 1024px**, with smooth progression and a 2800–4100ms desktop sweep.
+Points, geometry, text contours and frontier use clearer neutral contrast; no
+change to final typography/colors/layout. Native Canvas geometry is measured from
+loaded fonts and wrapped DOM words; no per-scroll reconstruction.
+
+Normal pointer/touch on #projects allows the sequence while the existing navigation
+keeps its hash, smooth scroll and heading focus. The capture handler grants exactly
+the synchronous navigation heading focus; its token expires on the next task.
+Keyboard activation (detail=0), other/programmatic focus, initial hash and reduced
+motion resolve immediately. A short smooth-navigation exemption ends after 1800ms
+or manual wheel/touch/key input. Normal scrolling continues; actual section exit
+or a large fast jump resolves final. No scroll/focus manipulation by this hook.
+
+Explicit font readiness, bounded 500/160-point grid, DPR/backing caps. Missing
+capabilities/setup errors, Canvas/render failure and stalled preparation fail open.
+Font preparation has a 6s watchdog; active motion has duration+1500ms recovery.
+Reflow, late font load, document hiding and preference change resolve final.
+Completion/unmount cancels all recovery/focus/navigation timers, RAF, observers and
+listeners and removes Canvas. No content display:none/inert/aria-hidden or clipping.
+
+Development review replay: open the same preview **without a hash** and reload.
+For an existing #projects URL, run `history.replaceState(null, '', location.pathname)`
+then reload. This resets the page visit; no replay control or production feature
+was added. Avoid direct-hash/keyboard entry when reviewing pointer/scroll motion.
 
 ## Verification
 
@@ -130,4 +147,5 @@ See `docs/CURRENT.md`, `docs/qa/block02/README.md`, saved browser screenshots an
 Playwright/Chromium tooling; it is not a project dependency. Standard production
 build and isolated preview build are validated separately. Browser results do not
 constitute approval or release authorization. Block 03 evidence and the scoped
-external-tool harness are in `docs/qa/block03/`. Blocks 04–06 remain unauthorized.
+external-tool harness are in `docs/qa/block03/`; correction evidence, real browser
+recordings and capture timestamps are in `docs/qa/block03a/`. Blocks 04–06 remain unauthorized.
