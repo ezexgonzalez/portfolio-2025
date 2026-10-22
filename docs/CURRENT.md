@@ -105,7 +105,7 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **DONE — PENDING DIRECTOR REVIEW** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **CORRECTION 03A REQUIRED** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
