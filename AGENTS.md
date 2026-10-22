@@ -31,4 +31,4 @@
 8. Describe what changed and how it was verified. Run `npm run lint` and `npm run build` when implementing code changes.
 9. Do not assert that Figma designs, benchmarks, animations or deployments are approved or verified unless actual evidence exists.
 
-Current stage: **Block 01 / Technical Foundation DONE — PENDING DIRECTOR REVIEW**, as detailed in [docs/CURRENT.md](docs/CURRENT.md). The opt-in 2027 subsystem is not mounted. Future blocks, including Block 02, are NOT authorized. Preserve the deployed 2025 site until explicit release approval.
+Current stage: **Block 01 / Technical Foundation APPROVED — DIRECTOR REVIEW COMPLETED**, as detailed in [docs/CURRENT.md](docs/CURRENT.md). The opt-in 2027 subsystem is not mounted. Future blocks, including Block 02, are NOT authorized. Preserve the deployed 2025 site until explicit release approval.
