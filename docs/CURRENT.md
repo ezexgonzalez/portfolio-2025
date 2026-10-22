@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **03B / Selected Work — Desktop Viewport Height Refinement**.
+- **Bloque activo:** **03B / Selected Work — DONE — PENDING DIRECTOR REVIEW**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Estado del Bloque 03:** **UI CONSTRUCTION APPROVED BY OWNER; FINAL SECTION HEIGHT REFINEMENT PENDING** (2026-10-22). Solo falta la corrección 03B; no reabrir motion ni diseño.
+- **Estado del Bloque 03:** **03A APPROVED; 03B DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Solo falta la corrección 03B; no reabrir motion ni diseño.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Integration Engineer ejecuta exclusivamente 03B, ajuste de altura/espaciado de Selected Work en desktop, comprueba que el motion aprobado siga intacto, actualiza esta bitácora y se detiene. Bloques 04–06 NO AUTORIZADOS.
+- **Siguiente hito:** Dirección revisa la compactación 03B entregada en sección 18. Ingeniería detenida; motion 03A conservado. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -106,7 +106,7 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A APPROVED; 03B HEIGHT REFINEMENT AUTHORIZED** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A APPROVED; 03B DONE — PENDING DIRECTOR REVIEW** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
@@ -812,3 +812,72 @@ publicación implícita.
 - Update `docs/CURRENT.md` with actual heights, before/after, test evidence, commit SHA, any limitations. Set 03B to `DONE — PENDING DIRECTOR REVIEW` when delivered. **Stop. Block 04 not authorized; no main/merge/deploy.**
 
 **This new feedback does not revoke approval of 03A.** The next review evaluates **only compactness of Selected Work and lack of regressions**.
+
+
+## 18. Entrega 03B — Altura de Selected Work — 2026-10-22
+
+**DONE — PENDING DIRECTOR REVIEW.** No constituye aprobación de 03B.
+Rama `feature/portfolio-2027-foundation`; HEAD inicial sincronizado
+`e8546661b87da38a71ce28f5e3531834ac85cd17`.
+
+### Cambio y archivos
+
+- `src/portfolio2027/styles/selected-work.css`: única modificación de producto.
+  Desde 1024px, ritmo vertical común `clamp(0.75rem, 4.166667svh - 1.25rem, 1.5rem)`
+  y múltiplos jerárquicos para paddings y separaciones. Contenido con altura
+  intrínseca, sin recorte ni altura fija. Tipografía, columnas, márgenes laterales,
+  reglas, copy y enlaces ≥52px intactos. Tablet/mobile conservan sus valores.
+- `docs/qa/block03b/`: script reproducible, JSON antes/después y capturas de los
+  siete viewports, Hero y construcción notebook. `README.md` explica evidencia.
+- `docs/CURRENT.md`, `AGENTS.md`, `README.md`: estado y gate actualizados.
+  No se tocaron motor/hook de motion, navegación, Hero, ASCII, fuentes, dependencias
+  ni preview. Sin cambios en main, merge, deploy, dominio o hosting.
+
+### Alturas reales y viewport
+
+| Viewport | Antes | Después | Disponible bajo header | Final sección / enlaces (coordenada Y) |
+|---|---:|---:|---:|---:|
+| 1920×1080 | 1072px | 1002px | 1016px | 1082 / 937px |
+| 1920×900 | 1072px | 826.5px | 836px | 906.5 / 800.5px |
+| 1536×864 | 924px | 796px | 800px | 876 / 779px |
+| 1366×768 | 868px | 680px | 704px | 760 / 687px |
+
+El ancla existente deja la sección en Y=80px (header64 + separación16).
+Por ello, el padding final queda 2/6.5/12px fuera de los primeros tres viewports;
+los cuatro enlaces y la línea inferior del grid quedan completos en todos.
+No se cambió la navegación para forzar el padding dentro de pantalla.
+768×1024, 390×844 y 320×844 conservan 1252/1178/1348px y el flujo apilado.
+Capturas estáticas de tablet/mobile y Hero comparadas con ImageChops: idénticas.
+
+### Verificación y problemas
+
+- Chromium153: siete viewports sin overflow horizontal, enlaces ≥52px, scroll
+  natural en desktop de 500px de alto; texto raíz 200% a 320px sin desborde.
+  Inspección real de desktop/notebook/mobile: jerarquía y espacio negativo conservados.
+- Construcción completa en notebook por CTA: A–E, 4200ms, Canvas coincide con
+  altura real del marco, altura estable, cobertura en todos los RAF visibles
+  previos al final, barrido termina con `complete`, sin guard ni Canvas restante.
+  Navbar, scroll pasivo y menú mobile completan; mobile conserva 3000ms.
+  No repetición, hash/foco, teclado, reduced motion, Back, Canvas nulo y no-JS PASS.
+  Código de motor/hook idéntico al HEAD aprobado; sin adaptación geométrica necesaria.
+- `npm run lint`: FAIL por los mismos cuatro no-unused-vars legacy: PrimaryButton:2,
+  SecondaryButton:2, Contact:6 y Skills:12. ESLint de `src/portfolio2027` PASS;
+  sintaxis del harness y `git diff --check` PASS.
+- `npm run build`: PASS (1717 módulos); los nueve artefactos normales coinciden por
+  SHA-256 con un build separado del HEAD inicial. Build explícito de preview PASS (42 módulos;
+  CSS 22.61kB/gzip 4.75, JS 207.74kB/gzip 65.99).
+- Se corrigió una primera escala demasiado amplia durante el ajuste; no quedó
+  ninguna regresión detectada. El harness usa páginas nuevas por viewport para
+  evitar medir un offset de header anterior al reflow al reutilizar la página.
+  Fuentes oficiales servidas solo a QA por la CA del proxy, sin bypass TLS.
+  No se instalaron dependencias. Safari/Firefox, dispositivos físicos y entrega
+  real de fuentes/CLS siguen pendientes de release, fuera de este ajuste.
+
+### Commits y gate
+
+- Implementación: `49a97ad596ed72bf87558e413441329ce9263b40`
+  (`fix: compact Selected Work desktop vertical rhythm`).
+- Cierre/evidencia: commit posterior `docs: record Block 03B viewport validation`;
+  SHA consultable en historial, sin autorreferencia circular.
+
+**Bloque 04 y posteriores NO AUTORIZADOS. Detener y esperar revisión de Dirección.**

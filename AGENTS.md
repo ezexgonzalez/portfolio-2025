@@ -31,4 +31,4 @@
 8. Describe what changed and how it was verified. Run `npm run lint` and `npm run build` when implementing code changes.
 9. Do not assert that Figma designs, benchmarks, animations or deployments are approved or verified unless actual evidence exists.
 
-Current stage: **Blocks 01, 02 and 02A APPROVED; Block 03A UI Construction visually APPROVED by owner; Block 03B desktop Selected Work height refinement AUTHORIZED — NOT STARTED**. Blocks 04–06 unauthorized. Read docs/CURRENT.md. No merge/deploy.
+Current stage: **Blocks 01, 02 and 02A APPROVED; Block 03A UI Construction visually APPROVED by owner; Block 03B desktop Selected Work height refinement DONE — PENDING DIRECTOR REVIEW**. Blocks 04–06 unauthorized. Read docs/CURRENT.md. No merge/deploy.

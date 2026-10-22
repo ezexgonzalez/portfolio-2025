@@ -1,0 +1,419 @@
+{
+  "mode": "after",
+  "browser": "153.0.8010.0",
+  "views": [
+    {
+      "width": 1920,
+      "viewportHeight": 1080,
+      "available": 1016,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 1002,
+      "top": 80,
+      "bottom": 1082,
+      "frameHeight": 1002,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 937,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 937,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 937,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 937,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "viewportHeight": 900,
+      "available": 836,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 826.5,
+      "top": 80,
+      "bottom": 906.5,
+      "frameHeight": 826.5,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 800.5,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 800.5,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 800.5,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 800.5,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1536,
+      "viewportHeight": 864,
+      "available": 800,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 796,
+      "top": 80,
+      "bottom": 876,
+      "frameHeight": 796,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 779,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 779,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 779,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 779,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "viewportHeight": 768,
+      "available": 704,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 680,
+      "top": 80,
+      "bottom": 760,
+      "frameHeight": 680,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 687,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 687,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 687,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 687,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "viewportHeight": 1024,
+      "available": 960,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 1252,
+      "top": 72,
+      "bottom": 1324,
+      "frameHeight": 1252,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 723,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 723,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 1211,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 1211,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "viewportHeight": 844,
+      "available": 780,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 1178,
+      "top": 72,
+      "bottom": 1250,
+      "frameHeight": 1178,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 692,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 692,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 1169,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 1169,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "viewportHeight": 844,
+      "available": 780,
+      "state": "final",
+      "reason": "initial-access",
+      "height": 1348,
+      "top": 72,
+      "bottom": 1420,
+      "frameHeight": 1348,
+      "canvas": false,
+      "guard": "none",
+      "links": [
+        {
+          "height": 52,
+          "bottom": 711,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "height": 52,
+          "bottom": 775,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "height": 52,
+          "bottom": 1275,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "height": 52,
+          "bottom": 1339,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "Seven widths: no horizontal overflow; natural layout; four links at least 52px",
+    "Short desktop allows natural scroll to lower links",
+    "320px with 200% root text: no overflow and lower links reachable",
+    "Complete 4200ms pointer construction: real frame geometry, all A–E phases, no exposed pre-final RAF, no jump, cover removed, focus and no replay",
+    "Navbar first entry and browser Back remain functional",
+    "Keyboard navigation resolves immediately",
+    "Direct hash resolves immediately",
+    "Passive scroll completes construction",
+    "Mobile menu pointer entry completes approved 3000ms construction",
+    "Canvas failure fails open",
+    "No-JS fallback retains four links"
+  ],
+  "errors": [],
+  "short": {
+    "state": "final",
+    "reason": "initial-access",
+    "height": 680,
+    "top": 80.015625,
+    "bottom": 760.015625,
+    "frameHeight": 680,
+    "canvas": false,
+    "guard": "none",
+    "links": [
+      {
+        "height": 52,
+        "bottom": 687.015625,
+        "href": "https://ezewebstudio.com.ar/"
+      },
+      {
+        "height": 52,
+        "bottom": 687.015625,
+        "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+      },
+      {
+        "height": 52,
+        "bottom": 687.015625,
+        "href": "https://mern-task-manager-iota-teal.vercel.app/"
+      },
+      {
+        "height": 52,
+        "bottom": 687.015625,
+        "href": "https://github.com/ezexgonzalez/mern-task-manager"
+      }
+    ],
+    "overflow": false
+  },
+  "motionStart": {
+    "state": "points",
+    "duration": "4200",
+    "trigger": "pointer",
+    "height": 680,
+    "top": 91,
+    "bottom": 771,
+    "frameHeight": 680,
+    "canvasHeight": 680,
+    "canvas": true,
+    "guard": "none",
+    "links": [
+      {
+        "height": 52,
+        "bottom": 698,
+        "href": "https://ezewebstudio.com.ar/"
+      },
+      {
+        "height": 52,
+        "bottom": 698,
+        "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+      },
+      {
+        "height": 52,
+        "bottom": 698,
+        "href": "https://mern-task-manager-iota-teal.vercel.app/"
+      },
+      {
+        "height": 52,
+        "bottom": 698,
+        "href": "https://github.com/ezexgonzalez/mern-task-manager"
+      }
+    ],
+    "overflow": false
+  },
+  "motionFinal": {
+    "state": "final",
+    "reason": "complete",
+    "duration": "4200",
+    "trigger": "pointer",
+    "height": 680,
+    "top": 80,
+    "bottom": 760,
+    "frameHeight": 680,
+    "canvas": false,
+    "guard": "none",
+    "links": [
+      {
+        "height": 52,
+        "bottom": 687,
+        "href": "https://ezewebstudio.com.ar/"
+      },
+      {
+        "height": 52,
+        "bottom": 687,
+        "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+      },
+      {
+        "height": 52,
+        "bottom": 687,
+        "href": "https://mern-task-manager-iota-teal.vercel.app/"
+      },
+      {
+        "height": 52,
+        "bottom": 687,
+        "href": "https://github.com/ezexgonzalez/mern-task-manager"
+      }
+    ],
+    "overflow": false
+  },
+  "motionStates": [
+    "waiting",
+    "points",
+    "geometry",
+    "skeleton",
+    "materialization",
+    "final"
+  ],
+  "coverSamples": 415,
+  "mobileMotion": {
+    "state": "final",
+    "reason": "complete",
+    "duration": "3000",
+    "trigger": "pointer",
+    "height": 1178,
+    "top": 72,
+    "bottom": 1250,
+    "frameHeight": 1178,
+    "canvas": false,
+    "guard": "none",
+    "links": [
+      {
+        "height": 52,
+        "bottom": 692,
+        "href": "https://ezewebstudio.com.ar/"
+      },
+      {
+        "height": 52,
+        "bottom": 692,
+        "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+      },
+      {
+        "height": 52,
+        "bottom": 1169,
+        "href": "https://mern-task-manager-iota-teal.vercel.app/"
+      },
+      {
+        "height": 52,
+        "bottom": 1169,
+        "href": "https://github.com/ezexgonzalez/mern-task-manager"
+      }
+    ],
+    "overflow": false
+  }
+}

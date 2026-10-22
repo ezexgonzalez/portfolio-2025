@@ -8,7 +8,7 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** Blocks 01/02/02A approved, Block 03A Selected Work UI Construction visually approved. **Only Block 03B desktop vertical compactness is authorized, not started.** Keep the animation, Hero and navigation unchanged. Blocks 04–06 unauthorized. Production 2025 unchanged. Consult [docs/CURRENT.md](docs/CURRENT.md).
+- **Current phase:** Blocks 01/02/02A approved, Block 03A Selected Work UI Construction visually approved. **Block 03B desktop vertical compactness DONE — PENDING DIRECTOR REVIEW.** Keep the animation, Hero and navigation unchanged. Blocks 04–06 unauthorized. Production 2025 unchanged. Consult [docs/CURRENT.md](docs/CURRENT.md).
 - **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
 - **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).
