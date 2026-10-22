@@ -12,10 +12,10 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **03 / Selected Work — Structural Grid + UI Construction**.
+- **Bloque activo:** **03A / UI Construction Visibility & Entry Correction**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Estado del Bloque 03:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Entrega y evidencia en sección 13.
-- **Siguiente hito:** revisión de Dirección del Bloque 03. Bloques 04–06 NO AUTORIZADOS.
+- **Estado del Bloque 03:** **IMPLEMENTED — DIRECTOR CORRECTION REQUIRED** (2026-10-22). La sección estática está entregada; UI Construction NO aprobada, corrección 03A autorizada. Entrega original en sección 13.
+- **Siguiente hito:** Integration Engineer ejecuta exclusivamente corrección 03A, actualiza evidencia y detiene. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -650,3 +650,19 @@ No se detectaron regresiones de producto fuera del overflow corregido.
 
 **Bloques 04–06: NO AUTORIZADOS. No iniciar Bloque 04.** Esperar revisión de
 Dirección y brief explícito. Producción permanece intacta.
+
+## 14. Director review — Block 03 motion NOT approved; Correction 03A authorized (2026-10-22)
+
+**Diagnosis from actual branch code and saved phase screenshots:** `useUiConstruction.js` calls `finish('anchor')` on any internal link click, `finish('hash')` on hash changes and `finish('focus')` on focus inside Selected Work. A normal pointer click on Hero's **Explorar proyectos** or the header **Proyectos** consequently skips the effect and permanently marks it final. That is consistent with the previous technical *accessibility shortcut*, but conflicts with the owner's requirement that the transition is actually discoverable in the normal user journey. The transition also plays only once and completes in 2400ms desktop / 1400ms compact. Saved screenshots `docs/qa/block03/motion-1920-1-points.png` through `-3-skeleton.png` show a very dark point/line/skeleton construction: visibility is inadequate for the motion's main expressive purpose.
+
+**Decision:** approve the static Structural Grid A and two real project links provisionally; **do NOT approve UI Construction as a user-visible experience**. Correction 03A is authorized *only* for entry-trigger orchestration and visual visibility/clarity. Preserve the static final layout, Hero, navigation, responsive and ASCII unchanged.
+
+**Correction acceptance rules:**
+1. First entry via **pointer/touch** on Hero CTA `#projects` or header `#projects` must allow the five-phase construction to be seen **once**, without delaying scroll, changing URL/hash semantics, trapping focus or blocking links. Passive scroll should also trigger it when appropriate. Prior `#projects` direct URL/load, keyboard-operated links, screen reader use or programmatic focus and reduced motion must remain immediate and accessible, with final DOM available. Carefully disambiguate pointer-initiated navigation from keyboard/direct hash and avoid cancelling the effect through the subsequent hash/focus events; document exact policy.
+2. Increase contrast of **points, connecting geometry, text outlines, and materialization frontier** to achieve clear readability on `#080808` while retaining monochrome, restraint, real geometry and intact final state. Do not use generic fade/reveal, neon, color accents or static image swaps; use side-by-side or runtime visual evidence of phase A/B/C/D.
+3. Inspect whether fast-scroll thresholds cancel during normal mouse wheel/touch scroll, and relax only overly eager cancellation while keeping reduced-motion, keyboard accessibility, early exit and cleanup reliable.
+4. Add a clearly **development-only** replay mechanism or documented reproducible reset for reviewers in the isolated preview, not production and not a new shipped feature. QA should explicitly check click Hero CTA, click navbar, passive scroll, replay/refresh, keyboard operation, direct hash, reduced motion, normal completion, and non-replay on revisit.
+5. Provide actual phase images and, if possible, a brief real-browser screen recording. Report trigger/final reasons using existing `data-construction` / `data-construction-reason`, capture timestamps and show why prior behavior was skipped. No library installation, no changes to `main`, no deploy, no Block 04.
+6. Update CURRENT.md and evidence with code commits and real verification. Mark `DONE — PENDING DIRECTOR REVIEW` after correction and STOP.
+
+**Note:** visual QA screenshots of the motion did exist before this review; their existence is not proof that users can see it through the normal CTA/navigation interaction. This is a user-visible defect requiring correction, not a request for a brand-new animation system.
