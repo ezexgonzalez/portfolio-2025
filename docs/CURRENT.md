@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **04 / About + Skills — AUTHORIZED — NOT STARTED**.
+- **Bloque activo:** **04 / About + Skills — DONE — PENDING DIRECTOR REVIEW**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Engineering Block 04 About / Story + Skills autorizado. Ejecutar únicamente ese bloque, actualizar CURRENT.md, detenerse para revisión de Dirección; Bloques 05–06 NO AUTORIZADOS.
+- **Siguiente hito:** Dirección revisa la entrega 04 de la sección 20. Ingeniería detenida; Bloques 05–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -897,3 +897,118 @@ Capturas estáticas de tablet/mobile y Hero comparadas con ImageChops: idéntica
 **Implementation:** Add About and Skills after existing Selected Work, replace only development `#about` and `#skills` placeholders with real semantic sections. Keep `#contact` technical placeholder. Maintain `Hero → Selected Work → About → Skills → Contact placeholder`. Existing nav/hash/focus, scroll offsets, selected work construction and typography must still work. Read foundation tokens and master interaction sheet `92:556`; motion beyond explicitly approved minimal editorial cues should stay static or be labeled proposed, no new dependencies and no UI Construction applied to About/Skills.
 
 **Validation:** exact-copy verification, screenshots versus Figma at 1920, 1536, 1366, 768, 390 and 320; natural height, no horizontal overflow; text reflow/zoom, semantic headings, chronology alignment and anchor focus; first-entry Selected Work motion still performs A–E with no flash and approved timing. Run npm lint/build and scoped lint; isolate the existing four legacy ESLint errors. Record files, browser evidence, commits, limitations and real checks in CURRENT.md, mark `DONE — PENDING DIRECTOR REVIEW` and STOP. **Block 05 and 06 remain NOT AUTHORIZED**.
+
+
+## 20. Entrega Bloque 04 — About / Story + Skills / Capabilities — 2026-10-22
+
+**DONE — PENDING DIRECTOR REVIEW.** No implica aprobación ni habilita Bloque 05.
+Rama `feature/portfolio-2027-foundation`, HEAD inicial sincronizado y verificado
+`3246d7af4a8ec566dfce6638322128707d47f515`.
+
+### Implementación y archivos
+
+- `components/AboutStory.jsx`, `styles/about-story.css` bajo `src/portfolio2027`:
+  Story & Timeline B, copy completo, tres capítulos, énfasis serif y cronología
+  2021/2025/2026. Lectura izquierda de 680/640/600px y fechas derecha de
+  360/320/280px. CSS Grid enlaza 2025 a la fila real del párrafo del regreso;
+  no hay coordenadas absolutas ni un desplazamiento vertical fijo. Bajo 1024px,
+  la misma secuencia DOM intercala cada hito en su momento narrativo, como Figma.
+- `components/SkillsCapabilities.jsx`, `styles/skills-capabilities.css`:
+  Technical Index A, título izquierdo e índice derecho; flujo vertical en tablet
+  y mobile, tres entradas informativas con h3 y lista ordenada. Copy/tecnologías
+  íntegros; espacios inseparables de Tailwind CSS y REST APIs conservados.
+  Sin controles, enlaces nuevos, iconos, tarjetas ni cursor de acción.
+- `preview/PortfolioPreview.jsx`: integra las secciones tras Selected Work y
+  sustituye exclusivamente los dos placeholders. Contact conserva su placeholder.
+- `preview.html`: fallback sin JS con historia y capacidades completas; conserva
+  Hero, proyectos, enlaces y placeholder Contact existentes.
+- `src/portfolio2027/README.md`: contrato y límites; `AGENTS.md`, `README.md` y
+  esta bitácora: estado. `docs/qa/block04/`: referencias de copy/motion obtenidas
+  de Figma, scripts, resultados, capturas completas y evidencia de regresión.
+
+No se modificaron Hero, navegación/hook/anclas, Selected Work, motor/hook de
+construcción, ASCII, tokens/fuentes, legacy 2025 ni dependencias/lockfile.
+No main, merge, deploy, dominio o hosting. Se reutilizó tooling externo de QA en
+/tmp, separado de los paquetes del proyecto.
+
+### Fidelidad y decisiones
+
+Se leyeron completos los contextos y renders de About 68:523/576/629 y notas
+68:682 dentro de 61:508, y Skills 90:556/634/712 dentro de 89:556. Retícula,
+separaciones, escalas, colores, orden y énfasis contrastados con capturas reales.
+No se utilizaron propuestas descartadas ni imágenes del diseño como interfaz.
+
+| Ancho | Altura About | Altura Skills | Referencia / adaptación |
+|---|---:|---:|---|
+| 1920px | 1818px | 1038px | Coincide con ambos frames finales |
+| 1536px | 1682px | 985px | Tipografía/lectura intermedia, altura natural |
+| 1366px | 1640px | 979px | Tipografía/lectura notebook, altura natural |
+| 768px | 1910px | 1039px | Coincide con ambos frames tablet |
+| 390px | 2231px | 1231px | Coincide con ambos frames mobile |
+| 320px | 2381px | 1305px | Reflow completo; About aplica notas de compresión |
+
+No se fijaron estas alturas. About conserva lectura progresiva y scroll; no se
+extendió el ajuste de compactación de Selected Work a otras secciones. El gutter
+existente a 390px es 24.375px, frente a 24px redondeados en Figma; se conserva.
+Persisten diferencias menores de métricas/rasterización web, sin deformar fuentes.
+
+**Motion:** la matriz 92:556 era una respuesta estructural; se consultaron sus
+filas completas 104:781/807/833/859/885/911/937. Entradas About, énfasis fecha/línea,
+entrada Skills, trazado de separadores y hover del número están **Proposed**.
+Por instrucción del brief, About/Skills permanecen estáticas, con texto siempre
+visible y seleccionable. Efectos pendientes de aprobación explícita. No se
+instalaron bibliotecas ni se reutilizó UI Construction para estas secciones.
+
+### Pruebas efectivas
+
+- Chromium153, 1920×1080, 1536×864, 1366×768, 768×1024, 390×844 y 320×844:
+  copy contra extracción de Figma, tres capítulos/entradas, h1/h2/h3 y lista,
+  lectura/fechas, fuentes cargadas, anchors, foco y ausencia de overflow PASS.
+  Capturas de sección completa para About y Skills en los seis anchos; inspección
+  visual de jerarquía, columnas, párrafos, fechas, líneas y flujo mobile.
+- Mi historia, todos los destinos desktop y menú mobile, cierre de menú,
+  teclado, hash, Back y offset sticky 80/72px PASS sin cambiar navegación.
+- Texto raíz 200% a 320px sin overflow y última capacidad alcanzable. Fallo de
+  fuentes mantiene historia completa y reflow. Fallback sin JS con historia y
+  tres capacidades PASS. No equivale a probar zoom de interfaz de cada navegador.
+- Contraste textual calculado contra #080808: primario 17.42:1, secundario8.72:1,
+  auxiliar4.87:1. Sin errores de consola ni page errors en los contextos normales
+  monitorizados; fallos de red de la prueba de fuentes se indujeron aparte.
+- Hero pixel-idéntico en seis viewports. Selected Work pixel-idéntico dentro de
+  sus límites visibles en los seis; a 1366 desaparece solo la antigua línea
+  técnica del placeholder siguiente, en Y760, fuera de Selected Work.
+- Construcción real completa por CTA/navbar/scroll: A–E, 4200ms notebook y 3000ms
+  mobile, geometría de marco correcta, cero RAF visible sin cobertura previa,
+  sin saltos y sin Canvas/guard tras finalizar. No repetición, teclado/hash,
+  reduced motion, Back, Canvas nulo y no-JS PASS. Interrumpir por movimiento
+  reducido/cambio de tamaño elimina capa; no se siguen dibujando frames después.
+- `npm run lint`: FAIL por los mismos cuatro no-unused-vars legacy: PrimaryButton:2,
+  SecondaryButton:2, Contact:6 y Skills:12. ESLint específico 2027 PASS.
+- `npm run build`: PASS (1717 módulos, CSS69.58kB/gzip10.67, JS237.77kB/gzip71.37);
+  preview explícita PASS (46 módulos, CSS32.56kB/gzip6.12, JS212.91kB/gzip67.63). Los nueve artefactos
+  del build normal coinciden por SHA-256 con build separado del HEAD inicial.
+- Sintaxis de ambos scripts y `git diff --check` PASS. Sin dependencias nuevas
+  de aplicación, cambios de configuración de build ni montaje de 2027 en 2025.
+
+### Problemas resueltos y límites
+
+Se corrigieron 2/4px de altura mobile al aplicar los interlineados exactos de
+los títulos Figma, sin reducir texto. Una corrida de QA de construcción fue
+interrumpida por recarga de Vite al editar el fallback; repetida después de
+terminar las ediciones: PASS. La primera comparación de viewport incluía la
+línea del placeholder retirado; se verificó el límite real de Selected Work.
+No se cambiaron bloques aprobados para adaptar las pruebas.
+
+Fuentes CSS/TTF oficiales obtenidas con TLS válido y servidas solo a QA por la CA
+del proxy; sin bypass de certificados ni redistribución de fuentes. Pendientes
+antes de release: entrega real de fuentes/CLS, Safari/Firefox, dispositivos
+físicos, lectores de pantalla y zoom de navegador. Sin otras regresiones detectadas.
+
+### Commits y gate
+
+- Implementación: `315d9c5a765851f3326ba9d5b8c0379934da37be`
+  (`feat: integrate editorial About story and Skills capabilities`).
+- Cierre/evidencia: commit posterior `docs: record Block 04 implementation and QA`;
+  SHA consultable en historial, sin hash circular dentro del mismo commit.
+
+**Bloques 05–06 NO AUTORIZADOS. Detener y esperar revisión de Dirección.**

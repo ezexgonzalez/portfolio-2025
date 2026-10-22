@@ -1,0 +1,46 @@
+// External browser tooling and official test fonts; no project dependency changes.
+import {createServer} from 'vite';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const {chromium}=await import(process.env.P27_PLAYWRIGHT_MODULE);
+const bundled=(await import(process.env.P27_CHROMIUM_MODULE)).default;
+const out='docs/qa/block04',baseline=!!process.env.P27_BASELINE_ROOT;
+const server=await createServer({root:process.env.P27_BASELINE_ROOT||process.cwd(),server:{host:'127.0.0.1',port:0}});await server.listen();
+const url=`http://127.0.0.1:${server.httpServer.address().port}/src/portfolio2027/preview.html`;
+const browser=await chromium.launch({executablePath:process.env.P27_CHROMIUM_EXECUTABLE,headless:true,args:bundled.args.filter(a=>!['--disable-web-security','--allow-running-insecure-content'].includes(a))});
+const css=fs.readFileSync(process.env.P27_FONT_CSS,'utf8'),fonts=new Map();for(const [,u] of css.matchAll(/url\((https:[^)]+)\)/g))fonts.set(u,fs.readFileSync(process.env.P27_FONT_CACHE+'/'+u.split('/').pop()));
+const report={browser:browser.version(),views:[],checks:[],errors:[]};
+const references=JSON.parse(fs.readFileSync(out+'/figma-reference.json','utf8'));
+const normalize=s=>s.replace(/\s+/g,' ').trim();
+async function context(options={}){const c=await browser.newContext(options);c.on('page',p=>p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text())}));await c.route('https://fonts.googleapis.com/**',r=>r.fulfill({contentType:'text/css',body:css}));await c.route('https://fonts.gstatic.com/**',r=>r.fulfill({contentType:'font/ttf',headers:{'access-control-allow-origin':'*'},body:fonts.get(r.request().url())}));return c;}
+async function load(p,hash=''){await p.goto(url+hash);await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(250);}
+async function info(p,id){return p.locator('#'+id).evaluate(e=>{const box=x=>{const r=x.getBoundingClientRect(),s=getComputedStyle(x);return {x:r.x,y:r.y,width:r.width,height:r.height,font:s.fontFamily,fontSize:s.fontSize,lineHeight:s.lineHeight,color:s.color}};return {section:box(e),heading:box(e.querySelector('h2')),paragraphs:[...e.querySelectorAll('p')].map(x=>({text:x.textContent,...box(x)})),milestones:[...e.querySelectorAll('.p27-story-milestone')].map(box),overflow:document.documentElement.scrollWidth>innerWidth};});}
+const pass=s=>{report.checks.push(s);console.log('PASS',s)};
+try{
+const c=await context({reducedMotion:'reduce'});
+for(const [w,h] of [[1920,1080],[1536,864],[1366,768],[768,1024],[390,844],[320,844]]){
+ const p=await c.newPage();p.on('pageerror',e=>report.errors.push(e.message));await p.setViewportSize({width:w,height:h});await load(p);
+ await p.screenshot({path:`${out}/${baseline?'before-':'after-'}hero-${w}.png`});
+ await load(p,'#projects');await p.evaluate(()=>document.activeElement.blur());await p.screenshot({path:`${out}/${baseline?'before-':'after-'}work-${w}.png`});
+ if(baseline){await p.close();continue;}
+ const view={width:w,height:h};
+ for(const id of ['about','skills']){await load(p,'#'+id);assert.equal(await p.evaluate(()=>document.activeElement.id),id+'-title');await p.evaluate(()=>document.activeElement.blur());view[id]=await info(p,id);assert.equal(view[id].overflow,false);const expected=w>=1024?80:72;assert.ok(Math.abs(view[id].section.y-expected)<1);await p.locator('#'+id).screenshot({path:`${out}/${id}-${w}.png`});}
+ assert.equal(await p.locator('h1').count(),1);assert.deepEqual(await p.locator('main h2').allTextContents(),['Proyectos seleccionados','El camino hasta acá.','Tecnologías y capacidades.','Contacto']);assert.equal(await p.evaluate(()=>document.fonts.check('400 20px \"DM Sans\"')&&document.fonts.check('italic 400 34px \"Instrument Serif\"')&&document.fonts.check('400 12px \"IBM Plex Mono\"')),true);assert.equal(await p.locator('#skills li').first().evaluate(e=>getComputedStyle(e).cursor),'auto');assert.equal(await p.locator('#about .p27-story-chapter').count(),3);assert.equal(await p.locator('#skills li').count(),3);assert.equal(await p.locator('#skills :is(a,button,[tabindex])').count(),1);assert.equal(await p.locator('#contact').count(),1);assert.equal(await p.locator('.p27-preview-target').count(),1);
+ const all=normalize(await p.locator('#about').textContent());for(const t of references.frames['68:523'].paragraphs)assert.ok(all.includes(normalize(t)),t);
+ const sk=normalize(await p.locator('#skills').textContent());for(const t of references.frames['90:556'].paragraphs)assert.ok(sk.includes(normalize(t)),t);
+ // Dates follow the return paragraph's measured row on desktop; mobile is interleaved.
+ const shape=await p.locator('#about').evaluate(e=>{const r=x=>{const a=x.getBoundingClientRect();return {y:a.y,x:a.x,bottom:a.bottom}};return {returnParagraph:r(e.querySelector('.p27-story-return > p:last-child')),date2025:r(e.querySelector('.p27-story-return .p27-story-milestone')),experience:r(e.querySelector('.p27-story-return > p:nth-child(2)')),date2026:r(e.querySelector('.p27-story-perspectives .p27-story-milestone')),perspective:r(e.querySelector('.p27-story-perspectives > p:first-child')),perspectiveNext:r(e.querySelector('.p27-story-perspectives > p:nth-last-child(2)'))};});
+ if(w>=1024){assert.equal(shape.date2025.y,shape.returnParagraph.y);assert.equal(shape.date2026.y,shape.perspective.y);assert.ok(shape.date2025.x>shape.returnParagraph.x);}else{assert.ok(shape.date2025.y>shape.experience.bottom&&shape.date2025.bottom<shape.returnParagraph.y);assert.ok(shape.date2026.y>shape.perspective.bottom&&shape.date2026.bottom<shape.perspectiveNext.y);}
+ view.chronology=shape;report.views.push(view);console.log('HEIGHTS',w,view.about.section.height,view.skills.section.height);await p.close();
+}
+if(!baseline){
+pass('Six widths: exact Figma paragraph copy, three chapters/entries, natural heights, chronology alignment, anchors/focus, no overflow');
+const p=await c.newPage();await p.setViewportSize({width:1920,height:1080});await load(p);await p.locator('.p27-secondary-action').click();await p.waitForTimeout(200);assert.equal(await p.evaluate(()=>location.hash),'#about');assert.equal(await p.evaluate(()=>document.activeElement.id),'about-title');for(const id of ['hero','projects','about','skills','contact']){await p.locator(`.p27-nav-desktop a[href="#${id}"],.p27-nav-identity[href="#${id}"]`).first().click();await p.waitForTimeout(100);assert.equal(await p.evaluate(()=>location.hash),'#'+id);assert.equal(await p.evaluate(()=>document.activeElement.tagName),id==='hero'?'H1':'H2');}await p.goBack();await p.waitForTimeout(100);assert.equal(await p.evaluate(()=>location.hash),'#skills');assert.equal(await p.evaluate(()=>document.activeElement.id),'skills-title');await p.locator('.p27-nav-desktop a[href="#about"]').focus();await p.keyboard.press('Enter');assert.equal(await p.evaluate(()=>document.activeElement.id),'about-title');pass('Hero Mi historia and every desktop navigation destination: hash, heading focus, Back and keyboard');
+await p.setViewportSize({width:390,height:844});await load(p);for(const id of ['about','skills','contact']){await p.locator('.p27-nav-toggle').click();await p.locator(`.p27-nav-mobile a[href="#${id}"]`).click();await p.waitForTimeout(100);assert.equal(await p.evaluate(()=>location.hash),'#'+id);assert.equal(await p.locator('.p27-nav-toggle').getAttribute('aria-expanded'),'false');}pass('Mobile menu destinations and disclosure closure');
+await p.setViewportSize({width:320,height:844});await load(p,'#about');await p.evaluate(()=>document.documentElement.style.fontSize='200%');await p.waitForTimeout(100);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth),320);for(const id of ['about','skills']){await p.locator('#'+id+' h2').focus();assert.ok(await p.locator('#'+id).isVisible());}await p.locator('#skills li').last().scrollIntoViewIfNeeded();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth),320);await p.screenshot({path:out+'/text-200-320.png'});pass('200% root text at 320px reflows without horizontal overflow; final capability reachable');
+const fc=await browser.newContext();await fc.route('https://fonts.googleapis.com/**',r=>r.abort());await fc.route('https://fonts.gstatic.com/**',r=>r.abort());const fp=await fc.newPage();await fp.setViewportSize({width:320,height:844});await fp.goto(url+'#about');await fp.waitForTimeout(300);assert.equal(await fp.evaluate(()=>document.documentElement.scrollWidth),320);assert.equal(await fp.locator('#about .p27-story-milestone').count(),3);pass('Font failure retains complete story and overflow-free fallback');
+const nc=await browser.newContext({javaScriptEnabled:false}),np=await nc.newPage();await np.goto(url);for(const id of ['about','skills']){assert.equal(await np.locator('#'+id).count(),1);assert.ok((await np.locator('#'+id).textContent()).length>300);}assert.equal(await np.locator('#skills li').count(),3);pass('No-JS fallback contains full About and all three Skills entries');
+// Keep the existing approved construction checks separate, without changing its harness.
+}
+assert.deepEqual(report.errors,[]);fs.writeFileSync(`${out}/${baseline?'baseline':'results'}.json`,JSON.stringify(report,null,2));
+}finally{await browser.close();await server.close();}
