@@ -8,8 +8,9 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** Figma Hero design exploration and motion feasibility research. No new UI implemented or approved yet.
-- **Creative direction source of truth:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
+- **Current phase:** approved five-section Figma direction + navigation; **Block 01 / Technical Foundation authorized, not yet implemented**. No 2027 web UI or animation has been verified in browser.
+- **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
+- **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).
 
 ## Existing stack
