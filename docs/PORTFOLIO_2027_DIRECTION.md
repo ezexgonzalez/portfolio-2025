@@ -38,7 +38,7 @@ Primary audience: recruiters, technical interviewers, developers, potential coll
 
 ## 3. Approved Hero content (V1, subject to final design/copy verification)
 
-Eyebrow: **PORTFOLIO / 2027**
+Hero top-left eyebrow: **OMITTED BY OWNER DECISION** (2026-10-21). Remove the visible `PORTFOLIO / 2027` text from all final Hero responsive frames and derived full-site/navigation-continuity views; retain no placeholder or replacement label. This does not rename the Portfolio 2027 project or alter footer/copyright, names, or navigation branding.
 
 Name: **Ezequiel Gonzalez.**  
 Role/context: **Full Stack Developer · Buenos Aires, Argentina**
@@ -271,6 +271,23 @@ Sections and ordering are exploratory until the Director approves. Preserve veri
 - Design actual desktop header/default, scrolled or sticky behavior, active, hover, keyboard focus, and mobile closed/open/menu interactions (including touch targets, escape/backdrop, scroll behavior, reduced motion and small-device fit).
 - Specify how the navbar integrates with the Hero so it does not mask ASCII/name/CTAs, and how it remains accessible in the full desktop/mobile continuous scroll.
 - Keep any unresolved interaction choices proposed until Director/owner review. Do not implement code, adjust production, or claim functionality based on static Figma.
+
+## 4F. PASS 12 — NAVIGATION APPROVED; HERO EYEBROW REMOVAL (2026-10-21)
+
+**Owner decision:** Global navigation as designed in Pass 12 is approved for design handoff, with **one targeted Hero copy correction pending in Figma**. Do not reopen the navigation or other approved sections.
+
+- **Figma navigation parent:** `111:547` — `14 — Global Navigation / Production Design`.
+- **Desktop:** `111:548` (initial `111:591`, scrolled `111:604`, states `111:618`).
+- **Mobile:** `111:549` (closed/open `111:637`, control `111:678`, links `111:701`).
+- **Specs:** `111:550` (64px desktop sticky, 56px compact; responsive switch near 832px based on available width; accessible five-item mobile disclosure; keyboard/focus/anchors/hash/scroll and reduced-motion expectations).
+- **Integration checks:** `111:723` (Hero contexts `111:725`).
+- Navigation links to `#hero`, `#projects`, `#about`, `#skills`, `#contact`; preserve Hero CTA destinations `#projects`, `#about`. No alternate navigation direction.
+
+**Only requested design correction:** remove the upper-left visible Hero `PORTFOLIO / 2027` micro-eyebrow. No replacement, no collapse-induced repositioning of content. Apply consistently to the *final* Hero variants `10:97`, `10:123`, `10:149`, `10:175`, `10:201`, `10:227`, `10:253`, `10:277`, as well as final full-page audit copies `102:559` / `102:775`, and Hero-context copies used by navigation and Selected Work continuity studies. If shared references are historical archives, preserve their archival nature but clearly prevent obsolete text from entering handoff; prefer updating any selected approved original if it serves as implementation reference. The  `04 — Visual Foundations` sample that still displays the old eyebrow must be reclassified or updated to avoid contradictory handoff.
+
+**Do not remove:** actual name `Ezequiel Gonzalez`, role/location, ASCII field, quote `Observar, cuestionar, entender.`, section index labels (e.g. `02 / SELECTED WORK`), navigation elements, content, spacings, accessibility states or other approved visual language.
+
+**Status:** This decision authorizes a **precise Figma correction only**, not code or production changes. Reinspect final desktop and mobile after correction. Once applied and verified, freeze approved full portfolio design for a scoped Integration Engineer handoff; browser behavior will still require engineering QA.
 
 ## 5. Motion system rules
 
