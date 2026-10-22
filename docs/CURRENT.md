@@ -15,7 +15,7 @@
 - **Bloque activo:** **03A / UI Construction Visibility & Entry Correction**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **IMPLEMENTED — DIRECTOR CORRECTION REQUIRED** (2026-10-22). La sección estática está entregada; UI Construction NO aprobada, corrección 03A autorizada. Entrega original en sección 13.
-- **Siguiente hito:** Integration Engineer ejecuta exclusivamente corrección 03A, actualiza evidencia y detiene. Bloques 04–06 NO AUTORIZADOS.
+- **Siguiente hito:** Integration Engineer ejecuta la corrección 03A ampliada (sección 15: zero-flash + ritmo más lento, además de activación/contraste), actualiza evidencia y se detiene. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -666,3 +666,16 @@ Dirección y brief explícito. Producción permanece intacta.
 6. Update CURRENT.md and evidence with code commits and real verification. Mark `DONE — PENDING DIRECTOR REVIEW` after correction and STOP.
 
 **Note:** visual QA screenshots of the motion did exist before this review; their existence is not proof that users can see it through the normal CTA/navigation interaction. This is a user-visible defect requiring correction, not a request for a brand-new animation system.
+
+## 15. Owner follow-up — Block 03A: no flash of finished section + slower build (2026-10-22)
+
+**This extends the still-open Block 03A correction gate; it is not approval of Block 03 or 03A.** Owner verified that motion can be seen by scrolling, but rejected two specific defects:
+
+1. **Wrong lifecycle / flash of finished UI:** Selected Work currently appears fully rendered, then disappears when the construction Canvas is appended, and only then builds back in. **Required:** for motion-eligible first visits, the finished UI must never be visually exposed before phase A. The first visible state should be an empty/dark construction surface, followed by A→B→C→D→E; one coherent transition with no final→blank→construction jump. Diagnose current React paint/useEffect/IntersectionObserver timing and the Canvas mount/opaque paint path. Establish a reliable pre-armed visual state from initial eligible render, before first paint where possible; keep underlying semantic DOM in the accessibility tree and its layout stable, without display:none, aria-hidden or inert on real content. Separate visual cover/mask from interactive semantics. Prioritize no-JS, Canvas failure, direct hash, assistive/keyboard access and prefers-reduced-motion: all should fail open to visible final content without a permanent blank panel. Ensure no premature content appears when fonts load/resize.
+2. **Duration and physicality:** current `2400ms desktop / 1400ms compact` is too fast and mechanical. Start tuning around **4.0–4.5s desktop** and **2.7–3.2s mobile/tablet**, then review pacing visually; phase timing should allow points to establish, geometry to connect, real DOM-shaped skeleton to form, and a deliberately readable continuous frontier sweep to materialize the UI. No artificial idle delay, simplistic opacity fade or UI appearing all at once. Duration is a tuning hypothesis, not a new permanent lock.
+
+**Carry forward previous 03A entry corrections:** first normal pointer/touch CTA or navbar entry and passive scroll should allow one visible sequence; direct-hash load, keyboard/screen-reader interaction and reduced motion must show final immediately; animation must not block input or repeat; fast scrolling should not cancel normal use prematurely. Keep Hero, global navigation and static Selected Work layout untouched.
+
+**Required validation:** video or sequential real-browser screenshots from the instant before the section first enters view through A/B/C/D/E on desktop (e.g. 1920×1080) and mobile (390×844), plus first-entry pointer navigation and slow scroll; prove no unmasked final DOM at t<0 and no black/hidden section remaining after fail-open triggers. Verify no-JS, reduced motion, hash direct, focus, late fonts, fail canvas, slow scroll, normal scroll/anchor entry, resize, no-replay, teardown, CSS/React fallback, scoped lint/build and no legacy regression. Record exact durations, trigger reason, visual gating and current-state updates. No new libraries, `main`, release or Block 04 work.
+
+**Status:** `03A — REVISION REQUIRED / OWNER FEEDBACK RECORDED`; latest code remains unapproved until engineer correction and Director's visual review.
