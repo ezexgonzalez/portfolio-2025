@@ -15,7 +15,7 @@
 - **Bloque activo:** **02 / Hero + Global Navigation**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Siguiente hito:** ejecutar Bloque 02 únicamente según el nuevo brief, en preview aislada. Bloques 03–06 NO AUTORIZADOS.
-- **No afirmar:** que ya existe la nueva UI, que se verificaron animaciones en navegador, que el cambio está desplegado o que la corrección final del Hero se aplicó en Figma sin comprobarlo.
+- **No afirmar:** que la nueva UI, el ASCII o la navegación ya están probados en navegador o desplegados. El rótulo del Hero sí se verificó eliminado en Figma el 2026-10-21.
 
 ## 2. Diseño seleccionado (NO reabrir)
 
@@ -32,13 +32,13 @@ Archivo: https://www.figma.com/design/qhsoutNaKIPSqO31AEttRT/Portfolio-2027-%E2%
 
 Otras referencias: foundations `11:37`; master interaction/motion `92:556`; auditoría full-site desktop `102:559`, mobile `102:775`; hallazgos `104:1287`.
 
-**Decisión posterior:** eliminar del Hero el microtexto superior `PORTFOLIO / 2027` sin sustituirlo ni recolocar el resto. El Pass 12B fue encargado al especialista Figma: **verificar que está efectivamente aplicado** antes de implementar el Hero. No confundir este texto con nombres de archivos, encabezados de documentación o copyright.
+**Decisión posterior:** eliminar del Hero el microtexto superior `PORTFOLIO / 2027` sin sustituirlo ni recolocar el resto. Pass 12B **verificado en ocho frames responsive de Hero, vistas integrales y contexto de navegación** el 2026-10-21. No confundir este texto con nombres de archivos, encabezados de documentación o copyright.
 
 **Identidad visual:** `#080808` fondo, `#EFEFEF` texto principal, `#ABABAB` secundario, `#7D7D7D` auxiliar, `#2A2A2A` líneas. Tipografías: DM Sans, Instrument Serif, IBM Plex Mono. Sin glass, tarjetas genéricas, gradientes arbitrarios, glows ni imágenes de proyectos.
 
 **Contenido:** solo Eze Web Studio y Task Manager en Selected Work. `Portfolio 2025` no figura como proyecto destacado. Nombre siempre `Ezequiel Gonzalez` sin tildes.
 
-## 3. BLOQUE ACTIVO — 01 / TECHNICAL FOUNDATION
+## 3. BLOQUE 01 — TECHNICAL FOUNDATION (COMPLETADO)
 
 **Responsable:** Frontend Integration Engineer.  
 **Estado:** `APPROVED — DIRECTOR REVIEW COMPLETED`. Evidencia en secciones 7 y 8.
@@ -111,7 +111,7 @@ Cada bloque necesita un brief específico y aprobación antes de pasar al siguie
 
 ## 5. Pendientes / decisiones que no hay que olvidar
 
-- **Figma Pass 12B:** verificar que el rótulo superior `PORTFOLIO / 2027` se quitó del Hero final y vistas derivadas.
+- **Figma Pass 12B:** rótulo superior `PORTFOLIO / 2027` eliminado y verificado en Hero responsive y vistas derivadas (2026-10-21).
 - **Eze Web Studio:** la URL pública de ese proyecto es independiente de `ezegonzalez.dev`, que corresponde al portfolio. No inventar la URL del proyecto.
 - **CV:** archivo `public/cv-ezequiel-gonzalez.pdf` existe en el repo, ruta prevista `/cv-ezequiel-gonzalez.pdf`. Revisar vigencia y descarga en navegador antes de publicación.
 - **Task Manager:** validar demo y repo antes de publicar los enlaces.
