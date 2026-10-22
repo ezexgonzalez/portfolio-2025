@@ -12,10 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **03A / UI Construction Visibility & Entry Correction**.
+- **Bloque activo:** **03A / UI Construction — Zero-flash, Visibility & Pacing**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **IMPLEMENTED — DIRECTOR CORRECTION REQUIRED** (2026-10-22). La sección estática está entregada; UI Construction NO aprobada, corrección 03A autorizada. Entrega original en sección 13.
-- **Siguiente hito:** Integration Engineer ejecuta la corrección 03A ampliada (sección 15: zero-flash + ritmo más lento, además de activación/contraste), actualiza evidencia y se detiene. Bloques 04–06 NO AUTORIZADOS.
+- **Estado del Bloque 03A:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22), entrega en sección 16.
+- **Siguiente hito:** revisión visual de Dirección del 03A. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -105,7 +106,7 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **CORRECTION 03A REQUIRED** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **03A DONE — PENDING DIRECTOR REVIEW** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
@@ -679,3 +680,119 @@ Dirección y brief explícito. Producción permanece intacta.
 **Required validation:** video or sequential real-browser screenshots from the instant before the section first enters view through A/B/C/D/E on desktop (e.g. 1920×1080) and mobile (390×844), plus first-entry pointer navigation and slow scroll; prove no unmasked final DOM at t<0 and no black/hidden section remaining after fail-open triggers. Verify no-JS, reduced motion, hash direct, focus, late fonts, fail canvas, slow scroll, normal scroll/anchor entry, resize, no-replay, teardown, CSS/React fallback, scoped lint/build and no legacy regression. Record exact durations, trigger reason, visual gating and current-state updates. No new libraries, `main`, release or Block 04 work.
 
 **Status:** `03A — REVISION REQUIRED / OWNER FEEDBACK RECORDED`; latest code remains unapproved until engineer correction and Director's visual review.
+
+
+## 16. Entrega 03A — Zero-flash, contraste y ritmo — 2026-10-22
+
+**DONE — PENDING DIRECTOR REVIEW.** No se declara aprobado el motion. Rama
+`feature/portfolio-2027-foundation`; HEAD inicial sincronizado/verificado
+`f6eae623b5ed923428e3528b7fc452c260c1bc7a`.
+
+### Causas y solución
+
+El JSX anterior exponía la sección final mientras useEffect esperaba fuentes;
+el observer montaba el Canvas opaco recién al 85% del viewport. De allí el salto
+final→vacío→construcción. Además, clic interno y foco programático del navegador
+resolvían final sin distinguir entrada normal por puntero de acceso por teclado.
+
+El primer render React lleva marcador armado y una cobertura visual opaca CSS
+#080808. useLayoutEffect prepara recuperación antes de pintar. Se conserva
+cobertura durante fuentes/espera y se retira en la misma tarea solo tras existir
+un Canvas opaco de fase cero. DOM auténtico, semántica, tamaño y enlaces quedan
+montados: sin display:none/inert/aria-hidden o máscaras sobre el contenido.
+Reduced motion elimina cobertura desde CSS; hash inicial/foco resuelven antes
+del primer pintado React. El fallback HTML sin JS no cambió.
+
+Capacidades ausentes o errores de configuración/preparación/Canvas/dibujo resuelven
+final. Preparación tipográfica: máximo 6s; la espera deja de tener timeout cuando
+las fuentes están listas. Recuperación de animación: duración+1500ms. Final y
+desmontaje retiran Canvas, cancelan RAF, observers/listeners y temporizadores de
+recuperación, foco y navegación. API ausente probada en montaje React aislado
+de SelectedWork; no es una auditoría de APIs de Hero/navegación legacy.
+
+### Activación, ritmo y claridad
+
+Entrada por puntero/tap en CTA o navbar permite una ejecución, conservando hash,
+scroll y foco del sistema existente. Se concede únicamente el foco de heading
+sincrónico de ese clic y el permiso vence en la siguiente tarea; una microtarea
+podía vencer antes del callback React. Exención del salto de desplazamiento
+programático: máximo 1800ms o hasta wheel/touch/tecla. No se manipula navegación.
+Teclado (detail 0), foco de acceso, hash inicial y reduced motion muestran final.
+
+Scroll normal ya no cancela por superar el margen superior de 25%: solo salida
+real de sección o salto grande/rápido (>máximo 400px/90vh en 150ms) resuelve final.
+Sin bloqueo de scroll o espera obligatoria; sin repetición al regresar. Para
+revisión de desarrollo se documenta recargar la misma preview sin hash, sin
+añadir controles ni funciones de producción.
+
+Duración final **4200ms desktop / 3000ms bajo 1024px**. Fases solapadas y curvas
+suaves: puntos desde 0, geometría desde ~600ms, esqueletos desde ~1400ms, barrido
+~2800–4100ms y liberación a 4200ms en desktop; escala proporcional en compacto.
+Mayor contraste neutral en puntos, recorridos, contornos y frontera, sin neón
+ni cambio del estado final. Geometría y Canvas nativos existentes conservados.
+
+### Archivos
+
+- `components/SelectedWork.jsx`: solo marcador inicial armado. Copy/URLs intactos.
+- `hooks/useUiConstruction.js`: preparación antes de pintar, permisos de entrada,
+  recuperación, interrupciones y limpieza; nada de cambios al hook de navegación.
+- `motion/uiConstruction.js`: curvas, ventanas de fases, contraste/grosor y barrido.
+- `styles/selected-work.css`: cobertura transitoria, excepción reduced y recorte
+  del desborde horizontal decorativo.
+- `src/portfolio2027/README.md`: contrato y reset de revisión local documentado.
+- `docs/qa/block03a/`: harness acotado, resultados/timestamps, fases en 4 anchuras,
+  preparación con fuentes lentas, comparaciones estáticas y 2 grabaciones MP4 reales.
+- `docs/CURRENT.md`, `AGENTS.md`, `README.md`: estado y cierre.
+
+Sin cambios en Hero, navegación, ASCII, fuentes/tokens, preview HTML/montaje, otras
+secciones o dependencias/lockfile. Sin main, merge, deploy, dominio o hosting.
+
+### Evidencia y verificación real
+
+- Chromium 153: **26 grupos PASS**, cero page errors monitorizados. Viewports
+  1920×1080,1366×768,390×844 y 320×844. Sin overflow horizontal.
+- Muestreo de 309/307/232/232 RAF desde antes de la entrada: ningún estado final
+  anterior al primer build; ninguna muestra de construcción expuesta sin cobertura.
+  Capturas reales de armado y A/B/C/D/E en las cuatro medidas.
+- Grabaciones CDP con reloj real y timestamps, MP4 a 30fps conservando intervalos:
+  desktop ~5.47s/mobile ~3.63s. Orden espera→puntos→geometría→esqueleto→barrido→final.
+  Primera fase a final observados ~4224.5/~3024.1ms con cadencia RAF. Capturas de
+  fases usan contexto aparte con reloj controlado, no un render de demostración.
+- Puntero CTA/navbar y menú mobile completan con hash/foco correctos; taps mobile
+  emulados también. Wheel normal no cancela. Acceso por teclado/hash/foco, cambio
+  reduced, cambio de tamaño, salida/salto rápido, fuentes tardías, Canvas nulo,
+  fallo de dibujo, preparación colgada, API ausente, sin JS, regreso y desmontaje
+  activo comprobados. No se afirma test en hardware touch/lector de pantalla.
+- Canvas retirado, sin dibujos nuevos en 200ms tras final/desmontaje; limpieza
+  explícita de temporizadores/observers/listeners. Sin cambios de altura por motion.
+- Comparación ImageChops: Hero Full HD y las cuatro secciones estáticas son
+  **pixel-idénticos** a evidencia 03; alturas 1072/868/1178/1348px conservadas.
+- `npm run lint`: FAIL, mismos 4 errores legacy no-unused-vars en PrimaryButton,
+  SecondaryButton, Contact y Skills; sin nuevos. ESLint de 2027 y sintaxis QA PASS.
+- `npm run build`: PASS, 1717 módulos. Build explícito de preview PASS, 42 módulos,
+  CSS 21.92kB/gzip 4.63 y JS 207.74kB/gzip 65.99. Comparación con build del HEAD
+  inicial: 9 artefactos normales idénticos por SHA-256. `git diff --check`: PASS.
+
+Problemas de QA corregidos: un sampler inicial leía el h2 del fallback HTML como
+si fuera la sección React; ahora distingue el nodo auténtico. Se ajustó la prueba
+de fuentes lentas a la restauración superior existente al terminar las fuentes.
+No se cambiaron Hero/navegación para adaptar esas pruebas. El muestreo verifica
+React en Chromium; no garantiza condiciones de carga pre-React en todo navegador.
+Fuentes oficiales CSS/TTF servidas solo a QA por limitación CA del proxy, con curl
+TLS validado/CORS y sin bypass de certificados. No se redistribuyen fuentes.
+
+Evidencia/reproducción: [qa/block03a/README.md](qa/block03a/README.md). Persisten
+pendientes de release: font delivery/CLS, Safari/Firefox, dispositivos físicos,
+lectores de pantalla, GPU/batería y memoria prolongada. Se detectó y corrigió un desborde decorativo de 4px a 320px en espera/animación;
+la comparación estática sigue idéntica. Ningún rediseño o regresión estática restante. Ritmo y claridad quedan sujetos a revisión de Dirección.
+
+### Commits y gate
+
+- Implementación: `bacb9bf9108aa1599a049287c359b98c7076b0af`
+  (`fix: prearm UI Construction and refine entry visibility and pacing`).
+- Cierre/evidencia: commit posterior
+  `docs: record Block 03A zero-flash validation and review gate`; SHA consultable
+  en historial, sin hash circular dentro del propio commit.
+
+**Bloque 04 y posteriores NO AUTORIZADOS.** Detener aquí. Sin aprobación ni
+publicación implícita.

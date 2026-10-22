@@ -1,0 +1,6816 @@
+{
+  "browser": "153.0.8010.0",
+  "checks": [
+    "Four static widths: no overflow, final accessible under reduced motion and direct hash",
+    "Zero exposed pre-final RAFs, five phases, no replay at 1920px",
+    "Zero exposed pre-final RAFs, five phases, no replay at 1366px",
+    "Zero exposed pre-final RAFs, five phases, no replay at 390px",
+    "Zero exposed pre-final RAFs, five phases, no replay at 320px",
+    "Normal pointer hero: construction, hash, focus, natural completion",
+    "Normal pointer navbar: construction, hash, focus, natural completion",
+    "Normal pointer mobile: construction, hash, focus, natural completion",
+    "Keyboard CTA resolves immediately",
+    "Initial #projects immediate final",
+    "Programmatic / assistive focus resolves immediately",
+    "Preference change resolves immediately",
+    "Active reflow resolves final",
+    "Fast scroll / actual exit resolves final",
+    "Late fonts stay covered; fast entry then resolves final without a content-to-blank jump",
+    "Canvas null removes all covers and preserves links",
+    "Render failure resolves final and removes canvas",
+    "Stalled preparation watchdog releases visual cover",
+    "No JavaScript keeps static HTML and four project links available",
+    "Missing observer fails open; active React unmount removes layer",
+    "Real-time browser screencast 1920px",
+    "Real-time browser screencast 390px",
+    "Emulated touch hero: one complete construction",
+    "Emulated touch navbar: one complete construction",
+    "Normal wheel increments do not cancel construction",
+    "Waiting and active construction have no horizontal overflow at all four widths"
+  ],
+  "sequences": [
+    {
+      "width": 1920,
+      "duration": 4200,
+      "samples": [
+        {
+          "sample": 0,
+          "state": "points",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1072
+        },
+        {
+          "sample": 1,
+          "state": "geometry",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1072
+        },
+        {
+          "sample": 2,
+          "state": "skeleton",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1072
+        },
+        {
+          "sample": 3,
+          "state": "materialization",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1072
+        },
+        {
+          "sample": 4,
+          "state": "final",
+          "reason": "complete",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 0,
+          "guard": "none",
+          "top": 80,
+          "height": 1072
+        }
+      ],
+      "coverFrames": [
+        {
+          "t": 116.80000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 171.40000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 196,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 217.90000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 237.90000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 240.40000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 258.30000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 273.60000000009313,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 290.30000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 307.10000000009313,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 323.70000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 340.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 357,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 376.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 2,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 1000,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 1008,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1024,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1040,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1056,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1072,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1088,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1104,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1120,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1136,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1152,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1168,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1184,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1200,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1216,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1232,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1248,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1264,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1280,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1296,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1312,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1328,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1344,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1360,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1376,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1392,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1408,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1424,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1440,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1456,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1472,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1488,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1504,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1520,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1536,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1552,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1568,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1584,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1600,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1616,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1632,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1648,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1664,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1680,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1696,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1712,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1728,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1744,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1760,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1776,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1792,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1808,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1824,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1840,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1856,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1872,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1888,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1904,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1920,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1936,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1952,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1968,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1984,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2000,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2016,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2032,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2048,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2064,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2080,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2096,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2112,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2128,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2144,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2160,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2176,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2192,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2208,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2224,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2240,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2256,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2272,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2288,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2304,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2320,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2336,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2352,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2368,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2384,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2400,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2416,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2432,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2448,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2464,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2480,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2496,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2512,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2528,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2544,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2560,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2576,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2592,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2608,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2624,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2640,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2656,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2672,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2688,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2704,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2720,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2736,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2752,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2768,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2784,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2800,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2816,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2832,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2848,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2864,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2880,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2896,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2912,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2928,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2944,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2960,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2976,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2992,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3008,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3024,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3040,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3056,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3072,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3088,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3104,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3120,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3136,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3152,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3168,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3184,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3200,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3216,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3232,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3248,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3264,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3280,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3296,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3312,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3328,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3344,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3360,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3376,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3392,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3408,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3424,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3440,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3456,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3472,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3488,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3504,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3520,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3536,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3552,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3568,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3584,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3600,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3616,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3632,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3648,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3664,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3680,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3696,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3712,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3728,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3744,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3760,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3776,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3792,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3808,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3824,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3840,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3856,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3872,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3888,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3904,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3920,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3936,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3952,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3968,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3984,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4000,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4016,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4032,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4048,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4064,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4080,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4096,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4112,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4128,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4144,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4160,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4176,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4192,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4208,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4224,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4240,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4256,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4272,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4288,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4304,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4320,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4336,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4352,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4368,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4384,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4400,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4416,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4432,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4448,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4464,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4480,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4496,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4512,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4528,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4544,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4560,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4576,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4592,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4608,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4624,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4640,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4656,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4672,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4688,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4704,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4720,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4736,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4752,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4768,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4784,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4800,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4816,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4832,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4848,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4864,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4880,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4896,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4912,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4928,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4944,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4960,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4976,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4992,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5008,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5024,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5040,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5056,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5072,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5088,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5104,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5120,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5136,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5152,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5168,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5184,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5200,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5216,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5232,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5248,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5264,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5280,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5296,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5312,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5328,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5344,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5360,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5376,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5392,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5408,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5424,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5440,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5456,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5472,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5488,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5504,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5520,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5536,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5552,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5568,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5584,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5600,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5616,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5632,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5648,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5664,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5680,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "duration": 4200,
+      "samples": [
+        {
+          "sample": 0,
+          "state": "points",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 868
+        },
+        {
+          "sample": 1,
+          "state": "geometry",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 868
+        },
+        {
+          "sample": 2,
+          "state": "skeleton",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 868
+        },
+        {
+          "sample": 3,
+          "state": "materialization",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 868
+        },
+        {
+          "sample": 4,
+          "state": "final",
+          "reason": "complete",
+          "trigger": "scroll",
+          "duration": "4200",
+          "canvas": 0,
+          "guard": "none",
+          "top": 80,
+          "height": 868
+        }
+      ],
+      "coverFrames": [
+        {
+          "t": 132,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 168.80000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 185.80000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 205.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 213,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 222.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 239.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 255.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 272.30000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 289.5,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 305.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 323.30000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 339.19999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 355.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 372.5,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 1000,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1008,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1024,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1040,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1056,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1072,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1088,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1104,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1120,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1136,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1152,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1168,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1184,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1200,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1216,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1232,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1248,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1264,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1280,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1296,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1312,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1328,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1344,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1360,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1376,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1392,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1408,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1424,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1440,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1456,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1472,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1488,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1504,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1520,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1536,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1552,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1568,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1584,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1600,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1616,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1632,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1648,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1664,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1680,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1696,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1712,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1728,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1744,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1760,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1776,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1792,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1808,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1824,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1840,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1856,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1872,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1888,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1904,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1920,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1936,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1952,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1968,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1984,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2000,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2016,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2032,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2048,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2064,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2080,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2096,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2112,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2128,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2144,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2160,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2176,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2192,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2208,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2224,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2240,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2256,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2272,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2288,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2304,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2320,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2336,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2352,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2368,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2384,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2400,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2416,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2432,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2448,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2464,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2480,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2496,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2512,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2528,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2544,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2560,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2576,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2592,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2608,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2624,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2640,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2656,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2672,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2688,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2704,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2720,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2736,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2752,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2768,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2784,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2800,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2816,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2832,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2848,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2864,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2880,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2896,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2912,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2928,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2944,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2960,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2976,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2992,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3008,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3024,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3040,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3056,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3072,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3088,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3104,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3120,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3136,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3152,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3168,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3184,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3200,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3216,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3232,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3248,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3264,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3280,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3296,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3312,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3328,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3344,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3360,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3376,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3392,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3408,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3424,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3440,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3456,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3472,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3488,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3504,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3520,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3536,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3552,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3568,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3584,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3600,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3616,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3632,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3648,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3664,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3680,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3696,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3712,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3728,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3744,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3760,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3776,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3792,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3808,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3824,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3840,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3856,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3872,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3888,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3904,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3920,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3936,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3952,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3968,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3984,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4000,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4016,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4032,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4048,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4064,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4080,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4096,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4112,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4128,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4144,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4160,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4176,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4192,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4208,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4224,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4240,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4256,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4272,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4288,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4304,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4320,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4336,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4352,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4368,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4384,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4400,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4416,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4432,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4448,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4464,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4480,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4496,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4512,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4528,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4544,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4560,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4576,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4592,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4608,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4624,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4640,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4656,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4672,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4688,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4704,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4720,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4736,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4752,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4768,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4784,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4800,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4816,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4832,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4848,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4864,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4880,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4896,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4912,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4928,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4944,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4960,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4976,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4992,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5008,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5024,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5040,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5056,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5072,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5088,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5104,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5120,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5136,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5152,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5168,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5184,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5200,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5216,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5232,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5248,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 5264,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5280,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5296,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5312,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5328,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5344,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5360,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5376,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5392,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5408,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5424,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5440,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5456,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5472,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5488,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5504,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5520,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5536,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5552,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5568,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5584,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5600,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5616,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5632,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 5648,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "duration": 3000,
+      "samples": [
+        {
+          "sample": 0,
+          "state": "points",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1178
+        },
+        {
+          "sample": 1,
+          "state": "geometry",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1178
+        },
+        {
+          "sample": 2,
+          "state": "skeleton",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1178
+        },
+        {
+          "sample": 3,
+          "state": "materialization",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1178
+        },
+        {
+          "sample": 4,
+          "state": "final",
+          "reason": "complete",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 0,
+          "guard": "none",
+          "top": 80,
+          "height": 1178
+        }
+      ],
+      "coverFrames": [
+        {
+          "t": 97.19999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 117.39999999990687,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 129.19999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 143.69999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 160.29999999993015,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 177.09999999997672,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 193.59999999997672,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 210.29999999993015,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 227,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 243.59999999997672,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 260.19999999995343,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 276.89999999990687,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 293.89999999990687,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 310.29999999993015,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 1000,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1008,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1024,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1040,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1056,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1072,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1088,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1104,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1120,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1136,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1152,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1168,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1184,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1200,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1216,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1232,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1248,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1264,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1280,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1296,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1312,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1328,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1344,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1360,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1376,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1392,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1408,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1424,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1440,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1456,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1472,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1488,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1504,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1520,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1536,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1552,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1568,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1584,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1600,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1616,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1632,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1648,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1664,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1680,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1696,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1712,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1728,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1744,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1760,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1776,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1792,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1808,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1824,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1840,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1856,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1872,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1888,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1904,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1920,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1936,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1952,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1968,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1984,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2000,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2016,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2032,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2048,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2064,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2080,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2096,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2112,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2128,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2144,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2160,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2176,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2192,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2208,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2224,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2240,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2256,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2272,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2288,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2304,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2320,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2336,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2352,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2368,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2384,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2400,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2416,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2432,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2448,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2464,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2480,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2496,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2512,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2528,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2544,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2560,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2576,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2592,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2608,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2624,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2640,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2656,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2672,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2688,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2704,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2720,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2736,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2752,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2768,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2784,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2800,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2816,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2832,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2848,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2864,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2880,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2896,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2912,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2928,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2944,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2960,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2976,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2992,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3008,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3024,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3040,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3056,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3072,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3088,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3104,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3120,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3136,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3152,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3168,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3184,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3200,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3216,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3232,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3248,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3264,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3280,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3296,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3312,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3328,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3344,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3360,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3376,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3392,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3408,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3424,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3440,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3456,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3472,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3488,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3504,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3520,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3536,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3552,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3568,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3584,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3600,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3616,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3632,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3648,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3664,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3680,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3696,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3712,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3728,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3744,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3760,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3776,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3792,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3808,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3824,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3840,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3856,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3872,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3888,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3904,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3920,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3936,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3952,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3968,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3984,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4000,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4016,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4032,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4048,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4064,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4080,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4096,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4112,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4128,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4144,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4160,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4176,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4192,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4208,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4224,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4240,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4256,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4272,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4288,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4304,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4320,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4336,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4352,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4368,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4384,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4400,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4416,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4432,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4448,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4464,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "duration": 3000,
+      "samples": [
+        {
+          "sample": 0,
+          "state": "points",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1348
+        },
+        {
+          "sample": 1,
+          "state": "geometry",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1348
+        },
+        {
+          "sample": 2,
+          "state": "skeleton",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1348
+        },
+        {
+          "sample": 3,
+          "state": "materialization",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 1,
+          "guard": "none",
+          "top": 80,
+          "height": 1348
+        },
+        {
+          "sample": 4,
+          "state": "final",
+          "reason": "complete",
+          "trigger": "scroll",
+          "duration": "3000",
+          "canvas": 0,
+          "guard": "none",
+          "top": 80,
+          "height": 1348
+        }
+      ],
+      "coverFrames": [
+        {
+          "t": 91.30000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 108.90000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 114.5,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 125.70000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 138.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 154.70000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 171.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 187.80000000004657,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 204.5,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 221.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 237.90000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 254.40000000002328,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 271.20000000006985,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 287.9000000000233,
+          "state": "waiting",
+          "visible": false,
+          "covered": true
+        },
+        {
+          "t": 1000,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1008,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1024,
+          "state": "waiting",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1040,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1056,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1072,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1088,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1104,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1120,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1136,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1152,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1168,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1184,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1200,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1216,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1232,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1248,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1264,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1280,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1296,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1312,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1328,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1344,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1360,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1376,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1392,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1408,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1424,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1440,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1456,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1472,
+          "state": "points",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1488,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1504,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1520,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1536,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1552,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1568,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1584,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1600,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1616,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1632,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1648,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1664,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1680,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1696,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1712,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1728,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1744,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1760,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1776,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1792,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1808,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1824,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1840,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1856,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1872,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1888,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1904,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1920,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1936,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1952,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1968,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 1984,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2000,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2016,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2032,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2048,
+          "state": "geometry",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2064,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2080,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2096,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2112,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2128,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2144,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2160,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2176,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2192,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2208,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2224,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2240,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2256,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2272,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2288,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2304,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2320,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2336,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2352,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2368,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2384,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2400,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2416,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2432,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2448,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2464,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2480,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2496,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2512,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2528,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2544,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2560,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2576,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2592,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2608,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2624,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2640,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2656,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2672,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2688,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2704,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2720,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2736,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2752,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2768,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2784,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2800,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2816,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2832,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2848,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2864,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2880,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2896,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2912,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2928,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2944,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2960,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2976,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 2992,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3008,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3024,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3040,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3056,
+          "state": "skeleton",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3072,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3088,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3104,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3120,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3136,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3152,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3168,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3184,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3200,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3216,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3232,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3248,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3264,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3280,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3296,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3312,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3328,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3344,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3360,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3376,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3392,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3408,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3424,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3440,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3456,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3472,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3488,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3504,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3520,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3536,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3552,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3568,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3584,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3600,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3616,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3632,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3648,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3664,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3680,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3696,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3712,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3728,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3744,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3760,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3776,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3792,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3808,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3824,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3840,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3856,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3872,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3888,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3904,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3920,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3936,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3952,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3968,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 3984,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4000,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4016,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4032,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4048,
+          "state": "materialization",
+          "visible": true,
+          "covered": true
+        },
+        {
+          "t": 4064,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4080,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4096,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4112,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4128,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4144,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4160,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4176,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4192,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4208,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4224,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4240,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4256,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4272,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4288,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4304,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4320,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4336,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4352,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4368,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4384,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4400,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4416,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4432,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4448,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        },
+        {
+          "t": 4464,
+          "state": "final",
+          "visible": true,
+          "covered": false
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "width": 1920,
+      "frames": 90,
+      "duration": 5.449458837509155,
+      "states": [
+        {
+          "state": "waiting",
+          "t": 362.70000000006985
+        },
+        {
+          "state": "points",
+          "t": 674.6000000000931
+        },
+        {
+          "state": "geometry",
+          "t": 1298.9000000000233
+        },
+        {
+          "state": "skeleton",
+          "t": 2082.100000000093
+        },
+        {
+          "state": "materialization",
+          "t": 3500.70000000007
+        },
+        {
+          "state": "final",
+          "t": 4899.100000000093
+        }
+      ],
+      "drawsAfterCompletion": 0
+    },
+    {
+      "width": 390,
+      "frames": 190,
+      "duration": 3.6405739784240723,
+      "states": [
+        {
+          "state": "waiting",
+          "t": 318.0999999999767
+        },
+        {
+          "state": "points",
+          "t": 666
+        },
+        {
+          "state": "geometry",
+          "t": 1106.8000000000466
+        },
+        {
+          "state": "skeleton",
+          "t": 1673.9000000000233
+        },
+        {
+          "state": "materialization",
+          "t": 2690.3000000000466
+        },
+        {
+          "state": "final",
+          "t": 3690.0999999999767
+        }
+      ],
+      "drawsAfterCompletion": 0
+    }
+  ],
+  "errors": []
+}

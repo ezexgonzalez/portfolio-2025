@@ -8,7 +8,7 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** Blocks 01/02/02A approved. Block 03 Selected Work static layout implemented; **UI Construction motion NOT APPROVED** because regular pointer navigation suppresses the animation and A/B/C phases are too subtle. **Block 03A targeted correction authorized.** Blocks 04–06 remain unauthorized. Production 2025 unchanged.
+- **Current phase:** Blocks 01/02/02A approved. Block 03 static layout preserved; **Block 03A motion correction DONE — PENDING DIRECTOR REVIEW**. Zero-flash preparation, clearer construction and 4200/3000ms pacing delivered with evidence in `docs/qa/block03a/`. UI Construction awaits Director approval. Blocks 04–06 remain unauthorized; production unchanged.
 - **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
 - **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).

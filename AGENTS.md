@@ -31,4 +31,4 @@
 8. Describe what changed and how it was verified. Run `npm run lint` and `npm run build` when implementing code changes.
 9. Do not assert that Figma designs, benchmarks, animations or deployments are approved or verified unless actual evidence exists.
 
-Current stage: **Blocks 01/02/02A APPROVED; Block 03 implementation delivered but UI Construction NOT APPROVED; Block 03A targeted motion visibility/entry correction AUTHORIZED**. Blocks 04–06 remain unauthorized. Read docs/CURRENT.md before any action. No production merge/deploy.
+Current stage: **Blocks 01/02/02A APPROVED; Block 03 implementation delivered but UI Construction NOT APPROVED; Block 03A zero-flash / visibility / pacing correction DONE — PENDING DIRECTOR REVIEW**. Blocks 04–06 remain unauthorized. Read docs/CURRENT.md before any action. No production merge/deploy.
