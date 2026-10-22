@@ -1,5 +1,6 @@
 import { portfolio2027RootClassName } from '../index.js';
 import Hero from '../components/Hero.jsx';
+import SelectedWork from '../components/SelectedWork.jsx';
 import Navigation from '../components/Navigation.jsx';
 import { useAnchorNavigation } from '../hooks/useAnchorNavigation.js';
 import { destinations } from '../navigation.js';
@@ -15,8 +16,9 @@ export default function PortfolioPreview() {
       <Navigation headerRef={headerRef} activeSection={activeSection} scrolled={scrolled} />
       <main>
         <Hero />
+        <SelectedWork />
         {/* Development-only anchor targets. Not the future section designs. */}
-        {destinations.slice(1).map(({ id, label }) => (
+        {destinations.slice(2).map(({ id, label }) => (
           <section key={id} className="p27-preview-target p27-container" aria-labelledby={id}>
             <h2 className="p27-target" id={id} tabIndex={-1}>{label}</h2>
             <p>Placeholder técnico temporal · sección todavía no implementada.</p>

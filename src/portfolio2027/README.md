@@ -1,8 +1,9 @@
 # Portfolio 2027 — isolated development experience
 
-Block 01 foundations approved. Block 02 adds Hero + Global Navigation only.
+Blocks 01, 02 and 02A approved. Block 03 adds Selected Work + UI Construction,
+completed for Director review in this isolated development experience.
 The 2025 `App.jsx`, `main.jsx`, theme initialization and default HTML entry remain
-unchanged. No Selected Work/About/Skills/Contact implementation is included.
+unchanged. About/Skills/Contact remain temporary targets, with no implementation.
 
 ## Open locally
 
@@ -14,7 +15,8 @@ npm run dev -- --host 127.0.0.1
 Open `http://127.0.0.1:5173/src/portfolio2027/preview.html` (use the port Vite prints).
 The default `/` remains 2025. This development HTML is not an input of the normal
 production build; no public route/router or hosting configuration was added.
-Its four future-section anchor targets are explicitly marked temporary.
+About/Skills/Contact anchor targets are explicitly marked temporary; #projects
+now reaches the real section. The readable no-JS fallback includes both projects.
 
 ## Architecture
 
@@ -28,7 +30,13 @@ Its four future-section anchor targets are explicitly marked temporary.
 - `hooks/useAnchorNavigation.js` owns active-section reading, hash/history,
   focus, initial font readiness and scroll offset. It restores document history
   policy and disconnects listeners/observer/RAF on cleanup.
-- `components/AmbientAscii.jsx` owns the independent Canvas lifecycle.
+- `components/AmbientAscii.jsx` owns the independent Hero Canvas lifecycle.
+- `components/SelectedWork.jsx` owns the two approved editorial project modules.
+- `styles/selected-work.css` uses native grid/subgrid to align equivalent desktop
+  rows, then natural stacked flow below 1024px; no fixed section height.
+- `hooks/useUiConstruction.js` owns one-shot triggering, interruption and cleanup.
+- `motion/uiConstruction.js` measures real DOM words/bounds once and renders the
+  decorative point/trace/contour/sweep sequence on one transient Canvas.
 - `navigation.js` declares the five approved anchor destinations.
 - `styles/experience.css` implements the two approved pieces using native CSS.
 - `preview/` owns the React root and development-only document reset/placeholders.
@@ -91,10 +99,35 @@ control rendering. No timer/RAF loop runs offscreen, hidden or in reduced motion
 Reduced motion draws phase zero; context failure leaves all semantic content
 available. StrictMode cleanup cancels scheduling and disconnects resources.
 
+## Selected Work / UI Construction
+
+Figma production `30:898` through `30:1689`, specs `35:818`, motion `45:5809`,
+PLAY `45:7422`/`45:10156`, reduced motion `45:11220`. Only Eze Web Studio and
+Task Manager are included, with verified public/repository destinations. Text-only
+modules, 1600px maximum frame, 720px columns/160px gap at 1920; 624px/96px at
+1536 and 563px/96px at 1366. Tablet/mobile stack; small links stack below 360px.
+The existing gutter token yields 24.375px at 390 instead of Figma's rounded 24px.
+
+Point field → geometric trace → typographic/UI skeleton → vertical sweep → actual
+DOM. Original native engine; no copied runtime, library or new package. Start
+near 85% viewport height once per mounted page visit. 2400ms desktop, 1400ms below
+1024px. One aria-hidden, pointer-transparent Canvas covers unrevealed pixels;
+no content opacity, visibility, inert or accessibility-tree masking. Text uses
+actual loaded fonts and wrapped word geometry. No per-scroll reconstruction.
+
+Explicit font readiness before measurement. Geometry/backing store caps and a
+bounded 500/160-point grid. Reduced motion, direct hash, focus/pointer, internal
+anchor, fast entry/scroll, offscreen/hidden state, resize/reflow or new font load
+resolve to final. Completion/cancellation removes Canvas, RAF, observers and
+listeners. Context/render failure retains the functional DOM. No entrance repeats
+on return scrolling; no navigation changes. Native Canvas text contours are a
+responsive rendering of the study, not exported Figma vector glyphs.
+
 ## Verification
 
 See `docs/CURRENT.md`, `docs/qa/block02/README.md`, saved browser screenshots and
 `docs/qa/block02/results.json`. The reproducible QA harness uses separately supplied
 Playwright/Chromium tooling; it is not a project dependency. Standard production
 build and isolated preview build are validated separately. Browser results do not
-constitute approval or release authorization. Block 03 remains unauthorized.
+constitute approval or release authorization. Block 03 evidence and the scoped
+external-tool harness are in `docs/qa/block03/`. Blocks 04–06 remain unauthorized.
