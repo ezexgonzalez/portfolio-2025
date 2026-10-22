@@ -14,7 +14,8 @@
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
 - **Bloque activo:** **03 / Selected Work — Structural Grid + UI Construction**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
-- **Siguiente hito:** Integration Engineer ejecuta únicamente Bloque 03 según brief del Director; termina con revisión y actualización de CURRENT.md. Bloques 04–06 NO AUTORIZADOS.
+- **Estado del Bloque 03:** **DONE — PENDING DIRECTOR REVIEW** (2026-10-22). Entrega y evidencia en sección 13.
+- **Siguiente hito:** revisión de Dirección del Bloque 03. Bloques 04–06 NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -104,7 +105,7 @@ Informe corto con:
 | **01** | **Technical Foundation**: estructura, tokens, fuentes, base CSS, verificación | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **03** | Selected Work: dos proyectos, responsive y UI Construction | **AUTHORIZED — NOT STARTED** |
+| **03** | Selected Work: dos proyectos, responsive y UI Construction | **DONE — PENDING DIRECTOR REVIEW** |
 | 04 | About + Skills: narrativa, índice técnico y responsive | **NO AUTORIZADO AÚN** |
 | 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
@@ -522,3 +523,130 @@ Director y nuevo brief explícito. Producción permanece intacta.
 **Project links:** Eze Web Studio repository `https://github.com/ezexgonzalez/eze-web-studio-V2`; Task Manager repo `https://github.com/ezexgonzalez/mern-task-manager` and demo `https://mern-task-manager-iota-teal.vercel.app/`. The Eze Web Studio project *public* destination is separate from portfolio `https://ezegonzalez.dev/` and must be verified, never guessed or pointed to the portfolio. If unresolved, disable/mark the project-public action in isolated preview rather than invent a link.
 
 **Exit gate:** lint/build and scoped checks (differentiate four pre-existing legacy lint errors); desktop+mobile visual evidence, construction frames/states or video if reliably available, responsive/keyboard/anchor/reduced-motion/cleanup checks, any performance measurements honestly scoped; update `docs/CURRENT.md` to `DONE — PENDING DIRECTOR REVIEW` with changed files, commits, limitations and accurate status. **STOP. Block 04 NOT AUTHORIZED**. No production merge/deploy.
+
+
+## 13. Entrega Bloque 03 — Selected Work + UI Construction — 2026-10-22
+
+**DONE — PENDING DIRECTOR REVIEW.** Alcance implementado en preview aislada; no
+equivale a aprobación ni habilita Bloque 04 o publicación.
+
+### Rama, alcance y archivos
+
+- Rama sincronizada: `feature/portfolio-2027-foundation`; HEAD inicial verificado
+  `e6bf62ea669b6212f5bf905c7eb4a5811f8d7490`.
+- `src/portfolio2027/components/SelectedWork.jsx`: exactamente Eze Web Studio y
+  Task Manager, copy aprobado, h2/h3/articles, metadatos, capacidades, stacks y
+  cuatro enlaces nativos con nombres accesibles específicos.
+- `styles/selected-work.css`: Structural Grid A, dos columnas desde 1024px,
+  subgrid alinea filas equivalentes; tablet/mobile apilados, enlaces en columna
+  bajo 360px, reglas finas, límites/márgenes y tipografía documentados en Figma.
+- `motion/uiConstruction.js`: motor Canvas 2D original y acotado; puntos, trazos
+  progresivos, contornos de texto real, regiones/guías y barrido vertical.
+- `hooks/useUiConstruction.js`: font readiness, trigger 85% viewport, una ejecución,
+  interrupciones y limpieza. Sin tocar el hook de navegación existente.
+- `preview/PortfolioPreview.jsx`: reemplaza únicamente Projects por sección real;
+  conserva placeholders About/Skills/Contact. `preview.html`: fallback sin JS con
+  ambos proyectos y enlaces. Mismo documento/ruta de desarrollo.
+- `src/portfolio2027/README.md`, `README.md`, `AGENTS.md`: contrato y estado.
+- `docs/qa/block03/`: evaluación técnica previa, harness externo acotado, JSON de
+  resultados, seis capturas estáticas, continuidad y diez capturas de fases.
+- `docs/CURRENT.md`: presente entrega y compuerta.
+
+No se modificaron Hero, Navigation, AmbientAscii, experience.css, fuentes/tokens,
+useAnchorNavigation, App/main/index.css legacy, package.json o lockfile. No nuevas
+dependencias de aplicación, runtime de terceros, imágenes o assets de proyectos.
+Sin cambios a main, merge, deploy, dominio o hosting.
+
+### Decisiones y fidelidad
+
+Se leyeron contextos/renders de producción 30:898/1237/1350/1463/1576/1689,
+especificaciones 35:818, PLAY 45:7422/10156 y reduced 45:11220; se contrastaron
+B/C/D 45:6096/6470/6906 y pistas nativas. Se conserva la familia/escala/tracking,
+orden, separadores y retícula. Alturas naturales medidas 1072/924/868/1252/1178/
+1348px a 1920/1536/1366/768/390/320, coincidentes con las referencias; no se
+fijaron alturas para lograrlo. Full HD: marco 1600, columnas 720 y vacío 160px.
+
+Revisión real de capturas desktop/notebook/tablet/mobile: continuidad editorial,
+crecimiento y lectura conservados. Hero Full HD pixel-idéntico a captura 02A
+aprobada (comparación ImageChops sin diferencias). Persisten las diferencias de
+métrica web DM Sans ya documentadas; no se deformaron fuentes. Gutter existente
+a 390 = 24.375px frente a 24px redondeados en Figma; no se modificó el foundation.
+
+Referencia transitions.dev estudiada sin instalar/copiar runtime: getBoundingClientRect
+y Range para medir, SVG para geometría, clipping para el barrido, cancel/cleanup.
+Licencia de transiciones permite uso/modificación en sitios personales/comerciales
+y prohíbe redistribuir la colección como producto competidor; tooling aparte MIT.
+Decisión nativa y límites en [evaluación](qa/block03/TECHNICAL_ASSESSMENT.md).
+
+Una capa Canvas decorativa, aria-hidden/pointer-transparent, mide palabras y límites
+cuando las fuentes están listas. Grid de 500/160 puntos, geometría responsive real,
+contornos tipográficos y frontera vertical que descubre DOM auténtico, sin fade
+único ni esconder contenido de accesibilidad. Las figuras estáticas del estudio
+se regeneran desde DOM; no se copian SVGs de coordenadas fijas.
+
+2400ms desktop / 1400ms bajo 1024, sin bucle. Mobile PLAY contiene 2s con hold: se
+normalizan fases a 1.4s propuestos por el brief. Los cinco estados se capturaron en
+el runtime real a 1920 y 390, con reloj controlado exclusivo de capturas. Barrido
+limitado al marco/rails medidos; no se afirma reproducción pixel-perfect de glifos
+vectoriales Figma. Dirección debe evaluar ritmo/fidelidad de esta implementación.
+
+Contenido disponible desde el principio; ninguna máscara/opacity/inert afecta al
+DOM. Ancla directa, foco/pointer, ancla interna, entrada/scroll rápidos, salida de
+pantalla, documento oculto, reduced motion o cambio de tamaño/reflow/carga tardía de fuentes
+resuelven final. Sin scroll lock, demora de navegación ni reconstrucción por scroll.
+Final/cancelación elimina Canvas y libera RAF/observers/listeners; fallo Canvas
+conserva contenido. Backing store acotado 2560×2048 y DPR 1.5/1.25 como máximos.
+
+### Enlaces verificados
+
+Curl con TLS validado y redirects: HTTP 200 y títulos correspondientes en los cuatro
+destinos, el 2026-10-22. Eze Web Studio `https://ezewebstudio.com.ar/`, canonical y
+título identifican al estudio; repo `https://github.com/ezexgonzalez/eze-web-studio-V2`.
+Task Manager `https://mern-task-manager-iota-teal.vercel.app/`, repo
+`https://github.com/ezexgonzalez/mern-task-manager`. No se auditó el CRUD/auth de
+aplicaciones externas ni se usó el dominio del portfolio como destino del estudio.
+
+### Pruebas, coste y problemas
+
+- Chromium 153: **21 grupos PASS**, seis anchuras, orden/layout, cuatro enlaces ≥52px,
+  overflow, foco/hover, #projects con h2 enfocado y offset 80px, menú mobile intacto,
+  cinco fases desktop/mobile, no repetición, interrupciones, desmontaje React
+  activo, Canvas nulo y fallback sin JS. JSON y capturas en qa/block03.
+- Sin page errors en el contexto normal monitorizado. Texto raíz 200% a 320px PASS.
+  Se detectó/corrigió un overflow nuevo del título ampliado con wrapping intrínseco.
+- Medición JS con contexto fresco/reloj real, DPR 1 y sin CPU throttling: setup
+  desktop 4.00ms/mobile 2.20ms; 144/73 callbacks, medias 0.24/0.18ms, p95 0.40/0.30ms,
+  máximos 1.30/0.40ms. No son tiempos GPU/raster, batería o dispositivos físicos.
+- 16/15 lecturas de elementos en setup; ninguna adicional tras la muestra de
+  medición en la ejecución sin scroll. Range se usa únicamente al crear geometría.
+  Sin overlays/draws posteriores en 200ms tras final y desmontaje probados.
+- Captura full-page disparaba cambio de tamaño y cancelación correcta; se pasó a capturas
+  de viewport con reloj aislado. Se corrigieron errores del harness de selector,
+  interop de módulos Vite y reloj; no se desactivaron interrupciones de producto.
+- `npm run lint`: FAIL, mismos 4 errores legacy no-unused-vars en PrimaryButton,
+  SecondaryButton, Contact y Skills. `npx --no-install eslint src/portfolio2027`: PASS.
+- `npm run build`: PASS; 1717 módulos, CSS 69.58kB/gzip 10.67, JS 237.77kB/gzip 71.37.
+  Los 9 artefactos coinciden por SHA-256 con build separado del HEAD inicial de 03
+  (sus hashes difieren del bloque anterior por cambios documentales previos de
+  Dirección, no por esta implementación). Build preview explícito PASS, 42 módulos; CSS 21.59kB/gzip 4.58, JS 206.54kB/gzip 65.65.
+  Se detectó una utilidad accidental por redacción de esta bitácora; se corrigió
+  esa redacción para conservar el bundle, sin cambiar el CSS/scanner legacy.
+- `git diff --check`, sintaxis del harness: PASS.
+
+Evidencia completa y reproducción: [qa/block03/README.md](qa/block03/README.md).
+Fuentes oficiales CSS/TTF obtenidas por curl con TLS válido y fulfillment de QA
+por CA del proxy; sin bypass de certificados/web security ni fuentes redistribuidas.
+Pendiente antes de release: entrega real de fuentes/WOFF2, CLS, Safari/Firefox,
+dispositivos reales, zoom real/lectores de pantalla y GPU/memoria prolongada.
+No se detectaron regresiones de producto fuera del overflow corregido.
+
+### Commits y siguiente gate
+
+- Implementación: `c15bee0b147f4a172f6b9757a81eb6ed47aa7ebc`
+  (`feat: add Selected Work and native UI Construction sequence`).
+- Cierre documental/evidencia: commit posterior
+  `docs: record Block 03 validation and director review gate`. Su SHA se consulta
+  en el historial; no se introduce un hash circular en el mismo commit.
+
+**Bloques 04–06: NO AUTORIZADOS. No iniciar Bloque 04.** Esperar revisión de
+Dirección y brief explícito. Producción permanece intacta.
