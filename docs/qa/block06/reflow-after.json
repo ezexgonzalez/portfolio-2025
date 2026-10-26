@@ -1,0 +1,92 @@
+{
+  "head": "982396eb6de28caf75ff710056fb7c3267da0fc4",
+  "browser": "153.0.8010.0",
+  "delivery": "Live Google Fonts via environment proxy with imported trusted CA; TLS verification enabled; no font fixtures",
+  "checks": [
+    "320px text200/400 and expanded400 menu: no overflow or clipped labels, Escape works",
+    "Native mailto mouse/Enter/touch dispatched without product prevention; no real mail client available"
+  ],
+  "layouts": [],
+  "accessibility": [],
+  "fonts": [],
+  "errors": [],
+  "text": [
+    {
+      "scale": 2,
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "scale": 4,
+      "width": 320,
+      "scrollWidth": 320
+    }
+  ],
+  "menu": {
+    "width": 320,
+    "scrollWidth": 320,
+    "labels": [
+      {
+        "text": "Inicio",
+        "width": 160,
+        "scrollWidth": 160
+      },
+      {
+        "text": "Proyectos",
+        "width": 160,
+        "scrollWidth": 160
+      },
+      {
+        "text": "Sobre mí",
+        "width": 160,
+        "scrollWidth": 160
+      },
+      {
+        "text": "Capacidades",
+        "width": 160,
+        "scrollWidth": 160
+      },
+      {
+        "text": "Contacto",
+        "width": 160,
+        "scrollWidth": 160
+      }
+    ]
+  },
+  "mail": {
+    "events": [
+      {
+        "prevented": false,
+        "detail": 1
+      },
+      {
+        "prevented": false,
+        "detail": 0
+      },
+      {
+        "prevented": false,
+        "detail": 1
+      }
+    ],
+    "requests": [
+      {
+        "frameId": "EF2F28800B508D3B13DF6B6E6EB84521",
+        "reason": "anchorClick",
+        "url": "mailto:ezexgonzalez@outlook.com",
+        "disposition": "currentTab"
+      },
+      {
+        "frameId": "EF2F28800B508D3B13DF6B6E6EB84521",
+        "reason": "anchorClick",
+        "url": "mailto:ezexgonzalez@outlook.com",
+        "disposition": "currentTab"
+      },
+      {
+        "frameId": "EF2F28800B508D3B13DF6B6E6EB84521",
+        "reason": "anchorClick",
+        "url": "mailto:ezexgonzalez@outlook.com",
+        "disposition": "currentTab"
+      }
+    ]
+  }
+}

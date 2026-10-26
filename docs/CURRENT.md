@@ -11,12 +11,12 @@
 - **Dominio de publicación futuro:** https://ezegonzalez.dev/ (el mismo de la web actual).
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
-- **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **06 / Final Visual QA & Optimization — AUTHORIZED — NOT STARTED**.
+- **Fase:** cinco secciones implementadas;01–05A aprobados para QA; auditoría06 entregada, pendiente de revisión.
+- **Bloque activo:** **06 / Final Visual QA & Optimization — DONE — PENDING DIRECTOR REVIEW**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Integration Engineer realiza Bloque 06 de auditoría y optimización del preview aislado, documenta hallazgos/mediciones y entrega para aprobación de Dirección. Merge y publicación NO AUTORIZADOS.
+- **Siguiente hito:** Dirección revisa la auditoría06 y sus pendientes de seguridad/validación para release. Merge, publicación y fases posteriores NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -109,7 +109,7 @@ Informe corto con:
 | **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **04** | About + Skills: narrativa, índice técnico y responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **06** | Final Visual QA & Optimization: Figma, responsive, a11y, motion, performance, SEO/readiness | **AUTHORIZED — NOT STARTED** |
+| **06** | Final Visual QA & Optimization: Figma, responsive, a11y, motion, performance, SEO/readiness | **DONE — PENDING DIRECTOR REVIEW** |
 
 Cada bloque necesita un brief específico y aprobación antes de pasar al siguiente. Un backlog NO es autorización para ejecutar trabajo futuro.
 
@@ -1319,3 +1319,56 @@ vigentes. No se declara aprobada la presencia visual de Skills sin Director revi
 **Deliverables:** baseline SHA, changed files and commit(s), a short prioritized QA report and real screenshots of full desktop/mobile (plus targeted before/after), test matrix, web performance audit with real numbers and environment, accessibility/links/SEO readiness matrix, unchanged legacy 2025 build proof, and **a release checklist / exact safe migration plan for later authorization**, not an actual merge, deploy or DNS action. Record results in `docs/qa/block06/` and update this `docs/CURRENT.md` to `DONE — PENDING DIRECTOR REVIEW` if complete. **STOP and await explicit approval for any publication phase.**
 
 **Hard prohibition:** No `main` modifications, merge/rebase into production, deployment, Vercel/Cloudflare project/settings edits, DNS/domain changes, noindex removal from isolated preview, or declaration that Portfolio 2027 is live.
+
+## 26. Entrega Bloque06 — auditoría integral — 2026-10-26
+
+**DONE — PENDING DIRECTOR REVIEW.** Rama `feature/portfolio-2027-foundation`.
+HEAD inicial sincronizado: `982396eb6de28caf75ff710056fb7c3267da0fc4`.
+Corrección: `c4e93604418f60150ff5947df9d32a4e7a95600b`
+(`fix: preserve navigation and content reflow with enlarged text`).
+Cierre documental: commit `docs: record Block 06 audit and unexecuted release plan`;
+HEAD final consultable en el historial de esta entrada, sin hash circular.
+
+- Auditoría nueva sobre **preview compilada**, no solo dev: siete viewports
+  requeridos más cuatro vecinos de breakpoint; Figma integral102:559/102:775 y
+  navegación111:591. Capturas completas desktop1920×6015 y mobile390×6367.
+  Diferencias de altura respecto de Figma explicadas por03B y header integrado.
+- P1 confirmado/corregido: texto400% a320px producía documento432px, desborde del
+  menú y recorte en Hero. Tres CSS (`experience`, `selected-work`,
+  `skills-capabilities`) permiten reflow intrínseco en acciones, skip, menú,
+  párrafo e índices. Texto200/400% pasa a320px; menú ampliado legible.
+  No cambia tamaños/copy, grillas normales ni navegación/motion aprobados.
+  Captura mobile idéntica; desktop solo38 píxeles de borde de Hablemos. difieren
+  1/255, con igual geometría y sin cambio de Contact.
+- URL limpia, Back/Forward, cinco deep links, reload Hero y nueva construcción,
+  teclado/foco/offset/skip, touch/menú/Escape, PDF y enlaces verificados.
+  A–E4200/3000ms, clic ordinario, zero-flash, ejecución única, Canvas final retirado,
+  Skills por scroll, reduced motion, fallos de Canvas y desmontaje pasan.
+  ASCII original conserva cadencia y pausa fuera de pantalla; visibilidad oculta
+  simulada y desmontaje no dejan dibujos/RAF. Sin errores normales registrados.
+- Se midieron entrega Google Fonts real por proxy+CA válida (sin fixtures ni bypass
+  TLS), carga retrasada y fallo; pesos/cursiva/swap correctos. Se midieron LCP/CLS,
+  EventTiming, TaskDuration y heap; valores/configuración en `metrics.json`.
+  Lighthouse mobile/desktop y limitaciones en informe; no son CWV de campo.
+  CLS por swap requiere validación final antes de release.
+- Se probó caché geométrica ASCII: comandos/píxeles iguales en48 muestras,
+  microbenchmark desktop mejor pero media compacto peor y beneficio total
+  inconsistente. **No incorporada**: componente ASCII permanece idéntico al inicial.
+  Candidato y datos quedan solo en QA para reproducir la decisión.
+- Axe sin infracciones en cuatro anchos; contraste sobre Canvas requiere revisión
+  manual (incomplete). Texto raíz200/400% NO equivale a zoom real de navegador.
+  Zoom real, lectores de pantalla, otros navegadores y dispositivos físicos
+  siguen sin probar. LinkedIn muestra authwall; CV vigente y mailto real pendientes.
+- `npm audit` identifica15 paquetes preexistentes en la cadena de herramientas
+  (1critical/11high/2moderate/1low); no implica explotación del sitio estático.
+  P1 pendiente de revisión/actualización dirigida autorizada. Sin cambios de paquetes.
+- ESLint2027 PASS; lint global conserva solo cuatro errores legacy conocidos.
+  Build normal1717 y preview49 módulos PASS. Comparación SHA256 de nueve artefactos
+  normales contra checkout inicial; evidencia en `build-comparison.json`.
+- Archivos adicionales: README2027, AGENTS/README raíz, esta bitácora y
+  `docs/qa/block06/` (informe A–G, scripts, JSON, capturas y `MIGRATION.md`).
+  Plan de activación/metadata/404/rollback preparado **sin ejecutar**.
+
+**No se declara listo para producción.** Resolver/aceptar P1 y controles esenciales
+antes de un gate de release. Main/entrada2025, fuentes, PDF, paquetes, SEO publicado,
+producción, dominio y hosting intactos. Sin merge/deploy ni inicio de otra fase.
