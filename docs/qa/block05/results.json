@@ -1,0 +1,770 @@
+{
+  "browser": "153.0.8010.0",
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "previous": {
+        "projects": {
+          "height": 1002,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 1818,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 1038,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 80,
+        "width": 1920,
+        "height": 1077,
+        "fontSize": "19px",
+        "lineHeight": "29.45px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 160,
+        "y": 288,
+        "width": 1600,
+        "height": 264,
+        "fontSize": "240px",
+        "lineHeight": "264px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 160,
+        "y": 702,
+        "width": 558.734375,
+        "height": 70,
+        "fontSize": "44px",
+        "lineHeight": "54px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 1180,
+        "y": 664,
+        "width": 580,
+        "height": 64,
+        "fontSize": "22px",
+        "lineHeight": "32px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 160,
+        "y": 1030,
+        "width": 1600,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 160,
+          "y": 702,
+          "width": 558.734375,
+          "height": 70,
+          "fontSize": "44px",
+          "lineHeight": "54px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 160,
+          "y": 880,
+          "width": 94.6875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 318.6875,
+          "y": 880,
+          "width": 84.046875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 466.734375,
+          "y": 880,
+          "width": 149.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "previous": {
+        "projects": {
+          "height": 796,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 1682,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 985,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 80,
+        "width": 1536,
+        "height": 888.203125,
+        "fontSize": "19px",
+        "lineHeight": "29.45px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 96,
+        "y": 258,
+        "width": 1343.984375,
+        "height": 216,
+        "fontSize": "192px",
+        "lineHeight": "216px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 96,
+        "y": 592,
+        "width": 446.359375,
+        "height": 61.203125,
+        "fontSize": "35.2px",
+        "lineHeight": "45.2px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 949.46875,
+        "y": 554,
+        "width": 490.515625,
+        "height": 60,
+        "fontSize": "20px",
+        "lineHeight": "30px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 96,
+        "y": 857.203125,
+        "width": 1343.984375,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 96,
+          "y": 592,
+          "width": 446.359375,
+          "height": 61.203125,
+          "fontSize": "35.2px",
+          "lineHeight": "45.2px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 96,
+          "y": 733.203125,
+          "width": 94.6875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 254.6875,
+          "y": 733.203125,
+          "width": 84.046875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 402.734375,
+          "y": 733.203125,
+          "width": 149.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "previous": {
+        "projects": {
+          "height": 680,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 1640,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 979,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 80,
+        "width": 1366,
+        "height": 869,
+        "fontSize": "18.615px",
+        "lineHeight": "28.8532px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 72,
+        "y": 258,
+        "width": 1221.984375,
+        "height": 200,
+        "fontSize": "176px",
+        "lineHeight": "200px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 72,
+        "y": 576,
+        "width": 405.703125,
+        "height": 58,
+        "fontSize": "32px",
+        "lineHeight": "42px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 846.671875,
+        "y": 538,
+        "width": 447.296875,
+        "height": 60,
+        "fontSize": "20px",
+        "lineHeight": "30px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 72,
+        "y": 838,
+        "width": 1221.984375,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 72,
+          "y": 576,
+          "width": 405.703125,
+          "height": 58,
+          "fontSize": "32px",
+          "lineHeight": "42px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 72,
+          "y": 714,
+          "width": 94.6875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 230.6875,
+          "y": 714,
+          "width": 84.046875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 378.734375,
+          "y": 714,
+          "width": 149.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "previous": {
+        "projects": {
+          "height": 1252,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 1910,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 1039,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 185,
+        "width": 768,
+        "height": 839,
+        "fontSize": "17.12px",
+        "lineHeight": "26.536px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 48,
+        "y": 331,
+        "width": 671.984375,
+        "height": 152,
+        "fontSize": "136px",
+        "lineHeight": "152px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 48,
+        "y": 581,
+        "width": 405.703125,
+        "height": 60,
+        "fontSize": "32px",
+        "lineHeight": "44px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 48,
+        "y": 673,
+        "width": 671.984375,
+        "height": 60,
+        "fontSize": "20px",
+        "lineHeight": "30px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 48,
+        "y": 913,
+        "width": 671.984375,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 48,
+          "y": 581,
+          "width": 405.703125,
+          "height": 60,
+          "fontSize": "32px",
+          "lineHeight": "44px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 48,
+          "y": 789,
+          "width": 94.6875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 182.6875,
+          "y": 789,
+          "width": 84.046875,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 306.734375,
+          "y": 789,
+          "width": 149.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "previous": {
+        "projects": {
+          "height": 1178,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 2231,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 1231,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 390,
+        "height": 827,
+        "fontSize": "16.175px",
+        "lineHeight": "25.0713px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 24.375,
+        "y": 194,
+        "width": 341.25,
+        "height": 104,
+        "fontSize": "88px",
+        "lineHeight": "104px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 24.375,
+        "y": 388,
+        "width": 303.671875,
+        "height": 50,
+        "fontSize": "24px",
+        "lineHeight": "34px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 24.375,
+        "y": 466,
+        "width": 341.25,
+        "height": 78,
+        "fontSize": "17px",
+        "lineHeight": "26px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 24.375,
+        "y": 804,
+        "width": 341.25,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 24.375,
+          "y": 388,
+          "width": 303.671875,
+          "height": 50,
+          "fontSize": "24px",
+          "lineHeight": "34px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 24.375,
+          "y": 592,
+          "width": 341.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 24.375,
+          "y": 644,
+          "width": 341.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 24.375,
+          "y": 696,
+          "width": 341.25,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "previous": {
+        "projects": {
+          "height": 1348,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        "about": {
+          "height": 2381,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        "skills": {
+          "height": 1305,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 320,
+        "height": 813,
+        "fontSize": "16px",
+        "lineHeight": "24.8px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "headline": {
+        "x": 20,
+        "y": 194,
+        "width": 280,
+        "height": 92,
+        "fontSize": "76px",
+        "lineHeight": "92px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "email": {
+        "x": 20,
+        "y": 376,
+        "width": 278.171875,
+        "height": 48,
+        "fontSize": "22px",
+        "lineHeight": "32px",
+        "color": "rgb(239, 239, 239)"
+      },
+      "message": {
+        "x": 20,
+        "y": 452,
+        "width": 280,
+        "height": 78,
+        "fontSize": "17px",
+        "lineHeight": "26px",
+        "color": "rgb(171, 171, 171)"
+      },
+      "footer": {
+        "x": 20,
+        "y": 790,
+        "width": 280,
+        "height": 47,
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "color": "rgb(125, 125, 125)"
+      },
+      "copyright": "© 2026 Ezequiel Gonzalez",
+      "overflow": false,
+      "links": [
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "href": "mailto:ezexgonzalez@outlook.com",
+          "download": null,
+          "x": 20,
+          "y": 376,
+          "width": 278.171875,
+          "height": 48,
+          "fontSize": "22px",
+          "lineHeight": "32px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "LinkedIn↗",
+          "href": "https://www.linkedin.com/in/ezexgonzalez/",
+          "download": null,
+          "x": 20,
+          "y": 578,
+          "width": 280,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "GitHub↗",
+          "href": "https://github.com/ezexgonzalez",
+          "download": null,
+          "x": 20,
+          "y": 630,
+          "width": 280,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        },
+        {
+          "text": "Descargar CV↓",
+          "href": "/cv-ezequiel-gonzalez.pdf",
+          "download": "cv-ezequiel-gonzalez.pdf",
+          "x": 20,
+          "y": 682,
+          "width": 280,
+          "height": 44,
+          "fontSize": "20px",
+          "lineHeight": "30px",
+          "color": "rgb(239, 239, 239)"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Six widths: Contact copy, natural geometry, complete email, 44px links, footer/current year, no overflow or placeholders; five semantic sections",
+    "Desktop destinations, active state, hash, heading focus, Back/Forward and Contact keyboard order/focus ring",
+    "PDF HTTP200/application-pdf/signature/bytes; actual mouse and keyboard downloads match original",
+    "Social anchors dispatch correct URLs to separate tabs (destination intercepted; real HTTP is separate)",
+    "Hover and pressed feedback preserve geometry; visible focus already checked",
+    "All mobile destinations real; disclosure closes and active section updates",
+    "320px/200% root text: full selectable email and links, no horizontal overflow",
+    "Continuous desktop/mobile scroll: every section becomes active, sticky header stays at top, no overlap/overflow",
+    "Emulated touch downloads original PDF",
+    "Clock in 2031 proves copyright is dynamic",
+    "No-JS HTML retains all five destinations and functional Contact links; footer omits a fixed year",
+    "Mouse/keyboard/touch mailto uses correct URI without prevention; external client unavailable in headless"
+  ],
+  "errors": [],
+  "full1920": [
+    {
+      "id": "hero",
+      "top": 64,
+      "height": 1016
+    },
+    {
+      "id": "projects",
+      "top": 1080,
+      "height": 1002
+    },
+    {
+      "id": "about",
+      "top": 2082,
+      "height": 1818
+    },
+    {
+      "id": "skills",
+      "top": 3900,
+      "height": 1038
+    },
+    {
+      "id": "contact",
+      "top": 4938,
+      "height": 1077
+    }
+  ],
+  "full390": [
+    {
+      "id": "hero",
+      "top": 56,
+      "height": 844
+    },
+    {
+      "id": "projects",
+      "top": 900,
+      "height": 1178
+    },
+    {
+      "id": "about",
+      "top": 2078,
+      "height": 2231
+    },
+    {
+      "id": "skills",
+      "top": 4309,
+      "height": 1231
+    },
+    {
+      "id": "contact",
+      "top": 5540,
+      "height": 827
+    }
+  ],
+  "cv": {
+    "status": 200,
+    "mime": "application/pdf",
+    "bytes": 47841,
+    "sha256": "322c600b3c5300231a24e7c6299d6be3ee346fb72e0a9300ce2c8a3a169d12c6"
+  }
+}

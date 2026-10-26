@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **05 / Contact + Closing Integration — AUTHORIZED — NOT STARTED**.
+- **Bloque activo:** **05 / Contact + Closing Integration — DONE — PENDING DIRECTOR REVIEW**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Frontend Integration Engineer ejecuta únicamente Bloque 05 Contact + Closing Integration en preview aislada, documenta y espera review de Dirección. Bloque 06 NO AUTORIZADO.
+- **Siguiente hito:** Dirección revisa la entrega 05 documentada en sección 22. Ingeniería detenida; Bloque 06 y publicación NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -108,7 +108,7 @@ Informe corto con:
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **04** | About + Skills: narrativa, índice técnico y responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **AUTHORIZED — NOT STARTED** |
+| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **DONE — PENDING DIRECTOR REVIEW** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
 
 Cada bloque necesita un brief específico y aprobación antes de pasar al siguiente. Un backlog NO es autorización para ejecutar trabajo futuro.
@@ -1037,3 +1037,125 @@ físicos, lectores de pantalla y zoom de navegador. Sin otras regresiones detect
 **QA and evidence:** Actual browser viewport/full-length captures desktop/tablet/mobile; compare Contact against Figma and complete end-to-end continuous scroll from Hero to closing footer. Audit navigation click/tap/focus/hash/back, mailto, CV PDF response/bytes and download behavior, all external links, 320px text reflow and 200% root text, no horizontal overflow, keyboard/focus order, reduced motion, no-JS fallback, dynamic year and no console errors. Regression check earlier blocks, especially Selected Work A–E zero-flash 4200/3000 motion. Run `npm run lint`, `npx --no-install eslint src/portfolio2027`, `npm run build` and isolated preview build; separate four known legacy lint errors. No new significant dependencies; no changes to `main`, production domain/DNS/hosting or Vercel/Cloudflare.
 
 **Delivery:** file and commit list, real QA results, Contact and full-page comparison screenshots, link/PDF verification, validation of approved earlier work; update `docs/CURRENT.md` at end as `DONE — PENDING DIRECTOR REVIEW`, not approved. **STOP. Block 06 NOT AUTHORIZED until Director review.**
+
+
+## 22. Entrega Bloque 05 — Contact / Closing + experiencia completa — 2026-10-26
+
+**DONE — PENDING DIRECTOR REVIEW.** No implica aprobación ni publicación.
+Rama `feature/portfolio-2027-foundation`; HEAD inicial sincronizado/verificado:
+`657e3153da0e7cd296fccb12d2095b1ac0fb174b`.
+
+### Implementación y archivos
+
+- `src/portfolio2027/components/ContactClosing.jsx` y `styles/contact-closing.css`:
+  Contact A Editorial Sign-off, copy completo, Hablemos. en Instrument Serif,
+  email nativo subrayado, mensaje, LinkedIn/GitHub ↗ y descarga CV ↓. Cada texto
+  e indicador forman un solo enlace, con objetivos ≥44px; filas completas en mobile.
+  Foco existente de 2px/separación4px, hover preciso y feedback al presionar sin
+  transformaciones ni animaciones. Un footer mínimo obtiene el año local con
+  `new Date().getFullYear()`; muestra 2026 y pasó prueba con calendario2031.
+- `preview/PortfolioPreview.jsx`: reemplaza el último placeholder por Contact,
+  conservando cinco secciones, un main y navegación existente. `preview/preview.css`:
+  elimina solo reglas del placeholder retirado. No se tocó el reset del documento.
+- `preview.html`: fallback legible con Contact y sus cuatro enlaces nativos;
+  sin JavaScript, firma sin año fijo. Conserva noindex/nofollow y el contenido previo.
+- `src/portfolio2027/README.md`, `AGENTS.md`, `README.md`, esta bitácora y
+  `docs/qa/block05/`: contrato, estado, scripts, JSON, referencias Figma y capturas.
+
+No se modificaron componentes/estilos/hooks de Hero, Navigation, Selected Work,
+UI Construction, About o Skills, fuentes/tokens, package.json/lockfile, PDF,
+entrada legacy 2025, main, SEO de producción, dominio, DNS o hosting. Sin merge
+ni deploy. Tooling de navegador externo al proyecto en /tmp, sin nuevos paquetes
+para la aplicación. No se inició Bloque 06.
+
+### Fidelidad y continuidad
+
+Se leyeron contextos completos y renders 90:790/829/868 dentro de producción89:557,
+estados92:983 y las once filas Contact de la matriz92:556 (104:963 a104:1223).
+Las entradas y movimientos decorativos son Proposed; se conservó presentación
+estática, con las convenciones funcionales autorizadas para enlaces reales.
+No hay formulario, tarjetas, imágenes, nuevo ASCII o construcción adicional.
+
+| Ancho | Altura Contact | Headline / email | Referencia |
+|---|---:|---:|---|
+| 1920px | 1077px | 240 / 44px | Frame final1920×1077 |
+| 1536px | 888.20px | 192 / 35.2px | Adaptación fluida desktop |
+| 1366px | 869px | 176 / 32px | Adaptación notebook |
+| 768px | 839px | 136 / 32px | Frame final768×839 |
+| 390px | 827px | 88 / 24px | Frame final390×827 |
+| 320px | 813px | 76 / 22px | Correo completo en una línea; reflow al ampliar |
+
+Alturas naturales, sin recorte ni obligación de100vh. Se conserva gutter390px
+24.375px del foundation. A768×1024 el final del documento limita el scroll y deja
+Contact en Y185px; no se añade un espaciador para forzar el offset72px. Los demás
+anclajes siguen offset80/72px y foco correcto. No es un defecto de navegación.
+Capturas integrales reales: desktop1920×6015 y mobile390×6367; se comprobaron las
+cuatro uniones, fondo, márgenes, separadores y ritmo sin alterar secciones previas.
+
+### Enlaces y CV
+
+- mailto exacto, activación por mouse/teclado/touch sin preventDefault. El entorno
+  headless no dispone de cliente de correo: no se afirma apertura de una app real
+  ni envío de mensajes. Texto seleccionable comprobado con selección DOM real.
+- LinkedIn y GitHub abren destinos aprobados en pestaña separada con protección
+  noopener/noreferrer. El despacho de URL se probó interceptando la navegación;
+  las respuestas HTTP reales se midieron aparte con curl y TLS válido.
+- GitHub de perfil y cuatro destinos de proyectos: HTTP200. **LinkedIn: HTTP999**
+  en la sonda automatizada; no se declara disponible ni roto por esa respuesta.
+  Requiere comprobación manual del perfil antes de publicar. No se cambió su URL.
+- `/cv-ezequiel-gonzalez.pdf`: HTTP200, application/pdf, firma%PDF-, versión1.4,
+  1página, 47841bytes; SHA-256
+  `322c600b3c5300231a24e7c6299d6be3ee346fb72e0a9300ce2c8a3a169d12c6`.
+  Descargas reales con mouse, Enter y touch emulado: nombre y bytes idénticos al
+  original. Blob Git conservado1e6bd92f2a812528cafc5c0d3fdda1d5d3ccc096.
+  La vigencia del contenido queda pendiente de revisión del dueño antes de release.
+
+### Validaciones efectivas
+
+- Chromium153: 1920×1080, 1536×864, 1366×768, 768×1024, 390×844, 320×844;
+  Contact, correo completo, jerarquía, objetivos táctiles y ausencia de overflow.
+  Scroll continuo desktop/mobile: todos los estados activos, header sticky estable,
+  sin solapamientos nuevos. Click, menú/cierre, foco, hash directo, Back/Forward,
+  teclado y orden email→LinkedIn→GitHub→CV PASS. Foco, hover y pressed verificados.
+- Texto raíz200% a320px: correo y acciones completos, sin overflow, scroll natural.
+  Fallo de fuentes mantiene Contact y enlaces legibles. Sin JS permanecen los
+  cinco destinos y contenido de las cinco áreas (Hero sigue como h1 del fallback).
+- Comparación de24 pares de capturas: Hero y secciones completas Projects/About/
+  Skills pixel-idénticos frente a HEAD inicial en los seis anchos. JSON de
+  regresión retenido; pares idénticos se omiten del commit para no duplicar assets.
+- Construcción completa A–E, zero-flash,4200/3000ms, geometría real, CTA/navbar/
+  scroll y mobile, ejecución única, hash/teclado, reduced motion, Canvas nulo y
+  cleanup PASS. Interrupciones por preferencia/cambio de tamaño retiran overlays
+  y detienen dibujo. ASCII activo en Hero se pausa al llegar a Contact, sin dibujos
+  adicionales fuera de pantalla. No errores de consola/page errors en contextos
+  normales monitorizados; los fallos de protocolo/fuentes se probaron aparte.
+- `npm run lint`: FAIL solo por cuatro no-unused-vars legacy: PrimaryButton:2,
+  SecondaryButton:2, Contact:6 y Skills:12. ESLint específico2027 y sintaxis de
+  tres scripts PASS. `git diff --check` PASS.
+- `npm run build`: PASS,1717módulos; CSS69.58kB/gzip10.67, JS237.77kB/gzip71.37.
+  Los nueve artefactos estándar son idénticos por SHA-256 al build del HEAD inicial.
+  Preview explícita PASS,48módulos; CSS36.83kB/gzip6.71, JS214.35kB/gzip67.91.
+
+### Problemas y límites
+
+Se corrigió una expectativa del harness: el fallback tiene Hero como h1, no como
+section; no se cambió Hero para ajustar esa prueba. Una captura parcial de Contact
+recortaba el dibujo del copyright en390px; las capturas de Contact se extraen ahora
+por sus límites DOM de capturas integrales del navegador, con footer completo y
+sin editar el producto para adaptar la captura.
+
+Fuentes oficiales CSS/TTF obtenidas con TLS válido y servidas solo a QA por la CA
+del proxy; sin bypass de certificados ni redistribución. Pendientes: LinkedIn
+manual, vigencia CV, cliente mailto real, entrega de fuentes/CLS, Safari/Firefox,
+dispositivos físicos, lectores de pantalla y zoom de interfaz de navegador.
+La prueba200% corresponde a texto raíz, no a afirmar zoom real de todos los browsers.
+No otras regresiones detectadas ni cambios fuera del alcance de integración.
+
+### Commits y siguiente gate
+
+- Implementación: `e8507b93882027911c6602de1cbf5543979836de`
+  (`feat: add editorial Contact closing and complete isolated preview`).
+- Cierre/evidencia: commit posterior `docs: record Block 05 integration and QA`;
+  SHA consultable en historial, sin hash circular en el mismo commit.
+
+**Bloque 06 NO AUTORIZADO. Esperar revisión de Dirección. Sin publicación implícita.**
