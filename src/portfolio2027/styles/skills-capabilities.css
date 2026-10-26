@@ -1,4 +1,4 @@
-/* Skills A — Technical Index. Static information; no action affordances. */
+/* Skills A — Technical Index. Informational rows; no action affordances. */
 .portfolio-2027 .p27-capabilities {
   --cap-top: 6rem; --cap-bottom: 8rem; --cap-main-top: 4rem;
   --cap-title: 3.5rem; --cap-accent: 4rem;
@@ -104,4 +104,47 @@
   .portfolio-2027 .p27-capabilities { --cap-title: 2.125rem; --cap-accent: 2.5rem; }
   .portfolio-2027 .p27-capabilities-title { line-height: 2.5rem; }
   .portfolio-2027 .p27-capabilities-title .p27-serif { line-height: 2.875rem; }
+}
+
+/* 05A: text stays visible; only the title offset and three rule strokes move.
+   Without the hook's markers, all rules keep their original static borders. */
+.portfolio-2027 .p27-capabilities {
+  --skills-title-offset: 6px; --skills-title-duration: 300ms;
+  --skills-rule-duration: 550ms; --skills-rule-stagger: 110ms;
+}
+.portfolio-2027 .p27-capabilities[data-skills-title='waiting'] .p27-capabilities-title {
+  transform: translateY(var(--skills-title-offset));
+}
+.portfolio-2027 .p27-capabilities[data-skills-title='playing'] .p27-capabilities-title {
+  animation: p27-skills-title-in var(--skills-title-duration) cubic-bezier(.22, 1, .36, 1) both;
+}
+.portfolio-2027 .p27-capability { position: relative; }
+.portfolio-2027 .p27-capabilities:is([data-skills-lines='waiting'], [data-skills-lines='playing']) .p27-capability {
+  border-block-start-color: transparent;
+}
+.portfolio-2027 .p27-capabilities:is([data-skills-lines='waiting'], [data-skills-lines='playing']) .p27-capability::before {
+  content: ''; position: absolute; inset: -1px 0 auto; block-size: var(--p27-hairline);
+  background: var(--p27-color-rule); transform: scaleX(0); transform-origin: left center; pointer-events: none;
+}
+.portfolio-2027 .p27-capabilities[data-skills-lines='playing'] .p27-capability::before {
+  animation: p27-skills-rule-in var(--skills-rule-duration) cubic-bezier(.2, .8, .2, 1) both;
+}
+.portfolio-2027 .p27-capabilities[data-skills-lines='playing'] .p27-capability:nth-child(2)::before { animation-delay: var(--skills-rule-stagger); }
+.portfolio-2027 .p27-capabilities[data-skills-lines='playing'] .p27-capability:nth-child(3)::before { animation-delay: calc(2 * var(--skills-rule-stagger)); }
+@keyframes p27-skills-title-in { from { transform: translateY(var(--skills-title-offset)); } to { transform: translateY(0); } }
+@keyframes p27-skills-rule-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-2027 .p27-capability-number { transition: color 180ms ease-out; }
+  .portfolio-2027 .p27-capability:hover .p27-capability-number { color: var(--p27-color-text); }
+}
+@media (max-width: 63.999rem) {
+  .portfolio-2027 .p27-capabilities {
+    --skills-title-offset: 4px; --skills-title-duration: 220ms;
+    --skills-rule-duration: 450ms; --skills-rule-stagger: 0ms;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-2027 .p27-capabilities .p27-capabilities-title { transform: none !important; }
+  .portfolio-2027 .p27-capabilities[data-skills-lines] .p27-capability { border-block-start-color: var(--p27-color-rule); }
+  .portfolio-2027 .p27-capabilities[data-skills-lines] .p27-capability::before { content: none; }
 }

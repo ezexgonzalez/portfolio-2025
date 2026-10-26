@@ -3,7 +3,8 @@
 Blocks 01–04 approved. Block 05 completes Contact / Closing and the five-section
 experience for Director review in the isolated preview. The 2025 `App.jsx`,
 `main.jsx`, theme initialization and default HTML entry remain unchanged.
-No placeholders remain. Block 06 and publication are not authorized.
+No placeholders remain. Block05A refines pointer-safe construction, clean navigation
+URLs/reload and Skills editorial motion. Block06/publication remain unauthorized.
 
 ## Open locally
 
@@ -27,7 +28,7 @@ includes both projects, the full story, three capability entries and Contact.
 - `components/Hero.jsx` contains the approved Spanish content and semantic h1.
 - `components/Navigation.jsx` owns the nonmodal mobile disclosure and actual-width
   navigation measurement. Identity/links are measured again after fonts load.
-- `hooks/useAnchorNavigation.js` owns active-section reading, hash/history,
+- `hooks/useAnchorNavigation.js` owns active-section reading, clean-URL session history,
   focus, initial font readiness and scroll offset. It restores document history
   policy and disconnects listeners/observer/RAF on cleanup.
 - `components/AmbientAscii.jsx` owns the independent Hero Canvas lifecycle.
@@ -40,7 +41,8 @@ includes both projects, the full story, three capability entries and Contact.
 - `components/AboutStory.jsx` and `styles/about-story.css` implement the three
   narrative chapters with paragraph-linked chronology, without fixed heights.
 - `components/SkillsCapabilities.jsx` and `styles/skills-capabilities.css` implement
-  the static three-entry technical index; no actions or pointer cursor.
+  the three-entry technical index; no actions or pointer cursor.
+- `hooks/useSkillsMotion.js` owns one-shot CSS title/rule entry and fail-open cleanup.
 - `components/ContactClosing.jsx` and `styles/contact-closing.css` implement the
   Editorial Sign-off, four native links and a minimal footer with current year.
 - `navigation.js` declares the five approved anchor destinations.
@@ -51,7 +53,7 @@ includes both projects, the full story, three capability entries and Contact.
 
 The preview imports no legacy CSS, `LiquidBackground` or `initTheme()`. Its own
 HTML scroll rules do not affect `/`. Native scroll anchoring is disabled only in
-this preview document because hash restoration is handled explicitly after fonts.
+this preview document because destination restoration is handled explicitly after fonts.
 
 ## Tailwind boundary
 
@@ -126,25 +128,45 @@ Points, geometry, text contours and frontier use clearer neutral contrast; no
 change to final typography/colors/layout. Native Canvas geometry is measured from
 loaded fonts and wrapped DOM words; no per-scroll reconstruction.
 
-Normal pointer/touch on #projects allows the sequence while the existing navigation
-keeps its hash, smooth scroll and heading focus. The capture handler grants exactly
-the synchronous navigation heading focus; its token expires on the next task.
-Keyboard activation (detail=0), other/programmatic focus, initial hash and reduced
-motion resolve immediately. A short smooth-navigation exemption ends after 1800ms
-or manual wheel/touch/key input. Normal scrolling continues; actual section exit
-or a large fast jump resolves final. No scroll/focus manipulation by this hook.
+Normal pointer/touch on #projects allows the sequence while navigation keeps smooth
+scroll and heading focus with a clean URL. A matching native pointer-down/focus
+pair inside Selected Work is allowed: blank/text/project-link presses do not
+finish construction. Its focus token is tied to the exact focusable pointer target,
+consumed once, cleared by keyboard/pointer cancellation and after click's task;
+a500ms post-pointerup bound covers gestures without a click. It never prevents
+activation. Navigation outside the section, offscreen/fast scroll and hidden tabs
+retain normal cleanup. Keyboard/programmatic/assistive focus and explicit initial
+hash still resolve final. A short navigation-scroll exemption remains1800ms.
+The Canvas engine, geometry, visual phases, contrast and4200/3000ms are unchanged.
 
-Explicit font readiness, bounded 500/160-point grid, DPR/backing caps. Missing
+Explicit font readiness, bounded500/160-point grid, DPR/backing caps. Missing
 capabilities/setup errors, Canvas/render failure and stalled preparation fail open.
-Font preparation has a 6s watchdog; active motion has duration+1500ms recovery.
+Font preparation has a6s watchdog; active motion has duration+1500ms recovery.
 Reflow, late font load, document hiding and preference change resolve final.
-Completion/unmount cancels all recovery/focus/navigation timers, RAF, observers and
-listeners and removes Canvas. No content display:none/inert/aria-hidden or clipping.
+Completion/unmount cancels recovery/focus/navigation/pointer timers, RAF, observers,
+listeners and Canvas. Semantic content remains available throughout.
 
-Development review replay: open the same preview **without a hash** and reload.
-For an existing #projects URL, run `history.replaceState(null, '', location.pathname)`
-then reload. This resets the page visit; no replay control or production feature
-was added. Avoid direct-hash/keyboard entry when reviewing pointer/scroll motion.
+Normal development review replay: refresh the clean URL. It starts at Hero and
+rearms one-shot effects. Explicit `#projects` in the address bar is a deep link
+and intentionally resolves final; use an unhashed URL to review the entrance.
+No replay control or production feature was added.
+
+## Clean internal navigation
+
+Native `href="#id"` stays intact for no-JS, modified clicks and explicit deep links.
+Handled internal clicks write a clean `pathname + search` and merge a destination
+under `history.state.portfolio2027.destination`, preserving other state. Repeating
+the same destination does not add an entry. Popstate restores each stored target
+with its heading focus and existing64/56px header plus16px offset. The header,
+mobile menu and visual active states are unchanged.
+
+On a new document or reload, a valid explicit URL hash wins; without a hash,
+the current entry is reset to Hero rather than reviving the previous document's
+destination. Manual browser scroll restoration is set in layout effect, with
+another initial alignment after fonts. Navigation occurring before fonts finish
+invalidates that initial alignment, avoiding a late jump back. Initial Hero does
+not take heading focus or acquire an unsolicited focus outline. Explicit hashes
+are preserved; only handled internal navigation writes a clean URL.
 
 ## About / Story and Skills / Capabilities
 
@@ -164,9 +186,22 @@ categories, descriptions and technology lines retain their hierarchy. NBSPs in
 Tailwind CSS and REST APIs match Figma. Text can reflow under enlargement.
 
 The master `92:556` rows `104:781/807/833/859/885/911/937` were read in full.
-Entrance, divider/date emphasis and number hover are all **Proposed**, so these
-two sections remain static with selectable, visible text and no new observers,
-timers or motion system. These effects await explicit approval.
+About's proposed effects remain static. Block05A explicitly authorizes Skills:
+- Title6→0px/300ms desktop;4→0px/220ms compact, cubic-bezier(.22,1,.36,1).
+- Three top separators draw from left in550ms with0/110/220ms desktop delays;
+  compact450ms simultaneous, cubic-bezier(.2,.8,.2,1). Bottom/index rules stay static.
+- Precise-hover number color #ABABAB↔#EFEFEF over180ms ease-out; no pointer cursor,
+  actions, links, cards or motion of descriptions/technologies.
+
+One IntersectionObserver watches title and first entry at15% visibility, unobserves
+on entry, and CSS animates transforms without changing layout. Text is always
+fully visible. Native animationend restores original borders and removes motion
+markers' active styles;2s recovery timers fail open if animation events are lost.
+Observers/listeners/timers are released on completion/unmount. Direct hash, Skills
+anchor/focus, reduced motion, hidden page, active reflow and setup failure resolve
+final. Without JavaScript/observer the original static border presentation remains.
+No native keyframe tracks were returned by Figma's motion API for90:556; values
+come from the matrix plus the owner's explicit05A timing refinements.
 
 ## Contact / Closing and complete integration
 
@@ -210,4 +245,4 @@ external-tool harness are in `docs/qa/block03/`; correction evidence, real brows
 recordings and capture timestamps are in `docs/qa/block03a/`. Block 04 copy/geometry, responsive captures and regression
 evidence live in `docs/qa/block04/`. Block05 Contact, complete-page captures,
 PDF/link checks and regressions are recorded in `docs/qa/block05/`. Block06 remains
-unauthorized; no publication is implied.
+unauthorized; no publication is implied.05A evidence is in `docs/qa/block05a/`.

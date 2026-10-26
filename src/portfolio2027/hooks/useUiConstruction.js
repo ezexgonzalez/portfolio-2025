@@ -22,6 +22,8 @@ export function useUiConstruction(sectionRef) {
     let recovery = 0;
     let navigationTimer = 0;
     let focusTimer = 0;
+    let pointerFocusTimer = 0;
+    let pointerFocusTarget = null;
     let disposed = false;
     let done = false;
     let started = false;
@@ -37,7 +39,8 @@ export function useUiConstruction(sectionRef) {
 
     function release() {
       cancelAnimationFrame(raf); raf = 0;
-      clearTimeout(recovery); clearTimeout(navigationTimer); clearTimeout(focusTimer);
+      clearTimeout(recovery); clearTimeout(navigationTimer); clearTimeout(focusTimer); clearTimeout(pointerFocusTimer);
+      pointerFocusTarget = null;
       layer?.remove(); layer = null;
       observer?.disconnect(); resizeObserver?.disconnect(); controller.abort();
     }
@@ -88,6 +91,12 @@ export function useUiConstruction(sectionRef) {
       lastY = scrollY; lastTime = now;
     }
     function anchor(event) {
+      // Native touch focus can arrive after pointerup. Keep only this gesture's
+      // exact focus target until click/default activation has finished its task.
+      if (pointerFocusTarget) {
+        clearTimeout(pointerFocusTimer);
+        pointerFocusTimer = window.setTimeout(clearPointerFocus, 0);
+      }
       const link = event.target.closest('a[href^="#"]');
       if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       if (link.getAttribute('href') !== '#projects' || event.detail === 0) { finish('keyboard-or-other-anchor'); return; }
@@ -104,9 +113,21 @@ export function useUiConstruction(sectionRef) {
     function hash() { if (location.hash && !(navigationInFlight && location.hash === '#projects')) finish('hash'); }
     function focus(event) {
       if (allowNavigationFocus && event.target.id === 'projects-title') { allowNavigationFocus = false; return; }
+      if (pointerFocusTarget === event.target) { clearPointerFocus(); return; }
       finish('focus');
     }
-    function keyboard() { navigationInFlight = false; if (started || section.contains(document.activeElement)) finish('keyboard'); }
+    function clearPointerFocus() { clearTimeout(pointerFocusTimer); pointerFocusTarget = null; }
+    function pointerDown(event) {
+      clearPointerFocus();
+      if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0)) return;
+      pointerFocusTarget = event.target.closest('a, button, [tabindex]');
+    }
+    function pointerUp() {
+      if (!pointerFocusTarget) return;
+      // Bounded fallback for gestures that never dispatch click (e.g. long press).
+      pointerFocusTimer = window.setTimeout(clearPointerFocus, 500);
+    }
+    function keyboard() { clearPointerFocus(); navigationInFlight = false; if (started || section.contains(document.activeElement)) finish('keyboard'); }
     function manualInput() { navigationInFlight = false; }
     function resize() { if (started) finish('reflow'); }
     function visibility() { if (document.hidden) finish('hidden'); }
@@ -114,7 +135,9 @@ export function useUiConstruction(sectionRef) {
     try {
       section.dataset.construction = 'waiting';
       section.addEventListener('focusin', focus, { signal });
-      section.addEventListener('pointerdown', () => finish('pointer-access'), { signal });
+      section.addEventListener('pointerdown', pointerDown, { signal });
+      document.addEventListener('pointerup', pointerUp, { signal });
+      document.addEventListener('pointercancel', clearPointerFocus, { signal });
       document.addEventListener('click', anchor, { capture: true, signal });
       document.addEventListener('keydown', keyboard, { capture: true, signal });
       document.addEventListener('visibilitychange', visibility, { signal });

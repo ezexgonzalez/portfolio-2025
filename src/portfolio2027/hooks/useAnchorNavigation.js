@@ -1,10 +1,17 @@
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { destinations } from '../navigation.js';
 
 export function useAnchorNavigation() {
   const headerRef = useRef(null);
   const [activeSection, setActiveSection] = useState('hero');
   const [scrolled, setScrolled] = useState(false);
+  const navigationEpoch = useRef(0);
+
+  function remember(id, replace = false, url = window.location.href) {
+    const state = window.history.state;
+    const next = { ...state, portfolio2027: { ...state?.portfolio2027, destination: id } };
+    window.history[replace ? 'replaceState' : 'pushState'](next, '', url);
+  }
 
   function goTo(id, smooth = false) {
     const target = document.getElementById(id);
@@ -25,17 +32,30 @@ export function useAnchorNavigation() {
     const id = link.getAttribute('href').slice(1);
     if (!destinations.some((item) => item.id === id)) return;
     event.preventDefault();
-    if (window.location.hash !== `#${id}`) window.history.pushState(null, '', `#${id}`);
+    navigationEpoch.current += 1;
+    const cleanUrl = window.location.pathname + window.location.search;
+    if (window.history.state?.portfolio2027?.destination !== id) remember(id, false, cleanUrl);
+    else if (window.location.hash) remember(id, true, cleanUrl);
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     goTo(id, event.detail > 0 && !reduced);
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let frame = 0;
     let initialFrame = 0;
     let disposed = false;
     const previousRestoration = window.history.scrollRestoration;
     window.history.scrollRestoration = 'manual';
+    const initialEpoch = navigationEpoch.current;
+    const hashDestination = () => {
+      const id = window.location.hash.slice(1);
+      return destinations.some((item) => item.id === id) ? id : null;
+    };
+    // A new document/refresh is a fresh visit. Only an explicit URL hash opts
+    // into deep-link access; the previous document's state is not a reload target.
+    const initialDestination = hashDestination() || 'hero';
+    remember(initialDestination, true);
+    if (initialDestination === 'hero') window.scrollTo({ top: 0, behavior: 'instant' });
     function readScroll() {
       frame = 0;
       const height = headerRef.current?.offsetHeight ?? 64;
@@ -52,18 +72,18 @@ export function useAnchorNavigation() {
     function schedule() {
       if (!frame) frame = window.requestAnimationFrame(readScroll);
     }
-    function restoreHash() {
-      const id = window.location.hash.slice(1);
+    function restoreLocation() {
+      navigationEpoch.current += 1;
+      const id = hashDestination() || window.history.state?.portfolio2027?.destination || 'hero';
       if (destinations.some((item) => item.id === id)) goTo(id);
-      else if (!id) window.scrollTo({ top: 0, behavior: 'instant' });
       schedule();
     }
     const headerObserver = new ResizeObserver(schedule);
     if (headerRef.current) headerObserver.observe(headerRef.current);
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', schedule);
-    window.addEventListener('popstate', restoreHash);
-    window.addEventListener('hashchange', restoreHash);
+    window.addEventListener('popstate', restoreLocation);
+    window.addEventListener('hashchange', restoreLocation);
     // Reading the mounted layout first triggers the fonts actually used by React.
     // Reading fonts.ready before this layout can resolve before font requests start.
     readScroll();
@@ -73,7 +93,15 @@ export function useAnchorNavigation() {
       document.fonts.load('400 12px "IBM Plex Mono"'),
       document.fonts.load('italic 400 144px "Instrument Serif"'),
     ]).then(() => document.fonts.ready).then(() => {
-      if (!disposed) initialFrame = requestAnimationFrame(restoreHash);
+      if (!disposed && navigationEpoch.current === initialEpoch) {
+        initialFrame = requestAnimationFrame(() => {
+          if (navigationEpoch.current === initialEpoch) {
+            if (initialDestination === 'hero') window.scrollTo({ top: 0, behavior: 'instant' });
+            else goTo(initialDestination);
+            schedule();
+          }
+        });
+      }
     });
     return () => {
       disposed = true;
@@ -83,8 +111,8 @@ export function useAnchorNavigation() {
       headerObserver.disconnect();
       window.removeEventListener('scroll', schedule);
       window.removeEventListener('resize', schedule);
-      window.removeEventListener('popstate', restoreHash);
-      window.removeEventListener('hashchange', restoreHash);
+      window.removeEventListener('popstate', restoreLocation);
+      window.removeEventListener('hashchange', restoreLocation);
     };
   }, []);
 

@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { useSkillsMotion } from '../hooks/useSkillsMotion.js';
 import '../styles/skills-capabilities.css';
 
 const capabilities = [
@@ -19,8 +21,10 @@ const capabilities = [
 ];
 
 export default function SkillsCapabilities() {
+  const sectionRef = useRef(null);
+  useSkillsMotion(sectionRef);
   return (
-    <section id="skills" className="p27-capabilities p27-target" aria-labelledby="skills-title">
+    <section ref={sectionRef} id="skills" className="p27-capabilities p27-target" aria-labelledby="skills-title">
       <div className="p27-container">
         <p className="p27-capabilities-index p27-mono">04 / CAPABILITIES</p>
         <div className="p27-capabilities-main">
