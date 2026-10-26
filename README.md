@@ -8,7 +8,7 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** Blocks 01–04 approved. Block 05 Contact / Closing + full isolated preview integration **DONE — PENDING DIRECTOR REVIEW**. Five sections complete; no placeholders. Block 06 and publication unauthorized. `main` and production remain 2025; consult [docs/CURRENT.md](docs/CURRENT.md).
+- **Current phase:** All five sections implemented in isolated Portfolio 2027 preview. Contact Block 05 delivered; **Block 05A interaction corrections authorized, not yet implemented**. Fix pointer-click canceling UI Construction, persistent internal navigation hash on reload, and add restrained Skills motion/hover. Block 06 / production publication unauthorized; consult [docs/CURRENT.md](docs/CURRENT.md).
 - **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
 - **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).
