@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **05 / Contact + Closing Integration — DONE — PENDING DIRECTOR REVIEW**.
+- **Bloque activo:** **05A / Interaction Corrections — AUTHORIZED — NOT STARTED**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Dirección revisa la entrega 05 documentada en sección 22. Ingeniería detenida; Bloque 06 y publicación NO AUTORIZADOS.
+- **Siguiente hito:** implementar solo Block 05A (click-safe UI Construction, clean URL/reset on reload, Skills editorial motion), documentar QA y detenerse. Bloque 06 y publicación NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -108,7 +108,7 @@ Informe corto con:
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **04** | About + Skills: narrativa, índice técnico y responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **DONE — PENDING DIRECTOR REVIEW** |
+| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **DONE — REVIEW AFTER 05A** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
 
 Cada bloque necesita un brief específico y aprobación antes de pasar al siguiente. Un backlog NO es autorización para ejecutar trabajo futuro.
@@ -1159,3 +1159,15 @@ No otras regresiones detectadas ni cambios fuera del alcance de integración.
   SHA consultable en historial, sin hash circular en el mismo commit.
 
 **Bloque 06 NO AUTORIZADO. Esperar revisión de Dirección. Sin publicación implícita.**
+
+## 23. User feedback — Engineering Block 05A authorized (2026-10-26)
+
+**Scope:** Three precise interaction refinements before Block 06. Block 05 was delivered but still pending final Director acceptance after Block 05A. No other design redirection or release authority.
+
+**A / UI Construction pointer-click fix.** `src/portfolio2027/hooks/useUiConstruction.js` unconditionally calls `finish('pointer-access')` in a `pointerdown` handler on Selected Work, and its `focusin` handler can also end animation when a pointer click focuses a project link. Fix this: any normal mouse/touch press or click within the still-visible Selected Work section must **not abruptly finish, cancel, accelerate, replay or restart** the approved A–E UI Construction. Project links must remain operable; don't intercept/block clicks with overlays. Clicking to navigate offscreen or away permits normal cleanup. Preserve keyboard/assistive access fail-open, reduced-motion, errors/Canvas failure, tab hidden, offscreen and unmount cleanup, zero-flash, one-shot, geometry, and exactly 4200/3000 ms natural timing. Distinguish focus caused by pointer from keyboard focus. Verify click on blank area and live links during phase B/C/D; ensure `data-construction-reason=complete` if it normally finishes on screen.
+
+**B / Refresh should reset animations after internal navbar navigation.** `src/portfolio2027/hooks/useAnchorNavigation.js` currently pushes visible persistent `#id` via `history.pushState(null,'','#'+id)`. Its initial restore from hash and construction's initial `location.hash` fail-open cause skipped motion after reload. For **internal UI links**, use a **clean URL** (no persistent `#section`), but preserve semantic native anchor href, keyboard, touch, accessible focus, smooth/reduced scroll, actual browser history Back/Forward (multiple distinct destinations), sticky offset and no-JS fallback. Prefer same-document `history.pushState` with destination stored under a namespaced `history.state` key, clean pathname + query, and popstate navigation; preserve unrelated state. Internal navigation then reload should **start at Hero and re-arm first-entry one-shot animations** (including browser scroll restoration behavior), even after refresh at former `#about` or `#projects`. External/explicit deep links entered with a real `#id` must keep working and may intentionally display motion's final accessible state. Do not globally strip external hashes, break scroll and history, or add extra navigation.
+
+**C / Add intentional Skills motion and hover.** Owner now explicitly authorizes visual enrichment **only in Skills**: approved Figma layout `89:556` / responsive `90:556`, `90:634`, `90:712`, motion master proposal rows `104:833`, `104:859`, `104:885`, `104:911`, `104:937`. Retain the three static informational categories, typography, text, structural grid. Implement restrained but perceptible one-time editorial title movement 6→0px (~220–350ms), 3 separator left-to-right strokes (~450–650ms per stroke; light stagger desktop, simultaneous/simpler mobile) triggered by scrolling into Skills, all text visible from initial render and no faded paragraphs. Add subtle hover on category number `#ABABAB`→`#EFEFEF` (~150–220ms) **only for devices with precise hover**, with optional modest rule contrast. Nothing should seem clickable: no cursor pointer, role/button/tabstops or new links. No loops, no new packages, no Skills UI Construction. Reduced motion, direct hash, keyboard and no-JS show full static state; one-shot, fail open, no extra height or reflow. Verify the motion is actually visible in normal scrolling.
+
+**Deliverables and gate:** Actual Chromium browser evidence for pointer click during build; reload from internal About/Projects visit (reset top and replay); clean URL after nav, history Back/Forward, explicit hash deep links, no-JS, focus, reduced motion; Skills entry/hover/mobile results. Cover 1920×1080, 1366×768, 390×844, 320px; verify no changes/regressions to Hero, Navigation visual, Selected Work layout/final motion, About, Contact, PDF or links. Run npm lint/build and scoped 2027 lint; distinguish existing four legacy errors. Update this CURRENT.md at completion with source files, commits, measurements and evidence, `DONE — PENDING DIRECTOR REVIEW`; STOP. **Block 06 NOT AUTHORIZED. No main/merge/deploy.**
