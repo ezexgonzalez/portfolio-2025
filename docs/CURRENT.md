@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **04 / About + Skills — DONE — PENDING DIRECTOR REVIEW**.
+- **Bloque activo:** **05 / Contact + Closing Integration — AUTHORIZED — NOT STARTED**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Dirección revisa la entrega 04 de la sección 20. Ingeniería detenida; Bloques 05–06 NO AUTORIZADOS.
+- **Siguiente hito:** Frontend Integration Engineer ejecuta únicamente Bloque 05 Contact + Closing Integration en preview aislada, documenta y espera review de Dirección. Bloque 06 NO AUTORIZADO.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -107,8 +107,8 @@ Informe corto con:
 | **02** | Hero + Global Navigation: preview aislada y fidelidad responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **04** | About + Skills: narrativa, índice técnico y responsive | **AUTHORIZED — NOT STARTED** |
-| 05 | Contact + Integration: enlaces, CV, cierre, meta/SEO, integración | **NO AUTORIZADO AÚN** |
+| **04** | About + Skills: narrativa, índice técnico y responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
+| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **AUTHORIZED — NOT STARTED** |
 | 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
 
 Cada bloque necesita un brief específico y aprobación antes de pasar al siguiente. Un backlog NO es autorización para ejecutar trabajo futuro.
@@ -1012,3 +1012,28 @@ físicos, lectores de pantalla y zoom de navegador. Sin otras regresiones detect
   SHA consultable en historial, sin hash circular dentro del mismo commit.
 
 **Bloques 05–06 NO AUTORIZADOS. Detener y esperar revisión de Dirección.**
+
+## 21. Director review of Block 04 and Block 05 authorization — 2026-10-26
+
+**DIRECTOR DECISION:** Block 04 **APPROVED** after reviewing actual captured browser desktop/mobile About and Skills views, source JSX/CSS, Figma final production references and QA log `docs/qa/block04`. About's 2021/2025/2026 chronology stays aligned to relevant story paragraphs (including within mobile reading sequence); Skills has precisely the approved three static capabilities with consistent editorial hierarchy. Exact copy and responsive behavior reviewed. Chromium responsive/nav/reduced-motion/previous-block regression checks reported PASS, production 2025 bundle unchanged, scoped lint PASS and global lint still only has four known legacy errors. These records are engineer-executed browser checks reviewed via repo artifacts; Director did not independently run browser in this environment. Blocks 01–04 now closed for visual changes except specifically approved regressions. Pending release QA still includes browser/device/font/CLS and assistive-tech testing.
+
+### Engineering Block 05 — CONTACT / CLOSING + FULL PREVIEW INTEGRATION
+
+**Status: AUTHORIZED — NOT STARTED**. Work exclusively on `feature/portfolio-2027-foundation` and within isolated Portfolio 2027 preview. **No `main` changes, merge or deploy.** Block 06 remains NOT AUTHORIZED.
+
+**Approved Figma Contact A / Editorial Sign-off:** production `89:557`; desktop `90:790` (1920×1077), tablet `90:829` (768×839), mobile `90:868` (390×827); approved original `84:557`. Interaction state study `92:983` and master `92:556` contain **proposals** and do not authorize decorative motion. Preserve black monochrome editorial / huge Instrument Serif italic “Hablemos.”, index `05 / CONTACT`, headline's negative space, primary mailto, supporting copy, editorial secondary links, structural rule and minimal footer.
+
+**Literal content and verified destinations:**
+- Email label `EMAIL`, primary address `ezexgonzalez@outlook.com`, `mailto:ezexgonzalez@outlook.com`; supporting copy: `Si tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.`
+- `LinkedIn` → `https://www.linkedin.com/in/ezexgonzalez/`
+- `GitHub` → `https://github.com/ezexgonzalez`
+- `Descargar CV` → `/cv-ezequiel-gonzalez.pdf` from verified tracked file `public/cv-ezequiel-gonzalez.pdf` (blob SHA `1e6bd92f2a812528cafc5c0d3fdda1d5d3ccc096`). Verify response and PDF signature in preview and check content currency before launch; **do not replace the file with an invented PDF.**
+- Figma shows `© 2027 Ezequiel Gonzalez` as design placeholder. Production implementation should derive year dynamically via current local year (e.g. `new Date().getFullYear()`); preserve exact owner name and minimal footer styling. It can read `© 2026` while the site is in 2026; do not hardcode 2027 or invent a business legal identity.
+
+**Integration scope:** Add Contact after existing Skills, remove only `#contact` temporary placeholder, preserving `Hero → Selected Work → About → Skills → Contact + footer`. Existing header/nav hashes, identity, CTA, sticky scroll offsets and menu must continue to work. Confirm external URLs, mailto and CV target accessible with keyboard/touch and no unintended download target error. Keep `src/portfolio2027/preview.html` marked `noindex,nofollow` as a development preview. Do not redirect default `/` from 2025, and do not alter global production SEO/head until the explicit release/integration authorization in later gate.
+
+**Responsive/interaction:** Respect Contact desktop/tablet/mobile widths including 1920/1536/1366/768/390/320. Large headline no clipping. Long email wraps/scales deliberately at 320 without broken characters or overflow; message and email stack below 1024; secondary links in accessible rows below ~640. Real links must have focus-visible, hover on pointer devices, pressed/touch feedback, sufficient targets; no fabricated CTA button/cards, new content or social icons. Hover/focus states are functional affordances; speculative motion or large reveals must not be added by default. Reduced motion no transition dependencies.
+
+**QA and evidence:** Actual browser viewport/full-length captures desktop/tablet/mobile; compare Contact against Figma and complete end-to-end continuous scroll from Hero to closing footer. Audit navigation click/tap/focus/hash/back, mailto, CV PDF response/bytes and download behavior, all external links, 320px text reflow and 200% root text, no horizontal overflow, keyboard/focus order, reduced motion, no-JS fallback, dynamic year and no console errors. Regression check earlier blocks, especially Selected Work A–E zero-flash 4200/3000 motion. Run `npm run lint`, `npx --no-install eslint src/portfolio2027`, `npm run build` and isolated preview build; separate four known legacy lint errors. No new significant dependencies; no changes to `main`, production domain/DNS/hosting or Vercel/Cloudflare.
+
+**Delivery:** file and commit list, real QA results, Contact and full-page comparison screenshots, link/PDF verification, validation of approved earlier work; update `docs/CURRENT.md` at end as `DONE — PENDING DIRECTOR REVIEW`, not approved. **STOP. Block 06 NOT AUTHORIZED until Director review.**
