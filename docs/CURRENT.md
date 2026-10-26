@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **05A / Interaction Corrections — DONE — PENDING DIRECTOR REVIEW**.
+- **Bloque activo:** **06 / Final Visual QA & Optimization — AUTHORIZED — NOT STARTED**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Dirección revisa la entrega 05A de sección24. Ingeniería detenida; Bloque06 y publicación NO AUTORIZADOS.
+- **Siguiente hito:** Integration Engineer realiza Bloque 06 de auditoría y optimización del preview aislado, documenta hallazgos/mediciones y entrega para aprobación de Dirección. Merge y publicación NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -108,8 +108,8 @@ Informe corto con:
 | **02A** | Hero tuning: altura desktop, quitar encuadre, reforzar ASCII | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **03** | Selected Work: dos proyectos, responsive y UI Construction | **APPROVED — DIRECTOR REVIEW COMPLETED** |
 | **04** | About + Skills: narrativa, índice técnico y responsive | **APPROVED — DIRECTOR REVIEW COMPLETED** |
-| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **DONE — REVIEW AFTER 05A** |
-| 06 | Visual QA & Optimization: comparación Figma, performance, accesibilidad | **NO AUTORIZADO AÚN** |
+| **05** | Contact + Closing Integration: enlaces, CV, footer, continuidad y preview | **APPROVED — DIRECTOR REVIEW COMPLETED** |
+| **06** | Final Visual QA & Optimization: Figma, responsive, a11y, motion, performance, SEO/readiness | **AUTHORIZED — NOT STARTED** |
 
 Cada bloque necesita un brief específico y aprobación antes de pasar al siguiente. Un backlog NO es autorización para ejecutar trabajo futuro.
 
@@ -1292,3 +1292,30 @@ vigentes. No se declara aprobada la presencia visual de Skills sin Director revi
   SHA consultable en historial, sin autorreferencia circular.
 
 **Bloque06 y publicación NO AUTORIZADOS. Finalizar y esperar revisión de Dirección.**
+
+## 25. Director approval of Block 05/05A and Block 06 authorization — 2026-10-26
+
+**DIRECTOR DECISION:** Block 05 Contact/Closing and Block 05A interaction refinements **APPROVED FOR FINAL QA**, not approved for production release. Verified in repository: `hooks/useUiConstruction.js` now distinguishes pointer-initiated focus from keyboard/assistive focus; click no longer finishes A–E on the same visible section, retains 4200/3000ms and accessible interruption; `hooks/useAnchorNavigation.js` maintains internal clean URLs with namespaced `history.state.portfolio2027.destination`, preserves Back/Forward and explicit hashes, resets new-document clean-URL refresh to Hero; `hooks/useSkillsMotion.js` and Skills CSS add restrained title movement, per-row structural line drawing and precise-hover index contrast without hiding text or altering geometry. Owner requested progression to Block 06.
+
+**Evidence reviewed, not independently reproduced by Director:** `docs/qa/block05a` browser screenshots (Skills early/middle/final and hover), reports, videos listed in repo, source and initial/final regression results. Engineer-reported Chromium153 tests cover 1920/1536/1366/768/390/320; pointer click construction, normal project navigation, clean URLs, multi-entry Back/Forward, reload reset, explicit deep links, no-JS, reduced motion, static fallback, hover and failed APIs. Build and scoped lint PASS; `npm run lint` still fails only four recorded unused-vars issues in legacy 2025 code. Contact 05 has validated PDF response, email/link semantics, dynamic footer, no regression. Browser-device and release checks remain outstanding. Slight 1/255 antialiasing difference in a handful of Contact glyph pixels does not justify altering Figma typography.
+
+### ACTIVE ENGINEERING BLOCK 06 — FINAL VISUAL QA & OPTIMIZATION
+
+**Status: AUTHORIZED — NOT STARTED.** Authorized only on `feature/portfolio-2027-foundation`, *isolated production-built 2027 preview plus local dev preview for diagnosis*. Existing 2025 default entry on `main` is **protected**, no merge, deployment, domain/DNS/hosting changes. No automatic transition to publication.
+
+**Audit scope / priorities:**
+1. Establish reproducible baseline from current HEAD and approved Figma sources; validate continuous page and all five sections, Full HD and reduced-height notebooks, tablet and 390/320px mobile. Compare output to actual Figma production frames. Capture usable screenshot evidence and classify real visual defects.
+2. Production-like **preview build** should be used for primary QA; dev server is not equivalent. Check fonts in a normal supported delivery path (loading, swaps, layout shifts, errors); do not rely solely on proxy fixtures. Verify no unintended exposure of preview to search indexing (it is `noindex,nofollow`) or rewire default production app.
+3. Behavior: full navigation incl. clean internal URLs, native deep links, Back/Forward, refresh starts Hero, keyboard/focus/menu/touch/hash, hover, native PDF/link actions, and dynamic copyright. UI Construction A–E zero-flash/first visit 4200/3000ms, pointer click safe, reduced motion/keyboard/assistive fail-open, Canvas fallback, no hanging RAF/timers; Hero ASCII lifecycle/pause/cleanup. Skills editorial effect one-time with texts continuously available; no unexpected motion on return.
+4. Accessibility: semantic h1–h3, landmarks, link names, focus visible and logical keyboard/tab order, target sizes, contrast, 200–400% zoom/reflow, screen reader when supported, reduced-motion/forced-colors/high contrast where practical, JS-disabled fallback, no content permanently masked. Record untested physical/AT configurations instead of claiming success.
+5. Performance: measure lab LCP, CLS, INP proxy/lab interactivity with explicit browser/throttling details (do NOT label lab figures field CWV), Lighthouse mobile/desktop if available, JS/CSS/fonts transferred, Total Blocking Time, Canvas FPS/CPU, memory/RAF and cleanup, layout/shifts. Compare before/after objectively and avoid arbitrary dependence on a Lighthouse score. Prefer targeted CSS, asset/font and lifecycle fixes; no new large dependencies.
+6. Technical/SEO readiness: validate `lang=es`, heading/metadata/head plan for future production root, canonical `https://ezegonzalez.dev/` only on production entry, title/description/OpenGraph/favicon/robots/sitemap/404 as **audit/release checklist**. The preview remains noindex; **do not modify live 2025 root or publish yet**. Verify Eze Web Studio `https://ezewebstudio.com.ar/` and Task Manager links, repositories, LinkedIn (previous automated HTTP999 requires manual browser check), GitHub profile, mailto and `public/cv-ezequiel-gonzalez.pdf`; CV content currency needs owner signoff.
+7. Security/build hygiene: inspect accidental secrets, unsafe target behavior, outdated/unused deps by supported evidence, no new package unless separately authorized; maintain 2025 build output unchanged, `main` untouched. Distinguish global legacy ESLint errors from newly introduced issues; do not refactor old site merely to make a metric green.
+
+**Remediation authority:** Agent may fix **confirmed P0/P1 defects** within isolated 2027 preview if changes are narrow, justified and regression-tested; P2 polish and visual redesign, copy changes, motion tuning, third-party packages, SEO production entry changes or hosting configuration require explicit Director decision. Prior approved design and motion are **frozen** except correction of a demonstrated defect. No browser test suite explosion; focus on targeted evidence of real risks. If a critical issue requires broad architecture change, stop that subtask and recommend a separate approval.
+
+**Findings rubric:** `P0` blocking functionality/accessibility/production safety, `P1` important issue before release, `P2` small improvement, `Verified` and `Not tested` explicitly distinguished. Report absolute reproducible steps, viewport/browser/device, current and expected result, severity, evidence and fix if made. All `P0`/`P1` must be resolved or explicitly accepted by owner for release readiness; unresolved external manual checks remain `PENDING`, not `PASS`.
+
+**Deliverables:** baseline SHA, changed files and commit(s), a short prioritized QA report and real screenshots of full desktop/mobile (plus targeted before/after), test matrix, web performance audit with real numbers and environment, accessibility/links/SEO readiness matrix, unchanged legacy 2025 build proof, and **a release checklist / exact safe migration plan for later authorization**, not an actual merge, deploy or DNS action. Record results in `docs/qa/block06/` and update this `docs/CURRENT.md` to `DONE — PENDING DIRECTOR REVIEW` if complete. **STOP and await explicit approval for any publication phase.**
+
+**Hard prohibition:** No `main` modifications, merge/rebase into production, deployment, Vercel/Cloudflare project/settings edits, DNS/domain changes, noindex removal from isolated preview, or declaration that Portfolio 2027 is live.
