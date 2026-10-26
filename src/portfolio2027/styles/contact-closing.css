@@ -1,0 +1,92 @@
+/* Contact A — Editorial Sign-off. Natural height, native links, no entrance motion. */
+.portfolio-2027 .p27-contact {
+  --contact-top: 6rem; --contact-bottom: 5rem; --contact-headline-gap: 5.875rem;
+  --contact-title: clamp(11rem, 12.5vw, 15rem); --contact-title-line: calc(var(--contact-title) + 1.5rem);
+  --contact-content-gap: 7rem; --contact-column-gap: clamp(4rem, 10.416667vw, 12.5rem);
+  --contact-label-gap: 1.25rem; --contact-email: clamp(2rem, 2.291667vw, 2.75rem);
+  --contact-email-line: calc(var(--contact-email) + 0.625rem);
+  --contact-message: 1.375rem; --contact-message-line: 2rem;
+  --contact-links-top: 6.75rem; --contact-links-gap: 4rem; --contact-footer-gap: 6.625rem;
+  padding-block: var(--contact-top) var(--contact-bottom);
+}
+.portfolio-2027 :is(.p27-contact-index, .p27-contact-label) {
+  font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-contact-title {
+  margin-block-start: var(--contact-headline-gap); font-size: var(--contact-title);
+  line-height: var(--contact-title-line); font-weight: 400; letter-spacing: -1px; overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-contact-content {
+  display: grid; grid-template-columns: minmax(0, 820fr) minmax(0, 580fr);
+  column-gap: var(--contact-column-gap); margin-block-start: var(--contact-content-gap); align-items: start;
+}
+.portfolio-2027 .p27-contact-primary { min-inline-size: 0; }
+.portfolio-2027 .p27-contact-email {
+  display: block; inline-size: fit-content; max-inline-size: 100%; min-block-size: 2.75rem;
+  margin-block-start: var(--contact-label-gap); padding-block: 0.5rem;
+  font-size: var(--contact-email); line-height: var(--contact-email-line); letter-spacing: -0.1px;
+  overflow-wrap: anywhere; text-decoration: underline; text-decoration-thickness: 1px;
+}
+.portfolio-2027 .p27-contact-message {
+  min-inline-size: 0; color: var(--p27-color-secondary); font-size: var(--contact-message);
+  line-height: var(--contact-message-line); letter-spacing: -0.1px; overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-contact-links {
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem var(--contact-links-gap);
+  margin-block-start: var(--contact-links-top);
+}
+.portfolio-2027 .p27-contact-links a {
+  display: inline-flex; align-items: center; gap: 0.5rem; min-block-size: 2.75rem;
+  max-inline-size: 100%; padding-block: 0.4375rem; font-size: 1.25rem; line-height: 1.875rem;
+  letter-spacing: -0.1px; overflow-wrap: anywhere;
+}
+.portfolio-2027 .p27-contact-links a > [aria-hidden] {
+  color: var(--p27-color-secondary); font-size: 1.125rem; line-height: 1.75rem;
+}
+.portfolio-2027 .p27-contact-links a:focus-visible .p27-contact-link-label { text-decoration: underline; }
+.portfolio-2027 .p27-contact a:active { color: var(--p27-color-secondary); }
+.portfolio-2027 .p27-contact-links a:active .p27-contact-link-label { text-decoration: underline; }
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-2027 .p27-contact-email:hover { text-decoration-thickness: 2px; }
+  .portfolio-2027 .p27-contact-links a:hover .p27-contact-link-label { text-decoration: underline; }
+}
+.portfolio-2027 .p27-contact-footer {
+  margin-block-start: var(--contact-footer-gap); padding-block-start: 1.75rem;
+  border-block-start: var(--p27-hairline) solid var(--p27-color-rule);
+  color: var(--p27-color-auxiliary); font-size: 0.75rem; line-height: 1.125rem;
+  letter-spacing: 0.5px; overflow-wrap: anywhere;
+}
+@media (max-width: 106rem) and (min-width: 64rem) {
+  .portfolio-2027 .p27-contact {
+    --contact-top: 5rem; --contact-bottom: 4rem; --contact-headline-gap: 5rem;
+    --contact-content-gap: 5rem; --contact-links-top: 5rem; --contact-footer-gap: 5rem;
+    --contact-message: 1.25rem; --contact-message-line: 1.875rem;
+  }
+}
+@media (max-width: 63.999rem) {
+  .portfolio-2027 .p27-contact {
+    --contact-top: 4rem; --contact-bottom: 4rem; --contact-headline-gap: 4rem;
+    --contact-title: 8.5rem; --contact-title-line: 9.5rem; --contact-content-gap: 4rem;
+    --contact-label-gap: 1rem; --contact-email: 2rem; --contact-email-line: 2.75rem;
+    --contact-message: 1.25rem; --contact-message-line: 1.875rem;
+    --contact-links-top: 3.5rem; --contact-links-gap: 2.5rem; --contact-footer-gap: 5rem;
+  }
+  .portfolio-2027 .p27-contact-content { grid-template-columns: minmax(0, 1fr); row-gap: 2rem; }
+}
+@media (max-width: 39.999rem) {
+  .portfolio-2027 .p27-contact {
+    --contact-top: 3.5rem; --contact-bottom: 3rem; --contact-headline-gap: 3rem;
+    --contact-title: 5.5rem; --contact-title-line: 6.5rem; --contact-content-gap: 3.5rem;
+    --contact-email: 1.5rem; --contact-email-line: 2.125rem;
+    --contact-message: 1.0625rem; --contact-message-line: 1.625rem;
+    --contact-links-top: 3rem; --contact-footer-gap: 4rem;
+  }
+  .portfolio-2027 .p27-contact-content { row-gap: 1.75rem; }
+  .portfolio-2027 .p27-contact-links { flex-direction: column; align-items: stretch; }
+}
+@media (max-width: 22.499rem) {
+  .portfolio-2027 .p27-contact {
+    --contact-title: 4.75rem; --contact-title-line: 5.75rem;
+    --contact-email: 1.375rem; --contact-email-line: 2rem;
+  }
+}

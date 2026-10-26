@@ -1,9 +1,9 @@
 # Portfolio 2027 — isolated development experience
 
-Blocks 01–03 approved. Block 04 implements About / Story and Skills / Capabilities
-for Director review in this isolated experience. The 2025 `App.jsx`, `main.jsx`,
-theme initialization and default HTML entry remain unchanged. Contact is the
-only temporary target; Block 05 is not authorized.
+Blocks 01–04 approved. Block 05 completes Contact / Closing and the five-section
+experience for Director review in the isolated preview. The 2025 `App.jsx`,
+`main.jsx`, theme initialization and default HTML entry remain unchanged.
+No placeholders remain. Block 06 and publication are not authorized.
 
 ## Open locally
 
@@ -15,9 +15,8 @@ npm run dev -- --host 127.0.0.1
 Open `http://127.0.0.1:5173/src/portfolio2027/preview.html` (use the port Vite prints).
 The default `/` remains 2025. This development HTML is not an input of the normal
 production build; no public route/router or hosting configuration was added.
-The #projects, #about and #skills anchors reach real sections. #contact remains
-a temporary technical target. The no-JS fallback includes both projects, the full
-story and exactly three capability entries.
+All five anchor destinations reach real content. The readable no-JS fallback
+includes both projects, the full story, three capability entries and Contact.
 
 ## Architecture
 
@@ -42,9 +41,11 @@ story and exactly three capability entries.
   narrative chapters with paragraph-linked chronology, without fixed heights.
 - `components/SkillsCapabilities.jsx` and `styles/skills-capabilities.css` implement
   the static three-entry technical index; no actions or pointer cursor.
+- `components/ContactClosing.jsx` and `styles/contact-closing.css` implement the
+  Editorial Sign-off, four native links and a minimal footer with current year.
 - `navigation.js` declares the five approved anchor destinations.
 - `styles/experience.css` implements the two approved pieces using native CSS.
-- `preview/` owns the React root and development-only document reset/placeholders.
+- `preview/` owns the React root and development-only document reset.
 - `preview.html` is an independent HTML document, with Spanish language,
   noindex metadata, optional-font stylesheet and readable HTML fallback.
 
@@ -167,6 +168,37 @@ Entrance, divider/date emphasis and number hover are all **Proposed**, so these
 two sections remain static with selectable, visible text and no new observers,
 timers or motion system. These effects await explicit approval.
 
+## Contact / Closing and complete integration
+
+Figma Contact A: production `89:557`, desktop `90:790`, tablet `90:829`, mobile
+`90:868`, state study `92:983`; master `92:556` Contact rows were read in full.
+The 240/136/88px Instrument Serif headline and 44/32/24px email follow the
+1920/768/390 references. Intermediate desktop type/spacing adapt fluidly; 320px
+uses a 76px headline and 22px complete email. Text can wrap under enlargement;
+no clipping, ellipsis or forced viewport height. Secondary links are single
+native anchors including their decorative direction indicators, at least44px
+high, stacked in full-width rows below640px. The email is always underlined;
+precise-pointer hover, pressed feedback and the existing2px/4px focus ring are
+immediate, without decorative movement, arrow transforms or entry animations.
+
+Email invokes the native `mailto:` handler without a new empty tab. LinkedIn
+and GitHub use separate tabs with noopener/noreferrer. CV uses native `download`
+with the existing same-origin `/cv-ezequiel-gonzalez.pdf`; the PDF is unchanged.
+Browser download tests match its original bytes. LinkedIn returned999 to the
+HTTP probe; its public profile still needs manual verification before release.
+
+`new Date().getFullYear()` provides the footer year at render time (2026 during
+this work; a2031 clock test verifies the dynamic value). With JavaScript disabled,
+the readable static HTML keeps the signature without a year rather than hardcoding
+an obsolete year. No-JS does not claim dynamic calendar behavior.
+
+Hero → Selected Work → About → Skills → Contact all remain in one main element.
+No temporary destination or extra navigation remains. The existing anchor offset
+is unchanged; short final sections may stop at the document bottom before reaching
+that offset (e.g.839px Contact in a1024px tablet viewport). No blank spacer is
+added to force an anchor alignment. Default `/`, noindex/nofollow preview, sources,
+production metadata, domain and hosting stay separate from release authorization.
+
 ## Verification
 
 See `docs/CURRENT.md`, `docs/qa/block02/README.md`, saved browser screenshots and
@@ -176,4 +208,6 @@ build and isolated preview build are validated separately. Browser results do no
 constitute approval or release authorization. Block 03 evidence and the scoped
 external-tool harness are in `docs/qa/block03/`; correction evidence, real browser
 recordings and capture timestamps are in `docs/qa/block03a/`. Block 04 copy/geometry, responsive captures and regression
-evidence live in `docs/qa/block04/`. Blocks 05–06 remain unauthorized.
+evidence live in `docs/qa/block04/`. Block05 Contact, complete-page captures,
+PDF/link checks and regressions are recorded in `docs/qa/block05/`. Block06 remains
+unauthorized; no publication is implied.
