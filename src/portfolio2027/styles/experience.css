@@ -10,6 +10,7 @@
 .portfolio-2027 .p27-target { scroll-margin-block-start: calc(var(--p27-header-height) + 1rem); }
 .portfolio-2027 .p27-skip {
   position: fixed; z-index: 40; inset: 0 auto auto 1rem;
+  max-inline-size: calc(100% - 2rem); overflow-wrap: anywhere;
   padding: 0.75rem 1rem; background: var(--p27-color-text); color: var(--p27-color-bg);
   transform: translateY(-150%);
 }
@@ -53,6 +54,7 @@
 }
 .portfolio-2027 .p27-nav-toggle {
   display: flex; gap: 0.5rem; align-items: center; min-block-size: 2.75rem;
+  flex-wrap: wrap; min-inline-size: 0; max-inline-size: 100%; overflow-wrap: anywhere;
   padding: 0 0.5rem; border: 0; background: none;
   font-size: 0.875rem; line-height: 1.25rem;
 }
@@ -79,7 +81,7 @@
   max-block-size: calc(100svh - var(--p27-header-height)); overflow-y: auto;
 }
 .portfolio-2027 .p27-nav-mobile a {
-  display: flex; gap: 1.25rem; align-items: center; min-block-size: 4rem;
+  display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; min-block-size: 4rem;
   border-block-end: var(--p27-hairline) solid var(--p27-color-rule);
   color: var(--p27-color-secondary); font-size: 1.5rem; line-height: 2rem;
 }
@@ -119,6 +121,7 @@
   max-inline-size: 100%; overflow-wrap: anywhere;
 }
 .portfolio-2027 .p27-hero-description {
+  overflow-wrap: anywhere;
   inline-size: min(100%, clamp(37.5rem, calc(7.22vw + 31.335rem), 40rem));
   font-size: clamp(1.0625rem, calc(0.5882vw + 0.5603rem), 1.1875rem);
   line-height: 1.53; letter-spacing: -0.005em;
@@ -126,10 +129,11 @@
 .portfolio-2027 .p27-hero-actions { display: flex; align-items: center; justify-content: center; gap: 2.125rem; flex-wrap: wrap; max-inline-size: 100%; }
 .portfolio-2027 .p27-hero-actions a {
   display: inline-flex; justify-content: center; align-items: center; gap: 1.5rem;
+  flex-wrap: wrap; overflow-wrap: anywhere;
   min-block-size: 3.25rem; font-size: 0.9375rem; line-height: 1.25rem; font-weight: 500; max-inline-size: 100%;
 }
 .portfolio-2027 a.p27-primary-action { inline-size: 13.625rem; background: var(--p27-color-text); color: var(--p27-color-bg); transition: background 150ms ease-out; }
-.portfolio-2027 .p27-secondary-action { inline-size: 7.25rem; min-inline-size: max-content; white-space: nowrap; }
+.portfolio-2027 .p27-secondary-action { inline-size: 7.25rem; min-inline-size: 0; }
 @media (hover: hover) {
   .portfolio-2027 a.p27-primary-action:hover { background: var(--p27-color-primary-hover); }
   .portfolio-2027 .p27-secondary-action:hover { text-decoration: underline; }
@@ -144,7 +148,7 @@
   transform: translateX(-50%); inline-size: 100vw; block-size: var(--p27-hairline);
   background: var(--p27-color-rule); pointer-events: none;
 }
-.portfolio-2027 .p27-hero-quote { font-size: 1.75rem; line-height: 2.25rem; }
+.portfolio-2027 .p27-hero-quote { font-size: 1.75rem; line-height: 2.25rem; max-inline-size: 100%; overflow-wrap: anywhere; }
 .portfolio-2027 .p27-hero-support { max-inline-size: 40.625rem; font-size: 1rem; line-height: 1.5625rem; color: var(--p27-color-secondary); }
 .portfolio-2027 .p27-ascii-viewport { position: absolute; inset: 0 -1.5rem; overflow: hidden; pointer-events: none; }
 .portfolio-2027 .p27-ascii {

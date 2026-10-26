@@ -1,10 +1,10 @@
 # Portfolio 2027 — isolated development experience
 
-Blocks 01–04 approved. Block 05 completes Contact / Closing and the five-section
-experience for Director review in the isolated preview. The 2025 `App.jsx`,
-`main.jsx`, theme initialization and default HTML entry remain unchanged.
-No placeholders remain. Block05A refines pointer-safe construction, clean navigation
-URLs/reload and Skills editorial motion. Block06/publication remain unauthorized.
+Blocks01–05A are approved for final QA. Block06 audit and targeted corrections
+are delivered for Director review; publication remains unauthorized. The isolated
+five-section experience keeps the 2025 default entry unchanged. See
+`docs/qa/block06/README.md` for measurements, unresolved release checks and
+`docs/qa/block06/MIGRATION.md` for the unexecuted activation plan.
 
 ## Open locally
 
@@ -244,5 +244,5 @@ constitute approval or release authorization. Block 03 evidence and the scoped
 external-tool harness are in `docs/qa/block03/`; correction evidence, real browser
 recordings and capture timestamps are in `docs/qa/block03a/`. Block 04 copy/geometry, responsive captures and regression
 evidence live in `docs/qa/block04/`. Block05 Contact, complete-page captures,
-PDF/link checks and regressions are recorded in `docs/qa/block05/`. Block06 remains
-unauthorized; no publication is implied.05A evidence is in `docs/qa/block05a/`.
+PDF/link checks and regressions are recorded in `docs/qa/block05/`. Block06 evidence is in `docs/qa/block06/`; no publication is implied.
+05A evidence is in `docs/qa/block05a/`.

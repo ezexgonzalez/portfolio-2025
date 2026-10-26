@@ -19,6 +19,7 @@
   display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
   font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
 }
+.portfolio-2027 .p27-work-index > p { min-inline-size: 0; overflow-wrap: anywhere; }
 .portfolio-2027 .p27-work-title {
   display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 1.125rem;
   margin-block-start: var(--work-heading-gap); font-size: var(--work-title);

@@ -11,6 +11,7 @@
   padding-block: var(--cap-top) var(--cap-bottom);
 }
 .portfolio-2027 .p27-capabilities-index {
+  overflow-wrap: anywhere;
   font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
   padding-block-end: 1.875rem; border-block-end: var(--p27-hairline) solid var(--p27-color-rule);
 }
