@@ -8,7 +8,7 @@ This repository originally powered Portfolio 2025. Portfolio 2027 reuses its Rea
 
 - **Production branch:** `main` (current published experience; keep stable).
 - **Preparation branch:** `feature/portfolio-2027-foundation`.
-- **Current phase:** Blocks 01–03 approved. Block 04 About / Story + Skills / Capabilities **DONE — PENDING DIRECTOR REVIEW** in the isolated preview. Contact remains a technical placeholder; Blocks 05–06 unauthorized. Production 2025 unchanged. Consult [docs/CURRENT.md](docs/CURRENT.md).
+- **Current phase:** Portfolio 2027 isolated preview contains approved Hero, Navigation, Selected Work/UI Construction, About and Skills (Blocks 01–04). **Block 05 Contact + Closing Integration authorized but NOT STARTED.** Block 06 final QA not authorized. `main` and production remain 2025; consult [docs/CURRENT.md](docs/CURRENT.md).
 - **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
 - **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
 - **Agent rules:** [AGENTS.md](AGENTS.md).
