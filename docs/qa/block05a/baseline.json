@@ -1,0 +1,167 @@
+{
+  "browser": "153.0.8010.0",
+  "checks": [
+    "Six final/reduced-motion layouts captured; no horizontal overflow"
+  ],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 1002,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 1818,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 1038,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 1077,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 796,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 1682,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 985,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 888,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 680,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 1640,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 979,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 869,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 1252,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 1910,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 1039,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 839,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 1178,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 2231,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 1231,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 827,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "sections": [
+        {
+          "id": "projects",
+          "height": 1348,
+          "text": "02 / SELECTED WORK02 PROYECTOSProyectos seleccionados01DISEÑO Y DESARROLLO WEBEze Web StudioEstudio web independiente de landing pages para negocios. Integra identidad de marca, diseño UI/UX y desarrollo frontend.PROYECTO PROPIOIdentidad visual · UI/UX · FrontendReact · Vite · Tailwind CSSVisitar proyecto ↗Código fuente ↗02FULL STACK DEVELOPMENTTask ManagerAplicación MERN para organizar tareas, con autenticación JWT, operaciones CRUD y persistencia de datos.APLICACIÓN MERNAPIs · Autenticación · PersistenciaReact · Node.js · Express · MongoDB · Tailwind CSSVisitar proyecto ↗Código fuente ↗"
+        },
+        {
+          "id": "about",
+          "height": 2381,
+          "text": "03 / ABOUTEzequiel GonzalezEl camino hasta acá.Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.2021 / Primeros pasosFormación en desarrollo web, fundamentos de programación y primeros proyectos.Pero mi recorrido no fue una línea recta.Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.2025 / Una nueva etapaRetomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.2026 / Nuevas perspectivasEze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir."
+        },
+        {
+          "id": "skills",
+          "height": 1305,
+          "text": "04 / CAPABILITIESTecnologías y capacidades.01INTERFACES WEBConstrucción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.React · JavaScript · TypeScript · Tailwind CSS · Vite02BACKEND & DATADesarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.Node.js · Express · MongoDB · REST APIs · JWT03TOOLS & WORKFLOWHerramientas para desarrollar, organizar, probar e iterar proyectos.Git · GitHub · Postman · Figma"
+        },
+        {
+          "id": "contact",
+          "height": 813,
+          "text": "05 / CONTACTHablemos.EMAILezexgonzalez@outlook.comSi tenés una propuesta, una oportunidad o una idea para compartir, me gustaría conocerla.LinkedIn↗GitHub↗Descargar CV↓© 2026 Ezequiel Gonzalez"
+        }
+      ]
+    }
+  ],
+  "construction": [],
+  "skills": [],
+  "errors": []
+}

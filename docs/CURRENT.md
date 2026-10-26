@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** diseño de las cinco secciones y navegación global aprobados en concepto; empieza la implementación **por bloques delimitados**.
-- **Bloque activo:** **05A / Interaction Corrections — AUTHORIZED — NOT STARTED**.
+- **Bloque activo:** **05A / Interaction Corrections — DONE — PENDING DIRECTOR REVIEW**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** implementar solo Block 05A (click-safe UI Construction, clean URL/reset on reload, Skills editorial motion), documentar QA y detenerse. Bloque 06 y publicación NO AUTORIZADOS.
+- **Siguiente hito:** Dirección revisa la entrega 05A de sección24. Ingeniería detenida; Bloque06 y publicación NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -1171,3 +1171,124 @@ No otras regresiones detectadas ni cambios fuera del alcance de integración.
 **C / Add intentional Skills motion and hover.** Owner now explicitly authorizes visual enrichment **only in Skills**: approved Figma layout `89:556` / responsive `90:556`, `90:634`, `90:712`, motion master proposal rows `104:833`, `104:859`, `104:885`, `104:911`, `104:937`. Retain the three static informational categories, typography, text, structural grid. Implement restrained but perceptible one-time editorial title movement 6→0px (~220–350ms), 3 separator left-to-right strokes (~450–650ms per stroke; light stagger desktop, simultaneous/simpler mobile) triggered by scrolling into Skills, all text visible from initial render and no faded paragraphs. Add subtle hover on category number `#ABABAB`→`#EFEFEF` (~150–220ms) **only for devices with precise hover**, with optional modest rule contrast. Nothing should seem clickable: no cursor pointer, role/button/tabstops or new links. No loops, no new packages, no Skills UI Construction. Reduced motion, direct hash, keyboard and no-JS show full static state; one-shot, fail open, no extra height or reflow. Verify the motion is actually visible in normal scrolling.
 
 **Deliverables and gate:** Actual Chromium browser evidence for pointer click during build; reload from internal About/Projects visit (reset top and replay); clean URL after nav, history Back/Forward, explicit hash deep links, no-JS, focus, reduced motion; Skills entry/hover/mobile results. Cover 1920×1080, 1366×768, 390×844, 320px; verify no changes/regressions to Hero, Navigation visual, Selected Work layout/final motion, About, Contact, PDF or links. Run npm lint/build and scoped 2027 lint; distinguish existing four legacy errors. Update this CURRENT.md at completion with source files, commits, measurements and evidence, `DONE — PENDING DIRECTOR REVIEW`; STOP. **Block 06 NOT AUTHORIZED. No main/merge/deploy.**
+
+
+## 24. Entrega Bloque05A — Puntero, historial y Skills motion — 2026-10-26
+
+**DONE — PENDING DIRECTOR REVIEW.** No se declara aprobación ni se inicia06.
+Rama `feature/portfolio-2027-foundation`; HEAD inicial sincronizado/verificado
+`1fa67057111fd952125dec8999a1baecda0ec330`.
+
+### Causa, solución y archivos
+
+- `hooks/useUiConstruction.js`: se eliminó la finalización incondicional de
+  pointerdown. El foco nativo asociado al puntero se permite solo para el elemento
+  enfocable exacto presionado, consumiendo una autorización por gesto. Se limpia
+  al hacer clic, cancelar puntero, usar teclado y al finalizar/desmontar; límite
+  post-pointerup500ms para gestos sin clic. Se conserva el permiso específico del
+  foco de navegación a Projects. No se bloquean enlaces ni se cambia Canvas,
+  fases, geometría, contraste, velocidad4200/3000ms o ejecución única.
+  Foco programático/teclado, reduced motion, error, salida real y cleanup siguen
+  resolviendo a final. Los temporizadores nuevos se liberan junto a los existentes.
+- `hooks/useAnchorNavigation.js`: destinos bajo
+  `history.state.portfolio2027.destination`, conservando otras claves y query.
+  Navegación interna escribe URL limpia y evita duplicar entradas al repetir el
+  mismo destino. Back/Forward restaura cada destino/foco/offset. Los href nativos
+  siguen siendo#id. Un documento nuevo sin hash reinicia la entrada actual en Hero;
+  un hash explícito conserva su deep link. Restauración manual desde layout effect
+  y alineación tras fuentes; una navegación anterior invalida la alineación inicial.
+  La carga inicial en Hero no añade foco/contorno sobre el nombre.
+- `hooks/useSkillsMotion.js` (nuevo), `components/SkillsCapabilities.jsx` y
+  `styles/skills-capabilities.css`: referencia a sección y lifecycle de una sola
+  entrada, animaciones CSS de título/líneas, hover de índice. Un observer mira
+  título/primera entrada al15%, deja de observar cada objetivo al disparar; no hay
+  medición de layout ni bucle RAF en el código de Skills. Eventos animationend
+  restauran los bordes originales; watchdog2s evita una línea incompleta si falla
+  el evento. Foco/ancla/deep link, movimiento reducido, página oculta, reflow
+  activo, falta de observer y errores de setup muestran final; cleanup aborta
+  listeners, observer y timers. Texto siempre visible; no roles/enlaces nuevos.
+- `src/portfolio2027/README.md`: contrato vigente. `AGENTS.md`, `README.md`, esta
+  bitácora y `docs/qa/block05a/`: estado, pruebas, JSON, capturas y dos videos reales.
+
+No se tocaron Hero/ASCII, motor uiConstruction.js, Selected Work JSX/CSS/altura,
+About, Contact, navegación visual, preview HTML, fuentes/tokens, PDF, enlaces,
+footer, legacy2025, dependencias/lockfile, main, hosting, dominio ni SEO.
+Sin instalaciones, merge o deploy. No exploraciones/ediciones de Figma.
+
+### Motion Skills y origen
+
+Releídos frames90:556/634/712, filas104:833/859/885/911/937 del master92:556.
+La API get_motion_context para90:556 devolvió nodes vacío: no se afirma importar
+keyframes nativos. El brief05A autoriza desarrollar las propuestas y sustituye
+sus tiempos anteriores por esta implementación medida:
+
+| Efecto | Desktop | Compacto (<1024px) |
+|---|---|---|
+| Título | 6→0px,300ms | 4→0px,220ms |
+| Tres trazados | 550ms, delays0/110/220ms | 450ms simultáneos |
+| Hover de índice | #ABABAB↔#EFEFEF,180ms | Solo si existe hover preciso |
+
+Curvas: título cubic-bezier(.22,1,.36,1), líneas cubic-bezier(.2,.8,.2,1),
+hover ease-out. Solo transformaciones del título y pseudolíneas; sin opacity,
+reflow, cambios de párrafos o tecnologías, flechas, tarjetas, puntero de botón,
+segundo UI Construction o loops. Reglas de cierre/índice permanecen estáticas.
+About conserva sus efectos propuestos sin implementar; no se amplió autorización.
+
+### Pruebas ejecutadas
+
+- Chromium153: seis anchuras1920/1536/1366/768/390/320, sin overflow; finales y
+  reduced motion capturados. Heights/layout finales permanecen iguales a HEAD
+  inicial. Skills conserva1038/985/979/1039/1231/1305px respectivamente.
+- **Puntero:** clic/tap sobre vacío, nombre y enlace de proyecto en B, C y D;
+  tres activaciones de enlace por contexto sin preventDefault del producto.
+  Para medir final en pantalla se impidió salir solo en listener de QA, no en
+  código de aplicación. Ambos recorridos incluyen A–E, cero RAF visible previo
+  al final sin cover, y terminan complete. Otra prueba deja navegar realmente
+  al destino externo durante el build (respuesta interceptada tras despacho).
+  No bloqueo de enlaces. Teclado/foco programático, reduced motion, cambio de
+  tamaño y Canvas nulo siguen finalizando/limpiando correctamente.
+- **Historial:** About→Skills→Contact añade exactamente3 entradas, repetir Contact
+  no duplica; query y estado ajeno preservados; Back/Forward recorre los3 destinos
+  y Hero. URL limpia y foco correcto. Recargar desde About y Projects lleva a
+  scrollY0, construction waiting y Skills waiting; volver a Projects reproduce
+  una construcción completa nueva. Deep links explícitos Projects/Skills en
+  documento nuevo son finales accesibles y conservan hash. Menú touch cierra,
+  actualiza foco y deja URL limpia. Sin JS se conserva navegación nativa#about.
+- **Skills:** videos CDP con reloj real1920/390, estados/transforms por RAF de QA,
+  progreso distinto entre líneas desktop y simultáneo compacto, título6/4→0,
+  texto siempre visible, altura estable, final completo y sin repetición. Hover
+  verificado de171 a239 y vuelta, con valor intermedio y cursor normal. Movimiento
+  reducido durante entrada deja cero animaciones CSS activas/bordes completos.
+  Texto raíz200% a320 sin overflow. Skills aislado sin observer falla abierto;
+  desmontaje activo sin errores. No se probaron lectores de pantalla reales.
+- **Regresiones visuales:** 30 pares. Hero, Projects, About, Skills finales y
+  Contact compacto:27 pares pixel-idénticos. Contact desktop presenta solo
+  diferencias de1/255 en203/120/24 píxeles a1920/1536/1366, en bordes de glifos
+  Hablemos.; sin cambio de fuente/geometría/copy o código Contact. Pares retenidos
+  para revisión; no se declara identidad absoluta de esos3. Reproducción en QA.
+- `npm run lint`: FAIL por los4 no-unused-vars legacy conocidos en PrimaryButton:2,
+  SecondaryButton:2, Contact:6 y Skills:12. ESLint2027, sintaxis QA y diff whitespace
+  PASS. `npm run build`: PASS,1717módulos,9 artefactos idénticos por SHA-256 a
+  baseline. Preview PASS,49módulos, CSS39.14kB/gzip7.05 y JS217.54kB/gzip68.73.
+
+### Problemas y límites
+
+Durante la comparación se detectó/corrigió el foco no solicitado de Hero al cargar.
+Un test trataba cambio de fragmento en el mismo documento como carga externa;
+se fuerza documento nuevo para esa comprobación. Una corrida se interrumpió por
+HMR al editar el hook; repetida con código estable, PASS. No se cambiaron otros
+bloques para adaptar capturas. Textos/URLs/PDF anteriores permanecen intactos;
+no se repitió sonda HTTP de servicios externos, cuya limitación LinkedIn999 sigue
+registrada en05. Fuentes oficiales servidas solo a QA por CA del proxy, sin bypass
+TLS ni redistribución. Pendientes release previos (navegadores/dispositivos reales,
+lectores de pantalla, entrega de fuentes/CLS, cliente mailto y vigencia CV) siguen
+vigentes. No se declara aprobada la presencia visual de Skills sin Director review.
+
+### Commits y gate
+
+- Implementación: `7bfdb07ae39a2fe6fd9ac406c20f7e52b59ddbbf`
+  (`fix: preserve pointer construction, clean navigation and animate Skills`).
+- Cierre/evidencia: commit posterior `docs: record Block 05A interaction validation`;
+  SHA consultable en historial, sin autorreferencia circular.
+
+**Bloque06 y publicación NO AUTORIZADOS. Finalizar y esperar revisión de Dirección.**

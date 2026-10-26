@@ -1,0 +1,16 @@
+{
+  "browser": "153.0.8010.0",
+  "checks": [
+    "Keyboard navigation keeps clean URL and accessible final construction",
+    "Keyboard Skills anchor resolves static immediately",
+    "Construction resize interruption still removes overlay",
+    "Active Skills reduced-motion change cancels CSS motion and restores full borders",
+    "Skills 320px with root text200% remains complete, without overflow",
+    "Missing observer fails open; active isolated Skills unmount cleans up without errors",
+    "Canvas failure still exposes real projects and removes guard"
+  ],
+  "views": [],
+  "construction": [],
+  "skills": [],
+  "errors": []
+}
