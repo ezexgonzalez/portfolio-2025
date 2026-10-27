@@ -1396,3 +1396,13 @@ producción, dominio y hosting intactos. Sin merge/deploy ni inicio de otra fase
 - Remaining known risks: Block 06 npm audit 15 advisories in current build tool lockfile, including 1 critical transitive package; exposure and targeted updates remain unreviewed/accepted explicitly. CV currency, LinkedIn authwall, real mailto, real-browser zoom/AT, Safari/Firefox, font swap CLS and actual live smoke remain open.
 
 **Current working truth:** Portfolio 2027 has been **merged to main**, and Vercel reports successful deployment. Prior prohibition records in historical sections 1–27 are obsolete gates for earlier stages; do not interpret them as reversing this actual merge. Future edits to production require separate, explicit authorization; rollback path described in `docs/qa/block06/MIGRATION.md`.
+
+## 29. Social sharing card / Open Graph (2026-10-27)
+
+**Owner approval:** replace the missing large link-preview image with the approved yearless monochrome editorial card featuring **Ezequiel Gonzalez**, **Full Stack Developer**, **Observar, cuestionar, entender.** and abstract ASCII texture. The old visual `2027` label was intentionally omitted so the artwork stays timeless.
+
+- Asset prepared from the approved image at `public/portfolio-og.png`, resized to 1200×630 (Open Graph social preview), optimized PNG without a year.
+- Root `index.html` metadata: `og:image`, `og:image:secure_url`, `og:image:type`, `og:image:width`, `og:image:height`, `og:image:alt`, plus `twitter:card=summary_large_image`, `twitter:image` and alt text. Absolute target: `https://ezegonzalez.dev/portfolio-og.png`.
+- Work isolated in `feature/portfolio-og-social-card` prior to merging into `main`; no design/component/motion changes.
+- Publication gate: CI compile, GitHub merge, provider deployment status; then confirm HTTP image response and metadata from public root if accessible. Social platforms may cache previous unfurled previews, so use their refresh/debug tools if an old preview remains.
+
