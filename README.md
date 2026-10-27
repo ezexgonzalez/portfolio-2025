@@ -1,12 +1,47 @@
-# React + Vite
+# Portfolio 2027 — Ezequiel Gonzalez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redesign in progress of the personal development portfolio at **https://ezegonzalez.dev/**.
 
-Currently, two official plugins are available:
+This repository originally powered Portfolio 2025. Portfolio 2027 reuses its React/Vite/Tailwind base and verified content while rebuilding the visual experience in a dark, monochromatic editorial direction.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project state
 
-## Expanding the ESLint configuration
+- **Production branch:** `main` (current published experience; keep stable).
+- **Preparation branch:** `feature/portfolio-2027-foundation`.
+- **Current phase:** Portfolio 2027's five-section isolated preview and Blocks 01–05A are approved for final review; **Block06 Final Visual QA & Optimization DONE — PENDING DIRECTOR REVIEW**. Production 2025 on `main` remains intact. No merge/deploy until separate explicit approval. See [docs/CURRENT.md](docs/CURRENT.md).
+- **Operational source of truth / active work:** [docs/CURRENT.md](docs/CURRENT.md). Read first, and update at the end of every block.
+- **Creative direction / approved designs:** [docs/PORTFOLIO_2027_DIRECTION.md](docs/PORTFOLIO_2027_DIRECTION.md).
+- **Agent rules:** [AGENTS.md](AGENTS.md).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Existing stack
+
+React 19, Vite 7, Tailwind CSS 4, JavaScript (JSX), lucide-react.
+
+## Local setup
+
+```bash
+npm ci
+npm run dev
+```
+
+Local checks:
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+## Architecture today
+
+- `src/sections/` — Hero, Projects, About, Skills, Contact.
+- `src/components/` — current UI and layout pieces.
+- `src/config/projects.js` — project information.
+- `src/config/skills.js` — skill information.
+- `public/` — CV, images and favicons.
+
+The current UI in `main` retains the 2025 design. It should not be presented as an already-completed 2027 redesign.
+
+## Contribution workflow
+
+Work on dedicated branches and preserve `main`. Do not install a motion stack, rewrite approved content, or merge visual changes until the Direction/Figma approval gates in the creative brief have been met. Verify facts in bio/projects and prioritize accessible, performant motion.

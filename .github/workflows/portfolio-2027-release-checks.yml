@@ -1,0 +1,48 @@
+name: Portfolio 2027 release candidate checks
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install exact lockfile
+        run: npm ci
+      - name: Check Portfolio 2027 ESLint
+        run: npx --no-install eslint src/portfolio2027 src/main.jsx
+      - name: Build primary site
+        run: npm run build
+      - name: Verify production root, metadata and static files
+        run: |
+          test -s dist/index.html
+          test -s dist/cv-ezequiel-gonzalez.pdf
+          test -s dist/robots.txt
+          test -s dist/sitemap.xml
+          test -s dist/404.html
+          grep -q 'lang="es"' dist/index.html
+          grep -q 'rel="canonical"' dist/index.html
+          grep -q 'https://ezegonzalez.dev/' dist/index.html
+          grep -q 'Ezequiel Gonzalez | Full Stack Developer' dist/index.html
+          if grep -qi 'noindex' dist/index.html; then echo 'Public root unexpectedly noindex'; exit 1; fi
+          if grep -q '/src/main.jsx' dist/index.html; then echo 'Unbuilt source found in root'; exit 1; fi
+          grep -q 'portfolio2027' src/main.jsx
+          if grep -q 'initTheme' src/main.jsx; then echo 'Legacy theme still active'; exit 1; fi
+      - name: Audit dependency advisories (non-blocking report)
+        run: npm audit --json > npm-audit-release.json || true
+      - name: Archive built candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-2027-candidate
+          path: dist/
+          retention-days: 7

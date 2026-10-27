@@ -1,0 +1,299 @@
+{
+  "browser": "153.0.8010.0",
+  "viewports": [
+    {
+      "width": 1920,
+      "overflow": 1920,
+      "height": 1072,
+      "frameWidth": 1600,
+      "projects": [
+        {
+          "x": 160,
+          "y": 400,
+          "w": 720,
+          "h": 565
+        },
+        {
+          "x": 1040,
+          "y": 400,
+          "w": 720,
+          "h": 565
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 212
+    },
+    {
+      "width": 1536,
+      "overflow": 1536,
+      "height": 924,
+      "frameWidth": 1344,
+      "projects": [
+        {
+          "x": 96,
+          "y": 352,
+          "w": 623.984375,
+          "h": 523
+        },
+        {
+          "x": 815.984375,
+          "y": 352,
+          "w": 624,
+          "h": 523
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 191
+    },
+    {
+      "width": 1366,
+      "overflow": 1366,
+      "height": 868,
+      "frameWidth": 1222,
+      "projects": [
+        {
+          "x": 72,
+          "y": 348,
+          "w": 562.984375,
+          "h": 471
+        },
+        {
+          "x": 730.984375,
+          "y": 348,
+          "w": 563,
+          "h": 471
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 191
+    },
+    {
+      "width": 768,
+      "overflow": 768,
+      "height": 1252,
+      "frameWidth": 672,
+      "projects": [
+        {
+          "x": 48,
+          "y": 316,
+          "w": 671.984375,
+          "h": 407
+        },
+        {
+          "x": 48,
+          "y": 804,
+          "w": 671.984375,
+          "h": 407
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 167
+    },
+    {
+      "width": 390,
+      "overflow": 390,
+      "height": 1178,
+      "frameWidth": 341,
+      "projects": [
+        {
+          "x": 24.375,
+          "y": 314,
+          "w": 341.25,
+          "h": 378
+        },
+        {
+          "x": 24.375,
+          "y": 773,
+          "w": 341.25,
+          "h": 396
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 155
+    },
+    {
+      "width": 320,
+      "overflow": 320,
+      "height": 1348,
+      "frameWidth": 280,
+      "projects": [
+        {
+          "x": 20,
+          "y": 310,
+          "w": 280,
+          "h": 465
+        },
+        {
+          "x": 20,
+          "y": 856,
+          "w": 280,
+          "h": 483
+        }
+      ],
+      "links": [
+        {
+          "url": "https://ezewebstudio.com.ar/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+          "h": 52
+        },
+        {
+          "url": "https://mern-task-manager-iota-teal.vercel.app/",
+          "h": 52
+        },
+        {
+          "url": "https://github.com/ezexgonzalez/mern-task-manager",
+          "h": 52
+        }
+      ],
+      "state": "final",
+      "headingTop": 155
+    }
+  ],
+  "checks": [
+    "Six responsive widths: two projects, layout, targets >=52px, no overflow, immediate reduced-motion/hash final",
+    "Direct #projects focuses heading with header offset 80px",
+    "Project links receive visible keyboard focus",
+    "Explicit link hover underline",
+    "320px with 200% root text reflows without horizontal overflow",
+    "Five distinct construction phases and overlay removal 1920px",
+    "No replay on scroll return 1920px",
+    "Five distinct construction phases and overlay removal 390px",
+    "No replay on scroll return 390px",
+    "Focus cancels to final",
+    "Internal anchor cancels to final",
+    "Preference change cancels to final",
+    "Resize during construction cancels stale geometry",
+    "Fast scroll / section exit cancels to final",
+    "Hidden-document event cancels to final (simulated)",
+    "Fast entry bypasses construction",
+    "Mobile menu navigates to real Projects and closes",
+    "Effect completes with no overlay; no later draws; active JS timings captured",
+    "Active React unmount removes overlay and stops drawing",
+    "Canvas unavailable fails open with all project links",
+    "No JavaScript HTML fallback contains both projects and four links"
+  ],
+  "errors": [],
+  "performance": [
+    {
+      "width": 1920,
+      "buildMs": [
+        4
+      ],
+      "drawsAfterCompletion": 0,
+      "frames": 144,
+      "mean": 0.237499999994826,
+      "p95": 0.39999999990686774,
+      "max": 1.2999999998137355,
+      "geometryElementReads": 16,
+      "readsAfterMeasurement": 0,
+      "overlay": 0
+    },
+    {
+      "width": 390,
+      "buildMs": [
+        2.199999999953434
+      ],
+      "drawsAfterCompletion": 0,
+      "frames": 73,
+      "mean": 0.17808219176806409,
+      "p95": 0.30000000004656613,
+      "max": 0.4000000001396984,
+      "geometryElementReads": 15,
+      "readsAfterMeasurement": 0,
+      "overlay": 0
+    }
+  ]
+}

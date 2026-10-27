@@ -1,0 +1,173 @@
+/* Structural Grid A. All dimensions are intrinsic; no viewport height constraint. */
+.portfolio-2027 .p27-work {
+  overflow-x: clip;
+  --work-top: 5.0625rem; --work-heading-gap: 2rem; --work-heading-bottom: 5rem;
+  --work-grid-gap: clamp(6rem, calc(16.667vw - 10rem), 10rem);
+  --work-grid-top: 2.1875rem; --work-grid-bottom: 5.1875rem; --work-bottom: 6.4375rem;
+  --work-name-gap: 3.5rem; --work-description-gap: 3rem; --work-class-gap: 5rem;
+  --work-cap-gap: 1rem; --work-tech-gap: 3rem; --work-action-gap: 3.5rem;
+  --work-title: 3.5rem; --work-accent: 4rem; --work-name: 4rem;
+  --work-description-size: 1.1875rem; --work-description-line: 1.8125rem;
+  --work-description-min: 3.625rem;
+}
+.portfolio-2027 .p27-work-frame { position: relative; padding-block-end: var(--work-bottom); }
+.portfolio-2027 :is(.p27-work-boundary,.p27-work-grid-top,.p27-work-grid-bottom) {
+  block-size: var(--p27-hairline); background: var(--p27-color-rule);
+}
+.portfolio-2027 .p27-work-heading { padding-block: var(--work-top) var(--work-heading-bottom); }
+.portfolio-2027 .p27-work-index {
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-work-index > p { min-inline-size: 0; overflow-wrap: anywhere; }
+.portfolio-2027 .p27-work-title {
+  display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 1.125rem;
+  margin-block-start: var(--work-heading-gap); font-size: var(--work-title);
+  line-height: calc(var(--work-title) + 0.5rem); font-weight: 400; letter-spacing: -2px;
+}
+.portfolio-2027 .p27-work-title > span { max-inline-size: 100%; overflow-wrap: anywhere; }
+.portfolio-2027 .p27-work-title .p27-serif {
+  font-size: var(--work-accent); line-height: calc(var(--work-accent) + 0.5rem); letter-spacing: -1px;
+}
+.portfolio-2027 .p27-work-grid {
+  position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--work-grid-gap); padding-block: calc(var(--work-grid-top) + 1px) calc(var(--work-grid-bottom) + 1px);
+}
+.portfolio-2027 .p27-work-grid-top { position: absolute; inset: 0 0 auto; }
+.portfolio-2027 .p27-work-grid-bottom { position: absolute; inset: auto 0 0; }
+.portfolio-2027 .p27-work-divider { position: absolute; inset: 0 auto 0 50%; inline-size: 1px; background: var(--p27-color-rule); }
+.portfolio-2027 .p27-work-rail { position: absolute; inset-block: 0 2.75rem; inline-size: 1px; background: var(--p27-color-rule); }
+.portfolio-2027 .p27-work-rail-start { inset-inline-start: -1.5rem; }
+.portfolio-2027 .p27-work-rail-end { inset-inline-end: -1.5rem; }
+.portfolio-2027 .p27-project { display: grid; grid-template-rows: subgrid; grid-row: span 7; min-inline-size: 0; overflow-wrap: anywhere; }
+.portfolio-2027 .p27-project-category {
+  display: flex; gap: 1.5rem; font-size: 0.75rem; line-height: 1.125rem;
+  letter-spacing: 0.5px; color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-project h3 {
+  margin-block-start: var(--work-name-gap); font-size: var(--work-name);
+  line-height: calc(var(--work-name) + 0.5rem); font-weight: 400; letter-spacing: -2.4px;
+}
+.portfolio-2027 .p27-project-description {
+  margin-block-start: var(--work-description-gap); max-inline-size: 37.5rem;
+  min-block-size: var(--work-description-min); font-size: var(--work-description-size);
+  line-height: var(--work-description-line); letter-spacing: -0.1px;
+}
+.portfolio-2027 .p27-project-classification {
+  margin-block-start: var(--work-class-gap); font-size: 0.75rem; line-height: 1.125rem;
+  letter-spacing: 0.5px; color: var(--p27-color-auxiliary);
+}
+.portfolio-2027 .p27-project-capabilities {
+  margin-block-start: var(--work-cap-gap); max-inline-size: 37.5rem;
+  font-size: 1rem; line-height: 1.5625rem; color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-project-technologies {
+  margin-block-start: var(--work-tech-gap); max-inline-size: 37.5rem;
+  font-size: 0.75rem; line-height: 1.125rem; letter-spacing: 0.5px; color: var(--p27-color-secondary);
+}
+.portfolio-2027 .p27-project-actions {
+  display: flex; flex-wrap: wrap; gap: 1.5rem; margin-block-start: var(--work-action-gap);
+}
+.portfolio-2027 .p27-project-actions a {
+  display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem;
+  min-block-size: 3.25rem; padding: 1rem; font-size: 0.9375rem; line-height: 1.25rem;
+  font-weight: 500; max-inline-size: 100%;
+}
+.portfolio-2027 .p27-project-actions a:active { color: var(--p27-color-secondary); }
+@media (hover: hover) {
+  .portfolio-2027 .p27-project-actions a:hover { text-decoration: underline; }
+}
+.portfolio-2027 .p27-construction { position: absolute; inset-block-start: 0; inset-inline-start: -1.5rem; z-index: 3; pointer-events: none; max-inline-size: none; }
+@media (max-width: 106rem) and (min-width: 64rem) {
+  .portfolio-2027 .p27-work {
+    --work-top: 4rem; --work-heading-gap: 1.75rem; --work-heading-bottom: 4rem;
+    --work-grid-top: 2rem; --work-grid-bottom: 4rem; --work-bottom: 4rem;
+    --work-name-gap: 3rem; --work-description-gap: 2.5rem; --work-class-gap: 3.5rem;
+    --work-cap-gap: 0.75rem; --work-tech-gap: 2.5rem; --work-action-gap: 3rem;
+    --work-title: 3rem; --work-accent: 3.5rem; --work-name: 3.5rem;
+    --work-description-size: 1.125rem; --work-description-line: 1.75rem; --work-description-min: 5.25rem;
+  }
+  .portfolio-2027 .p27-work-title { letter-spacing: -1.6px; }
+  .portfolio-2027 .p27-work-title .p27-serif { letter-spacing: -0.8px; }
+  .portfolio-2027 .p27-project h3 { letter-spacing: -2px; }
+  .portfolio-2027 .p27-project-description { letter-spacing: 0; }
+}
+@media (max-width: 89.999rem) and (min-width: 64rem) {
+  .portfolio-2027 .p27-work {
+    --work-title: 2.75rem; --work-accent: 3.25rem; --work-name: 3.25rem;
+    --work-name-gap: 2.5rem; --work-description-gap: 2rem; --work-class-gap: 2.5rem;
+    --work-tech-gap: 2rem; --work-action-gap: 2.5rem;
+  }
+  .portfolio-2027 .p27-work-title { letter-spacing: -1.4px; }
+  .portfolio-2027 .p27-project h3 { letter-spacing: -1.8px; }
+}
+/* Desktop rhythm follows available height, with readable minimum spacing.
+   Only whitespace adapts; intrinsic content can always extend the section. */
+@media (min-width: 64rem) {
+  .portfolio-2027 .p27-work {
+    --work-rhythm: clamp(0.75rem, calc(4.166667svh - 1.25rem), 1.5rem);
+    --work-top: calc(3 * var(--work-rhythm));
+    --work-heading-gap: calc(1.5 * var(--work-rhythm));
+    --work-heading-bottom: calc(3 * var(--work-rhythm));
+    --work-grid-top: calc(1.5 * var(--work-rhythm));
+    --work-grid-bottom: calc(3 * var(--work-rhythm));
+    --work-bottom: calc(3 * var(--work-rhythm));
+    --work-name-gap: calc(2.5 * var(--work-rhythm));
+    --work-description-gap: calc(2 * var(--work-rhythm));
+    --work-class-gap: calc(3 * var(--work-rhythm));
+    --work-cap-gap: calc(0.5 * var(--work-rhythm));
+    --work-tech-gap: calc(2 * var(--work-rhythm));
+    --work-action-gap: calc(2 * var(--work-rhythm));
+  }
+}
+@media (max-width: 63.999rem) {
+  .portfolio-2027 .p27-work {
+    --work-top: 3rem; --work-heading-gap: 1.75rem; --work-heading-bottom: 3.5rem;
+    --work-grid-top: 2rem; --work-grid-bottom: 3rem; --work-bottom: 4rem;
+    --work-name-gap: 2rem; --work-description-gap: 1.5rem; --work-class-gap: 2rem;
+    --work-cap-gap: 0.75rem; --work-tech-gap: 1.5rem; --work-action-gap: 2rem;
+    --work-title: 2.75rem; --work-accent: 3.25rem; --work-name: 3.375rem;
+    --work-description-size: 1.125rem; --work-description-line: 1.75rem; --work-description-min: 0px;
+  }
+  .portfolio-2027 .p27-work-grid { grid-template-columns: minmax(0, 1fr); row-gap: 5.0625rem; }
+  .portfolio-2027 .p27-work-divider { display: none; }
+  .portfolio-2027 .p27-work-rail { display: none; }
+  .portfolio-2027 .p27-project { display: block; grid-row: auto; }
+  .portfolio-2027 .p27-project + .p27-project { position: relative; }
+  .portfolio-2027 .p27-project + .p27-project::before { content: ''; position: absolute; inset: -2.5625rem 0 auto; block-size: 1px; background: var(--p27-color-rule); }
+  .portfolio-2027 .p27-work-title { letter-spacing: -1.4px; }
+  .portfolio-2027 .p27-work-title .p27-serif { letter-spacing: -0.8px; }
+  .portfolio-2027 .p27-project h3 { line-height: 4rem; letter-spacing: -1.8px; }
+  .portfolio-2027 .p27-project-description { letter-spacing: 0; }
+}
+@media (max-width: 37.499rem) {
+  .portfolio-2027 .p27-work {
+    --work-top: 2.5rem; --work-heading-gap: 1.5rem; --work-heading-bottom: 2.5rem;
+    --work-grid-top: 1.75rem; --work-grid-bottom: 2rem; --work-bottom: 3rem;
+    --work-name-gap: 1.5rem; --work-class-gap: 1.5rem; --work-cap-gap: 0.5rem; --work-action-gap: 1.5rem;
+    --work-title: 2.25rem; --work-accent: 2.625rem; --work-name: 2.25rem;
+    --work-description-size: 1rem; --work-description-line: 1.5625rem;
+  }
+  .portfolio-2027 .p27-work-title { flex-direction: column; line-height: 2.625rem; letter-spacing: -1px; }
+  .portfolio-2027 .p27-work-title .p27-serif { line-height: 3rem; letter-spacing: -0.5px; }
+  .portfolio-2027 .p27-project h3 { line-height: 2.75rem; letter-spacing: -1.2px; }
+  .portfolio-2027 .p27-project-actions { gap: 1rem; }
+  .portfolio-2027 .p27-project-actions a { gap: 1rem; padding-inline: 0.5rem; }
+}
+@media (max-width: 22.499rem) {
+  .portfolio-2027 .p27-work { --work-title: 2.125rem; --work-accent: 2.5rem; --work-name: 2.125rem; }
+  .portfolio-2027 .p27-work-title { line-height: 2.5rem; }
+  .portfolio-2027 .p27-work-title .p27-serif { line-height: 2.875rem; letter-spacing: -0.4px; }
+  .portfolio-2027 .p27-project h3 { line-height: 2.625rem; letter-spacing: -1px; }
+  .portfolio-2027 .p27-project-actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+}
+
+/* First React paint is already covered. Semantic content and layout stay intact.
+   The guard is replaced atomically by the opaque Canvas, or removed by fail-open. */
+.portfolio-2027 .p27-work:is([data-construction='armed'], [data-construction='waiting']) .p27-work-frame::after {
+  content: ''; position: absolute; inset: 0 -1.5rem; z-index: 3;
+  background: var(--p27-color-bg); pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-2027 .p27-work .p27-work-frame::after { content: none; }
+}

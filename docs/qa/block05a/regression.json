@@ -1,0 +1,203 @@
+[
+  {
+    "section": "hero",
+    "width": 1920,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "hero",
+    "width": 1536,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "hero",
+    "width": 1366,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "hero",
+    "width": 768,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "hero",
+    "width": 390,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "hero",
+    "width": 320,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 1920,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 1536,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 1366,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 768,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 390,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "projects",
+    "width": 320,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 1920,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 1536,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 1366,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 768,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 390,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "about",
+    "width": 320,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 1920,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 1536,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 1366,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 768,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 390,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "skills",
+    "width": 320,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "contact",
+    "width": 1920,
+    "identical": false,
+    "difference": [
+      166,
+      248,
+      1001,
+      424
+    ],
+    "maxChannelDifference": 1,
+    "differentPixels": 203
+  },
+  {
+    "section": "contact",
+    "width": 1536,
+    "identical": false,
+    "difference": [
+      112,
+      214,
+      751,
+      353
+    ],
+    "maxChannelDifference": 1,
+    "differentPixels": 120
+  },
+  {
+    "section": "contact",
+    "width": 1366,
+    "identical": false,
+    "difference": [
+      88,
+      210,
+      697,
+      339
+    ],
+    "maxChannelDifference": 1,
+    "differentPixels": 24
+  },
+  {
+    "section": "contact",
+    "width": 768,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "contact",
+    "width": 390,
+    "identical": true,
+    "difference": null
+  },
+  {
+    "section": "contact",
+    "width": 320,
+    "identical": true,
+    "difference": null
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "fileKey": "qhsoutNaKIPSqO31AEttRT",
+  "nativeMotion": [
+    "{\"nodes\":[]}"
+  ],
+  "matrix": {
+    "104:833": [
+      "Skills",
+      "Título",
+      "Scroll · primera entrada",
+      "Acento editorial discreto; texto siempre visible. translateY: 6 → 0 px; sin fade.",
+      "220 ms",
+      "cubic-bezier(.22,1,.36,1)",
+      "Una vez por visita",
+      "Mobile: 4 → 0 px, 180 ms.",
+      "Posición final inmediata.",
+      "Optional",
+      "Proposed",
+      "Disparar al 15% visible, una vez por visita. Teclado/ancla: sin espera."
+    ],
+    "104:859": [
+      "Skills",
+      "Separadores / 3 entradas",
+      "Scroll · primera entrada",
+      "Líneas se trazan; número, título y contenido no se ocultan. Ancho de línea: 0 → 100%. Origen izquierda.",
+      "260 ms + 0/40/80 ms",
+      "cubic-bezier(.2,.8,.2,1)",
+      "Una vez por visita",
+      "Mobile: 180 ms simultáneos. Sin escalonar párrafos.",
+      "Líneas completas, sin barrido.",
+      "Optional",
+      "Proposed",
+      "Secuencia desktop máxima 340 ms. Textos visibles desde el inicio. No construcción UI de Selected Work."
+    ],
+    "104:885": [
+      "Skills",
+      "Número de capacidad",
+      "Hover · puntero preciso",
+      "Solo el índice pasa de #ABABAB a #EFEFEF. Color; sin cambio de geometría ni línea.",
+      "120 ms",
+      "ease-out",
+      "Por interacción",
+      "Touch: sin hover; no se agrega información.",
+      "Cambio de contraste inmediato.",
+      "Optional",
+      "Proposed",
+      "Contenido informativo: cursor normal, sin flechas, links ni tab stops. El resto de la fila permanece estático."
+    ],
+    "104:911": [
+      "Skills",
+      "Filas y tecnologías",
+      "Focus / Active / Touch",
+      "No tienen estados de acción: son texto legible y seleccionable. Ninguna.",
+      "0 ms",
+      "none",
+      "Ninguno",
+      "Misma lectura y orden en todos los dispositivos.",
+      "Contenido completo inmediato.",
+      "Essential",
+      "Proposed",
+      "Sin roles de botón ni eventos de activación. No sumar enlaces a tecnologías."
+    ],
+    "104:937": [
+      "Skills",
+      "Política de scroll",
+      "Scroll / Load / retorno",
+      "Estado final al volver; ninguna animación se repite. Ninguna después de la primera entrada.",
+      "0 ms",
+      "none",
+      "Ninguno",
+      "Mismo comportamiento.",
+      "Sin entradas.",
+      "Essential",
+      "Proposed",
+      "Sin JS / fallo de observer: mostrar estado final. No ocultar filas durante scroll normal."
+    ]
+  },
+  "briefOverride": {
+    "titleDesktopMs": 300,
+    "titleCompactMs": 220,
+    "titleDesktopPx": 6,
+    "titleCompactPx": 4,
+    "linesDesktopMs": 550,
+    "linesCompactMs": 450,
+    "desktopStaggerMs": 110,
+    "compactStaggerMs": 0,
+    "hoverMs": 180
+  }
+}

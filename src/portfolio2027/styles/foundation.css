@@ -1,0 +1,91 @@
+@import './tokens.css';
+
+/* All rules are opt-in. No html/body/:root, legacy theme or Tailwind reset edits. */
+.portfolio-2027 {
+  isolation: isolate;
+  min-inline-size: 0;
+  background: var(--p27-color-bg);
+  color: var(--p27-color-text);
+  font-family: var(--p27-font-sans);
+  font-size: var(--p27-text-body);
+  font-weight: var(--p27-weight-regular);
+  font-optical-sizing: none;
+  font-variation-settings: 'opsz' 14;
+  line-height: var(--p27-leading-body);
+  text-align: start;
+}
+
+.portfolio-2027,
+.portfolio-2027 *,
+.portfolio-2027 *::before,
+.portfolio-2027 *::after {
+  box-sizing: border-box;
+}
+
+.portfolio-2027 :where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol) {
+  margin: 0;
+}
+
+.portfolio-2027 :where(button, input, textarea, select) {
+  font: inherit;
+  color: inherit;
+}
+
+.portfolio-2027 :where(img, svg, video, canvas) {
+  max-inline-size: 100%;
+}
+
+.portfolio-2027 :where(img, video) {
+  block-size: auto;
+}
+
+.portfolio-2027 :where(a) {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.portfolio-2027 :focus-visible {
+  outline: var(--p27-focus-width) solid var(--p27-color-text);
+  outline-offset: var(--p27-focus-offset);
+}
+
+.portfolio-2027::selection,
+.portfolio-2027 ::selection {
+  background: var(--p27-color-text);
+  color: var(--p27-color-bg);
+}
+
+/* Apply to semantic elements as needed; no layout/section components yet. */
+.portfolio-2027 .p27-container {
+  inline-size: min(calc(100% - 2 * var(--p27-page-gutter)), var(--p27-width-frame));
+  margin-inline: auto;
+  min-inline-size: 0;
+}
+
+.portfolio-2027 .p27-reading {
+  max-inline-size: var(--p27-width-reading);
+  overflow-wrap: break-word;
+}
+
+.portfolio-2027 .p27-serif {
+  font-family: var(--p27-font-serif);
+  font-style: italic;
+  font-variation-settings: normal;
+}
+
+.portfolio-2027 .p27-mono {
+  font-family: var(--p27-font-mono);
+  font-variation-settings: normal;
+}
+
+/* Defensive policy only. This block introduces no animation or smooth scroll. */
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-2027,
+  .portfolio-2027 *,
+  .portfolio-2027 *::before,
+  .portfolio-2027 *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

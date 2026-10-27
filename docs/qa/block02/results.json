@@ -1,0 +1,443 @@
+{
+  "browser": "153.0.8010.0",
+  "fontDelivery": "Official CSS/TTF responses via TLS-validated curl, test-only request fulfillment; direct browser delivery not verified in this proxy environment",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "compact": "false",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.018113216258861402,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 267,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 805.90625,
+          "y": 316.984375,
+          "width": 308.1875,
+          "height": 96
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 404.984375,
+          "width": 445.96875,
+          "height": 152
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 640.015625,
+          "y": 588.96875,
+          "width": 639.96875,
+          "height": 58.125
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 160,
+          "y": 938,
+          "width": 1600,
+          "height": 206
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 960,
+      "scrollWidth": 1920,
+      "compact": "false",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.01294921875,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 211,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 805.90625,
+          "y": 256.984375,
+          "width": 308.1875,
+          "height": 96
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 344.984375,
+          "width": 445.96875,
+          "height": 152
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 640.015625,
+          "y": 524.96875,
+          "width": 639.96875,
+          "height": 58.125
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 160,
+          "y": 838.71875,
+          "width": 1600,
+          "height": 174
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 900,
+      "scrollWidth": 1920,
+      "compact": "false",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.019502786593967012,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 183,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 805.90625,
+          "y": 226.984375,
+          "width": 308.1875,
+          "height": 96
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 314.984375,
+          "width": 445.96875,
+          "height": 152
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 640.015625,
+          "y": 492.96875,
+          "width": 639.96875,
+          "height": 58.125
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 160,
+          "y": 790,
+          "width": 1600,
+          "height": 158
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "scrollWidth": 1536,
+      "compact": "false",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.013956705729166666,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 590.875,
+          "y": 187,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 627.921875,
+          "y": 229.796875,
+          "width": 280.109375,
+          "height": 88
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 569.765625,
+          "y": 309.796875,
+          "width": 396.421875,
+          "height": 136.015625
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 461.859375,
+          "y": 470.609375,
+          "width": 612.25,
+          "height": 55.0625
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 96,
+          "y": 754,
+          "width": 1343.984375,
+          "height": 158
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "compact": "false",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.02361447708054879,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 505.875,
+          "y": 165,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 556.90625,
+          "y": 205,
+          "width": 252.15625,
+          "height": 80
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 509.546875,
+          "y": 277,
+          "width": 346.875,
+          "height": 120.015625
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 382.984375,
+          "y": 419.015625,
+          "width": 600,
+          "height": 52
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 72,
+          "y": 674,
+          "width": 1221.984375,
+          "height": 158
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "compact": "true",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.03204924485180527,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 206.890625,
+          "y": 214,
+          "width": 354.203125,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 243.90625,
+          "y": 262,
+          "width": 280.171875,
+          "height": 88
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 191.96875,
+          "y": 342,
+          "width": 384.03125,
+          "height": 132
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 123.984375,
+          "y": 504,
+          "width": 520,
+          "height": 84
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 48,
+          "y": 874,
+          "width": 671.984375,
+          "height": 191.0625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "compact": "true",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.10119952216441794,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 36.296875,
+          "y": 158,
+          "width": 317.40625,
+          "height": 18
+        },
+        {
+          "className": "p27-first-name",
+          "x": 95.84375,
+          "y": 200,
+          "width": 198.296875,
+          "height": 62
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 52.078125,
+          "y": 254,
+          "width": 285.84375,
+          "height": 100
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 24.375,
+          "y": 378,
+          "width": 341.25,
+          "height": 75
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 24.375,
+          "y": 700,
+          "width": 341.25,
+          "height": 164
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "scrollWidth": 320,
+      "compact": "true",
+      "fonts": [
+        "DM Sans 400 normal",
+        "DM Sans 500 normal",
+        "IBM Plex Mono 400 normal",
+        "Instrument Serif 400 italic"
+      ],
+      "cls": 0.12590406774331214,
+      "geometry": [
+        {
+          "className": "p27-hero-role p27-mono",
+          "x": 20,
+          "y": 144,
+          "width": 280,
+          "height": 36
+        },
+        {
+          "className": "p27-first-name",
+          "x": 67.90625,
+          "y": 200,
+          "width": 184.1875,
+          "height": 58
+        },
+        {
+          "className": "p27-last-name p27-serif",
+          "x": 29.484375,
+          "y": 250,
+          "width": 261.03125,
+          "height": 94
+        },
+        {
+          "className": "p27-hero-description",
+          "x": 20,
+          "y": 364,
+          "width": 280,
+          "height": 100
+        },
+        {
+          "className": "p27-hero-closing",
+          "x": 20,
+          "y": 710,
+          "width": 280,
+          "height": 184
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "8 reference viewports: official fonts loaded, no horizontal overflow, static reduced-motion ASCII",
+    "Desktop anchor, focus, 80px offset and sticky header",
+    "Back/Forward and passive active section without hash changes",
+    "Direct mobile hash and 72px offset",
+    "Mobile disclosure, aria-expanded, keyboard entry, Escape and restored control focus",
+    "Keyboard section selection closes disclosure and focuses destination",
+    "Outside pointer closes without modal/backdrop",
+    "Tab exits disclosure without focus trap; visible focus ring",
+    "320x360 disclosure scroll keeps final link reachable",
+    "320px at 200% root text: content reflows without horizontal overflow",
+    "Animated ASCII runs at bounded cadence; no draws offscreen",
+    "Simulated visibilitychange stops/resumes ASCII draws",
+    "Changing reduced-motion preference stops scheduling and renders static field",
+    "Mobile ASCII sampled; simulated DPR 3 remains capped near 1.25",
+    "Font request and Canvas failure retain readable content/actions without overflow",
+    "HTML fallback preserves copy and anchor targets without JavaScript",
+    "No page/console errors or failed requests in normal QA context"
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "asciiDesktop": {
+    "samples": 26,
+    "meanMs": 3.330769230826543,
+    "p95Ms": 3.699999999254942,
+    "maxMs": 4.800000000745058
+  },
+  "asciiMobile": {
+    "samples": 14,
+    "meanMs": 1.7785714285980379,
+    "p95Ms": 2.099999999627471,
+    "maxMs": 2.099999999627471
+  },
+  "simulatedDpr3": {
+    "internalWidth": 606,
+    "cssWidth": 484.828125
+  }
+}

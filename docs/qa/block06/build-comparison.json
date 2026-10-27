@@ -1,0 +1,27 @@
+{
+  "head": "982396eb6de28caf75ff710056fb7c3267da0fc4",
+  "artifactCount": 9,
+  "identical": true,
+  "before": {
+    "index.html": "4fd2515a3d277540364203fb289b4689b97891e6a5b23117ea6e5be1fc3b17b9",
+    "favicon-dark.svg": "56e9e2e83b23e91c4dc611e0d2bd6eae81073ce651cd97c9f74772c22554a92c",
+    "hero-liquid-dark.png": "d7be4e5d267ecec071ee17f664e52242a0611dc4630da83a9912477f57626c30",
+    "task-manager.png": "3147f2f72bd8e64dacf26f21e5a65f6b664dc1e4b135aa2857dc07773a72cd41",
+    "favicon-light.svg": "cc45cda510f13ef13f099da80d5a7613f4945caeccd8d629265c086323f6cb13",
+    "cv-ezequiel-gonzalez.pdf": "322c600b3c5300231a24e7c6299d6be3ee346fb72e0a9300ce2c8a3a169d12c6",
+    "portfolio.png": "989d81b0714e9ce0f11f526584f6ede08eb8ce48ce9b4a95c368608dd4e0c5d6",
+    "assets/index-PA0iK1LF.css": "5ffa14e63e2d95b5b761654aa21ba6615ebcd47566dca104e4b055bc8ffc3ca1",
+    "assets/index-i9u0NDUT.js": "bef769d99d3a192575442c6623b975d1844ce915876b2aff4e17074f4d3abfe3"
+  },
+  "after": {
+    "index.html": "4fd2515a3d277540364203fb289b4689b97891e6a5b23117ea6e5be1fc3b17b9",
+    "favicon-dark.svg": "56e9e2e83b23e91c4dc611e0d2bd6eae81073ce651cd97c9f74772c22554a92c",
+    "hero-liquid-dark.png": "d7be4e5d267ecec071ee17f664e52242a0611dc4630da83a9912477f57626c30",
+    "task-manager.png": "3147f2f72bd8e64dacf26f21e5a65f6b664dc1e4b135aa2857dc07773a72cd41",
+    "favicon-light.svg": "cc45cda510f13ef13f099da80d5a7613f4945caeccd8d629265c086323f6cb13",
+    "cv-ezequiel-gonzalez.pdf": "322c600b3c5300231a24e7c6299d6be3ee346fb72e0a9300ce2c8a3a169d12c6",
+    "portfolio.png": "989d81b0714e9ce0f11f526584f6ede08eb8ce48ce9b4a95c368608dd4e0c5d6",
+    "assets/index-PA0iK1LF.css": "5ffa14e63e2d95b5b761654aa21ba6615ebcd47566dca104e4b055bc8ffc3ca1",
+    "assets/index-i9u0NDUT.js": "bef769d99d3a192575442c6623b975d1844ce915876b2aff4e17074f4d3abfe3"
+  }
+}

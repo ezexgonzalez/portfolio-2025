@@ -1,0 +1,390 @@
+[
+  {
+    "scale": 2,
+    "width": 320,
+    "scrollWidth": 320,
+    "offenders": [
+      {
+        "tag": "DIV",
+        "cls": "p27-nav-measure",
+        "text": "",
+        "rect": {
+          "x": -1179.859375,
+          "y": 44,
+          "width": 1459.859375,
+          "height": 88,
+          "top": 44,
+          "right": 280,
+          "bottom": 132,
+          "left": -1179.859375
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "p27-nav-identity p27-mono",
+        "text": "Ezequiel Gonzalez",
+        "rect": {
+          "x": -1179.859375,
+          "y": 44,
+          "width": 253.3125,
+          "height": 88,
+          "top": 44,
+          "right": -926.546875,
+          "bottom": 132,
+          "left": -1179.859375
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "anywhere"
+      },
+      {
+        "tag": "DIV",
+        "cls": "p27-nav-desktop",
+        "text": "",
+        "rect": {
+          "x": -614.546875,
+          "y": 44,
+          "width": 894.546875,
+          "height": 88,
+          "top": 44,
+          "right": 280,
+          "bottom": 132,
+          "left": -614.546875
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Proyectos",
+        "rect": {
+          "x": -614.546875,
+          "y": 44,
+          "width": 169.765625,
+          "height": 88,
+          "top": 44,
+          "right": -444.78125,
+          "bottom": 132,
+          "left": -614.546875
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Sobre mí",
+        "rect": {
+          "x": -380.78125,
+          "y": 44,
+          "width": 154.953125,
+          "height": 88,
+          "top": 44,
+          "right": -225.828125,
+          "bottom": 132,
+          "left": -380.78125
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Capacidades",
+        "rect": {
+          "x": -161.828125,
+          "y": 44,
+          "width": 215.34375,
+          "height": 88,
+          "top": 44,
+          "right": 53.515625,
+          "bottom": 132,
+          "left": -161.828125
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "CANVAS",
+        "cls": "p27-ascii",
+        "text": "",
+        "rect": {
+          "x": -38.3984375,
+          "y": 320,
+          "width": 396.796875,
+          "height": 1120,
+          "top": 320,
+          "right": 358.3984375,
+          "bottom": 1440,
+          "left": -38.3984375
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      }
+    ]
+  },
+  {
+    "scale": 4,
+    "width": 320,
+    "scrollWidth": 432,
+    "offenders": [
+      {
+        "tag": "BUTTON",
+        "cls": "p27-nav-toggle",
+        "text": "",
+        "rect": {
+          "x": 80,
+          "y": 288,
+          "width": 269.953125,
+          "height": 176,
+          "top": 288,
+          "right": 349.953125,
+          "bottom": 464,
+          "left": 80
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "DIV",
+        "cls": "p27-nav-measure",
+        "text": "",
+        "rect": {
+          "x": -2671.15625,
+          "y": 144,
+          "width": 2911.15625,
+          "height": 176,
+          "top": 144,
+          "right": 240,
+          "bottom": 320,
+          "left": -2671.15625
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "p27-nav-identity p27-mono",
+        "text": "Ezequiel Gonzalez",
+        "rect": {
+          "x": -2671.15625,
+          "y": 144,
+          "width": 498.109375,
+          "height": 176,
+          "top": 144,
+          "right": -2173.046875,
+          "bottom": 320,
+          "left": -2671.15625
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "anywhere"
+      },
+      {
+        "tag": "DIV",
+        "cls": "p27-nav-desktop",
+        "text": "",
+        "rect": {
+          "x": -1549.046875,
+          "y": 144,
+          "width": 1789.046875,
+          "height": 176,
+          "top": 144,
+          "right": 240,
+          "bottom": 320,
+          "left": -1549.046875
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Proyectos",
+        "rect": {
+          "x": -1549.046875,
+          "y": 144,
+          "width": 339.53125,
+          "height": 176,
+          "top": 144,
+          "right": -1209.515625,
+          "bottom": 320,
+          "left": -1549.046875
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Sobre mí",
+        "rect": {
+          "x": -1081.515625,
+          "y": 144,
+          "width": 309.890625,
+          "height": 176,
+          "top": 144,
+          "right": -771.625,
+          "bottom": 320,
+          "left": -1081.515625
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Capacidades",
+        "rect": {
+          "x": -643.625,
+          "y": 144,
+          "width": 430.671875,
+          "height": 176,
+          "top": 144,
+          "right": -212.953125,
+          "bottom": 320,
+          "left": -643.625
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "Contacto",
+        "rect": {
+          "x": -84.953125,
+          "y": 144,
+          "width": 324.953125,
+          "height": 176,
+          "top": 144,
+          "right": 240,
+          "bottom": 320,
+          "left": -84.953125
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "CANVAS",
+        "cls": "p27-ascii",
+        "text": "",
+        "rect": {
+          "x": -38.3984375,
+          "y": 752,
+          "width": 396.796875,
+          "height": 2240,
+          "top": 752,
+          "right": 358.3984375,
+          "bottom": 2992,
+          "left": -38.3984375
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "A",
+        "cls": "p27-primary-action",
+        "text": "",
+        "rect": {
+          "x": 203.3125,
+          "y": 7852,
+          "width": 160,
+          "height": 208,
+          "top": 7852,
+          "right": 363.3125,
+          "bottom": 8060,
+          "left": 203.3125
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "↗",
+        "rect": {
+          "x": 432.203125,
+          "y": 7916,
+          "width": 50.28125,
+          "height": 80,
+          "top": 7916,
+          "right": 482.484375,
+          "bottom": 7996,
+          "left": 432.203125
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "A",
+        "cls": "p27-secondary-action",
+        "text": "",
+        "rect": {
+          "x": 80,
+          "y": 8124,
+          "width": 406.640625,
+          "height": 208,
+          "top": 8124,
+          "right": 486.640625,
+          "bottom": 8332,
+          "left": 80
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "text": "→",
+        "rect": {
+          "x": 436.359375,
+          "y": 8188,
+          "width": 50.28125,
+          "height": 80,
+          "top": 8188,
+          "right": 486.640625,
+          "bottom": 8268,
+          "left": 436.359375
+        },
+        "whiteSpace": "nowrap",
+        "overflow": "normal"
+      },
+      {
+        "tag": "P",
+        "cls": "p27-hero-quote p27-serif",
+        "text": "Observar, cuestionar, entender.",
+        "rect": {
+          "x": -32.8125,
+          "y": 8744,
+          "width": 385.625,
+          "height": 360,
+          "top": 8744,
+          "right": 352.8125,
+          "bottom": 9104,
+          "left": -32.8125
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "02 PROYECTOS",
+        "rect": {
+          "x": 80,
+          "y": 10857,
+          "width": 263.703125,
+          "height": 144,
+          "top": 10857,
+          "right": 343.703125,
+          "bottom": 11001,
+          "left": 80
+        },
+        "whiteSpace": "normal",
+        "overflow": "normal"
+      }
+    ]
+  }
+]

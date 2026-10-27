@@ -1,0 +1,1002 @@
+{
+  "head": "982396eb6de28caf75ff710056fb7c3267da0fc4",
+  "browser": "153.0.8010.0",
+  "fonts": [
+    {
+      "mode": "live",
+      "failed": [],
+      "qa": {
+        "lcp": [
+          {
+            "t": 7192,
+            "duration": 0,
+            "name": "",
+            "node": "SPAN"
+          }
+        ],
+        "shifts": [
+          {
+            "t": 7171.5999999996275,
+            "value": 0.025399881516587678,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "",
+                "previous": {
+                  "x": 0,
+                  "y": 21.4375,
+                  "width": 390,
+                  "height": 822.5625,
+                  "top": 21.4375,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                },
+                "current": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 390,
+                  "height": 844,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          {
+            "t": 12606.200000000186,
+            "value": 0.06495422212162627,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "p27-last-name p27-serif",
+                "previous": {
+                  "x": 24.375,
+                  "y": 249,
+                  "width": 341.25,
+                  "height": 207,
+                  "top": 249,
+                  "right": 365.625,
+                  "bottom": 456,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 52.078125,
+                  "y": 243,
+                  "width": 290,
+                  "height": 120,
+                  "top": 243,
+                  "right": 342.078125,
+                  "bottom": 363,
+                  "left": 52.078125
+                }
+              },
+              {
+                "node": "p27-hero-description",
+                "previous": {
+                  "x": 24.375,
+                  "y": 477,
+                  "width": 341.25,
+                  "height": 100,
+                  "top": 477,
+                  "right": 365.625,
+                  "bottom": 577,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 24.375,
+                  "y": 377,
+                  "width": 341.25,
+                  "height": 100,
+                  "top": 377,
+                  "right": 365.625,
+                  "bottom": 477,
+                  "left": 24.375
+                }
+              },
+              {
+                "node": "p27-hero-closing",
+                "previous": {
+                  "x": 24.375,
+                  "y": 733,
+                  "width": 341.25,
+                  "height": 111,
+                  "top": 733,
+                  "right": 365.625,
+                  "bottom": 844,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 24.375,
+                  "y": 699,
+                  "width": 341.25,
+                  "height": 145,
+                  "top": 699,
+                  "right": 365.625,
+                  "bottom": 844,
+                  "left": 24.375
+                }
+              },
+              {
+                "node": "p27-hero-actions",
+                "previous": {
+                  "x": 32.734375,
+                  "y": 601,
+                  "width": 324.53125,
+                  "height": 52,
+                  "top": 601,
+                  "right": 357.265625,
+                  "bottom": 653,
+                  "left": 32.734375
+                },
+                "current": {
+                  "x": 32.734375,
+                  "y": 501,
+                  "width": 324.53125,
+                  "height": 52,
+                  "top": 501,
+                  "right": 357.265625,
+                  "bottom": 553,
+                  "left": 32.734375
+                }
+              },
+              {
+                "node": "",
+                "previous": {
+                  "x": 0,
+                  "y": 733,
+                  "width": 390,
+                  "height": 1,
+                  "top": 733,
+                  "right": 390,
+                  "bottom": 734,
+                  "left": 0
+                },
+                "current": {
+                  "x": 0,
+                  "y": 699,
+                  "width": 390,
+                  "height": 1,
+                  "top": 699,
+                  "right": 390,
+                  "bottom": 700,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          {
+            "t": 12653.099999999627,
+            "value": 0.0055284771980263995,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "p27-hero-actions",
+                "previous": {
+                  "x": 32.734375,
+                  "y": 501,
+                  "width": 324.53125,
+                  "height": 52,
+                  "top": 501,
+                  "right": 357.265625,
+                  "bottom": 553,
+                  "left": 32.734375
+                },
+                "current": {
+                  "x": 34,
+                  "y": 476,
+                  "width": 322,
+                  "height": 52,
+                  "top": 476,
+                  "right": 356,
+                  "bottom": 528,
+                  "left": 34
+                }
+              },
+              {
+                "previous": {
+                  "x": 84.9375,
+                  "y": 197,
+                  "width": 220.109375,
+                  "height": 73,
+                  "top": 197,
+                  "right": 305.046875,
+                  "bottom": 270,
+                  "left": 84.9375
+                },
+                "current": {
+                  "x": 95.84375,
+                  "y": 193,
+                  "width": 198.296875,
+                  "height": 73,
+                  "top": 193,
+                  "right": 294.140625,
+                  "bottom": 266,
+                  "left": 95.84375
+                }
+              },
+              {
+                "previous": {
+                  "x": 24.375,
+                  "y": 765,
+                  "width": 341.25,
+                  "height": 40,
+                  "top": 765,
+                  "right": 365.625,
+                  "bottom": 805,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 24.375,
+                  "y": 764,
+                  "width": 341.25,
+                  "height": 40,
+                  "top": 764,
+                  "right": 365.625,
+                  "bottom": 804,
+                  "left": 24.375
+                }
+              },
+              {
+                "node": "p27-nav-toggle",
+                "previous": {
+                  "x": 291.4375,
+                  "y": 6,
+                  "width": 74.1875,
+                  "height": 44,
+                  "top": 6,
+                  "right": 365.625,
+                  "bottom": 50,
+                  "left": 291.4375
+                },
+                "current": {
+                  "x": 298.125,
+                  "y": 6,
+                  "width": 67.5,
+                  "height": 44,
+                  "top": 6,
+                  "right": 365.625,
+                  "bottom": 50,
+                  "left": 298.125
+                }
+              }
+            ]
+          }
+        ],
+        "long": [
+          {
+            "t": 7109.200000000186,
+            "duration": 59,
+            "name": "self"
+          }
+        ],
+        "events": [
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerout",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerover",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerenter",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerenter",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerenter",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "pointerenter",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "mouseout",
+            "interactionId": 0
+          },
+          {
+            "t": 7170.4000000003725,
+            "duration": 16,
+            "name": "mouseover",
+            "interactionId": 0
+          }
+        ],
+        "draws": {
+          "p27-ascii": 54
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-37eNuBeH.js",
+          "type": "script",
+          "transfer": 217838,
+          "encoded": 217538,
+          "duration": 5.599999999627471
+        },
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-CYGSIVwo.css",
+          "type": "link",
+          "transfer": 39437,
+          "encoded": 39137,
+          "duration": 5.400000000372529
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap",
+          "type": "css",
+          "transfer": 1058,
+          "encoded": 758,
+          "duration": 7054.299999999814
+        }
+      ],
+      "navigation": {
+        "name": "http://127.0.0.1:39213/src/portfolio2027/preview.html",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 7109,
+        "navigationId": 6654,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.7999999998137355,
+        "domainLookupEnd": 0.7999999998137355,
+        "connectStart": 0.7999999998137355,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.2000000001862645,
+        "requestStart": 1.2999999998137355,
+        "responseStart": 4.7999999998137355,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.7999999998137355,
+        "responseEnd": 5.7000000001862645,
+        "transferSize": 7064,
+        "encodedBodySize": 6764,
+        "decodedBodySize": 6764,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 23.5,
+        "domContentLoadedEventStart": 7108.9000000003725,
+        "domContentLoadedEventEnd": 7109,
+        "domComplete": 7109,
+        "loadEventStart": 7109,
+        "loadEventEnd": 7109,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        }
+      ],
+      "memory": {
+        "used": 10000000,
+        "total": 10000000
+      },
+      "overflow": false
+    },
+    {
+      "mode": "delayed",
+      "failed": [],
+      "qa": {
+        "lcp": [
+          {
+            "t": 1064,
+            "duration": 0,
+            "name": "",
+            "node": "SPAN"
+          }
+        ],
+        "shifts": [
+          {
+            "t": 1059,
+            "value": 0.025399881516587678,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "",
+                "previous": {
+                  "x": 0,
+                  "y": 21.4375,
+                  "width": 390,
+                  "height": 822.5625,
+                  "top": 21.4375,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                },
+                "current": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 390,
+                  "height": 844,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                }
+              }
+            ]
+          },
+          {
+            "t": 1986.5,
+            "value": 0.08517678779072278,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "p27-last-name p27-serif",
+                "previous": {
+                  "x": 24.375,
+                  "y": 249,
+                  "width": 341.25,
+                  "height": 207,
+                  "top": 249,
+                  "right": 365.625,
+                  "bottom": 456,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 52.078125,
+                  "y": 243,
+                  "width": 290,
+                  "height": 120,
+                  "top": 243,
+                  "right": 342.078125,
+                  "bottom": 363,
+                  "left": 52.078125
+                }
+              },
+              {
+                "node": "p27-hero-description",
+                "previous": {
+                  "x": 24.375,
+                  "y": 477,
+                  "width": 341.25,
+                  "height": 100,
+                  "top": 477,
+                  "right": 365.625,
+                  "bottom": 577,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 24.375,
+                  "y": 377,
+                  "width": 341.25,
+                  "height": 75,
+                  "top": 377,
+                  "right": 365.625,
+                  "bottom": 452,
+                  "left": 24.375
+                }
+              },
+              {
+                "node": "p27-hero-closing",
+                "previous": {
+                  "x": 24.375,
+                  "y": 733,
+                  "width": 341.25,
+                  "height": 111,
+                  "top": 733,
+                  "right": 365.625,
+                  "bottom": 844,
+                  "left": 24.375
+                },
+                "current": {
+                  "x": 24.375,
+                  "y": 699,
+                  "width": 341.25,
+                  "height": 145,
+                  "top": 699,
+                  "right": 365.625,
+                  "bottom": 844,
+                  "left": 24.375
+                }
+              },
+              {
+                "node": "p27-hero-actions",
+                "previous": {
+                  "x": 32.734375,
+                  "y": 601,
+                  "width": 324.53125,
+                  "height": 52,
+                  "top": 601,
+                  "right": 357.265625,
+                  "bottom": 653,
+                  "left": 32.734375
+                },
+                "current": {
+                  "x": 34,
+                  "y": 476,
+                  "width": 322,
+                  "height": 52,
+                  "top": 476,
+                  "right": 356,
+                  "bottom": 528,
+                  "left": 34
+                }
+              },
+              {
+                "previous": {
+                  "x": 84.9375,
+                  "y": 197,
+                  "width": 220.109375,
+                  "height": 73,
+                  "top": 197,
+                  "right": 305.046875,
+                  "bottom": 270,
+                  "left": 84.9375
+                },
+                "current": {
+                  "x": 95.84375,
+                  "y": 193,
+                  "width": 198.296875,
+                  "height": 73,
+                  "top": 193,
+                  "right": 294.140625,
+                  "bottom": 266,
+                  "left": 95.84375
+                }
+              }
+            ]
+          }
+        ],
+        "long": [],
+        "events": [],
+        "draws": {
+          "p27-ascii": 18
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-CYGSIVwo.css",
+          "type": "link",
+          "transfer": 39437,
+          "encoded": 39137,
+          "duration": 6.7999999998137355
+        },
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-37eNuBeH.js",
+          "type": "script",
+          "transfer": 217838,
+          "encoded": 217538,
+          "duration": 7.5
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap",
+          "type": "css",
+          "transfer": 1058,
+          "encoded": 758,
+          "duration": 965.1999999992549
+        }
+      ],
+      "navigation": {
+        "name": "http://127.0.0.1:39213/src/portfolio2027/preview.html",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1008.4000000003725,
+        "navigationId": 2383,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.10000000055879354,
+        "domainLookupStart": 3.7000000001862645,
+        "domainLookupEnd": 3.800000000745058,
+        "connectStart": 3.800000000745058,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.900000000372529,
+        "requestStart": 4.2000000001862645,
+        "responseStart": 4.800000000745058,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.800000000745058,
+        "responseEnd": 5.5,
+        "transferSize": 7064,
+        "encodedBodySize": 6764,
+        "decodedBodySize": 6764,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 13.300000000745058,
+        "domContentLoadedEventStart": 984.8000000007451,
+        "domContentLoadedEventEnd": 984.9000000003725,
+        "domComplete": 1008.4000000003725,
+        "loadEventStart": 1008.4000000003725,
+        "loadEventEnd": 1008.4000000003725,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "status": "loaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "normal",
+          "status": "unloaded",
+          "display": "swap"
+        }
+      ],
+      "memory": {
+        "used": 10000000,
+        "total": 10000000
+      },
+      "overflow": false
+    },
+    {
+      "mode": "unavailable",
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "qa": {
+        "lcp": [
+          {
+            "t": 96,
+            "duration": 0,
+            "name": "",
+            "node": "SPAN"
+          }
+        ],
+        "shifts": [
+          {
+            "t": 87.79999999981374,
+            "value": 0.025399881516587678,
+            "duration": 0,
+            "recent": false,
+            "name": "",
+            "sources": [
+              {
+                "node": "",
+                "previous": {
+                  "x": 0,
+                  "y": 21.4375,
+                  "width": 390,
+                  "height": 822.5625,
+                  "top": 21.4375,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                },
+                "current": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 390,
+                  "height": 844,
+                  "top": 0,
+                  "right": 390,
+                  "bottom": 844,
+                  "left": 0
+                }
+              }
+            ]
+          }
+        ],
+        "long": [],
+        "events": [],
+        "draws": {
+          "p27-ascii": 11
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-37eNuBeH.js",
+          "type": "script",
+          "transfer": 217838,
+          "encoded": 217538,
+          "duration": 6.7999999998137355
+        },
+        {
+          "name": "http://127.0.0.1:39213/assets/preview-CYGSIVwo.css",
+          "type": "link",
+          "transfer": 39437,
+          "encoded": 39137,
+          "duration": 6
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap",
+          "type": "css",
+          "transfer": 0,
+          "encoded": 0,
+          "duration": 2.2000000001862645
+        }
+      ],
+      "navigation": {
+        "name": "http://127.0.0.1:39213/src/portfolio2027/preview.html",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 44.39999999944121,
+        "navigationId": 5865,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.20000000018626451,
+        "domainLookupStart": 2.2000000001862645,
+        "domainLookupEnd": 2.2000000001862645,
+        "connectStart": 2.2000000001862645,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.2999999998137355,
+        "requestStart": 2.2999999998137355,
+        "responseStart": 3,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 3,
+        "responseEnd": 4,
+        "transferSize": 7064,
+        "encodedBodySize": 6764,
+        "decodedBodySize": 6764,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 11,
+        "domContentLoadedEventStart": 44.299999999813735,
+        "domContentLoadedEventEnd": 44.39999999944121,
+        "domComplete": 44.39999999944121,
+        "loadEventStart": 44.39999999944121,
+        "loadEventEnd": 44.39999999944121,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "fonts": [],
+      "memory": {
+        "used": 10000000,
+        "total": 10000000
+      },
+      "overflow": false
+    }
+  ],
+  "note": "First independent live/delayed/unavailable-font baseline; normal final screenshots retained only once."
+}

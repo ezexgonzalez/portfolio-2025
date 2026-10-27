@@ -1,0 +1,2246 @@
+{
+  "browser": "153.0.8010.0",
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1920,
+          "height": 1818,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "19px",
+          "lineHeight": "29.45px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 160,
+          "y": 258,
+          "width": 1600,
+          "height": 168,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "56px",
+          "lineHeight": "64px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 160,
+            "y": 176,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 1629.09375,
+            "y": 176,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 160,
+            "y": 467,
+            "width": 680,
+            "height": 124,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 160,
+            "y": 623,
+            "width": 680,
+            "height": 93,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 1280,
+            "y": 467,
+            "width": 360,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 1280,
+            "y": 519,
+            "width": 360,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 160,
+            "y": 837,
+            "width": 680,
+            "height": 42,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "34px",
+            "lineHeight": "42px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 160,
+            "y": 911,
+            "width": 680,
+            "height": 155,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 1280,
+            "y": 1098,
+            "width": 360,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 1280,
+            "y": 1150,
+            "width": 360,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 160,
+            "y": 1098,
+            "width": 680,
+            "height": 124,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 160,
+            "y": 1346,
+            "width": 680,
+            "height": 93,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 1280,
+            "y": 1346,
+            "width": 360,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 1280,
+            "y": 1398,
+            "width": 360,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 160,
+            "y": 1471,
+            "width": 680,
+            "height": 93,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 160,
+            "y": 1596,
+            "width": 680,
+            "height": 93,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 1280,
+            "y": 467,
+            "width": 360,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 1280,
+            "y": 1098,
+            "width": 360,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 1280,
+            "y": 1346,
+            "width": 360,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "31px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1920,
+          "height": 1038,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "19px",
+          "lineHeight": "29.45px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 160,
+          "y": 289,
+          "width": 480,
+          "height": 701,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "56px",
+          "lineHeight": "64px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 160,
+            "y": 176,
+            "width": 1600,
+            "height": 49,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 800,
+            "y": 386,
+            "width": 860,
+            "height": 58,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 800,
+            "y": 464,
+            "width": 960,
+            "height": 36,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "24px",
+            "lineHeight": "36px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 800,
+            "y": 629,
+            "width": 860,
+            "height": 58,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 800,
+            "y": 707,
+            "width": 960,
+            "height": 36,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "24px",
+            "lineHeight": "36px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 800,
+            "y": 872,
+            "width": 860,
+            "height": 29,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 800,
+            "y": 921,
+            "width": 960,
+            "height": 36,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "24px",
+            "lineHeight": "36px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -720,
+          "x": 160,
+          "bottom": -596
+        },
+        "date2025": {
+          "y": -720,
+          "x": 1280,
+          "bottom": -593
+        },
+        "experience": {
+          "y": -907,
+          "x": 160,
+          "bottom": -752
+        },
+        "date2026": {
+          "y": -472,
+          "x": 1280,
+          "bottom": -345
+        },
+        "perspective": {
+          "y": -472,
+          "x": 160,
+          "bottom": -379
+        },
+        "perspectiveNext": {
+          "y": -347,
+          "x": 160,
+          "bottom": -254
+        }
+      }
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1536,
+          "height": 1682,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "19px",
+          "lineHeight": "29.45px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 96,
+          "y": 234,
+          "width": 1343.984375,
+          "height": 144,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "48px",
+          "lineHeight": "56px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 96,
+            "y": 160,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 1309.078125,
+            "y": 160,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 96,
+            "y": 419,
+            "width": 640,
+            "height": 116,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 96,
+            "y": 563,
+            "width": 640,
+            "height": 87,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 1039.984375,
+            "y": 419,
+            "width": 320,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 1039.984375,
+            "y": 471,
+            "width": 320,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 96,
+            "y": 763,
+            "width": 640,
+            "height": 40,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "32px",
+            "lineHeight": "40px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 96,
+            "y": 831,
+            "width": 640,
+            "height": 145,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 1039.984375,
+            "y": 1004,
+            "width": 320,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 1039.984375,
+            "y": 1056,
+            "width": 320,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 96,
+            "y": 1004,
+            "width": 640,
+            "height": 116,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 96,
+            "y": 1244,
+            "width": 640,
+            "height": 87,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 1039.984375,
+            "y": 1244,
+            "width": 320,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 1039.984375,
+            "y": 1296,
+            "width": 320,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 96,
+            "y": 1359,
+            "width": 640,
+            "height": 87,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 96,
+            "y": 1474,
+            "width": 640,
+            "height": 87,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 1039.984375,
+            "y": 419,
+            "width": 320,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 1039.984375,
+            "y": 1004,
+            "width": 320,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 1039.984375,
+            "y": 1244,
+            "width": 320,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "19px",
+            "lineHeight": "29px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1536,
+          "height": 985,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "19px",
+          "lineHeight": "29.45px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 96,
+          "y": 265,
+          "width": 400,
+          "height": 672,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "48px",
+          "lineHeight": "56px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 96,
+            "y": 160,
+            "width": 1343.984375,
+            "height": 49,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 640,
+            "y": 358,
+            "width": 799.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 640,
+            "y": 434,
+            "width": 799.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 640,
+            "y": 591,
+            "width": 799.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 640,
+            "y": 667,
+            "width": 799.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 640,
+            "y": 824,
+            "width": 799.984375,
+            "height": 28,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 640,
+            "y": 872,
+            "width": 799.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -678,
+          "x": 96,
+          "bottom": -562
+        },
+        "date2025": {
+          "y": -678,
+          "x": 1039.984375,
+          "bottom": -551
+        },
+        "experience": {
+          "y": -851,
+          "x": 96,
+          "bottom": -706
+        },
+        "date2026": {
+          "y": -438,
+          "x": 1039.984375,
+          "bottom": -286
+        },
+        "perspective": {
+          "y": -438,
+          "x": 96,
+          "bottom": -351
+        },
+        "perspectiveNext": {
+          "y": -323,
+          "x": 96,
+          "bottom": -236
+        }
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1366,
+          "height": 1640,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "18.615px",
+          "lineHeight": "28.8532px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 72,
+          "y": 234,
+          "width": 1221.984375,
+          "height": 124,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "44px",
+          "lineHeight": "52px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 72,
+            "y": 160,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 1163.078125,
+            "y": 160,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 72,
+            "y": 399,
+            "width": 600,
+            "height": 112,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 72,
+            "y": 539,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 927.984375,
+            "y": 399,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 927.984375,
+            "y": 451,
+            "width": 280,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 72,
+            "y": 728,
+            "width": 600,
+            "height": 38,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "30px",
+            "lineHeight": "38px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 72,
+            "y": 794,
+            "width": 600,
+            "height": 140,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 927.984375,
+            "y": 962,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 927.984375,
+            "y": 1014,
+            "width": 280,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 72,
+            "y": 962,
+            "width": 600,
+            "height": 112,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 72,
+            "y": 1219,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 927.984375,
+            "y": 1219,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 927.984375,
+            "y": 1271,
+            "width": 280,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 72,
+            "y": 1331,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 72,
+            "y": 1443,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 927.984375,
+            "y": 399,
+            "width": 280,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 927.984375,
+            "y": 962,
+            "width": 280,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 927.984375,
+            "y": 1219,
+            "width": 280,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 80,
+          "width": 1366,
+          "height": 979,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "18.615px",
+          "lineHeight": "28.8532px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 72,
+          "y": 265,
+          "width": 360,
+          "height": 666,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "44px",
+          "lineHeight": "52px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 72,
+            "y": 160,
+            "width": 1221.984375,
+            "height": 49,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 540,
+            "y": 356,
+            "width": 753.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 540,
+            "y": 432,
+            "width": 753.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 540,
+            "y": 587,
+            "width": 753.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 540,
+            "y": 663,
+            "width": 753.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 540,
+            "y": 818,
+            "width": 753.984375,
+            "height": 28,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 540,
+            "y": 866,
+            "width": 753.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -678,
+          "x": 72,
+          "bottom": -566
+        },
+        "date2025": {
+          "y": -678,
+          "x": 927.984375,
+          "bottom": -526
+        },
+        "experience": {
+          "y": -846,
+          "x": 72,
+          "bottom": -706
+        },
+        "date2026": {
+          "y": -421,
+          "x": 927.984375,
+          "bottom": -269
+        },
+        "perspective": {
+          "y": -421,
+          "x": 72,
+          "bottom": -337
+        },
+        "perspectiveNext": {
+          "y": -309,
+          "x": 72,
+          "bottom": -225
+        }
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 768,
+          "height": 1910,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "17.12px",
+          "lineHeight": "26.536px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 48,
+          "y": 202,
+          "width": 671.984375,
+          "height": 124,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "44px",
+          "lineHeight": "52px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 48,
+            "y": 136,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 589.078125,
+            "y": 136,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 48,
+            "y": 359,
+            "width": 600,
+            "height": 112,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 48,
+            "y": 499,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 48,
+            "y": 611,
+            "width": 600,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 48,
+            "y": 663,
+            "width": 600,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 48,
+            "y": 810,
+            "width": 600,
+            "height": 38,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "30px",
+            "lineHeight": "38px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 48,
+            "y": 876,
+            "width": 600,
+            "height": 140,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 48,
+            "y": 1044,
+            "width": 600,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 48,
+            "y": 1096,
+            "width": 600,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 48,
+            "y": 1174,
+            "width": 600,
+            "height": 112,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 48,
+            "y": 1383,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 48,
+            "y": 1495,
+            "width": 600,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 48,
+            "y": 1547,
+            "width": 600,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 48,
+            "y": 1625,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 48,
+            "y": 1737,
+            "width": 600,
+            "height": 84,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 48,
+            "y": 611,
+            "width": 600,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 48,
+            "y": 1044,
+            "width": 600,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 48,
+            "y": 1495,
+            "width": 600,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 768,
+          "height": 1039,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "17.12px",
+          "lineHeight": "26.536px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 48,
+          "y": 233,
+          "width": 671.984375,
+          "height": 60,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "44px",
+          "lineHeight": "52px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 48,
+            "y": 136,
+            "width": 671.984375,
+            "height": 49,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 108,
+            "y": 440,
+            "width": 611.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 108,
+            "y": 516,
+            "width": 611.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 108,
+            "y": 671,
+            "width": 611.984375,
+            "height": 56,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 108,
+            "y": 747,
+            "width": 611.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 108,
+            "y": 902,
+            "width": 611.984375,
+            "height": 28,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "18px",
+            "lineHeight": "28px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 108,
+            "y": 950,
+            "width": 611.984375,
+            "height": 32,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "22px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -736,
+          "x": 48,
+          "bottom": -624
+        },
+        "date2025": {
+          "y": -866,
+          "x": 48,
+          "bottom": -764
+        },
+        "experience": {
+          "y": -1034,
+          "x": 48,
+          "bottom": -894
+        },
+        "date2026": {
+          "y": -415,
+          "x": 48,
+          "bottom": -313
+        },
+        "perspective": {
+          "y": -527,
+          "x": 48,
+          "bottom": -443
+        },
+        "perspectiveNext": {
+          "y": -285,
+          "x": 48,
+          "bottom": -201
+        }
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 390,
+          "height": 2231,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "16.175px",
+          "lineHeight": "25.0713px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 24.375,
+          "y": 186,
+          "width": 341.25,
+          "height": 138,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "36px",
+          "lineHeight": "42px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 24.375,
+            "y": 128,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 234.71875,
+            "y": 128,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 24.375,
+            "y": 353,
+            "width": 341.25,
+            "height": 156,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 24.375,
+            "y": 533,
+            "width": 341.25,
+            "height": 104,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 24.375,
+            "y": 661,
+            "width": 341.25,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 24.375,
+            "y": 713,
+            "width": 341.25,
+            "height": 50,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 24.375,
+            "y": 848,
+            "width": 341.25,
+            "height": 72,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "28px",
+            "lineHeight": "36px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 24.375,
+            "y": 944,
+            "width": 341.25,
+            "height": 208,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 24.375,
+            "y": 1176,
+            "width": 341.25,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 24.375,
+            "y": 1228,
+            "width": 341.25,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 24.375,
+            "y": 1327,
+            "width": 341.25,
+            "height": 156,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 24.375,
+            "y": 1568,
+            "width": 341.25,
+            "height": 130,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 24.375,
+            "y": 1722,
+            "width": 341.25,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 24.375,
+            "y": 1774,
+            "width": 341.25,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 24.375,
+            "y": 1898,
+            "width": 341.25,
+            "height": 130,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 24.375,
+            "y": 2052,
+            "width": 341.25,
+            "height": 130,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 24.375,
+            "y": 661,
+            "width": 341.25,
+            "height": 102,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 24.375,
+            "y": 1176,
+            "width": 341.25,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 24.375,
+            "y": 1722,
+            "width": 341.25,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 390,
+          "height": 1231,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "16.175px",
+          "lineHeight": "25.0713px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 24.375,
+          "y": 211,
+          "width": 341.25,
+          "height": 90,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "36px",
+          "lineHeight": "42px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 24.375,
+            "y": 128,
+            "width": 341.25,
+            "height": 43,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 24.375,
+            "y": 464,
+            "width": 341.25,
+            "height": 104,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 24.375,
+            "y": 588,
+            "width": 341.25,
+            "height": 60,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 24.375,
+            "y": 799,
+            "width": 341.25,
+            "height": 78,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 24.375,
+            "y": 897,
+            "width": 341.25,
+            "height": 60,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 24.375,
+            "y": 1108,
+            "width": 341.25,
+            "height": 52,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 24.375,
+            "y": 1180,
+            "width": 341.25,
+            "height": 30,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -904,
+          "x": 24.375,
+          "bottom": -748
+        },
+        "date2025": {
+          "y": -1055,
+          "x": 24.375,
+          "bottom": -928
+        },
+        "experience": {
+          "y": -1287,
+          "x": 24.375,
+          "bottom": -1079
+        },
+        "date2026": {
+          "y": -509,
+          "x": 24.375,
+          "bottom": -357
+        },
+        "perspective": {
+          "y": -663,
+          "x": 24.375,
+          "bottom": -533
+        },
+        "perspectiveNext": {
+          "y": -333,
+          "x": 24.375,
+          "bottom": -203
+        }
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "about": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 320,
+          "height": 2381,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24.8px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 20,
+          "y": 186,
+          "width": 280,
+          "height": 134,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "03 / ABOUT",
+            "x": 20,
+            "y": 128,
+            "width": 77.015625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Ezequiel Gonzalez",
+            "x": 169.09375,
+            "y": 128,
+            "width": 130.90625,
+            "height": 18,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(125, 125, 125)"
+          },
+          {
+            "text": "Mi relación con la tecnología empezó con la curiosidad. Antes de pensar en una profesión o en un lenguaje de programación, me gustaba aprender por mi cuenta, explorar herramientas y entender qué había detrás de las cosas que utilizaba.",
+            "x": 20,
+            "y": 349,
+            "width": 280,
+            "height": 175,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Ese interés me llevó a estudiar la Licenciatura en Sistemas en la Universidad Nacional de Lanús y a formarme de manera intensiva en desarrollo web en 2021.",
+            "x": 20,
+            "y": 548,
+            "width": 280,
+            "height": 125,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2021 / Primeros pasos",
+            "x": 20,
+            "y": 697,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Formación en desarrollo web, fundamentos de programación y primeros proyectos.",
+            "x": 20,
+            "y": 749,
+            "width": 280,
+            "height": 75,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Pero mi recorrido no fue una línea recta.",
+            "x": 20,
+            "y": 901,
+            "width": 280,
+            "height": 64,
+            "font": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+            "fontSize": "26px",
+            "lineHeight": "32px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Durante un tiempo, la programación quedó en segundo plano. Mi experiencia trabajando en el Centro de Monitoreo de la Policía de la Ciudad también me enseñó mucho: a desenvolverme en situaciones exigentes, prestar atención a los detalles, comunicarme con claridad y trabajar en equipo.",
+            "x": 20,
+            "y": 989,
+            "width": 280,
+            "height": 225,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2025 / Una nueva etapa",
+            "x": 20,
+            "y": 1238,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Retomo el desarrollo con mayor claridad, profundizo en Full Stack y comienzo a construir proyectos completos.",
+            "x": 20,
+            "y": 1290,
+            "width": 280,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "En 2025 decidí retomar el desarrollo web, esta vez con una perspectiva diferente. Ya no quería solamente aprender tecnologías. Quería construir proyectos completos, tomar mis propias decisiones y entender todo el proceso.",
+            "x": 20,
+            "y": 1414,
+            "width": 280,
+            "height": 175,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Así fui profundizando en el desarrollo Full Stack con proyectos como Task Manager. Más adelante, Eze Web Studio me llevó a involucrarme también con el diseño, la identidad visual y la experiencia de usuario.",
+            "x": 20,
+            "y": 1666,
+            "width": 280,
+            "height": 150,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "2026 / Nuevas perspectivas",
+            "x": 20,
+            "y": 1840,
+            "width": 280,
+            "height": 36,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Eze Web Studio. El diseño, la experiencia de usuario y las decisiones de producto empiezan a ocupar un lugar central en mi trabajo.",
+            "x": 20,
+            "y": 1892,
+            "width": 280,
+            "height": 100,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Hoy disfruto trabajar en ese punto donde se encuentran la lógica y el diseño. Me interesa tanto resolver lo que sucede detrás de una aplicación como cuidar la experiencia de quien está del otro lado.",
+            "x": 20,
+            "y": 2016,
+            "width": 280,
+            "height": 150,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Sigo aprendiendo, experimentando y desarrollando mi propio criterio. No veo el desarrollo como algo que se termina de aprender, sino como un proceso en el que siempre hay algo nuevo por descubrir.",
+            "x": 20,
+            "y": 2190,
+            "width": 280,
+            "height": 150,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "milestones": [
+          {
+            "x": 20,
+            "y": 697,
+            "width": 280,
+            "height": 127,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 20,
+            "y": 1238,
+            "width": 280,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "x": 20,
+            "y": 1840,
+            "width": 280,
+            "height": 152,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "25px",
+            "color": "rgb(171, 171, 171)"
+          }
+        ],
+        "overflow": false
+      },
+      "skills": {
+        "section": {
+          "x": 0,
+          "y": 72,
+          "width": 320,
+          "height": 1305,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "24.8px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "heading": {
+          "x": 20,
+          "y": 211,
+          "width": 280,
+          "height": 86,
+          "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "color": "rgb(239, 239, 239)"
+        },
+        "paragraphs": [
+          {
+            "text": "04 / CAPABILITIES",
+            "x": 20,
+            "y": 128,
+            "width": 280,
+            "height": 43,
+            "font": "\"IBM Plex Mono\", ui-monospace, \"Courier New\", monospace",
+            "fontSize": "12px",
+            "lineHeight": "18px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Construcción de interfaces y experiencias web, con atención a los componentes, el diseño responsive y la experiencia de usuario.",
+            "x": 20,
+            "y": 460,
+            "width": 280,
+            "height": 130,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "React · JavaScript · TypeScript · Tailwind CSS · Vite",
+            "x": 20,
+            "y": 610,
+            "width": 280,
+            "height": 60,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Desarrollo de aplicaciones Full Stack, integración frontend/backend, APIs, autenticación y persistencia de datos.",
+            "x": 20,
+            "y": 821,
+            "width": 280,
+            "height": 130,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Node.js · Express · MongoDB · REST APIs · JWT",
+            "x": 20,
+            "y": 971,
+            "width": 280,
+            "height": 60,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          },
+          {
+            "text": "Herramientas para desarrollar, organizar, probar e iterar proyectos.",
+            "x": 20,
+            "y": 1182,
+            "width": 280,
+            "height": 52,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "17px",
+            "lineHeight": "26px",
+            "color": "rgb(171, 171, 171)"
+          },
+          {
+            "text": "Git · GitHub · Postman · Figma",
+            "x": 20,
+            "y": 1254,
+            "width": 280,
+            "height": 30,
+            "font": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px",
+            "color": "rgb(239, 239, 239)"
+          }
+        ],
+        "milestones": [],
+        "overflow": false
+      },
+      "chronology": {
+        "returnParagraph": {
+          "y": -967,
+          "x": 20,
+          "bottom": -792
+        },
+        "date2025": {
+          "y": -1143,
+          "x": 20,
+          "bottom": -991
+        },
+        "experience": {
+          "y": -1392,
+          "x": 20,
+          "bottom": -1167
+        },
+        "date2026": {
+          "y": -541,
+          "x": 20,
+          "bottom": -389
+        },
+        "perspective": {
+          "y": -715,
+          "x": 20,
+          "bottom": -565
+        },
+        "perspectiveNext": {
+          "y": -365,
+          "x": 20,
+          "bottom": -215
+        }
+      }
+    }
+  ],
+  "checks": [
+    "Six widths: exact Figma paragraph copy, three chapters/entries, natural heights, chronology alignment, anchors/focus, no overflow",
+    "Hero Mi historia and every desktop navigation destination: hash, heading focus, Back and keyboard",
+    "Mobile menu destinations and disclosure closure",
+    "200% root text at 320px reflows without horizontal overflow; final capability reachable",
+    "Font failure retains complete story and overflow-free fallback",
+    "No-JS fallback contains full About and all three Skills entries"
+  ],
+  "errors": []
+}

@@ -1,0 +1,4 @@
+/* Explicit opt-in, separate from foundation.css. display=swap applies to the
+   provider's @font-face declarations. No requests until this file is imported.
+   DM Sans is pinned to Figma's opsz 14; request only the approved weights. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap');

@@ -1,0 +1,37 @@
+[
+  {
+    "viewport": 820,
+    "compact": "true",
+    "available": 720,
+    "required": 734,
+    "scrollWidth": 820
+  },
+  {
+    "viewport": 832,
+    "compact": "true",
+    "available": 731,
+    "required": 734,
+    "scrollWidth": 832
+  },
+  {
+    "viewport": 840,
+    "compact": "false",
+    "available": 738,
+    "required": 734,
+    "scrollWidth": 840
+  },
+  {
+    "viewport": 900,
+    "compact": "false",
+    "available": 793,
+    "required": 734,
+    "scrollWidth": 900
+  },
+  {
+    "viewport": 1100,
+    "compact": "false",
+    "available": 977,
+    "required": 734,
+    "scrollWidth": 1100
+  }
+]

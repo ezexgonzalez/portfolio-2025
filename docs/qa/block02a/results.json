@@ -1,0 +1,626 @@
+{
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": 1920,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "1920px",
+        "left": "800px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 264.953125,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 805.90625,
+          "y": 314.9375,
+          "w": 308.1875,
+          "h": 96
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 402.9375,
+          "w": 445.96875,
+          "h": 152
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 640.015625,
+          "y": 586.921875,
+          "w": 639.96875,
+          "h": 58.125
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 776,
+          "y": 677.03125,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 160,
+          "y": 930,
+          "w": 1600,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 960,
+      "overflow": 1920,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "1920px",
+        "left": "800px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 210.953125,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 805.90625,
+          "y": 256.9375,
+          "w": 308.1875,
+          "h": 96
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 344.9375,
+          "w": 445.96875,
+          "h": 152
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 640.015625,
+          "y": 524.921875,
+          "w": 639.96875,
+          "h": 58.125
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 776,
+          "y": 611.03125,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 160,
+          "y": 810,
+          "w": 1600,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 900,
+      "overflow": 1920,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "1920px",
+        "left": "800px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 782.890625,
+          "y": 183.953125,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 805.90625,
+          "y": 227.9375,
+          "w": 308.1875,
+          "h": 96
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 737.015625,
+          "y": 315.9375,
+          "w": 445.96875,
+          "h": 152
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 640.015625,
+          "y": 493.921875,
+          "w": 639.96875,
+          "h": 58.125
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 776,
+          "y": 578.03125,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 160,
+          "y": 750,
+          "w": 1600,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "overflow": 1536,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "1536px",
+        "left": "671.984px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 590.875,
+          "y": 181.265625,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 627.921875,
+          "y": 224.0625,
+          "w": 280.109375,
+          "h": 88
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 569.765625,
+          "y": 304.0625,
+          "w": 396.421875,
+          "h": 136.015625
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 461.859375,
+          "y": 464.875,
+          "w": 612.25,
+          "h": 55.0625
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 583.984375,
+          "y": 544.734375,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 96,
+          "y": 714,
+          "w": 1343.984375,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": 1366,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "1366px",
+        "left": "610.984px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 505.875,
+          "y": 150.984375,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 556.90625,
+          "y": 190.984375,
+          "w": 252.15625,
+          "h": 80
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 509.546875,
+          "y": 262.984375,
+          "w": 346.875,
+          "h": 120.015625
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 382.984375,
+          "y": 405,
+          "w": 600,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 498.984375,
+          "y": 479,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 72,
+          "y": 618,
+          "w": 1221.984375,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": 768,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "768px",
+        "left": "335.984px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 206.890625,
+          "y": 213,
+          "w": 354.203125,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 243.90625,
+          "y": 261,
+          "w": 280.171875,
+          "h": 88
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 191.96875,
+          "y": 341,
+          "w": 384.03125,
+          "h": 132
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 123.984375,
+          "y": 503,
+          "w": 520,
+          "h": 84
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 199.984375,
+          "y": 617,
+          "w": 368,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 48,
+          "y": 873,
+          "w": 671.984375,
+          "h": 190.0625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": 390,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "390px",
+        "left": "170.625px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 36.296875,
+          "y": 157,
+          "w": 317.40625,
+          "h": 18
+        },
+        {
+          "class": "p27-first-name",
+          "x": 95.84375,
+          "y": 199,
+          "w": 198.296875,
+          "h": 62
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 52.078125,
+          "y": 253,
+          "w": 285.84375,
+          "h": 100
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 24.375,
+          "y": 377,
+          "w": 341.25,
+          "h": 75
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 34,
+          "y": 476,
+          "w": 322,
+          "h": 52
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 24.375,
+          "y": 699,
+          "w": 341.25,
+          "h": 163
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "overflow": 320,
+      "frameBorder": "0px",
+      "separator": {
+        "width": "320px",
+        "left": "140px",
+        "content": "\"\""
+      },
+      "fonts": [
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "DM Sans",
+          "loaded"
+        ],
+        [
+          "IBM Plex Mono",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "loaded"
+        ],
+        [
+          "Instrument Serif",
+          "unloaded"
+        ]
+      ],
+      "hero": [
+        {
+          "class": "p27-hero-role p27-mono",
+          "x": 20,
+          "y": 143,
+          "w": 280,
+          "h": 36
+        },
+        {
+          "class": "p27-first-name",
+          "x": 67.90625,
+          "y": 199,
+          "w": 184.1875,
+          "h": 58
+        },
+        {
+          "class": "p27-last-name p27-serif",
+          "x": 29.484375,
+          "y": 249,
+          "w": 261.03125,
+          "h": 94
+        },
+        {
+          "class": "p27-hero-description",
+          "x": 20,
+          "y": 363,
+          "w": 280,
+          "h": 100
+        },
+        {
+          "class": "p27-hero-actions",
+          "x": 61,
+          "y": 483,
+          "w": 198,
+          "h": 120
+        },
+        {
+          "class": "p27-hero-closing",
+          "x": 20,
+          "y": 709,
+          "w": 280,
+          "h": 183
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Desktop CTA anchor and destination focus",
+    "Mobile disclosure open / Escape close",
+    "ASCII running / reduced motion static"
+  ],
+  "errors": []
+}

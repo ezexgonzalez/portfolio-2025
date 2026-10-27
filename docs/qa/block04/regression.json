@@ -1,0 +1,151 @@
+[
+  {
+    "section": "hero",
+    "width": 1920,
+    "region": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "hero",
+    "width": 1536,
+    "region": [
+      0,
+      0,
+      1536,
+      864
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "hero",
+    "width": 1366,
+    "region": [
+      0,
+      0,
+      1366,
+      768
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "hero",
+    "width": 768,
+    "region": [
+      0,
+      0,
+      768,
+      1024
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "hero",
+    "width": 390,
+    "region": [
+      0,
+      0,
+      390,
+      844
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "hero",
+    "width": 320,
+    "region": [
+      0,
+      0,
+      320,
+      844
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "work",
+    "width": 1920,
+    "region": [
+      0,
+      80,
+      1920,
+      1080
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "work",
+    "width": 1536,
+    "region": [
+      0,
+      80,
+      1536,
+      864
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "work",
+    "width": 1366,
+    "region": [
+      0,
+      80,
+      1366,
+      760
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": [
+      72,
+      760,
+      1294,
+      761
+    ]
+  },
+  {
+    "section": "work",
+    "width": 768,
+    "region": [
+      0,
+      72,
+      768,
+      1024
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "work",
+    "width": 390,
+    "region": [
+      0,
+      72,
+      390,
+      844
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  },
+  {
+    "section": "work",
+    "width": 320,
+    "region": [
+      0,
+      72,
+      320,
+      844
+    ],
+    "pixelIdentical": true,
+    "wholeViewportDifference": null
+  }
+]

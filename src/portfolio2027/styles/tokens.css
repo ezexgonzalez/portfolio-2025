@@ -1,0 +1,68 @@
+/* Sources: Figma 11:37 and 111:550. Never redefine legacy :root/@theme. */
+.portfolio-2027 {
+  color-scheme: dark;
+  --p27-color-bg: #080808;
+  --p27-color-text: #efefef;
+  --p27-color-secondary: #ababab;
+  --p27-color-auxiliary: #7d7d7d;
+  --p27-color-rule: #2a2a2a;
+  --p27-color-primary-hover: #d6d6d6;
+
+  --p27-font-sans: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --p27-font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --p27-font-mono: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
+  --p27-weight-regular: 400;
+  --p27-weight-medium: 500;
+
+  /* Initial fluid reading scale; section display sizes belong to later blocks. */
+  --p27-text-small: 0.875rem;
+  --p27-text-body: clamp(1rem, 0.95rem + 0.25vw, 1.1875rem);
+  --p27-text-editorial: clamp(1.5rem, 1.25rem + 0.5vw, 1.75rem);
+  --p27-leading-body: 1.55;
+  --p27-leading-heading: 1.1;
+
+  --p27-space-1: 0.25rem;
+  --p27-space-2: 0.5rem;
+  --p27-space-3: 0.75rem;
+  --p27-space-4: 1rem;
+  --p27-space-5: 1.25rem;
+  --p27-space-6: 1.5rem;
+  --p27-space-7: 1.75rem;
+  --p27-space-8: 2rem;
+  --p27-space-10: 2.5rem;
+  --p27-space-12: 3rem;
+  --p27-space-16: 4rem;
+
+  --p27-width-frame: 100rem;
+  --p27-width-content: 56.25rem;
+  --p27-width-reading: 40rem;
+  --p27-width-closing: 48.125rem;
+  --p27-page-gutter: clamp(1.25rem, 6.25vw, 3rem);
+  --p27-grid-gap: 1rem;
+  --p27-hairline: 1px;
+  --p27-header-desktop: 4rem;
+  --p27-header-compact: 3.5rem;
+  --p27-focus-width: 2px;
+  --p27-focus-offset: 4px;
+}
+
+/* Interpolation knots, not fixed device layouts. Reference gutters in px:
+   320:20, 390:24 (~24.4 fluid), 768:48, 1366:72, 1536:96, 1920:160. */
+@media (min-width: 48rem) {
+  .portfolio-2027 {
+    --p27-page-gutter: clamp(3rem, 1.07358rem + 4.01338vw, 4.5rem);
+    --p27-grid-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 85.375rem) {
+  .portfolio-2027 {
+    --p27-page-gutter: clamp(4.5rem, -7.55294rem + 14.11765vw, 6rem);
+  }
+}
+
+@media (min-width: 96rem) {
+  .portfolio-2027 {
+    --p27-page-gutter: clamp(6rem, -10rem + 16.66667vw, 10rem);
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.linkedin.com/in/ezexgonzalez/",
+    "result": "999 https://www.linkedin.com/in/ezexgonzalez/",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://github.com/ezexgonzalez",
+    "result": "200 https://github.com/ezexgonzalez",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://ezewebstudio.com.ar/",
+    "result": "200 https://ezewebstudio.com.ar/",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+    "result": "200 https://github.com/ezexgonzalez/eze-web-studio-V2",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://mern-task-manager-iota-teal.vercel.app/",
+    "result": "200 https://mern-task-manager-iota-teal.vercel.app/",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://github.com/ezexgonzalez/mern-task-manager",
+    "result": "200 https://github.com/ezexgonzalez/mern-task-manager",
+    "error": "",
+    "exit": 0
+  }
+]

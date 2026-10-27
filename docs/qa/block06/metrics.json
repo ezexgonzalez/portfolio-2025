@@ -1,0 +1,2460 @@
+{
+  "fontCases": [
+    {
+      "mode": "live",
+      "LCPms": 5136,
+      "CLSsession": 0.0747446321787644,
+      "shiftSumNotCLS": 0.10014451369535207,
+      "failed": [],
+      "loaded": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "display": "swap"
+        }
+      ]
+    },
+    {
+      "mode": "delayed",
+      "LCPms": 1084,
+      "CLSsession": 0.0747446321787644,
+      "shiftSumNotCLS": 0.10014451369535207,
+      "failed": [],
+      "loaded": [
+        {
+          "family": "DM Sans",
+          "weight": "400",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "DM Sans",
+          "weight": "500",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "weight": "400",
+          "style": "normal",
+          "display": "swap"
+        },
+        {
+          "family": "Instrument Serif",
+          "weight": "400",
+          "style": "italic",
+          "display": "swap"
+        }
+      ]
+    },
+    {
+      "mode": "unavailable",
+      "LCPms": 100,
+      "CLSsession": 0.025399881516587678,
+      "shiftSumNotCLS": 0.025399881516587678,
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@14,400;14,500&family=IBM+Plex+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "loaded": []
+    }
+  ],
+  "motion": [
+    {
+      "width": 1920,
+      "FPS": 11,
+      "heroTaskSeconds4s": 0.959774,
+      "heapBytesBefore": 25211268,
+      "heapBytesAfter": 33284824,
+      "maxObservedInteractionMs": 32,
+      "eventSamples": 6,
+      "longTasks": [
+        {
+          "t": 61.299999999813735,
+          "duration": 53,
+          "name": "self"
+        },
+        {
+          "t": 1284.5999999996275,
+          "duration": 55,
+          "name": "self"
+        }
+      ],
+      "phaseOrder": [
+        "points",
+        "geometry",
+        "skeleton",
+        "materialization",
+        "final"
+      ],
+      "offscreenDraws": 0
+    },
+    {
+      "width": 390,
+      "FPS": 8,
+      "heroTaskSeconds4s": 0.248762,
+      "heapBytesBefore": 24243088,
+      "heapBytesAfter": 6882164,
+      "maxObservedInteractionMs": 32,
+      "eventSamples": 6,
+      "longTasks": [],
+      "phaseOrder": [
+        "points",
+        "geometry",
+        "skeleton",
+        "materialization",
+        "final"
+      ],
+      "offscreenDraws": 0
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "fullHeight": 6015,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 1016
+        },
+        {
+          "id": "projects",
+          "top": 1080,
+          "height": 1002
+        },
+        {
+          "id": "about",
+          "top": 2082,
+          "height": 1818
+        },
+        {
+          "id": "skills",
+          "top": 3900,
+          "height": 1038
+        },
+        {
+          "id": "contact",
+          "top": 4938,
+          "height": 1077
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 196.75,
+          "height": 53.4375,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 1600,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 1600,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 1600,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 1600,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 1600,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 558.734375,
+          "height": 70,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 900,
+      "scrollWidth": 1920,
+      "fullHeight": 5660,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 836
+        },
+        {
+          "id": "projects",
+          "top": 900,
+          "height": 827
+        },
+        {
+          "id": "about",
+          "top": 1727,
+          "height": 1818
+        },
+        {
+          "id": "skills",
+          "top": 3545,
+          "height": 1038
+        },
+        {
+          "id": "contact",
+          "top": 4583,
+          "height": 1077
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 196.75,
+          "height": 53.4375,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 1600,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 1600,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 1600,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 1600,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 1600,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 558.734375,
+          "height": 70,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "scrollWidth": 1536,
+      "fullHeight": 5215,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 800
+        },
+        {
+          "id": "projects",
+          "top": 864,
+          "height": 796
+        },
+        {
+          "id": "about",
+          "top": 1660,
+          "height": 1682
+        },
+        {
+          "id": "skills",
+          "top": 3342,
+          "height": 985
+        },
+        {
+          "id": "contact",
+          "top": 4327,
+          "height": 888
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 196.75,
+          "height": 53.4375,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 1344,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 1344,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 1344,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 1344,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 1344,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 446.359375,
+          "height": 61.203125,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "fullHeight": 4936,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 704
+        },
+        {
+          "id": "projects",
+          "top": 768,
+          "height": 680
+        },
+        {
+          "id": "about",
+          "top": 1448,
+          "height": 1640
+        },
+        {
+          "id": "skills",
+          "top": 3088,
+          "height": 979
+        },
+        {
+          "id": "contact",
+          "top": 4067,
+          "height": 869
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 193.375,
+          "height": 52.84375,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 1222,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 1222,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 1222,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 1222,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 1222,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 58,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "fullHeight": 6120,
+      "header": 56,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 56,
+          "height": 1024
+        },
+        {
+          "id": "projects",
+          "top": 1080,
+          "height": 1252
+        },
+        {
+          "id": "about",
+          "top": 2332,
+          "height": 1910
+        },
+        {
+          "id": "skills",
+          "top": 4242,
+          "height": 1039
+        },
+        {
+          "id": "contact",
+          "top": 5281,
+          "height": 839
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 180.359375,
+          "height": 50.53125,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Men\u00fa +",
+          "width": 67.5,
+          "height": 44,
+          "href": null
+        },
+        {
+          "text": "01Inicio",
+          "width": 672,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 672,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 672,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 672,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 672,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 60,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "fullHeight": 6367,
+      "header": 56,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 56,
+          "height": 844
+        },
+        {
+          "id": "projects",
+          "top": 900,
+          "height": 1178
+        },
+        {
+          "id": "about",
+          "top": 2078,
+          "height": 2231
+        },
+        {
+          "id": "skills",
+          "top": 4309,
+          "height": 1231
+        },
+        {
+          "id": "contact",
+          "top": 5540,
+          "height": 827
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 172.09375,
+          "height": 49.0625,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Men\u00fa +",
+          "width": 67.5,
+          "height": 44,
+          "href": null
+        },
+        {
+          "text": "01Inicio",
+          "width": 341.25,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 341.25,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 341.25,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 341.25,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 341.25,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 198,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 104,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 157.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 144.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 157.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 144.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 303.671875,
+          "height": 50,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 341.25,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 341.25,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 341.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "scrollWidth": 320,
+      "fullHeight": 6747,
+      "header": 56,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 56,
+          "height": 844
+        },
+        {
+          "id": "projects",
+          "top": 900,
+          "height": 1348
+        },
+        {
+          "id": "about",
+          "top": 2248,
+          "height": 2381
+        },
+        {
+          "id": "skills",
+          "top": 4629,
+          "height": 1305
+        },
+        {
+          "id": "contact",
+          "top": 5934,
+          "height": 813
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 170.75,
+          "height": 48.796875,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Men\u00fa +",
+          "width": 67.5,
+          "height": 44,
+          "href": null
+        },
+        {
+          "text": "01Inicio",
+          "width": 280,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 280,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 280,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 280,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 280,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 198,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 104,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 157.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 144.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 157.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 144.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 278.171875,
+          "height": 48,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 280,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 280,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 280,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 831,
+      "height": 900,
+      "scrollWidth": 831,
+      "fullHeight": 5996,
+      "header": 56,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 56,
+          "height": 900
+        },
+        {
+          "id": "projects",
+          "top": 956,
+          "height": 1252
+        },
+        {
+          "id": "about",
+          "top": 2208,
+          "height": 1910
+        },
+        {
+          "id": "skills",
+          "top": 4118,
+          "height": 1039
+        },
+        {
+          "id": "contact",
+          "top": 5157,
+          "height": 839
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 181.71875,
+          "height": 50.78125,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Men\u00fa +",
+          "width": 67.5,
+          "height": 44,
+          "href": null
+        },
+        {
+          "text": "01Inicio",
+          "width": 729.96875,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 729.96875,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 729.96875,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 729.96875,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 729.96875,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 60,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 832,
+      "height": 900,
+      "scrollWidth": 832,
+      "fullHeight": 5996,
+      "header": 56,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 56,
+          "height": 900
+        },
+        {
+          "id": "projects",
+          "top": 956,
+          "height": 1252
+        },
+        {
+          "id": "about",
+          "top": 2208,
+          "height": 1910
+        },
+        {
+          "id": "skills",
+          "top": 4118,
+          "height": 1039
+        },
+        {
+          "id": "contact",
+          "top": 5157,
+          "height": 839
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 181.71875,
+          "height": 50.78125,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Men\u00fa +",
+          "width": 67.5,
+          "height": 44,
+          "href": null
+        },
+        {
+          "text": "01Inicio",
+          "width": 730.875,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 730.875,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 730.875,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 730.875,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 730.875,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 60,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 1023,
+      "height": 900,
+      "scrollWidth": 1023,
+      "fullHeight": 5974,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 900
+        },
+        {
+          "id": "projects",
+          "top": 964,
+          "height": 1252
+        },
+        {
+          "id": "about",
+          "top": 2216,
+          "height": 1910
+        },
+        {
+          "id": "skills",
+          "top": 4126,
+          "height": 1039
+        },
+        {
+          "id": "contact",
+          "top": 5165,
+          "height": 809
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 185.921875,
+          "height": 51.5,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 906.5625,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 906.5625,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 906.5625,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 906.5625,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 906.5625,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 60,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "scrollWidth": 1024,
+      "fullHeight": 5541,
+      "header": 64,
+      "sections": [
+        {
+          "id": "hero",
+          "top": 64,
+          "height": 900
+        },
+        {
+          "id": "projects",
+          "top": 964,
+          "height": 829
+        },
+        {
+          "id": "about",
+          "top": 1793,
+          "height": 1752
+        },
+        {
+          "id": "skills",
+          "top": 3545,
+          "height": 1127
+        },
+        {
+          "id": "contact",
+          "top": 4672,
+          "height": 869
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Ezequiel Gonzalez"
+        },
+        {
+          "tag": "H2",
+          "text": "Proyectos seleccionados"
+        },
+        {
+          "tag": "H3",
+          "text": "Eze Web Studio"
+        },
+        {
+          "tag": "H3",
+          "text": "Task Manager"
+        },
+        {
+          "tag": "H2",
+          "text": "El camino hasta ac\u00e1."
+        },
+        {
+          "tag": "H2",
+          "text": "Tecnolog\u00edas y capacidades."
+        },
+        {
+          "tag": "H3",
+          "text": "INTERFACES WEB"
+        },
+        {
+          "tag": "H3",
+          "text": "BACKEND & DATA"
+        },
+        {
+          "tag": "H3",
+          "text": "TOOLS & WORKFLOW"
+        },
+        {
+          "tag": "H2",
+          "text": "Hablemos."
+        }
+      ],
+      "targets": [
+        {
+          "text": "Saltar al contenido",
+          "width": 185.921875,
+          "height": 51.53125,
+          "href": "#hero"
+        },
+        {
+          "text": "Ezequiel Gonzalez",
+          "width": 130.90625,
+          "height": 44,
+          "href": "#hero"
+        },
+        {
+          "text": "Proyectos",
+          "width": 84.890625,
+          "height": 44,
+          "href": "#projects"
+        },
+        {
+          "text": "Sobre m\u00ed",
+          "width": 77.484375,
+          "height": 44,
+          "href": "#about"
+        },
+        {
+          "text": "Capacidades",
+          "width": 107.671875,
+          "height": 44,
+          "href": "#skills"
+        },
+        {
+          "text": "Contacto",
+          "width": 81.25,
+          "height": 44,
+          "href": "#contact"
+        },
+        {
+          "text": "01Inicio",
+          "width": 907.46875,
+          "height": 64,
+          "href": "#hero"
+        },
+        {
+          "text": "02Proyectos",
+          "width": 907.46875,
+          "height": 64,
+          "href": "#projects"
+        },
+        {
+          "text": "03Sobre m\u00ed",
+          "width": 907.46875,
+          "height": 64,
+          "href": "#about"
+        },
+        {
+          "text": "04Capacidades",
+          "width": 907.46875,
+          "height": 64,
+          "href": "#skills"
+        },
+        {
+          "text": "05Contacto",
+          "width": 907.46875,
+          "height": 64,
+          "href": "#contact"
+        },
+        {
+          "text": "Explorar proyectos \u2197",
+          "width": 218,
+          "height": 52,
+          "href": "#projects"
+        },
+        {
+          "text": "Mi historia \u2192",
+          "width": 116,
+          "height": 52,
+          "href": "#about"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://ezewebstudio.com.ar/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/eze-web-studio-V2"
+        },
+        {
+          "text": "Visitar proyecto \u2197",
+          "width": 181.34375,
+          "height": 52,
+          "href": "https://mern-task-manager-iota-teal.vercel.app/"
+        },
+        {
+          "text": "C\u00f3digo fuente \u2197",
+          "width": 168.875,
+          "height": 52,
+          "href": "https://github.com/ezexgonzalez/mern-task-manager"
+        },
+        {
+          "text": "ezexgonzalez@outlook.com",
+          "width": 405.703125,
+          "height": 58,
+          "href": "mailto:ezexgonzalez@outlook.com"
+        },
+        {
+          "text": "LinkedIn\u2197",
+          "width": 98.4375,
+          "height": 44,
+          "href": "https://www.linkedin.com/in/ezexgonzalez/"
+        },
+        {
+          "text": "GitHub\u2197",
+          "width": 87.796875,
+          "height": 44,
+          "href": "https://github.com/ezexgonzalez"
+        },
+        {
+          "text": "Descargar CV\u2193",
+          "width": 149.25,
+          "height": 44,
+          "href": "/cv-ezequiel-gonzalez.pdf"
+        }
+      ]
+    }
+  ],
+  "axe": [
+    {
+      "width": 1920,
+      "violations": 0,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "violations": 0,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "violations": 0,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "violations": 0,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    }
+  ],
+  "lighthouse-desktop": {
+    "version": "13.5.0",
+    "scores": {
+      "performance": null,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.5
+    },
+    "fonts": [
+      {
+        "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 5505.73399999924,
+        "networkRequestTime": 5555.867999999784,
+        "networkEndTime": 10953.047999999486,
+        "finished": true,
+        "transferSize": 37559,
+        "resourceSize": 36980,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 5505.913999999873,
+        "networkRequestTime": 5556.444000000134,
+        "networkEndTime": 10954.050999999978,
+        "finished": true,
+        "transferSize": 10176,
+        "resourceSize": 10052,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7Motmp5g.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 5506.122999999672,
+        "networkRequestTime": 5556.728000000119,
+        "networkEndTime": 10974.104000000283,
+        "finished": true,
+        "transferSize": 15808,
+        "resourceSize": 15684,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      }
+    ]
+  },
+  "lighthouse-mobile": {
+    "version": "13.5.0",
+    "scores": {
+      "performance": 0.97,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.5
+    },
+    "fonts": [
+      {
+        "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 180.99500000104308,
+        "networkRequestTime": 225.82600000035018,
+        "networkEndTime": 295.24300000071526,
+        "finished": true,
+        "transferSize": 37049,
+        "resourceSize": 36980,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 181.26900000032037,
+        "networkRequestTime": 226.24299999978393,
+        "networkEndTime": 339.820000000298,
+        "finished": true,
+        "transferSize": 10106,
+        "resourceSize": 10052,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7Motmp5g.woff2",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 181.52700000070035,
+        "networkRequestTime": 226.44500000029802,
+        "networkEndTime": 338.47000000067055,
+        "finished": true,
+        "transferSize": 15738,
+        "resourceSize": 15684,
+        "statusCode": 200,
+        "mimeType": "font/woff2",
+        "resourceType": "Font",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "Google Fonts"
+      }
+    ]
+  }
+}

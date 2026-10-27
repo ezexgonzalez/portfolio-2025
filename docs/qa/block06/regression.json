@@ -1,0 +1,41 @@
+[
+  {
+    "width": 1920,
+    "beforeSize": [
+      1920,
+      6015
+    ],
+    "afterSize": [
+      1920,
+      6015
+    ],
+    "pixelIdentical": false,
+    "changedPixels": 38,
+    "maxChannelDifference": 1,
+    "differenceBounds": [
+      301,
+      5241,
+      1001,
+      5362
+    ],
+    "beforeSHA256": "576ff3e356dc3fc2ab1f828ae5bd96e20dce7710d4ace0c3bb061f265bdd714e",
+    "afterSHA256": "192e102cee9a15a4860ec927c2bcd9bce661c842de5982167ad48180e950cca1"
+  },
+  {
+    "width": 390,
+    "beforeSize": [
+      390,
+      6367
+    ],
+    "afterSize": [
+      390,
+      6367
+    ],
+    "pixelIdentical": true,
+    "changedPixels": 0,
+    "maxChannelDifference": 0,
+    "differenceBounds": null,
+    "beforeSHA256": "497077a7c4ab8e379a0b808285f621f51bcd91819416a4861a33e80210a221e2",
+    "afterSHA256": "497077a7c4ab8e379a0b808285f621f51bcd91819416a4861a33e80210a221e2"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://ezegonzalez.dev/",
+    "http": 200,
+    "effective": "https://ezegonzalez.dev/",
+    "seconds": 4.190633,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://ezewebstudio.com.ar/",
+    "http": 200,
+    "effective": "https://ezewebstudio.com.ar/",
+    "seconds": 5.633448,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://mern-task-manager-iota-teal.vercel.app/",
+    "http": 200,
+    "effective": "https://mern-task-manager-iota-teal.vercel.app/",
+    "seconds": 4.155001,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://github.com/ezexgonzalez",
+    "http": 200,
+    "effective": "https://github.com/ezexgonzalez",
+    "seconds": 5.068511,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+    "http": 200,
+    "effective": "https://github.com/ezexgonzalez/eze-web-studio-V2",
+    "seconds": 1.320949,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://github.com/ezexgonzalez/mern-task-manager",
+    "http": 200,
+    "effective": "https://github.com/ezexgonzalez/mern-task-manager",
+    "seconds": 4.764811,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/ezexgonzalez/",
+    "http": 999,
+    "effective": "https://www.linkedin.com/in/ezexgonzalez/",
+    "seconds": 3.332772,
+    "TLSverify": 0,
+    "exit": 0,
+    "error": ""
+  }
+]

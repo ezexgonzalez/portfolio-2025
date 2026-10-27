@@ -1,0 +1,378 @@
+{
+  "head": "982396eb6de28caf75ff710056fb7c3267da0fc4",
+  "browser": "153.0.8010.0",
+  "delivery": "Live Google Fonts via environment proxy with imported trusted CA; TLS verification enabled; no font fixtures",
+  "checks": [
+    "48 fixed-phase draw commands and Canvas pixel hashes identical (stable readback context); paired 90-frame JS render benchmark (no pixel-read cost included)"
+  ],
+  "layouts": [],
+  "accessibility": [],
+  "fonts": [],
+  "errors": [],
+  "comparison": [
+    {
+      "width": 1600,
+      "height": 766,
+      "compact": false,
+      "cachedCells": 13229,
+      "prepareMs": 3.7999999998137355,
+      "hashes": [
+        {
+          "phase": 0,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "a4a8eeec4b413bab1399d7ddc422ace8bef201fc528561c1bef5d0e4818e05f8"
+        },
+        {
+          "phase": 3,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "cfde8fc3ee931a887c4c5c1da392d8023de60086dcc0756796f0a85a8abb1ab0"
+        },
+        {
+          "phase": 6,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "e59280fb38dacbcb8dc87911820c47ab5479d022e932a044e7ee98910cf9b848"
+        },
+        {
+          "phase": 9,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "820fe71fed24a20b7d08f2f77143dcd944d0624fdac33a85180fc5e8cb7e565f"
+        },
+        {
+          "phase": 12,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "8b84c2f4e1014d7130a9e806a831ac2739a66856ab262b904424ed161ba5cf30"
+        },
+        {
+          "phase": 15,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "53f954a487fa1cf031327677969234b499898d09185df2bc3c3058db28e2d57a"
+        },
+        {
+          "phase": 18,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "7eacc192122033c4169e8dd042d00f4f1fa8b55054280f7ecb7162e38bea7659"
+        },
+        {
+          "phase": 21,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "dfb316294f8acb1a2e07588f2314ffb3c95f3fb2c15d90da4a3aa519f1887ceb"
+        },
+        {
+          "phase": 24,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "7ed098b7208809ff6860e705494d8c14ad853a6f59833041a5729935c9e380ae"
+        },
+        {
+          "phase": 27,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "b6c14c216c5ca108a1d4f73308297e2578c4ca58b8316e72bfaa720592792845"
+        },
+        {
+          "phase": 30,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "ee0cabf20bcef9e95771331126ee8aa480b8dd1603a3b2e6d5ae17fae4d36c80"
+        },
+        {
+          "phase": 33,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "a67240a539e9d5cb987e289c2600fcb80d207397acf6268327001a1c32547646"
+        }
+      ],
+      "before": {
+        "mean": 5.822222222211874,
+        "p50": 5.7000000001862645,
+        "p95": 6.5
+      },
+      "after": {
+        "mean": 3.3244444444672103,
+        "p50": 3.2999999998137355,
+        "p95": 3.6000000005587935
+      }
+    },
+    {
+      "width": 1240,
+      "height": 650,
+      "compact": false,
+      "cachedCells": 8673,
+      "prepareMs": 1.7000000001862645,
+      "hashes": [
+        {
+          "phase": 0,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "fb515915b5de26ebf997f26393e14f7d7580f65b0a57f1987edf91f65fa871fc"
+        },
+        {
+          "phase": 3,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "081af534dfed96b499459fc8cd4db4a54260b810c04e00ac8fb7e341eba316be"
+        },
+        {
+          "phase": 6,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "3083e6228884fc9f8d1e214774532c9cd3939c5f7dd0b2bd83ec1383945bd4a0"
+        },
+        {
+          "phase": 9,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "87acf09f4788acec12775e877ecf7fe36b6dd5a0a60a8bd1f644770a9badd232"
+        },
+        {
+          "phase": 12,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "82d5233455da9fd5fd76fa721c499bd6f1ca9eed6cef331dd8f1d5febf9a16b2"
+        },
+        {
+          "phase": 15,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "4b0407ca22dd84ecc6adf83704cdfdb35e37ec8c4aac60da4b5ab617f89ee9d1"
+        },
+        {
+          "phase": 18,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "3bd176a14af5639247f2aaec7db87cb8c1206fc09ca96d7056931f4c72305b85"
+        },
+        {
+          "phase": 21,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "6b61ee33b9c321e337c28b6c2b241463987ec78d99af8de9a40ad7821cba8eed"
+        },
+        {
+          "phase": 24,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "42ee35cf6fa55393c00597b9a400c4d24b0bdb97e85336e7139bb3e37303fff6"
+        },
+        {
+          "phase": 27,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "9f587616161405cd2ed452a3341dc0e6f9422171e098a56d1f7592b91deabee7"
+        },
+        {
+          "phase": 30,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "97df2295fda7036a69ab782f0b84fc972362d3ea84384c13a91e0ed352de7b11"
+        },
+        {
+          "phase": 33,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "cdd06300ded3ffa024fb81fcdbfb5067d58b60b9b84f5931aa3ddba4bdd5b13c"
+        }
+      ],
+      "before": {
+        "mean": 3.9933333333478207,
+        "p50": 3.900000000372529,
+        "p95": 4.800000000745058
+      },
+      "after": {
+        "mean": 2.272222222211874,
+        "p50": 2.2000000001862645,
+        "p95": 2.7000000001862645
+      }
+    },
+    {
+      "width": 483.6,
+      "height": 560,
+      "compact": true,
+      "cachedCells": 3442,
+      "prepareMs": 1.8999999994412065,
+      "hashes": [
+        {
+          "phase": 0,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "c5c9dc03b6e2a426a04366f08ba71c87e5a07eed55e41e1e266443d04024c0a7"
+        },
+        {
+          "phase": 3,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "8dae82443fd4da544d0f33cc6ee08ef034f1dc1c51e205113276a8df57fac79f"
+        },
+        {
+          "phase": 6,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "61ef67d270ca45c275b9c8502e6ef0594081103afccb41ad40e1af5fecad4e04"
+        },
+        {
+          "phase": 9,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "715cac2334ddcb848111a0aa21e7c97f5b9961168332cf5807657a3dc644ca7a"
+        },
+        {
+          "phase": 12,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "d9bfd1cc329569c7b9a018f4d2357a5cb92c50ae0a26b5e365d7694672447e5b"
+        },
+        {
+          "phase": 15,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "90ff79d7c04b3fd3542f88ba5762f2555dd6815656fada7811837262d6d7177b"
+        },
+        {
+          "phase": 18,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "8560146c5835f08c939e4788cfd7c9ba7906a24834eeb345ebf5f0093fd0a6aa"
+        },
+        {
+          "phase": 21,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "c1a740141a5ac2fdbfd20b35617d61bb2598fa12345eb778bb7818de4e778c71"
+        },
+        {
+          "phase": 24,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "42f826afa102a674faee2c5cd3933036660c78e26cae986f0da9613febcae4d1"
+        },
+        {
+          "phase": 27,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "426eab56e2b644af79e2d6f26a6b5928958cf20b566d1ca7eb207a286b516d64"
+        },
+        {
+          "phase": 30,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "14a6c1249adb77d52063f2aca8c6288ad50f970f7d9535c71cc956148b5deb7b"
+        },
+        {
+          "phase": 33,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "ef74db3a703282457e644557b0029e00a45e750fc7d2c14c31aa1f66f2a21c19"
+        }
+      ],
+      "before": {
+        "mean": 1.5633333333043589,
+        "p50": 1.5,
+        "p95": 1.8999999994412065
+      },
+      "after": {
+        "mean": 2.135555555578321,
+        "p50": 0.8999999994412065,
+        "p95": 9
+      }
+    },
+    {
+      "width": 396.8,
+      "height": 560,
+      "compact": true,
+      "cachedCells": 3442,
+      "prepareMs": 0.6000000005587935,
+      "hashes": [
+        {
+          "phase": 0,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "4915eaf0e0bb76e5fc90d2b1d454b5e571a74d8c8b7dd6d99f666cb3680727b3"
+        },
+        {
+          "phase": 3,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "45b45df99c8d212165dff03cb85336ca7ea16973904d582cf34f03bf5dd3004c"
+        },
+        {
+          "phase": 6,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "bf777593ff1340b2b814ea4c4c297e16844e4917684f9f526fb85a71bd2e72dd"
+        },
+        {
+          "phase": 9,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "6e41f23ef5bfaf28300ed0d6e16fc78eb288af317f5278903515a8ca537ec4fa"
+        },
+        {
+          "phase": 12,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "ef417438dae1683b2e1d0333a415d6c7e8e5c913b6acb509acfef651be1aae26"
+        },
+        {
+          "phase": 15,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "f6a8cc87fffe42746bbea9c483cdb2e6f45a2acb9e484e8807e24d518f6ccaad"
+        },
+        {
+          "phase": 18,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "236ad28bfaef89b97d873487a12def02243aec593bc47b8bdf1bc270d339ec29"
+        },
+        {
+          "phase": 21,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "c78eaa5609b5d31bd5060c732f652c2e8c5cfab2c98d5ef21ef075b425eae379"
+        },
+        {
+          "phase": 24,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "bd8fed81a5770b27d7f0869b700aeead219a744798281f869432356dfa5e02fc"
+        },
+        {
+          "phase": 27,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "370e887a0f5f7065d18e18203f7fc0e944c28fc39bdb15385f1df06c0fbc957e"
+        },
+        {
+          "phase": 30,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "4647659f5e16bdc24afa7d6bc36809768d717d700d34bd2f80b079dea317cf57"
+        },
+        {
+          "phase": 33,
+          "sameCommands": true,
+          "equal": true,
+          "sha256": "d74c4d3d0a894ea7c89438cf19e162b14a366966a369ace7f0980af024e554bb"
+        }
+      ],
+      "before": {
+        "mean": 1.5522222222035957,
+        "p50": 1.5,
+        "p95": 1.8999999994412065
+      },
+      "after": {
+        "mean": 2.0688888889116543,
+        "p50": 0.900000000372529,
+        "p95": 9.200000000186265
+      }
+    }
+  ]
+}
