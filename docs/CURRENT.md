@@ -9,14 +9,14 @@
 - **Proyecto:** nuevo portfolio personal de Ezequiel Gonzalez.
 - **Repositorio:** https://github.com/ezexgonzalez/portfolio-2025
 - **Dominio de publicación futuro:** https://ezegonzalez.dev/ (el mismo de la web actual).
-- **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
-- **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
-- **Fase:** cinco secciones implementadas;01–05A aprobados para QA; auditoría06 entregada, pendiente de revisión.
-- **Bloque activo:** **RELEASE CANDIDATE / Portfolio 2027 Root Activation — PREPARED, NOT MERGED**.
+- **Rama activa publicada en repositorio:** `main` (merge Portfolio 2027 PR #14). Historial de implementación en `feature/portfolio-2027-foundation`; candidato de activación en `release/portfolio-2027-activation`.
+- **`main`:** contiene Portfolio 2027 tras aprobación y merge explícitos del propietario el 2026-10-26 (hora Argentina; commit del merge `3c35010ee6e5a33aa2c23e66f3826f8ce00cfd36`). La versión 2025 permanece en el historial para rollback.
+- **Fase:** Portfolio 2027 integrado a `main` con nueva entrada raíz y despliegue Vercel reportado `success`; pendiente smoke final de URL pública y seguimiento de hallazgos de auditoría06.
+- **Bloque activo:** **POST-MERGE / Portfolio 2027 production verification**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Validar PR de release candidate, resolver/aceptar riesgos pendientes de auditoría06; NO hacer merge hasta comprobar el build y la entrada raíz. La publicación requiere smoke post-merge. Estado previo: Dirección revisa la auditoría06 y sus pendientes de seguridad/validación para release. Merge, publicación y fases posteriores NO AUTORIZADOS.
+- **Siguiente hito:** comprobar raíz pública `https://ezegonzalez.dev/` desde navegador real, identidad 2027, navegación, motion, fuentes, CV, HTTPS, robots/sitemap, 404 HTTP y modo mobile. Seguir pendientes de dependencias (15 avisos), verificación LinkedIn/mailto, CV vigente, lector de pantalla/Safari/Firefox. No declarar que esos puntos están probados hasta ver evidencia.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -1383,3 +1383,16 @@ producción, dominio y hosting intactos. Sin merge/deploy ni inicio de otra fase
 - `public/robots.txt`, `public/sitemap.xml`, `public/404.html` added. No invented social image or visual redesign. OG image remains a publishing polish item (do not point to a 2025 screenshot).
 - GitHub Actions check `.github/workflows/portfolio-2027-release-checks.yml` added to verify `npm ci`, scoped lint, production build, entry/SEO/asset signatures; `npm audit` advisory report is non-blocking pending applicability decision.
 - **Gate:** PR checks and production-root browser QA must succeed, plus owner confirmation of CV and live link behavior; `npm audit` pre-existing 15 advisories (1 critical) to be risk-classified. No proxy-fixture fonts-only claims as real deployment checks. No `main` change or deploy before gate.
+
+## 28. Portfolio 2027 merge to main — 2026-10-26 (Argentina local time)
+
+**Explicit owner instruction:** “hace el merge”. **EXECUTED.**
+- Source: `release/portfolio-2027-activation`, approved release candidate PR [#14](https://github.com/ezexgonzalez/portfolio-2025/pull/14), head `ff82c92ae24909ae133a117460254edf61145c20`.
+- Target `main` merge method: merge commit `3c35010ee6e5a33aa2c23e66f3826f8ce00cfd36`. GitHub reports `merged:true`. Previously deployed 2025 base commit `014843d198abc18a5f818b4c750e484f8fd0b47d` preserved for rollback.
+- Pre-merge GitHub Actions `build-and-smoke` PASS: exact npm lockfile install, scoped ESLint2027, `npm run build`, root HTML/metadata/source check and static CV/robots/sitemap/404 checks.
+- After merge, verified that `main:src/main.jsx` imports `PortfolioPreview` and `main:index.html` has public 2027 title `Ezequiel Gonzalez | Full Stack Developer`, canonical `https://ezegonzalez.dev/`, no `noindex`; preview remains separate.
+- GitHub commit status Vercel reported **success / deployment completed** for merge SHA, with deployment details https://vercel.com/ezexgonzalezs-projects/portfolio-2026/2FFk5X89jeNpAoEZuH6pxKH9U5ie. This confirms provider deployment, **not independent end-user page visual/browser smoke**.
+- No DNS/hosting edits performed. No claim that 404 HTTP status, third-party links or CLS/physical browser checks have been verified on live site.
+- Remaining known risks: Block 06 npm audit 15 advisories in current build tool lockfile, including 1 critical transitive package; exposure and targeted updates remain unreviewed/accepted explicitly. CV currency, LinkedIn authwall, real mailto, real-browser zoom/AT, Safari/Firefox, font swap CLS and actual live smoke remain open.
+
+**Current working truth:** Portfolio 2027 has been **merged to main**, and Vercel reports successful deployment. Prior prohibition records in historical sections 1–27 are obsolete gates for earlier stages; do not interpret them as reversing this actual merge. Future edits to production require separate, explicit authorization; rollback path described in `docs/qa/block06/MIGRATION.md`.
