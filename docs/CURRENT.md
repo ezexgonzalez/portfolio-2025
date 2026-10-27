@@ -12,7 +12,7 @@
 - **Rama activa publicada en repositorio:** `main` (merge Portfolio 2027 PR #14). Historial de implementación en `feature/portfolio-2027-foundation`; candidato de activación en `release/portfolio-2027-activation`.
 - **`main`:** contiene Portfolio 2027 tras aprobación y merge explícitos del propietario el 2026-10-26 (hora Argentina; commit del merge `3c35010ee6e5a33aa2c23e66f3826f8ce00cfd36`). La versión 2025 permanece en el historial para rollback.
 - **Fase:** Portfolio 2027 integrado a `main` con nueva entrada raíz y despliegue Vercel reportado `success`; pendiente smoke final de URL pública y seguimiento de hallazgos de auditoría06.
-- **Bloque activo:** **POST-MERGE / Portfolio 2027 production verification**.
+- **Bloque activo:** **POST-RELEASE / Portfolio 2027 + social Open Graph card verification**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
@@ -1406,3 +1406,12 @@ producción, dominio y hosting intactos. Sin merge/deploy ni inicio de otra fase
 - Work isolated in `feature/portfolio-og-social-card` prior to merging into `main`; no design/component/motion changes.
 - Publication gate: CI compile, GitHub merge, provider deployment status; then confirm HTTP image response and metadata from public root if accessible. Social platforms may cache previous unfurled previews, so use their refresh/debug tools if an old preview remains.
 
+
+## 30. Open Graph social artwork LIVE — 2026-10-27
+
+**Owner-approved new yearless social card is integrated.**
+- PR [#15](https://github.com/ezexgonzalez/portfolio-2025/pull/15), merge commit `5d95a0f0c72643f3c183e8c16eecdf0aaee2ca7a`; merged to `main`.
+- Exact Git blob SHA `87fd046d9d2795808c72cfd90b97634e5355717e` verified for `public/portfolio-og.png` on `main`. Image is an optimized 1200×630 PNG derived from the owner-approved static card, **no year**.
+- `index.html` includes public `og:image`, secure_url, PNG type, dimensions, alt and `twitter:card=summary_large_image`/twitter:image, pointing to `https://ezegonzalez.dev/portfolio-og.png`.
+- GitHub Actions candidate `build-and-smoke` succeeded, and Vercel reported **Deployment has completed** for merge SHA.
+- Remaining post-release spot check: social previews in actual LinkedIn/WhatsApp/X when they recrawl the URL. A previously cached preview may need a refresh; do not assume cache invalidates immediately. No component/layout/motion changes were made.
