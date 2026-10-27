@@ -12,11 +12,11 @@
 - **Rama de trabajo/documentación activa:** `feature/portfolio-2027-foundation`.
 - **`main`:** producción actual, NO modificar, fusionar ni desplegar sin autorización.
 - **Fase:** cinco secciones implementadas;01–05A aprobados para QA; auditoría06 entregada, pendiente de revisión.
-- **Bloque activo:** **06 / Final Visual QA & Optimization — DONE — PENDING DIRECTOR REVIEW**.
+- **Bloque activo:** **RELEASE CANDIDATE / Portfolio 2027 Root Activation — PREPARED, NOT MERGED**.
 - **Estado actual del Bloque 01:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-21).
 - **Estado del Bloque 03:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Selected Work, UI Construction 03A y ajuste de altura 03B cerrados. No reabrir.
 - **Estado del Bloque 03A:** **APPROVED — OWNER VISUAL REVIEW** (2026-10-22). Zero-flash, claridad y ritmo de construcción aceptados; entrega en sección 16.
-- **Siguiente hito:** Dirección revisa la auditoría06 y sus pendientes de seguridad/validación para release. Merge, publicación y fases posteriores NO AUTORIZADOS.
+- **Siguiente hito:** Validar PR de release candidate, resolver/aceptar riesgos pendientes de auditoría06; NO hacer merge hasta comprobar el build y la entrada raíz. La publicación requiere smoke post-merge. Estado previo: Dirección revisa la auditoría06 y sus pendientes de seguridad/validación para release. Merge, publicación y fases posteriores NO AUTORIZADOS.
 - **Estado del Bloque 02A:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22). Entrega en sección 11, ver revisión en sección 12.
 - **Estado del Bloque 02:** **APPROVED — DIRECTOR REVIEW COMPLETED** (2026-10-22), incluidas las correcciones del 02A. Preview local probada en Chromium, no desplegada; riesgos tipográficos/CLS y dispositivos físicos pendientes antes de release.
 
@@ -1372,3 +1372,14 @@ HEAD final consultable en el historial de esta entrada, sin hash circular.
 **No se declara listo para producción.** Resolver/aceptar P1 y controles esenciales
 antes de un gate de release. Main/entrada2025, fuentes, PDF, paquetes, SEO publicado,
 producción, dominio y hosting intactos. Sin merge/deploy ni inicio de otra fase.
+
+## 27. Release candidate staged for authorized merge request — 2026-10-26
+
+**Request:** owner inspected the preview manually and requested merge to `main` provided Director finds no release concern. Director's review found that simply merging `feature/portfolio-2027-foundation` would **not** activate the new site: `index.html` and `src/main.jsx` remained tied to 2025. The Block 06 audit itself explicitly warned production candidate activation and security/CLS checks had not yet been performed.
+
+**Safe progress:** created `release/portfolio-2027-activation` branched from the audited `feature/portfolio-2027-foundation`, with public root activation of the existing Portfolio 2027 composition and accessible no-JS fallback, public metadata/canonical, robots/sitemap and a minimal 404 fallback. Added PR build/smoke checks for `main`. Kept the isolated noindex preview unchanged and all approved motion/layout source unchanged. The release candidate branch remains **not merged/not deployed**, awaiting actual CI verification, security applicability review and any necessary smoke inspection. The public 404 HTTP status depends on hosting configuration and must be tested live.
+- Root entry: `src/main.jsx` imports `PortfolioPreview` instead of legacy App; legacy code retained for rollback. No `initTheme()` or `src/index.css` import in root 2027 entry.
+- `index.html` sets `lang=es`, title/description/canonical/OG/Twitter textual tags, stylesheet and existing favicon. Long semantic fallback moved under `noscript` to avoid a pre-hydration flash; accessible when JavaScript is disabled.
+- `public/robots.txt`, `public/sitemap.xml`, `public/404.html` added. No invented social image or visual redesign. OG image remains a publishing polish item (do not point to a 2025 screenshot).
+- GitHub Actions check `.github/workflows/portfolio-2027-release-checks.yml` added to verify `npm ci`, scoped lint, production build, entry/SEO/asset signatures; `npm audit` advisory report is non-blocking pending applicability decision.
+- **Gate:** PR checks and production-root browser QA must succeed, plus owner confirmation of CV and live link behavior; `npm audit` pre-existing 15 advisories (1 critical) to be risk-classified. No proxy-fixture fonts-only claims as real deployment checks. No `main` change or deploy before gate.
